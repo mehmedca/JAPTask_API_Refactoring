@@ -1,3 +1,4 @@
+using JAP_Task_1_API.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,10 +29,48 @@ namespace JAP_Task_1_API
         {
 
             services.AddControllers();
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "JAP_Task_1_API", Version = "v1" });
+            //});
+
+            #region Configure Swagger  
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "JAP_Task_1_API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "JAP-Project1 API",
+                    Version = "v1"
+                });
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "In order to authenticate insert JWT token in this order: Bearer {your token}",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new string[] { }
+                    }
+                });
             });
+            #endregion
+
+            services.RegisterServices(Configuration);
+
+            services.AddRouting(opts => opts.LowercaseUrls = true);
+
+            services.Authentication(Configuration);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,12 +87,16 @@ namespace JAP_Task_1_API
 
             app.UseRouting();
 
+            app.UseCors("debug");
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+            app.UseSwagger(c =>
             {
-                endpoints.MapControllers();
+                c.SerializeAsV2 = true;
             });
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JWT Auth v1"));
         }
     }
 }
