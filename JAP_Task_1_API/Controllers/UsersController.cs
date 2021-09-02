@@ -1,4 +1,5 @@
-﻿using JAP.Core.Models.InsertRequest;
+﻿using JAP.Core.Interfaces.IService;
+using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
 using Microsoft.AspNetCore.Http;

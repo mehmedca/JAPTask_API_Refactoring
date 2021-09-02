@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using JAP.Core.Interfaces.IService;
 
 namespace JAP_Task_1_API.Controllers
 {
@@ -21,7 +22,7 @@ namespace JAP_Task_1_API.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public async Task<IActionResult> GetById(string id)
+        public async Task<IActionResult> GetById(int id)
         {
             return Ok(await _movieService.GetMovieByIdAsync(id));
         }
@@ -33,7 +34,7 @@ namespace JAP_Task_1_API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Edit(string id, [FromBody] MovieUpdateRequest updateRequest)
+        public async Task<IActionResult> Edit(int id, [FromBody] MovieUpdateRequest updateRequest)
         {
             return Ok(await _movieService.UpdateMovieAsync(id, updateRequest));
         }
@@ -46,7 +47,7 @@ namespace JAP_Task_1_API.Controllers
 
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int id)
         {
             await _movieService.SoftDeleteMovieAsync(id);
             return Ok(true);
