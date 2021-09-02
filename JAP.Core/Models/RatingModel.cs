@@ -10,7 +10,7 @@ namespace JAP.Core.Models
     {
         public int Id { get; set; }
 
-        public string RatedByUserId { get; set; }
+        public string RatedById { get; set; }
         public string RatedByUserUsername { get; set; }
 
         public int MovieId { get; set; }

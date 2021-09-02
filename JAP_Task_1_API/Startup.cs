@@ -1,3 +1,4 @@
+using JAP.Mapper;
 using JAP_Task_1_API.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -71,6 +72,7 @@ namespace JAP_Task_1_API
 
             services.Authentication(Configuration);
 
+            services.AddAutoMapper(typeof(ModelsToEntitiesProfiles));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
