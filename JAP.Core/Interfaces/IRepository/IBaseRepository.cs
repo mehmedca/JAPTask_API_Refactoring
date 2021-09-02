@@ -13,7 +13,7 @@ namespace JAP.Core.Interfaces.IRepository
         Task<IEnumerable<TModel>> GetPageAsync(TSearch search);
         Task<TModel> AddAsync(TInsert entity);
         Task UpdateAsync(object id, TUpdate entity);
-        Task SoftDeleteAsync(object id);
+        Task SoftDeleteAsync(object id, string userId = "");
         Task SaveChangesAsync();
     }
 }

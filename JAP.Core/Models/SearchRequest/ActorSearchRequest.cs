@@ -8,5 +8,7 @@ namespace JAP.Core.Models.SearchRequest
 {
     public class ActorSearchRequest
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }

@@ -1,8 +1,11 @@
-﻿using JAP.Core.Interfaces.IService;
+﻿using JAP.Common.Extensions;
+using JAP.Core.Interfaces.IRepository;
+using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,29 +16,46 @@ namespace JAP.Core.Services
 {
     public class ActorService : IActorService
     {
-        public Task<ActorModel> GetActorByIdAsync(int id)
+        private readonly IActorRepository _actorRepository;
+        private readonly IHttpContextAccessor _httpContext;
+
+        private readonly string userId;
+        public ActorService(IActorRepository actorRepository, IHttpContextAccessor httpContext)
         {
-            throw new NotImplementedException();
+            _actorRepository = actorRepository;
+            _httpContext = httpContext;
+            userId = _httpContext.HttpContext.User.GetUserId();
         }
 
-        public Task<IEnumerable<ActorModel>> GetPageAsync(ActorSearchRequest search)
+        public async Task<ActorModel> GetActorByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _actorRepository.GetByIdAsync(id);
         }
 
-        public Task<ActorModel> InsertActorAsync(ActorInsertRequest insert)
+        public async Task<IEnumerable<ActorModel>> GetPageAsync(ActorSearchRequest search)
         {
-            throw new NotImplementedException();
+            return await _actorRepository.GetPageAsync(search);
         }
 
-        public Task SoftDeleteActorAsync(int id)
+        public async Task<ActorModel> InsertActorAsync(ActorInsertRequest insert)
         {
-            throw new NotImplementedException();
+            insert.DateCreated = DateTime.Now;
+            insert.CreatedById = userId;
+
+            return await _actorRepository.AddAsync(insert);
         }
 
-        public Task<ActorModel> UpdateActorAsync(int id, ActorUpdateRequest update)
+        public async Task SoftDeleteActorAsync(int id)
         {
-            throw new NotImplementedException();
+            await _actorRepository.SoftDeleteAsync(id, userId);
+        }
+
+        public async Task UpdateActorAsync(int id, ActorUpdateRequest update)
+        {
+            update.DateModified = DateTime.Now;
+            update.ModifiedById = userId;
+
+            await _actorRepository.UpdateAsync(id, update);
         }
     }
 }

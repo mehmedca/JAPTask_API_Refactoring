@@ -36,7 +36,8 @@ namespace JAP_Task_1_API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Edit(string id, [FromBody] AppRoleUpdateRequest updateRequest)
         {
-            return Ok(await _roleService.UpdateRoleAsync(id, updateRequest));
+            await _roleService.UpdateRoleAsync(id, updateRequest);
+            return NoContent();
         }
 
         [HttpGet]

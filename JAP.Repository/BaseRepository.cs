@@ -36,13 +36,14 @@ namespace JAP.Repository
             return _mapper.Map<TModel>(insert);
         }
 
-        public async virtual Task SoftDeleteAsync(object id)
+        public async virtual Task SoftDeleteAsync(object id, string userName)
         {
             var entity = await _context.Set<TDatabase>().FindAsync(id);
 
             if (entity is BaseDeleteEntity deletableEntity)
             {
                 deletableEntity.IsDeleted = true;
+                deletableEntity.DeletedById = userName;
                 deletableEntity.DateDeleted = DateTime.Now;
                 
                 _context.Set<BaseDeleteEntity>().Attach(deletableEntity);
@@ -50,6 +51,9 @@ namespace JAP.Repository
             else if (entity is AppRole role)
             {
                 role.IsDeleted = true;
+                role.DeletedById = userName;
+                role.DateDeleted = DateTime.Now;
+
                 _context.Set<AppRole>().Attach(role);
             }
             else

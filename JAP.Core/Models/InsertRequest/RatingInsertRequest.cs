@@ -8,5 +8,7 @@ namespace JAP.Core.Models.InsertRequest
 {
     public class RatingInsertRequest
     {
+        public string RatedById { get; set; }
+        public int MovieId { get; set; }
     }
 }

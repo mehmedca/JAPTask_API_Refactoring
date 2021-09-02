@@ -1,8 +1,13 @@
-﻿using JAP.Core.Interfaces.IService;
+﻿using JAP.Common.Extensions;
+using JAP.Core.Entities.Identity;
+using JAP.Core.Interfaces.IRepository;
+using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,29 +18,51 @@ namespace JAP.Core.Services
 {
     public class RoleService : IRoleService
     {
-        public Task<IEnumerable<AppRoleModel>> GetPageAsync(AppRoleSearchRequest search)
+        private readonly IRoleRepository _roleRepository;
+        private readonly RoleManager<AppRole> _roleManager;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
+        private readonly string userId;
+
+        public RoleService(IRoleRepository roleRepository, RoleManager<AppRole> roleManager, IHttpContextAccessor httpContextAccessor)
         {
-            throw new NotImplementedException();
+            _roleRepository = roleRepository;
+            _roleManager = roleManager;
+            _httpContextAccessor = httpContextAccessor;
+
+            userId = _httpContextAccessor.HttpContext.User.GetUserId();
         }
 
-        public Task<AppRoleModel> GetRoleByIdAsync(string id)
+
+        public async Task<IEnumerable<AppRoleModel>> GetPageAsync(AppRoleSearchRequest search)
         {
-            throw new NotImplementedException();
+            return await _roleRepository.GetPageAsync(search);
         }
 
-        public Task<AppRoleModel> InsertRoleAsync(AppRoleInsertRequest insert)
+        public async Task<AppRoleModel> GetRoleByIdAsync(string id)
         {
-            throw new NotImplementedException();
+            return await _roleRepository.GetByIdAsync(id);
         }
 
-        public Task SoftDeleteRoleAsync(string id)
+        public async Task<AppRoleModel> InsertRoleAsync(AppRoleInsertRequest insert)
         {
-            throw new NotImplementedException();
+            insert.CreatedById = userId;
+            insert.DateCreated = DateTime.Now;
+
+            return await _roleRepository.AddAsync(insert);
         }
 
-        public Task<AppRoleModel> UpdateRoleAsync(string id, AppRoleUpdateRequest update)
+        public async Task SoftDeleteRoleAsync(string id)
         {
-            throw new NotImplementedException();
+            await _roleRepository.SoftDeleteAsync(id, userId);
+        }
+
+        public async Task UpdateRoleAsync(string id, AppRoleUpdateRequest update)
+        {
+            update.ModifiedById = userId;
+            update.DateModified = DateTime.UtcNow;
+
+            await _roleRepository.UpdateAsync(id, update);
         }
     }
 }

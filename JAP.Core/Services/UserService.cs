@@ -1,8 +1,15 @@
-﻿using JAP.Core.Interfaces.IService;
+﻿using JAP.Common.Extensions;
+using JAP.Core.Entities.Identity;
+using JAP.Core.Interfaces.IRepository;
+using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,29 +20,57 @@ namespace JAP.Core.Services
 {
     public class UserService : IUserService
     {
-        public Task<IEnumerable<AppUserModel>> GetPageAsync(AppUserSearchRequest search)
+        private readonly IUserRepository _userRepository;
+        private readonly UserManager<AppUser> _userManager;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
+        public UserService(IUserRepository userRepository, UserManager<AppUser> userManager, 
+            IHttpContextAccessor httpContextAccessor, IConfiguration configuration)
         {
-            throw new NotImplementedException();
+            _userRepository = userRepository;
+            _userManager = userManager;
+            _httpContextAccessor = httpContextAccessor;
         }
 
-        public Task<AppUserModel> GetUserByIdAsync(string id)
+
+
+        public async Task<IEnumerable<AppUserModel>> GetPageAsync(AppUserSearchRequest search)
         {
-            throw new NotImplementedException();
+            return await _userRepository.GetPageAsync(search);
         }
 
-        public Task<AppUserModel> InsertUserAsync(AppUserInsertRequest insert)
+        public async Task<AppUserModel> GetUserByIdAsync(string id)
         {
-            throw new NotImplementedException();
+            var user = await _userManager.FindByIdAsync(id);
+
+            return MapUserModelFromUserEntity(user);
         }
 
-        public Task SoftDeleteUserAsync(string id)
+        public async Task UpdateUserAsync(string id, AppUserUpdateRequest update)
         {
-            throw new NotImplementedException();
+            var user = await _userManager.Users.Include(x => x.UserRoles)
+                .ThenInclude(y => y.Role)
+                .FirstOrDefaultAsync(x => x.Id == id);
+
+            update.ModifiedById = _httpContextAccessor.HttpContext.User.GetUserId();
+            update.DateModified = DateTime.UtcNow;
+
+            await _userRepository.UpdateAsync(id, update);
         }
 
-        public Task<AppUserModel> UpdateUserAsync(string id, AppUserUpdateRequest update)
+        private AppUserModel MapUserModelFromUserEntity(AppUser user)
         {
-            throw new NotImplementedException();
+            if (user == null) return null;
+
+            return new AppUserModel
+            {
+                Id = user.Id,
+                FullName = user.FirstName + " " + user.LastName,
+                UserName = user.UserName,
+                DateCreated = user.DateCreated,
+                PhotoId = user.PhotoId ?? null,
+                PhotoUrl = user.UserPhoto.Url ?? null
+            };
         }
     }
 }

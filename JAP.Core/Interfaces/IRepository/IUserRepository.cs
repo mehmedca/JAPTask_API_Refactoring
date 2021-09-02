@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace JAP.Core.Interfaces.IRepository
 {
-    public interface IUserRepository : IBaseRepository<AppUserModel, AppUserSearchRequest, AppUserInsertRequest, 
+    public interface IUserRepository : IBaseRepository<AppUserModel, AppUserSearchRequest, object, 
         AppUserUpdateRequest, AppUser>
     {
     }

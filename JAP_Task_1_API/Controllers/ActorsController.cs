@@ -36,7 +36,8 @@ namespace JAP_Task_1_API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Edit(int id, [FromBody] ActorUpdateRequest updateRequest)
         {
-            return Ok(await _actorService.UpdateActorAsync(id, updateRequest));
+            await _actorService.UpdateActorAsync(id, updateRequest);
+            return NoContent();
         }
 
         [HttpGet]

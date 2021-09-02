@@ -22,7 +22,6 @@ namespace JAP.Mapper
                 .ForMember(x => x.PhotoUrl, y => y.MapFrom(z => z.UserPhoto.Url))
                 .ReverseMap().PreserveReferences();
             CreateMap<AppUserUpdateRequest, AppUser>();
-            CreateMap<AppUserInsertRequest, AppUser>();
 
             //ROLE
             CreateMap<AppRole, AppRoleModel>().ReverseMap().PreserveReferences();
@@ -49,7 +48,6 @@ namespace JAP.Mapper
 
             //PHOTO
             CreateMap<Photo, PhotoModel>().ReverseMap().PreserveReferences();
-            CreateMap<PhotoInsertRequest, Photo>();
 
             //RATING
             CreateMap<Rating, RatingModel>()

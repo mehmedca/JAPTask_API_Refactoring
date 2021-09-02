@@ -26,6 +26,7 @@
     <ProjectReference Include="..\JAP.Core\JAP.Core.csproj" />
     <ProjectReference Include="..\JAP.Database\JAP.Database.csproj" />
     <ProjectReference Include="..\JAP.Mapper\JAP.Mapper.csproj" />
+    <ProjectReference Include="..\JAP.Repository\JAP.Repository.csproj" />
   </ItemGroup>
 
 </Project>

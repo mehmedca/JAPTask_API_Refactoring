@@ -16,7 +16,7 @@ namespace JAP.Core.Interfaces.IService
     {
         Task<AppRoleModel> GetRoleByIdAsync(string id);
         Task<AppRoleModel> InsertRoleAsync(AppRoleInsertRequest insert);
-        Task<AppRoleModel> UpdateRoleAsync(string id, AppRoleUpdateRequest update);
+        Task UpdateRoleAsync(string id, AppRoleUpdateRequest update);
         Task<IEnumerable<AppRoleModel>> GetPageAsync(AppRoleSearchRequest search);
         Task SoftDeleteRoleAsync(string id);
     }

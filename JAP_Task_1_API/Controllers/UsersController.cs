@@ -27,16 +27,11 @@ namespace JAP_Task_1_API.Controllers
             return Ok(await _userService.GetUserByIdAsync(id));
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Add([FromBody] AppUserInsertRequest insertRequest)
-        {
-            return Ok(await _userService.InsertUserAsync(insertRequest));
-        }
-
         [HttpPut("{id}")]
         public async Task<IActionResult> Edit(string id, [FromBody] AppUserUpdateRequest updateRequest)
         {
-            return Ok(await _userService.UpdateUserAsync(id, updateRequest));
+            await _userService.UpdateUserAsync(id, updateRequest);
+            return NoContent();
         }
 
         [HttpGet]
@@ -45,12 +40,5 @@ namespace JAP_Task_1_API.Controllers
             return Ok(await _userService.GetPageAsync(search));
         }
 
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(string id)
-        {
-            await _userService.SoftDeleteUserAsync(id);
-            return Ok(true);
-        }
     }
 }

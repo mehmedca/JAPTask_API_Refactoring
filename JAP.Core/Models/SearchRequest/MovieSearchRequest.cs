@@ -8,5 +8,7 @@ namespace JAP.Core.Models.SearchRequest
 {
     public class MovieSearchRequest
     {
+        public string Title { get; set; }
+        public DateTime ReleaseDate { get; set; }
     }
 }

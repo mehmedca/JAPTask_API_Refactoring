@@ -14,4 +14,8 @@
     <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JAP.Common\JAP.Common.csproj" />
+  </ItemGroup>
+
 </Project>

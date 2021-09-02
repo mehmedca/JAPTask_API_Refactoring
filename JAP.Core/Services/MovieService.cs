@@ -1,8 +1,11 @@
-﻿using JAP.Core.Interfaces.IService;
+﻿using JAP.Common.Extensions;
+using JAP.Core.Interfaces.IRepository;
+using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,29 +16,46 @@ namespace JAP.Core.Services
 {
     public class MovieService : IMovieService
     {
-        public Task<MovieModel> GetMovieByIdAsync(int id)
+        private readonly IMovieRepository _movieRepository;
+        private readonly IHttpContextAccessor _httpContext;
+
+        private readonly string userId;
+        public MovieService(IMovieRepository movieRepository, IHttpContextAccessor httpContext)
         {
-            throw new NotImplementedException();
+            _movieRepository = movieRepository;
+            _httpContext = httpContext;
+            userId = _httpContext.HttpContext.User.GetUserId();
         }
 
-        public Task<IEnumerable<MovieModel>> GetPageAsync(MovieSearchRequest search)
+        public async Task<MovieModel> GetMovieByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _movieRepository.GetByIdAsync(id);
         }
 
-        public Task<MovieModel> InsertMovieAsync(MovieInsertRequest insert)
+        public async Task<IEnumerable<MovieModel>> GetPageAsync(MovieSearchRequest search)
         {
-            throw new NotImplementedException();
+            return await _movieRepository.GetPageAsync(search);
         }
 
-        public Task SoftDeleteMovieAsync(int id)
+        public async Task<MovieModel> InsertMovieAsync(MovieInsertRequest insert)
         {
-            throw new NotImplementedException();
+            insert.DateCreated = DateTime.Now;
+            insert.CreatedById = userId;
+
+            return await _movieRepository.AddAsync(insert);
         }
 
-        public Task<MovieModel> UpdateMovieAsync(int id, MovieUpdateRequest update)
+        public async Task SoftDeleteMovieAsync(int id)
         {
-            throw new NotImplementedException();
+            await _movieRepository.SoftDeleteAsync(id, userId);
+        }
+
+        public async Task UpdateMovieAsync(int id, MovieUpdateRequest update)
+        {
+            update.DateModified = DateTime.Now;
+            update.ModifiedById = userId;
+
+            await _movieRepository.UpdateAsync(id, update);
         }
     }
 }

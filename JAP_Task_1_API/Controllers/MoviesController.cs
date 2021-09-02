@@ -36,7 +36,8 @@ namespace JAP_Task_1_API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Edit(int id, [FromBody] MovieUpdateRequest updateRequest)
         {
-            return Ok(await _movieService.UpdateMovieAsync(id, updateRequest));
+            await _movieService.UpdateMovieAsync(id, updateRequest);
+            return NoContent();
         }
 
         [HttpGet]

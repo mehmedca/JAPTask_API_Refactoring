@@ -21,7 +21,7 @@ namespace JAP.Core.Entities.Identity
         public DateTime? DateModified { get; set; }
         public DateTime LastOnline { get; set; } = DateTime.Now;
 
-        public int PhotoId { get; set; }
+        public int? PhotoId { get; set; }
         public Photo UserPhoto { get; set; }
 
         public ICollection<AppUserRole> UserRoles { get; set; }

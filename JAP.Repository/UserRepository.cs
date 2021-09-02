@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace JAP.Repository
 {
-    public class UserRepository : BaseRepository<AppUserModel, AppUserSearchRequest, AppUserInsertRequest,
+    public class UserRepository : BaseRepository<AppUserModel, AppUserSearchRequest, object,
         AppUserUpdateRequest, AppUser>, IUserRepository
     {
         public UserRepository(JAPContext dbContext, IMapper mapper) : base(dbContext, mapper)

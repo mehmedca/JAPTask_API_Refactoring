@@ -8,5 +8,6 @@ namespace JAP.Core.Models.SearchRequest
 {
     public class AppRoleSearchRequest
     {
+        public string Name { get; set; }
     }
 }

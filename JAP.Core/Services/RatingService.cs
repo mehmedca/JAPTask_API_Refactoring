@@ -1,4 +1,5 @@
-﻿using JAP.Core.Interfaces.IService;
+﻿using JAP.Core.Interfaces.IRepository;
+using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using System;
@@ -11,14 +12,22 @@ namespace JAP.Core.Services
 {
     public class RatingService : IRatingService
     {
-        public Task<RatingModel> GetRatingByIdAsync(int id)
+        private readonly IRatingRepository _ratingRepository;
+
+        public RatingService(IRatingRepository ratingRepository)
         {
-            throw new NotImplementedException();
+            _ratingRepository = ratingRepository;
         }
 
-        public Task<RatingModel> InsertRatingAsync(RatingInsertRequest insert)
+
+        public async Task<RatingModel> GetRatingByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _ratingRepository.GetByIdAsync(id);
+        }
+
+        public async Task<RatingModel> InsertRatingAsync(RatingInsertRequest insert)
+        {
+            return await _ratingRepository.AddAsync(insert);
         }
     }
 }

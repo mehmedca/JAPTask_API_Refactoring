@@ -15,9 +15,7 @@ namespace JAP.Core.Interfaces.IService
     public interface IUserService
     {
         Task<AppUserModel> GetUserByIdAsync(string id);
-        Task<AppUserModel> InsertUserAsync(AppUserInsertRequest insert);
-        Task<AppUserModel> UpdateUserAsync(string id, AppUserUpdateRequest update);
+        Task UpdateUserAsync(string id, AppUserUpdateRequest update);
         Task<IEnumerable<AppUserModel>> GetPageAsync(AppUserSearchRequest search);
-        Task SoftDeleteUserAsync(string id);
     }
 }

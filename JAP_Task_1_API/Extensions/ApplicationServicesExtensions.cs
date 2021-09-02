@@ -1,5 +1,9 @@
 ﻿using JAP.Common;
+using JAP.Core.Interfaces.IRepository;
+using JAP.Core.Interfaces.IService;
+using JAP.Core.Services;
 using JAP.Database.Context;
+using JAP.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -15,13 +19,32 @@ namespace JAP_Task_1_API.Extensions
     {
         public static void RegisterServices(this IServiceCollection services, IConfiguration configuration)
         {
+            //Auth settings
             var appSettingsSection = configuration.GetSection("AuthSettings");
             services.Configure<AuthSettings>(appSettingsSection);
 
+
+            //DB configuration
             services.AddDbContext<JAPContext>(options => options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+
+            //Services
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IRoleService, RoleService>();
+            services.AddScoped<IRatingService, RatingService>();
+            services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IActorService, ActorService>();
+
+            //Repsitories
+            services.AddScoped(typeof(IBaseRepository<,,,,>), typeof(BaseRepository<,,,,>));
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<IActorRepository, ActorRepository>();
+            services.AddScoped<IRatingRepository, RatingRepository>();
         }
     }
 }

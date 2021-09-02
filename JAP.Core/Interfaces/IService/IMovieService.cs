@@ -15,7 +15,7 @@ namespace JAP.Core.Interfaces.IService
     {
         Task<MovieModel> GetMovieByIdAsync(int id);
         Task<MovieModel> InsertMovieAsync(MovieInsertRequest insert);
-        Task<MovieModel> UpdateMovieAsync(int id, MovieUpdateRequest update);
+        Task UpdateMovieAsync(int id, MovieUpdateRequest update);
         Task<IEnumerable<MovieModel>> GetPageAsync(MovieSearchRequest search);
         Task SoftDeleteMovieAsync(int id);
     }
