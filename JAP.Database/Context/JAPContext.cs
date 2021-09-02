@@ -21,7 +21,6 @@ namespace JAP.Database.Context
 
         public DbSet<Actor> Actors { get; set; }
         public DbSet<Movie> Movies { get; set; }
-        public DbSet<Photo> Photos { get; set; }
         public DbSet<Rating> Ratings { get; set; }
 
 

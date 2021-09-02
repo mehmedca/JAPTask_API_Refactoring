@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace JAP.Core.Entities
 {
+    [Table("Photos")]
     public class Photo
     {
         [Required]
