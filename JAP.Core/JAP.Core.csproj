@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\IRepository\" />
     <Folder Include="Interfaces\IAuth\" />
   </ItemGroup>
 
