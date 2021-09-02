@@ -1,5 +1,6 @@
 ﻿using JAP.Core.Entities;
 using JAP.Core.Entities.Identity;
+using JAP.Database.Seed;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -51,6 +52,7 @@ namespace JAP.Database.Context
                 fk.DeleteBehavior = DeleteBehavior.Restrict;
 
 
+            SeedHelper.SeedDefaultUsersAndRoles(builder);
         }
     }
 
