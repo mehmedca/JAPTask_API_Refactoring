@@ -25,7 +25,6 @@ namespace JAP.Database.Context
         public DbSet<Rating> Ratings { get; set; }
 
 
-
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -53,6 +52,10 @@ namespace JAP.Database.Context
 
 
             SeedHelper.SeedDefaultUsersAndRoles(builder);
+            SeedHelper.SeedImagesToDb(builder);
+            SeedHelper.SeedActorsToDb(builder);
+            SeedHelper.SeedMoviesToDb(builder);
+            SeedHelper.SeedRatingsToDb(builder);
         }
     }
 

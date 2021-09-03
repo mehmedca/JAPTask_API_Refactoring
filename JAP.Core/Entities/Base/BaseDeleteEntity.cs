@@ -10,7 +10,6 @@ namespace JAP.Core.Entities.Base
 {
     public class BaseDeleteEntity : BaseEntity
     {
-        [Required]
         [MaxLength(200)]
         public string DeletedById { get; set; }
         public AppUser DeletedByUser { get; set; }

@@ -15,6 +15,10 @@ namespace JAP.Core.Entities
         public int Id { get; set; }
 
         [Required]
+        [Range(1,5)]
+        public int RatingInt { get; set; }
+
+        [Required]
         public string RatedById { get; set; }
         public AppUser RatedByUser { get; set; }
 

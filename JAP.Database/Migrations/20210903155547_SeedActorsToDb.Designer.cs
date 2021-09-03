@@ -3,15 +3,17 @@ using System;
 using JAP.Database.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace JAP.Database.Migrations
 {
     [DbContext(typeof(JAPContext))]
-    partial class JAPContextModelSnapshot : ModelSnapshot
+    [Migration("20210903155547_SeedActorsToDb")]
+    partial class SeedActorsToDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -95,7 +97,7 @@ namespace JAP.Database.Migrations
                         {
                             Id = -1,
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 984, DateTimeKind.Local).AddTicks(2750),
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 555, DateTimeKind.Local).AddTicks(767),
                             FirstName = "Johnny",
                             IsDeleted = false,
                             LastName = "Depp",
@@ -105,7 +107,7 @@ namespace JAP.Database.Migrations
                         {
                             Id = -2,
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 984, DateTimeKind.Local).AddTicks(4037),
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 555, DateTimeKind.Local).AddTicks(1901),
                             FirstName = "Angelina",
                             IsDeleted = false,
                             LastName = "Jolie",
@@ -115,7 +117,7 @@ namespace JAP.Database.Migrations
                         {
                             Id = -3,
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 984, DateTimeKind.Local).AddTicks(4094),
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 555, DateTimeKind.Local).AddTicks(1908),
                             FirstName = "Tom",
                             IsDeleted = false,
                             LastName = "Hanks",
@@ -125,7 +127,7 @@ namespace JAP.Database.Migrations
                         {
                             Id = -4,
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 984, DateTimeKind.Local).AddTicks(4101),
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 555, DateTimeKind.Local).AddTicks(1914),
                             FirstName = "Natalie",
                             IsDeleted = false,
                             LastName = "Portman",
@@ -135,7 +137,7 @@ namespace JAP.Database.Migrations
                         {
                             Id = -5,
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 984, DateTimeKind.Local).AddTicks(4108),
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 555, DateTimeKind.Local).AddTicks(1920),
                             FirstName = "Scarlett",
                             IsDeleted = false,
                             LastName = "Johansson",
@@ -145,7 +147,7 @@ namespace JAP.Database.Migrations
                         {
                             Id = -6,
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 984, DateTimeKind.Local).AddTicks(4114),
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 555, DateTimeKind.Local).AddTicks(1925),
                             FirstName = "Brad",
                             IsDeleted = false,
                             LastName = "Pitt",
@@ -213,9 +215,9 @@ namespace JAP.Database.Migrations
                         new
                         {
                             Id = "8cdd8900-b5a2-41ef-bd55-2a4215f04c48",
-                            ConcurrencyStamp = "f83fc824-b5c1-47af-a932-66821fbe6cb2",
+                            ConcurrencyStamp = "72c0f2f7-f720-4669-bcce-73dd9ef792dd",
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 982, DateTimeKind.Local).AddTicks(9107),
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 553, DateTimeKind.Local).AddTicks(9265),
                             IsDeleted = false,
                             Name = "Admin",
                             NormalizedName = "ADMIN"
@@ -223,9 +225,9 @@ namespace JAP.Database.Migrations
                         new
                         {
                             Id = "3cf0bbae-1fc5-4ca2-9eb4-1557aed94397",
-                            ConcurrencyStamp = "349ec230-3d93-4ca9-9dd8-f9fbd5836dcc",
+                            ConcurrencyStamp = "1b346682-3371-408d-ab71-264bc31a9fac",
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 982, DateTimeKind.Local).AddTicks(9556),
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 553, DateTimeKind.Local).AddTicks(9663),
                             IsDeleted = false,
                             Name = "Moderator",
                             NormalizedName = "MODERATOR"
@@ -233,9 +235,9 @@ namespace JAP.Database.Migrations
                         new
                         {
                             Id = "0ee2b0b2-e5f4-4bab-b7aa-bc6d6237efd0",
-                            ConcurrencyStamp = "5635f137-4f84-49df-aa89-caf70fb9801b",
+                            ConcurrencyStamp = "f92bc324-e94c-4455-ba3f-3cdde6417b4f",
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 982, DateTimeKind.Local).AddTicks(9567),
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 553, DateTimeKind.Local).AddTicks(9672),
                             IsDeleted = false,
                             Name = "User",
                             NormalizedName = "USER"
@@ -334,15 +336,15 @@ namespace JAP.Database.Migrations
                         {
                             Id = "rOFHG9xvlRKAdXOjUh3J",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "88046105-2b02-422a-a398-f5a508289021",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 964, DateTimeKind.Local).AddTicks(6211),
+                            ConcurrencyStamp = "56f2f1a3-e625-4c69-b108-29009eb84195",
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 537, DateTimeKind.Local).AddTicks(5925),
                             EmailConfirmed = false,
                             FirstName = "Admin",
                             LastName = "Admin",
-                            LastOnline = new DateTime(2021, 9, 3, 18, 13, 31, 954, DateTimeKind.Local).AddTicks(1847),
+                            LastOnline = new DateTime(2021, 9, 3, 17, 55, 46, 527, DateTimeKind.Local).AddTicks(5427),
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHz2au++1Ri5yytHX+hQ7OjIfdRTkCoWsYRrg7G4ha2yl3mV7G18xOW21jnfKPzE7w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIsq/bpvjKt3Q65Bq6GHWiV1m8AZTIpC3VAoazG7EGA6cN/QpvHe2iJS1OiwP8TP9g==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "admin"
@@ -351,15 +353,15 @@ namespace JAP.Database.Migrations
                         {
                             Id = "pQVqvZg7tnJYQv93gme9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "dcbd7037-26f7-43d4-88a3-17bfee3e0c9f",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 973, DateTimeKind.Local).AddTicks(2216),
+                            ConcurrencyStamp = "743526d2-0265-4084-85ba-58487c6275dd",
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 545, DateTimeKind.Local).AddTicks(2996),
                             EmailConfirmed = false,
                             FirstName = "Moderator",
                             LastName = "Moderator",
-                            LastOnline = new DateTime(2021, 9, 3, 18, 13, 31, 964, DateTimeKind.Local).AddTicks(7045),
+                            LastOnline = new DateTime(2021, 9, 3, 17, 55, 46, 537, DateTimeKind.Local).AddTicks(6603),
                             LockoutEnabled = false,
                             NormalizedUserName = "MODERATOR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJuH+FvFcnPMGzJpSY2mQgC+LablOyAZsu8Y8pLgcDl0ZhwxpaQllIEidCPL0W41Mg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMFgAlTchAoNjKU2iL/DATJBeWTJlS6yIJmCigSfhsBjW1OQETWVsy/h9I60F3Snuw==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "moderator"
@@ -368,15 +370,15 @@ namespace JAP.Database.Migrations
                         {
                             Id = "NsOUTyrRU3CRxdPY06lP",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5c56b6d4-da84-44da-a124-c77f9aaa3c4b",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 981, DateTimeKind.Local).AddTicks(6528),
+                            ConcurrencyStamp = "fa9c5387-28af-42a4-92ac-d30b2f84f310",
+                            DateCreated = new DateTime(2021, 9, 3, 17, 55, 46, 552, DateTimeKind.Local).AddTicks(8172),
                             EmailConfirmed = false,
                             FirstName = "User",
                             LastName = "User",
-                            LastOnline = new DateTime(2021, 9, 3, 18, 13, 31, 973, DateTimeKind.Local).AddTicks(2236),
+                            LastOnline = new DateTime(2021, 9, 3, 17, 55, 46, 545, DateTimeKind.Local).AddTicks(3010),
                             LockoutEnabled = false,
                             NormalizedUserName = "USER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEPocPiSBp1R/j5eEkU+RnG5qv8hnM73k5zWuNCL6AM5V8KUH8M6p4NUdUysgXyGjzw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEN989qrXHFRuWOFnQMaMHxBnI79HqoIBq8IsbbqCnFLIToi0VWUkE8A0RlLEPCE6Fw==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "user"
@@ -483,63 +485,6 @@ namespace JAP.Database.Migrations
                     b.HasIndex("PhotoId");
 
                     b.ToTable("Movies");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = -1,
-                            CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 985, DateTimeKind.Local).AddTicks(758),
-                            Description = "A happily married man's life is turned upside down when his wife is killed in a mysterious hit-and-run accident in Tel Aviv.",
-                            IsDeleted = false,
-                            PhotoId = -7,
-                            ReleaseDate = new DateTime(2021, 4, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Hit and Run"
-                        },
-                        new
-                        {
-                            Id = -2,
-                            CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 985, DateTimeKind.Local).AddTicks(2116),
-                            Description = "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
-                            IsDeleted = false,
-                            PhotoId = -8,
-                            ReleaseDate = new DateTime(1972, 6, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "The Godfather"
-                        },
-                        new
-                        {
-                            Id = -3,
-                            CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 985, DateTimeKind.Local).AddTicks(2125),
-                            Description = "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X",
-                            IsDeleted = false,
-                            PhotoId = -9,
-                            ReleaseDate = new DateTime(2021, 1, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Suicide Squad"
-                        },
-                        new
-                        {
-                            Id = -4,
-                            CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 985, DateTimeKind.Local).AddTicks(2132),
-                            Description = "Two spies are recruited by an intelligence agency. They pose as a married couple Mr. and Mrs. Smith when they are on their missions.",
-                            IsDeleted = false,
-                            PhotoId = -10,
-                            ReleaseDate = new DateTime(2005, 4, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Mr and Mrs Smith"
-                        },
-                        new
-                        {
-                            Id = -5,
-                            CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 3, 18, 13, 31, 985, DateTimeKind.Local).AddTicks(2140),
-                            Description = "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
-                            IsDeleted = false,
-                            PhotoId = -11,
-                            ReleaseDate = new DateTime(2008, 11, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "The Dark Knight"
-                        });
                 });
 
             modelBuilder.Entity("JAP.Core.Entities.Photo", b =>
@@ -649,9 +594,6 @@ namespace JAP.Database.Migrations
                     b.Property<string>("RatedByUserId")
                         .HasColumnType("text");
 
-                    b.Property<int>("RatingInt")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
 
                     b.HasIndex("MovieId");
@@ -659,78 +601,6 @@ namespace JAP.Database.Migrations
                     b.HasIndex("RatedByUserId");
 
                     b.ToTable("Ratings");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = -1,
-                            MovieId = -1,
-                            RatedById = "NsOUTyrRU3CRxdPY06lP",
-                            RatingInt = 3
-                        },
-                        new
-                        {
-                            Id = -2,
-                            MovieId = -1,
-                            RatedById = "NsOUTyrRU3CRxdPY06lP",
-                            RatingInt = 4
-                        },
-                        new
-                        {
-                            Id = -3,
-                            MovieId = -2,
-                            RatedById = "NsOUTyrRU3CRxdPY06lP",
-                            RatingInt = 5
-                        },
-                        new
-                        {
-                            Id = -4,
-                            MovieId = -2,
-                            RatedById = "NsOUTyrRU3CRxdPY06lP",
-                            RatingInt = 4
-                        },
-                        new
-                        {
-                            Id = -5,
-                            MovieId = -3,
-                            RatedById = "NsOUTyrRU3CRxdPY06lP",
-                            RatingInt = 2
-                        },
-                        new
-                        {
-                            Id = -6,
-                            MovieId = -3,
-                            RatedById = "NsOUTyrRU3CRxdPY06lP",
-                            RatingInt = 4
-                        },
-                        new
-                        {
-                            Id = -7,
-                            MovieId = -4,
-                            RatedById = "NsOUTyrRU3CRxdPY06lP",
-                            RatingInt = 3
-                        },
-                        new
-                        {
-                            Id = -8,
-                            MovieId = -4,
-                            RatedById = "NsOUTyrRU3CRxdPY06lP",
-                            RatingInt = 5
-                        },
-                        new
-                        {
-                            Id = -9,
-                            MovieId = -5,
-                            RatedById = "NsOUTyrRU3CRxdPY06lP",
-                            RatingInt = 2
-                        },
-                        new
-                        {
-                            Id = -10,
-                            MovieId = -5,
-                            RatedById = "NsOUTyrRU3CRxdPY06lP",
-                            RatingInt = 3
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
