@@ -7,6 +7,7 @@ using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
 using JAP.Database.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,5 +23,14 @@ namespace JAP.Repository
         {
         }
 
+
+        public async Task TrackUserActivity(string userId)
+        {
+            var user = await _context.Users.Where(x => x.Id == userId).FirstOrDefaultAsync();
+            if (user == null) return;
+                
+            user.LastOnline = DateTime.Now;
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -14,5 +14,6 @@ namespace JAP.Core.Interfaces.IRepository
     public interface IUserRepository : IBaseRepository<AppUserModel, AppUserSearchRequest, object, 
         AppUserUpdateRequest, AppUser>
     {
+        Task TrackUserActivity(string userId);
     }
 }

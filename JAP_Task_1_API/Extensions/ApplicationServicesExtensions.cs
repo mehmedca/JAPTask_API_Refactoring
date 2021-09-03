@@ -6,6 +6,7 @@ using JAP.Core.Services;
 using JAP.Core.Services.Auth;
 using JAP.Database.Context;
 using JAP.Repository;
+using JAP_Task_1_API.Helpers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -48,6 +49,10 @@ namespace JAP_Task_1_API.Extensions
             services.AddScoped<IMovieRepository, MovieRepository>();
             services.AddScoped<IActorRepository, ActorRepository>();
             services.AddScoped<IRatingRepository, RatingRepository>();
+
+
+            services.AddScoped<LogUserActivity>();
+
         }
     }
 }
