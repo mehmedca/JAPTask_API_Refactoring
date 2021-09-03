@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using JAP.Common;
 using JAP.Core.Entities;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Models;
@@ -14,12 +15,16 @@ using System.Threading.Tasks;
 
 namespace JAP.Repository
 {
-    public class RatingRepository : BaseRepository<RatingModel, object, RatingInsertRequest,
+    public class RatingRepository : BaseRepository<RatingModel, BaseSearch, RatingInsertRequest,
         object, Rating>, IRatingRepository
     {
         public RatingRepository(JAPContext dbContext, IMapper mapper) : base(dbContext, mapper)
         {
         }
 
+        public Task<PagedResult<RatingModel>> GetPageAsync(object search)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using JAP.Common.Extensions;
+﻿using JAP.Common;
+using JAP.Common.Extensions;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
@@ -32,7 +33,7 @@ namespace JAP.Core.Services
             return await _movieRepository.GetByIdAsync(id);
         }
 
-        public async Task<IEnumerable<MovieModel>> GetPageAsync(MovieSearchRequest search)
+        public async Task<PagedResult<MovieModel>> GetPageAsync(MovieSearchRequest search)
         {
             return await _movieRepository.GetPageAsync(search);
         }

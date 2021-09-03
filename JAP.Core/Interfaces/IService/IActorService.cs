@@ -1,4 +1,5 @@
-﻿using JAP.Core.Entities;
+﻿using JAP.Common;
+using JAP.Core.Entities;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
@@ -16,7 +17,7 @@ namespace JAP.Core.Interfaces.IService
         Task<ActorModel> GetActorByIdAsync(int id);
         Task<ActorModel> InsertActorAsync(ActorInsertRequest insert);
         Task UpdateActorAsync(int id, ActorUpdateRequest update);
-        Task<IEnumerable<ActorModel>> GetPageAsync(ActorSearchRequest search);
+        Task<PagedResult<ActorModel>> GetPageAsync(ActorSearchRequest search);
         Task SoftDeleteActorAsync(int id);
     }
 }

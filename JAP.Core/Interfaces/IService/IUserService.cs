@@ -1,4 +1,5 @@
-﻿using JAP.Core.Entities;
+﻿using JAP.Common;
+using JAP.Core.Entities;
 using JAP.Core.Entities.Identity;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
@@ -16,6 +17,6 @@ namespace JAP.Core.Interfaces.IService
     {
         Task<AppUserModel> GetUserByIdAsync(string id);
         Task UpdateUserAsync(string id, AppUserUpdateRequest update);
-        Task<IEnumerable<AppUserModel>> GetPageAsync(AppUserSearchRequest search);
+        Task<PagedResult<AppUserModel>> GetPageAsync(AppUserSearchRequest search);
     }
 }

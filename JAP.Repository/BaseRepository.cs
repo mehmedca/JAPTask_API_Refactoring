@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
+using JAP.Common;
 using JAP.Core.Entities.Base;
 using JAP.Core.Entities.Identity;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Database.Context;
+using JAP.Repository.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,10 +17,12 @@ namespace JAP.Repository
     public class BaseRepository<TModel, TSearch, TInsert, TUpdate, TDatabase> : IBaseRepository<TModel, TSearch, TInsert,
         TUpdate, TDatabase> 
         where TDatabase : class, new()
-        where TSearch: new()
+        where TSearch: BaseSearch, new()
     {
         protected readonly JAPContext _context;
         protected readonly IMapper _mapper;
+
+        public virtual int DefaultPageSize { get; set; } = 2;
 
         public BaseRepository(JAPContext dbContext, IMapper mapper)
         {
@@ -86,18 +90,78 @@ namespace JAP.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async virtual Task<IEnumerable<TModel>> GetPageAsync(TSearch search)
+        public async virtual Task<PagedResult<TModel>> GetPageAsync(TSearch search)
         {
             if (search == null)
             {
                 search = new TSearch();
             }
 
-            var result = await _context.Set<TDatabase>().ToListAsync();
+            PagedResult<TModel> result = new PagedResult<TModel>();
 
-            return _mapper.Map<IEnumerable<TModel>>(result);
+            var query = await GetAsync(search);
+                
+            result.Count = await GetCountAsync(query);
+
+            AddPaging(search, ref query);
+            var res = await query.ToListAsync();
+
+            result.Results = _mapper.Map<IReadOnlyList<TModel>>(res);
+
+            return result;
         }
 
+        protected virtual async Task<IQueryable<TDatabase>> GetAsync(TSearch search)
+        {
+            var query = _context.Set<TDatabase>().AsQueryable();
+            AddInclude(search, ref query);
+            query = await AddFilterAsync(search, query);
+            AddOrder(search, ref query);
+            return await Task.FromResult(query);
+        }
+
+        protected virtual void AddInclude(TSearch search, ref IQueryable<TDatabase> query)
+        {
+            var includes = search.Includes.ToArray();
+            query = includes.Aggregate(query, (current, include) => current.Include(include));
+        }
+
+        protected virtual void AddPaging(TSearch search, ref IQueryable<TDatabase> query)
+        {
+            if (!search.RetrieveAll.GetValueOrDefault(false) == true)
+            {
+                if (search.Page < 1)
+                    search.Page = 1;
+
+                query = query.Skip((search.Page.GetValueOrDefault(1) - 1)
+                    * search.PageSize.GetValueOrDefault(DefaultPageSize))
+                    .Take(search.PageSize.GetValueOrDefault(DefaultPageSize));
+            }
+        }
+
+        protected virtual async Task<long> GetCountAsync(IQueryable<TDatabase> query)
+        {
+            return await query.LongCountAsync();
+        }
+
+        protected virtual async Task<IQueryable<TDatabase>> AddFilterAsync(TSearch search, IQueryable<TDatabase> query)
+        {
+            AddFilterFromSearchObject(search, ref query);
+            return await Task.FromResult(query);
+        }
+
+        protected virtual void AddFilterFromSearchObject(TSearch search, ref IQueryable<TDatabase> query)
+        {
+
+        }
+
+        protected virtual void AddOrder(TSearch search, ref IQueryable<TDatabase> query)
+        {
+            if (!string.IsNullOrWhiteSpace(search.SortBy))
+            {
+                query = query.OrderBy(search.SortBy);
+            }
+        }
     }
 }
 

@@ -1,4 +1,5 @@
-﻿using JAP.Core.Entities;
+﻿using JAP.Common;
+using JAP.Core.Entities;
 using JAP.Core.Entities.Identity;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
@@ -17,7 +18,7 @@ namespace JAP.Core.Interfaces.IService
         Task<AppRoleModel> GetRoleByIdAsync(string id);
         Task<AppRoleModel> InsertRoleAsync(AppRoleInsertRequest insert);
         Task UpdateRoleAsync(string id, AppRoleUpdateRequest update);
-        Task<IEnumerable<AppRoleModel>> GetPageAsync(AppRoleSearchRequest search);
+        Task<PagedResult<AppRoleModel>> GetPageAsync(AppRoleSearchRequest search);
         Task SoftDeleteRoleAsync(string id);
     }
 }

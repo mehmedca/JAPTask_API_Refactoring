@@ -1,4 +1,5 @@
-﻿using JAP.Common.Extensions;
+﻿using JAP.Common;
+using JAP.Common.Extensions;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
@@ -32,7 +33,7 @@ namespace JAP.Core.Services
             return await _actorRepository.GetByIdAsync(id);
         }
 
-        public async Task<IEnumerable<ActorModel>> GetPageAsync(ActorSearchRequest search)
+        public async Task<PagedResult<ActorModel>> GetPageAsync(ActorSearchRequest search)
         {
             return await _actorRepository.GetPageAsync(search);
         }

@@ -1,4 +1,5 @@
-﻿using JAP.Common.Extensions;
+﻿using JAP.Common;
+using JAP.Common.Extensions;
 using JAP.Core.Entities.Identity;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Interfaces.IService;
@@ -34,7 +35,7 @@ namespace JAP.Core.Services
 
 
 
-        public async Task<IEnumerable<AppUserModel>> GetPageAsync(AppUserSearchRequest search)
+        public async Task<PagedResult<AppUserModel>> GetPageAsync(AppUserSearchRequest search)
         {
             return await _userRepository.GetPageAsync(search);
         }

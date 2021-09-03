@@ -1,4 +1,5 @@
-﻿using JAP.Core.Entities;
+﻿using JAP.Common;
+using JAP.Core.Entities;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
@@ -16,7 +17,7 @@ namespace JAP.Core.Interfaces.IService
         Task<MovieModel> GetMovieByIdAsync(int id);
         Task<MovieModel> InsertMovieAsync(MovieInsertRequest insert);
         Task UpdateMovieAsync(int id, MovieUpdateRequest update);
-        Task<IEnumerable<MovieModel>> GetPageAsync(MovieSearchRequest search);
+        Task<PagedResult<MovieModel>> GetPageAsync(MovieSearchRequest search);
         Task SoftDeleteMovieAsync(int id);
     }
 }
