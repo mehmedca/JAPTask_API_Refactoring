@@ -18,10 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Errors\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\JAP.Common\JAP.Common.csproj" />
     <ProjectReference Include="..\JAP.Core\JAP.Core.csproj" />
     <ProjectReference Include="..\JAP.Database\JAP.Database.csproj" />

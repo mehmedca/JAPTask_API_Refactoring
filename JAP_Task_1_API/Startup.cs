@@ -1,5 +1,6 @@
 using JAP.Mapper;
 using JAP_Task_1_API.Extensions;
+using JAP_Task_1_API.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,11 +32,7 @@ namespace JAP_Task_1_API
             services.SetupCors();
 
             services.AddControllers();
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "JAP_Task_1_API", Version = "v1" });
-            //});
-
+           
             #region Configure Swagger  
             services.AddSwaggerGen(c =>
             {
@@ -79,11 +76,15 @@ namespace JAP_Task_1_API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseMiddleware<ExceptionMiddleware>();
+
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JAP_Task_1_API v1"));
+                app.UseSwagger(c =>
+                {
+                    c.SerializeAsV2 = true;
+                });
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JWT Auth v1"));
             }
 
             app.UseRouting();
@@ -98,11 +99,6 @@ namespace JAP_Task_1_API
                 endpoints.MapControllers();
             });
 
-            app.UseSwagger(c =>
-            {
-                c.SerializeAsV2 = true;
-            });
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JWT Auth v1"));
         }
     }
 }
