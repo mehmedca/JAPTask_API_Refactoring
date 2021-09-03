@@ -2,6 +2,7 @@
 using JAP.Core.Entities;
 using JAP.Core.Entities.Identity;
 using JAP.Core.Models;
+using JAP.Core.Models.AuthModels;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.UpdateRequest;
 using System;
@@ -22,6 +23,8 @@ namespace JAP.Mapper
                 .ForMember(x => x.PhotoUrl, y => y.MapFrom(z => z.UserPhoto.Url))
                 .ReverseMap().PreserveReferences();
             CreateMap<AppUserUpdateRequest, AppUser>();
+
+            CreateMap<RegisterModel, AppUser>();
 
             //ROLE
             CreateMap<AppRole, AppRoleModel>().ReverseMap().PreserveReferences();

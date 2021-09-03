@@ -1,7 +1,9 @@
 ﻿using JAP.Common;
+using JAP.Core.Interfaces.IAuth;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Interfaces.IService;
 using JAP.Core.Services;
+using JAP.Core.Services.Auth;
 using JAP.Database.Context;
 using JAP.Repository;
 using Microsoft.AspNetCore.Http;
@@ -32,6 +34,7 @@ namespace JAP_Task_1_API.Extensions
 
 
             //Services
+            services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<IRatingService, RatingService>();

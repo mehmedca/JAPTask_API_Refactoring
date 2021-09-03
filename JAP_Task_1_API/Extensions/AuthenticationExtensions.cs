@@ -24,7 +24,7 @@ namespace JAP_Task_1_API.Extensions
             {
                 opt.Password.RequireNonAlphanumeric = false;
                 opt.Password.RequiredUniqueChars = 0;
-                opt.User.RequireUniqueEmail = true;
+                opt.User.RequireUniqueEmail = false;
                 opt.SignIn.RequireConfirmedEmail = false;
             })
                 .AddRoles<AppRole>()
