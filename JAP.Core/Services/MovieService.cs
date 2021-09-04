@@ -28,9 +28,19 @@ namespace JAP.Core.Services
             userId = _httpContext.HttpContext.User.GetUserId();
         }
 
+        public async Task AddMovieRating(RatingInsertRequest request)
+        {
+            await _movieRepository.AddMovieRating(request);
+        }
+
         public async Task<MovieModel> GetMovieByIdAsync(int id)
         {
             return await _movieRepository.GetByIdAsync(id);
+        }
+
+        public async Task<ICollection<RatingModel>> GetMovieRatings(int id)
+        {
+            return await _movieRepository.GetMovieRatings(id);
         }
 
         public async Task<PagedResult<MovieModel>> GetPageAsync(MovieSearchRequest search)

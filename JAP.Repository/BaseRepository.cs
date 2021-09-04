@@ -15,14 +15,14 @@ using System.Threading.Tasks;
 namespace JAP.Repository
 {
     public class BaseRepository<TModel, TSearch, TInsert, TUpdate, TDatabase> : IBaseRepository<TModel, TSearch, TInsert,
-        TUpdate, TDatabase> 
+        TUpdate, TDatabase>
         where TDatabase : class, new()
-        where TSearch: BaseSearch, new()
+        where TSearch : BaseSearch, new()
     {
         protected readonly JAPContext _context;
         protected readonly IMapper _mapper;
 
-        public virtual int DefaultPageSize { get; set; } = 2;
+        public virtual int DefaultPageSize { get; set; } = 10;
 
         public BaseRepository(JAPContext dbContext, IMapper mapper)
         {
@@ -49,7 +49,7 @@ namespace JAP.Repository
                 deletableEntity.IsDeleted = true;
                 deletableEntity.DeletedById = userName;
                 deletableEntity.DateDeleted = DateTime.Now;
-                
+
                 _context.Set<BaseDeleteEntity>().Attach(deletableEntity);
             }
             else if (entity is AppRole role)
@@ -100,7 +100,7 @@ namespace JAP.Repository
             PagedResult<TModel> result = new PagedResult<TModel>();
 
             var query = await GetAsync(search);
-                
+
             result.Count = await GetCountAsync(query);
 
             AddPaging(search, ref query);

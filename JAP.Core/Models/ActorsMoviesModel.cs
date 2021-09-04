@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace JAP.Core.Models
 {
-    public class RatingModel
+    public class ActorsMoviesModel
     {
         public int Id { get; set; }
-
-        public int RatingInt { get; set; }
-
-        public string RatedById { get; set; }
-
+        public int ActorId { get; set; }
         public int MovieId { get; set; }
     }
 }

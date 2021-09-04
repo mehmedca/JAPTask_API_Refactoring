@@ -1,4 +1,5 @@
-﻿using JAP.Core.Entities.Identity;
+﻿using JAP.Core.Entities;
+using JAP.Core.Entities.Identity;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
@@ -11,9 +12,10 @@ using System.Threading.Tasks;
 
 namespace JAP.Core.Interfaces.IRepository
 {
-    public interface IUserRepository : IBaseRepository<AppUserModel, AppUserSearchRequest, object, 
+    public interface IUserRepository : IBaseRepository<AppUserModel, AppUserSearchRequest, object,
         AppUserUpdateRequest, AppUser>
     {
         Task TrackUserActivity(string userId);
+        Task<ICollection<Rating>> GetUserRatings(string userId);
     }
 }

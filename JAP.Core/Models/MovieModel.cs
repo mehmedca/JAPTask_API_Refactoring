@@ -16,10 +16,12 @@ namespace JAP.Core.Models
 
         public DateTime ReleaseDate { get; set; }
 
+        public double RatingTotal { get; set; }
+
         public int PhotoId { get; set; }
         public string PhotoUrl { get; set; }
 
-        public ICollection<ActorModel> Cast { get; set; }
+        public ICollection<ActorsMoviesModel> Cast { get; set; }
         public ICollection<RatingModel> MovieRatings { get; set; }
     }
 }

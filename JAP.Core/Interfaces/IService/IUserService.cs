@@ -18,5 +18,6 @@ namespace JAP.Core.Interfaces.IService
         Task<AppUserModel> GetUserByIdAsync(string id);
         Task UpdateUserAsync(string id, AppUserUpdateRequest update);
         Task<PagedResult<AppUserModel>> GetPageAsync(AppUserSearchRequest search);
+        Task<ICollection<RatingModel>> GetUserRatings(string id);
     }
 }

@@ -21,6 +21,7 @@ namespace JAP.Mapper
             CreateMap<AppUser, AppUserModel>()
                 .ForMember(x => x.FullName, y => y.MapFrom(z => z.FirstName + " " + z.LastName))
                 .ForMember(x => x.PhotoUrl, y => y.MapFrom(z => z.UserPhoto.Url))
+                .ForMember(x => x.UserRatings, y => y.MapFrom(z => z.UserRatings))
                 .ReverseMap().PreserveReferences();
             CreateMap<AppUserUpdateRequest, AppUser>();
 
@@ -54,7 +55,6 @@ namespace JAP.Mapper
 
             //RATING
             CreateMap<Rating, RatingModel>()
-               .ForMember(x => x.RatedByUserUsername, y => y.MapFrom(z => z.RatedByUser.UserName))
                .ReverseMap().PreserveReferences();
             CreateMap<RatingInsertRequest, Rating>();
         }

@@ -53,5 +53,23 @@ namespace JAP_Task_1_API.Controllers
             await _movieService.SoftDeleteMovieAsync(id);
             return Ok(true);
         }
+
+
+
+        //RATINGS
+
+        //Get movie ratings
+        [HttpGet("ratings/{id}")]
+        public async Task<IActionResult> GetMovieRatings(int id)
+        {
+            return Ok(await _movieService.GetMovieRatings(id));
+        }
+
+        [HttpPost("add-rating")]
+        public async Task<IActionResult> AddMovieRating(RatingInsertRequest request)
+        {
+            await _movieService.AddMovieRating(request);
+            return Ok();
+        }
     }
 }

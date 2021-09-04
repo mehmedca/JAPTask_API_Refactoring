@@ -24,8 +24,8 @@ namespace JAP.Core.Entities.Identity
         public int? PhotoId { get; set; }
         public Photo UserPhoto { get; set; }
 
-        public ICollection<AppUserRole> UserRoles { get; set; }
-        public ICollection<Rating> UserRatings { get; set; }
+        public virtual ICollection<AppUserRole> UserRoles { get; set; }
+        public virtual ICollection<Rating> UserRatings { get; set; }
 
     }
 }

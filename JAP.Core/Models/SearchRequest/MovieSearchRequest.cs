@@ -9,7 +9,7 @@ namespace JAP.Core.Models.SearchRequest
 {
     public class MovieSearchRequest : BaseSearch
     {
-        public string Title { get; set; }
-        public DateTime ReleaseDate { get; set; }
+        public string TextualSearch { get; set; }
+        public int? ReleaseYear { get; set; }
     }
 }

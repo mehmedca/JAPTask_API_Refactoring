@@ -1,4 +1,5 @@
-﻿using JAP.Common;
+﻿using AutoMapper;
+using JAP.Common;
 using JAP.Common.Extensions;
 using JAP.Core.Entities.Identity;
 using JAP.Core.Interfaces.IRepository;
@@ -24,13 +25,15 @@ namespace JAP.Core.Services
         private readonly IUserRepository _userRepository;
         private readonly UserManager<AppUser> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IMapper _mapper;
 
-        public UserService(IUserRepository userRepository, UserManager<AppUser> userManager, 
-            IHttpContextAccessor httpContextAccessor, IConfiguration configuration)
+        public UserService(IUserRepository userRepository, UserManager<AppUser> userManager,
+            IHttpContextAccessor httpContextAccessor, IConfiguration configuration, IMapper mapper)
         {
             _userRepository = userRepository;
             _userManager = userManager;
             _httpContextAccessor = httpContextAccessor;
+            _mapper = mapper;
         }
 
 
@@ -42,9 +45,15 @@ namespace JAP.Core.Services
 
         public async Task<AppUserModel> GetUserByIdAsync(string id)
         {
-            var user = await _userManager.FindByIdAsync(id);
+            var user = await _userRepository.GetByIdAsync(id);
 
-            return MapUserModelFromUserEntity(user);
+            return _mapper.Map<AppUserModel>(user);
+        }
+
+        public async Task<ICollection<RatingModel>> GetUserRatings(string id)
+        {
+            var userRatings = await _userRepository.GetUserRatings(id);
+            return _mapper.Map<ICollection<RatingModel>>(userRatings);
         }
 
         public async Task UpdateUserAsync(string id, AppUserUpdateRequest update)
@@ -59,19 +68,5 @@ namespace JAP.Core.Services
             await _userRepository.UpdateAsync(id, update);
         }
 
-        private AppUserModel MapUserModelFromUserEntity(AppUser user)
-        {
-            if (user == null) return null;
-
-            return new AppUserModel
-            {
-                Id = user.Id,
-                FullName = user.FirstName + " " + user.LastName,
-                UserName = user.UserName,
-                DateCreated = user.DateCreated,
-                PhotoId = user.PhotoId ?? null,
-                PhotoUrl = user.UserPhoto.Url ?? null
-            };
-        }
     }
 }

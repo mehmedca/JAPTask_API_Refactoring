@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JAP.Core.Models
+namespace JAP.Core.Entities
 {
-    public class RatingModel
+    public class ActorsMovies
     {
         public int Id { get; set; }
 
-        public int RatingInt { get; set; }
-
-        public string RatedById { get; set; }
+        public int ActorId { get; set; }
+        public Actor Actor { get; set; }
 
         public int MovieId { get; set; }
+        public Movie Movie { get; set; }
     }
 }

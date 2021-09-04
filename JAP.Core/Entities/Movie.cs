@@ -13,7 +13,7 @@ namespace JAP.Core.Entities
     {
         public Movie()
         {
-            Cast = new HashSet<Actor>();
+            Cast = new HashSet<ActorsMovies>();
             MovieRatings = new HashSet<Rating>();
         }
 
@@ -32,7 +32,9 @@ namespace JAP.Core.Entities
         public int PhotoId { get; set; }
         public Photo CoverImage { get; set; }
 
-        public ICollection<Actor> Cast { get; private set; }
+        public double RatingTotal { get; set; }
+
+        public ICollection<ActorsMovies> Cast { get; private set; }
         public ICollection<Rating> MovieRatings { get; private set; }
     }
 }

@@ -40,5 +40,13 @@ namespace JAP_Task_1_API.Controllers
             return Ok(await _userService.GetPageAsync(search));
         }
 
+
+        ////Get user ratings
+        //[HttpGet("user-ratings")]
+        //public async Task<IActionResult> GetUserRatings(string id)
+        //{
+        //    return Ok(await _userService.GetUserRatings(id));
+        //}
+
     }
 }

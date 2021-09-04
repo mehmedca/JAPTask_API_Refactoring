@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace JAP.Database.Context
 {
-    public class JAPContext : IdentityDbContext<AppUser, AppRole, string, IdentityUserClaim<string>, AppUserRole, 
+    public class JAPContext : IdentityDbContext<AppUser, AppRole, string, IdentityUserClaim<string>, AppUserRole,
         IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>
     {
         public JAPContext(DbContextOptions options) : base(options)
@@ -23,6 +23,7 @@ namespace JAP.Database.Context
         public DbSet<Actor> Actors { get; set; }
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Rating> Ratings { get; set; }
+        public DbSet<ActorsMovies> ActorsInMovies { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)

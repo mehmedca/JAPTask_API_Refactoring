@@ -15,5 +15,7 @@ namespace JAP.Core.Models
 
         public int PhotoId { get; set; }
         public string PhotoUrl { get; set; }
+
+        public ICollection<ActorsMoviesModel> ActedInMovies { get; set; }
     }
 }
