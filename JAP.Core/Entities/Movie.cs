@@ -28,11 +28,10 @@ namespace JAP.Core.Entities
         [Required]
         public DateTime ReleaseDate { get; set; }
 
-        [Required]
-        public int PhotoId { get; set; }
+        public int? PhotoId { get; set; }
         public Photo CoverImage { get; set; }
 
-        public double RatingTotal { get; set; }
+        public double RatingTotal { get; set; } = 0;
         public bool IsTvShow { get; set; } = false;
 
         public ICollection<ActorsMovies> Cast { get; private set; }

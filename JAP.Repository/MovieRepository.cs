@@ -27,10 +27,62 @@ namespace JAP.Repository
             _http = http;
         }
 
+
+
+        public async override Task<MovieModel> AddAsync(MovieInsertRequest entity)
+        {
+            //In order to leave a rating you have to be logged in so we're getting logged userId from HttpContext.User var
+            var userId = _http.HttpContext.User.GetUserId();
+            if (string.IsNullOrWhiteSpace(userId)) return null;
+
+            var movie = MapMovieEntityFromInsertRequest(entity);
+
+            movie.CreatedById = userId;
+            await _context.Movies.AddAsync(movie);
+
+            await SaveChangesAsync();
+
+            var isUpdated = false;
+            foreach (var item in entity.Actors)
+            {
+                var actor = await _context.Actors.FindAsync(item);
+                if(actor != null)
+                {
+                    isUpdated = true;
+                    await _context.ActorsInMovies.AddAsync(new ActorsMovies
+                    {
+                        ActorId = actor.Id,
+                        MovieId = movie.Id
+                    });
+                }
+            }
+
+            if(isUpdated) await SaveChangesAsync();
+
+            return _mapper.Map<MovieModel>(movie);
+        }
+
+        private Movie MapMovieEntityFromInsertRequest(MovieInsertRequest entity)
+        {
+            return new Movie
+            {
+                DateCreated = DateTime.Now,
+                Description = entity.Description,
+                IsTvShow = entity.IsTvShow,
+                ReleaseDate = entity.ReleaseDate,
+                Title = entity.Title
+            };
+        }
+
         public async Task AddMovieRating(RatingInsertRequest request)
         {
             var rating = _mapper.Map<Rating>(request);
-            rating.RatedById = _http.HttpContext.User.GetUserId() == "" ? "" : _http.HttpContext.User.GetUserId();
+
+            //In order to leave a rating you have to be logged in so we're getting logged userId from HttpContext.User var
+            var userId = _http.HttpContext.User.GetUserId();
+            if (string.IsNullOrWhiteSpace(userId)) return;
+            
+            rating.RatedById = _http.HttpContext.User.GetUserId();
 
             _context.Ratings.Add(rating);
             await SaveChangesAsync();
@@ -81,19 +133,6 @@ namespace JAP.Repository
             {
                 search = new MovieSearchRequest();
             }
-
-            //PagedResult<TModel> result = new PagedResult<TModel>();
-
-            //var query = await GetAsync(search);
-
-            //result.Count = await GetCountAsync(query);
-
-            //AddPaging(search, ref query);
-            //var res = await query.ToListAsync();
-
-            //result.Results = _mapper.Map<IReadOnlyList<TModel>>(res);
-
-            //return result;
 
             PagedResult<MovieModel> result = new PagedResult<MovieModel>();
 

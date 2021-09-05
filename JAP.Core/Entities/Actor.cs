@@ -11,12 +11,6 @@ namespace JAP.Core.Entities
 {
     public class Actor : BaseDeleteEntity
     {
-        public Actor()
-        {
-            ActedInMovies = new HashSet<ActorsMovies>();
-        }
-
-
         [Required]
         [MaxLength(30)]
         public string FirstName { get; set; }
@@ -25,11 +19,7 @@ namespace JAP.Core.Entities
         [MaxLength(30)]
         public string LastName { get; set; }
 
-        [Required]
-        public int PhotoId { get; set; }
+        public int? PhotoId { get; set; }
         public Photo ProfileImg { get; set; }
-
-        public ICollection<ActorsMovies> ActedInMovies { get; private set; }
-
     }
 }

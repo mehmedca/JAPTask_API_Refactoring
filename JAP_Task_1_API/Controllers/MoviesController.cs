@@ -71,5 +71,9 @@ namespace JAP_Task_1_API.Controllers
             await _movieService.AddMovieRating(request);
             return Ok();
         }
+
+
+        // MOVIE PHOTO
+
     }
 }

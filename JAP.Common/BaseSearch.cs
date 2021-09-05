@@ -17,7 +17,6 @@ namespace JAP.Common
         public int? Page { get; set; }
         public bool? RetrieveAll { get; set; }
         public string SortBy { get; set; }
-        //public SortOrder SortOrder { get; set; }
         public IList<string> Includes { get; set; }
     }
 }
