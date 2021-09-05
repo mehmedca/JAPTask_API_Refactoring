@@ -56,6 +56,7 @@ namespace JAP.Database.Context
             SeedHelper.SeedImagesToDb(builder);
             SeedHelper.SeedActorsToDb(builder);
             SeedHelper.SeedMoviesToDb(builder);
+            SeedHelper.SeedActorsInMovies(builder);
             SeedHelper.SeedRatingsToDb(builder);
         }
     }

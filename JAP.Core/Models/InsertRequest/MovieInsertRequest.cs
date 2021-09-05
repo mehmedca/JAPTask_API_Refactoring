@@ -12,5 +12,6 @@ namespace JAP.Core.Models.InsertRequest
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime ReleaseDate { get; set; }
+        public bool IsTvShow { get; set; } 
     }
 }

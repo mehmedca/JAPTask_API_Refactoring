@@ -18,6 +18,8 @@ namespace JAP.Core.Models
 
         public double RatingTotal { get; set; }
 
+        public bool IsTvShow { get; set; }
+
         public int PhotoId { get; set; }
         public string PhotoUrl { get; set; }
 
