@@ -27,6 +27,9 @@ namespace JAP_Task_1_API.Extensions
             var appSettingsSection = configuration.GetSection("AuthSettings");
             services.Configure<AuthSettings>(appSettingsSection);
 
+            //Cloudinary settings
+            var cloudinarySettings = configuration.GetSection("CloudinarySettings");
+            services.Configure<CloudinarySettings>(cloudinarySettings);
 
             //DB configuration
             services.AddDbContext<JAPContext>(options => options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
