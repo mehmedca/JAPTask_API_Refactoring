@@ -8,9 +8,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using JAP.Core.Interfaces.IService;
+using Microsoft.AspNetCore.Authorization;
 
 namespace JAP_Task_1_API.Controllers
 {
+    [Authorize(Policy = "RequireAdminRole")]
     public class RolesController : BaseApiController
     {
         private readonly IRoleService _roleService;

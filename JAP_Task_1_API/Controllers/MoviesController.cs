@@ -10,9 +10,11 @@ using System.Threading.Tasks;
 using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
 using JAP.Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace JAP_Task_1_API.Controllers
 {
+    [Authorize]
     public class MoviesController : BaseApiController
     {
         private readonly IMovieService _movieService;
@@ -22,7 +24,7 @@ namespace JAP_Task_1_API.Controllers
             _movieService = movieService;
         }
 
-
+        [AllowAnonymous]
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -30,12 +32,14 @@ namespace JAP_Task_1_API.Controllers
             return Ok(await _movieService.GetMovieByIdAsync(id));
         }
 
+        [Authorize(Policy = "RequireModeratorRole")]
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] MovieInsertRequest insertRequest)
         {
             return Ok(await _movieService.InsertMovieAsync(insertRequest));
         }
 
+        [Authorize(Policy = "RequireModeratorRole")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Edit(int id, [FromBody] MovieUpdateRequest updateRequest)
         {
@@ -43,13 +47,14 @@ namespace JAP_Task_1_API.Controllers
             return NoContent();
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetPage([FromQuery] MovieSearchRequest search)
         {
             return Ok(await _movieService.GetPageAsync(search));
         }
 
-
+        [Authorize(Policy = "RequireAdminRole")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -78,6 +83,7 @@ namespace JAP_Task_1_API.Controllers
 
 
         // MOVIE PHOTO
+        [Authorize(Policy = "RequireModeratorRole")]
         [HttpPost("add-photo")]
         public async Task<ActionResult<PhotoModel>> AddPhoto(PhotoInsertRequest request)
         {

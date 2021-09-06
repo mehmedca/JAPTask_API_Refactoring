@@ -3,6 +3,7 @@ using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace JAP_Task_1_API.Controllers
 {
+    [Authorize]
     public class ActorsController : BaseApiController
     {
         private readonly IActorService _actorService;
@@ -21,7 +23,7 @@ namespace JAP_Task_1_API.Controllers
             _actorService = actorService;
         }
 
-
+        [AllowAnonymous]
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -29,12 +31,14 @@ namespace JAP_Task_1_API.Controllers
             return Ok(await _actorService.GetActorByIdAsync(id));
         }
 
+        [Authorize(Policy = "RequireModeratorRole")]
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] ActorInsertRequest insertRequest)
         {
             return Ok(await _actorService.InsertActorAsync(insertRequest));
         }
 
+        [Authorize(Policy = "RequireModeratorRole")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Edit(int id, [FromBody] ActorUpdateRequest updateRequest)
         {
@@ -42,13 +46,14 @@ namespace JAP_Task_1_API.Controllers
             return NoContent();
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetPage([FromQuery] ActorSearchRequest search)
         {
             return Ok(await _actorService.GetPageAsync(search));
         }
 
-
+        [Authorize(Policy = "RequireAdminRole")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -58,6 +63,7 @@ namespace JAP_Task_1_API.Controllers
 
 
         // ACTOR PHOTO
+        [Authorize(Policy = "RequireModeratorRole")]
         [HttpPost("add-photo")]
         public async Task<ActionResult<PhotoModel>> AddPhoto(PhotoInsertRequest request)
         {
