@@ -22,14 +22,9 @@ namespace JAP.Repository
     public class UserRepository : BaseRepository<AppUserModel, AppUserSearchRequest, object,
         AppUserUpdateRequest, AppUser>, IUserRepository
     {
-        private readonly IPhotoService _photoService;
-        private readonly IHttpContextAccessor _http;
 
-        public UserRepository(JAPContext dbContext, IMapper mapper, IPhotoService photoService, 
-            IHttpContextAccessor http) : base(dbContext, mapper)
+        public UserRepository(JAPContext dbContext, IMapper mapper) : base(dbContext, mapper)
         {
-            _photoService = photoService;
-            _http = http;
         }
 
 
@@ -91,30 +86,5 @@ namespace JAP.Repository
             return userRatings;
         }
 
-        public async Task<PhotoModel> AddUserProfilePhotoAsync(IFormFile file)
-        {
-            var result = await _photoService.AddPhotoAsync(file);
-
-            if (result.Error != null) return null;
-
-            var photo = new Photo
-            {
-                Url = result.SecureUrl.AbsoluteUri,
-                PublicId = result.PublicId
-            };
-
-            await _context.AddAsync(photo);
-            await SaveChangesAsync();
-
-            var userId = _http.HttpContext.User.GetUserId();
-
-            var user = await _context.Users.FindAsync(userId);
-            user.PhotoId = photo.Id;
-            user.DateModified = DateTime.Now;
-
-            await SaveChangesAsync();
-
-            return _mapper.Map<PhotoModel>(photo);
-        }
     }
 }

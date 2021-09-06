@@ -45,7 +45,6 @@ namespace JAP_Task_1_API.Extensions
             services.AddScoped<IRatingService, RatingService>();
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<IActorService, ActorService>();
-
             services.AddScoped<IPhotoService, PhotoService>();
 
 
@@ -56,6 +55,7 @@ namespace JAP_Task_1_API.Extensions
             services.AddScoped<IMovieRepository, MovieRepository>();
             services.AddScoped<IActorRepository, ActorRepository>();
             services.AddScoped<IRatingRepository, RatingRepository>();
+            services.AddScoped<IPhotoRepository, PhotoRepository>();
 
 
             services.AddScoped<LogUserActivity>();

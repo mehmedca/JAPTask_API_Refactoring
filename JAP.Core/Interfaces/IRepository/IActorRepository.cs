@@ -14,6 +14,5 @@ namespace JAP.Core.Interfaces.IRepository
     public interface IActorRepository : IBaseRepository<ActorModel, ActorSearchRequest, ActorInsertRequest, 
         ActorUpdateRequest, Actor>
     {
-        Task<PhotoModel> AddActorProfilePhotoAsync(PhotoInsertRequest request);
     }
 }

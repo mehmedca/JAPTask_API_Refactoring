@@ -11,6 +11,7 @@ namespace JAP.Core.Models.UpdateRequest
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public int? PhotoId { get; set; }
 
     }
 }

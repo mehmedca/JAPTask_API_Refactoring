@@ -23,22 +23,36 @@ namespace JAP.Core.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
+        private readonly IPhotoRepository _photoRepository;
         private readonly UserManager<AppUser> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IMapper _mapper;
 
+        private readonly string userId;
+
         public UserService(IUserRepository userRepository, UserManager<AppUser> userManager,
-            IHttpContextAccessor httpContextAccessor, IConfiguration configuration, IMapper mapper)
+            IHttpContextAccessor httpContextAccessor, IMapper mapper, IPhotoRepository photoRepository)
         {
             _userRepository = userRepository;
+            _photoRepository = photoRepository;
             _userManager = userManager;
             _httpContextAccessor = httpContextAccessor;
             _mapper = mapper;
+            userId = _httpContextAccessor.HttpContext.User.GetUserId();
         }
 
         public async Task<PhotoModel> AddUserProfilePhotoAsync(IFormFile file)
         {
-            return await _userRepository.AddUserProfilePhotoAsync(file);
+            var photo = await _photoRepository.AddPhotoAsync(file);
+            if (photo == null) return null;
+            var update = new AppUserUpdateRequest
+            {
+                PhotoId = photo.Id
+            };
+
+            await UpdateUserAsync(userId, update);
+
+            return photo;
         }
 
         public async Task<PagedResult<AppUserModel>> GetPageAsync(AppUserSearchRequest search)
@@ -65,7 +79,7 @@ namespace JAP.Core.Services
                 .ThenInclude(y => y.Role)
                 .FirstOrDefaultAsync(x => x.Id == id);
 
-            update.ModifiedById = _httpContextAccessor.HttpContext.User.GetUserId();
+            update.ModifiedById = userId;
             update.DateModified = DateTime.UtcNow;
 
             await _userRepository.UpdateAsync(id, update);

@@ -22,37 +22,32 @@ namespace JAP.Repository
     public class MovieRepository : BaseRepository<MovieModel, MovieSearchRequest, MovieInsertRequest,
         MovieUpdateRequest, Movie>, IMovieRepository
     {
-        private readonly IHttpContextAccessor _http;
-        private readonly IPhotoService _photoService;
+        private readonly IRatingRepository _ratingRepository;
+
         public MovieRepository(JAPContext dbContext, IMapper mapper, IHttpContextAccessor http, 
-            IPhotoService photoService) : base(dbContext, mapper)
+            IRatingRepository ratingRepository) : base(dbContext, mapper)
         {
-            _http = http;
-            _photoService = photoService;
+            _ratingRepository = ratingRepository;
         }
 
 
 
         public async override Task<MovieModel> AddAsync(MovieInsertRequest entity)
         {
-            //In order to leave a rating you have to be logged in so we're getting logged userId from HttpContext.User var
-            var userId = _http.HttpContext.User.GetUserId();
-            if (string.IsNullOrWhiteSpace(userId)) return null;
-
             var movie = MapMovieEntityFromInsertRequest(entity);
 
-            movie.CreatedById = userId;
             await _context.Movies.AddAsync(movie);
 
             await SaveChangesAsync();
 
-            var isUpdated = false;
+            //After adding a movie to db we need to add data to ActorsMovies table in order to connect actors who act in that
+            // particular movie
             foreach (var item in entity.Actors)
             {
+                //entity.Actors is a list of Actor ids (int) 
                 var actor = await _context.Actors.FindAsync(item);
                 if(actor != null)
                 {
-                    isUpdated = true;
                     await _context.ActorsInMovies.AddAsync(new ActorsMovies
                     {
                         ActorId = actor.Id,
@@ -61,7 +56,7 @@ namespace JAP.Repository
                 }
             }
 
-            if(isUpdated) await SaveChangesAsync();
+            await SaveChangesAsync();
 
             return _mapper.Map<MovieModel>(movie);
         }
@@ -70,7 +65,8 @@ namespace JAP.Repository
         {
             return new Movie
             {
-                DateCreated = DateTime.Now,
+                DateCreated = entity.DateCreated,
+                CreatedById = entity.CreatedById,
                 Description = entity.Description,
                 IsTvShow = entity.IsTvShow,
                 ReleaseDate = entity.ReleaseDate,
@@ -80,28 +76,16 @@ namespace JAP.Repository
 
         public async Task AddMovieRatingAsync(RatingInsertRequest request)
         {
-            var rating = _mapper.Map<Rating>(request);
-
-            //In order to leave a rating you have to be logged in so we're getting logged userId from HttpContext.User var
-            var userId = _http.HttpContext.User.GetUserId();
-            if (string.IsNullOrWhiteSpace(userId)) return;
+            if (await _ratingRepository.AddAsync(request) == null) return;
             
-            rating.RatedById = _http.HttpContext.User.GetUserId();
-
-            _context.Ratings.Add(rating);
-            await SaveChangesAsync();
-
             await SetMovieRatingTotalAsync(request.MovieId);
         }
 
         private async Task SetMovieRatingTotalAsync(int movieId)
         {
             var movie = await _context.Movies.Where(x => x.Id == movieId).Include(x => x.MovieRatings).FirstOrDefaultAsync();
-            double total = 0;
-            foreach (var mr in movie.MovieRatings)
-            {
-                total += mr.RatingInt;
-            }
+            double total =  movie.MovieRatings.Sum(x => x.RatingInt);
+
             movie.RatingTotal = total / movie.MovieRatings.Count;
 
             await SaveChangesAsync();
@@ -111,7 +95,8 @@ namespace JAP.Repository
         public async Task<ICollection<RatingModel>> GetMovieRatingsAsync(int id)
         {
             var ratings = await _context.Movies.Where(x => x.Id == id)
-                .Include(x => x.MovieRatings).ThenInclude(y => y.RatedByUser).Select(x => x.MovieRatings).FirstOrDefaultAsync();
+                .Include(x => x.MovieRatings).ThenInclude(y => y.RatedByUser).Select(x => x.MovieRatings)
+                .FirstOrDefaultAsync();
 
             return _mapper.Map<ICollection<RatingModel>>(ratings);
         }
@@ -143,8 +128,7 @@ namespace JAP.Repository
             var query = _context.Set<Movie>().AsQueryable();
             query = query
                 .Include(x => x.CoverImage)
-                .Include(x => x.MovieRatings)
-                .Include(x => x.Cast).ThenInclude(y => y.Actor).ThenInclude(z => z.ProfileImg);
+                .Include(x => x.MovieRatings);
 
             query = await AddFilterAsync(search, query);
 
@@ -160,29 +144,14 @@ namespace JAP.Repository
             return result;
         }
 
-        public async Task<PhotoModel> AddMovieCoverPhotoAsync(PhotoInsertRequest request)
+        public override async Task<MovieModel> GetByIdAsync(object id)
         {
-            var result = await _photoService.AddPhotoAsync(request.Photo);
+            var movie = await _context.Movies.Where(x => x.Id == (int)id)
+                .Include(x => x.CoverImage)
+                .Include(x => x.MovieRatings)
+                .Include(x => x.Cast).ThenInclude(y => y.Actor).FirstOrDefaultAsync();
 
-            if (result.Error != null) return null;
-
-            var photo = new Photo
-            {
-                Url = result.SecureUrl.AbsoluteUri,
-                PublicId = result.PublicId
-            };
-
-            await _context.AddAsync(photo);
-            await SaveChangesAsync();
-
-            var movie = await _context.Movies.FindAsync(request.Id);
-            movie.PhotoId = photo.Id;
-            movie.DateModified = DateTime.Now;
-            movie.ModifiedById = _http.HttpContext.User.GetUserId();
-
-            await SaveChangesAsync();
-
-            return _mapper.Map<PhotoModel>(photo);
+            return _mapper.Map<MovieModel>(movie);
         }
     }
 }

@@ -18,6 +18,5 @@ namespace JAP.Core.Interfaces.IRepository
     {
         Task TrackUserActivity(string userId);
         Task<ICollection<Rating>> GetUserRatings(string userId);
-        Task<PhotoModel> AddUserProfilePhotoAsync(IFormFile file);
     }
 }

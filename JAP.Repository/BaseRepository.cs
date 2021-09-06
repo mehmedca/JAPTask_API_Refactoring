@@ -87,7 +87,8 @@ namespace JAP.Repository
 
         public async Task SaveChangesAsync()
         {
-            await _context.SaveChangesAsync();
+            if(_context.ChangeTracker.HasChanges())
+                await _context.SaveChangesAsync();
         }
 
         public async virtual Task<PagedResult<TModel>> GetPageAsync(TSearch search)

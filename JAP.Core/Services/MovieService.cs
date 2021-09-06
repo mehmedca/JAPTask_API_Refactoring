@@ -18,23 +18,35 @@ namespace JAP.Core.Services
     public class MovieService : IMovieService
     {
         private readonly IMovieRepository _movieRepository;
+        private readonly IPhotoRepository _photoRepository;
         private readonly IHttpContextAccessor _httpContext;
 
         private readonly string userId;
-        public MovieService(IMovieRepository movieRepository, IHttpContextAccessor httpContext)
+        public MovieService(IMovieRepository movieRepository, IHttpContextAccessor httpContext, IPhotoRepository photoRepository)
         {
             _movieRepository = movieRepository;
+            _photoRepository = photoRepository;
             _httpContext = httpContext;
             userId = _httpContext.HttpContext.User.GetUserId();
         }
 
         public async Task<PhotoModel> AddMovieCoverPhotoAsync(PhotoInsertRequest request)
         {
-            return await _movieRepository.AddMovieCoverPhotoAsync(request);
+            var photo = await _photoRepository.AddPhotoAsync(request.Photo);
+            if (photo == null) return null;
+            var update = new MovieUpdateRequest
+            {
+                PhotoId = photo.Id
+            };
+
+            await UpdateMovieAsync(request.Id, update);
+
+            return photo;
         }
 
         public async Task AddMovieRatingAsync(RatingInsertRequest request)
         {
+            request.RatedById = userId;
             await _movieRepository.AddMovieRatingAsync(request);
         }
 

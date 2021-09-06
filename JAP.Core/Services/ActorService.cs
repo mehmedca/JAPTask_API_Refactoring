@@ -18,19 +18,30 @@ namespace JAP.Core.Services
     public class ActorService : IActorService
     {
         private readonly IActorRepository _actorRepository;
+        private readonly IPhotoRepository _photoRepository;
         private readonly IHttpContextAccessor _httpContext;
 
         private readonly string userId;
-        public ActorService(IActorRepository actorRepository, IHttpContextAccessor httpContext)
+        public ActorService(IActorRepository actorRepository, IHttpContextAccessor httpContext, IPhotoRepository photoRepository)
         {
             _actorRepository = actorRepository;
+            _photoRepository = photoRepository;
             _httpContext = httpContext;
             userId = _httpContext.HttpContext.User.GetUserId();
         }
 
         public async Task<PhotoModel> AddActorProfilePhotoAsync(PhotoInsertRequest request)
         {
-            return await _actorRepository.AddActorProfilePhotoAsync(request);
+            var photo = await _photoRepository.AddPhotoAsync(request.Photo);
+            if (photo == null) return null;
+            var update = new ActorUpdateRequest
+            {
+                PhotoId = photo.Id
+            };
+
+            await UpdateActorAsync(request.Id, update);
+
+            return photo;
         }
 
         public async Task<ActorModel> GetActorByIdAsync(int id)

@@ -22,14 +22,8 @@ namespace JAP.Repository
     public class ActorRepository : BaseRepository<ActorModel, ActorSearchRequest, ActorInsertRequest, 
         ActorUpdateRequest, Actor>, IActorRepository
     {
-        private readonly IPhotoService _photoService;
-        private readonly IHttpContextAccessor _http;
-
-        public ActorRepository(JAPContext dbContext, IMapper mapper, IPhotoService photoService, 
-            IHttpContextAccessor http) : base(dbContext, mapper)
+        public ActorRepository(JAPContext dbContext, IMapper mapper) : base(dbContext, mapper)
         {
-            _photoService = photoService;
-            _http = http;
         }
 
 
@@ -68,31 +62,6 @@ namespace JAP.Repository
             result.Results = _mapper.Map<IReadOnlyList<ActorModel>>(res);
 
             return result;
-        }
-
-        public async Task<PhotoModel> AddActorProfilePhotoAsync(PhotoInsertRequest request)
-        {
-            var result = await _photoService.AddPhotoAsync(request.Photo);
-
-            if (result.Error != null) return null;
-
-            var photo = new Photo
-            {
-                Url = result.SecureUrl.AbsoluteUri,
-                PublicId = result.PublicId
-            };
-
-            await _context.AddAsync(photo);
-            await SaveChangesAsync();
-
-            var actor = await _context.Actors.FindAsync(request.Id);
-            actor.PhotoId = photo.Id;
-            actor.DateModified = DateTime.Now;
-            actor.ModifiedById = _http.HttpContext.User.GetUserId();
-
-            await SaveChangesAsync();
-
-            return _mapper.Map<PhotoModel>(photo);
         }
     }
 }

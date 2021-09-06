@@ -16,6 +16,5 @@ namespace JAP.Core.Interfaces.IRepository
     {
         Task<ICollection<RatingModel>> GetMovieRatingsAsync(int id);
         Task AddMovieRatingAsync(RatingInsertRequest request);
-        Task<PhotoModel> AddMovieCoverPhotoAsync(PhotoInsertRequest request);
     }
 }
