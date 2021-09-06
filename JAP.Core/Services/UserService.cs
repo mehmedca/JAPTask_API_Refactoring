@@ -36,7 +36,10 @@ namespace JAP.Core.Services
             _mapper = mapper;
         }
 
-
+        public async Task<PhotoModel> AddUserProfilePhotoAsync(IFormFile file)
+        {
+            return await _userRepository.AddUserProfilePhotoAsync(file);
+        }
 
         public async Task<PagedResult<AppUserModel>> GetPageAsync(AppUserSearchRequest search)
         {

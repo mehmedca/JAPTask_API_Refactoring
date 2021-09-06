@@ -28,9 +28,14 @@ namespace JAP.Core.Services
             userId = _httpContext.HttpContext.User.GetUserId();
         }
 
-        public async Task AddMovieRating(RatingInsertRequest request)
+        public async Task<PhotoModel> AddMovieCoverPhotoAsync(PhotoInsertRequest request)
         {
-            await _movieRepository.AddMovieRating(request);
+            return await _movieRepository.AddMovieCoverPhotoAsync(request);
+        }
+
+        public async Task AddMovieRatingAsync(RatingInsertRequest request)
+        {
+            await _movieRepository.AddMovieRatingAsync(request);
         }
 
         public async Task<MovieModel> GetMovieByIdAsync(int id)
@@ -38,9 +43,9 @@ namespace JAP.Core.Services
             return await _movieRepository.GetByIdAsync(id);
         }
 
-        public async Task<ICollection<RatingModel>> GetMovieRatings(int id)
+        public async Task<ICollection<RatingModel>> GetMovieRatingsAsync(int id)
         {
-            return await _movieRepository.GetMovieRatings(id);
+            return await _movieRepository.GetMovieRatingsAsync(id);
         }
 
         public async Task<PagedResult<MovieModel>> GetPageAsync(MovieSearchRequest search)

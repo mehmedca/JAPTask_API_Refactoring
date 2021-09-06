@@ -3,6 +3,7 @@ using JAP.Common;
 using JAP.Common.Extensions;
 using JAP.Core.Entities;
 using JAP.Core.Interfaces.IRepository;
+using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
@@ -22,9 +23,12 @@ namespace JAP.Repository
         MovieUpdateRequest, Movie>, IMovieRepository
     {
         private readonly IHttpContextAccessor _http;
-        public MovieRepository(JAPContext dbContext, IMapper mapper, IHttpContextAccessor http) : base(dbContext, mapper)
+        private readonly IPhotoService _photoService;
+        public MovieRepository(JAPContext dbContext, IMapper mapper, IHttpContextAccessor http, 
+            IPhotoService photoService) : base(dbContext, mapper)
         {
             _http = http;
+            _photoService = photoService;
         }
 
 
@@ -74,7 +78,7 @@ namespace JAP.Repository
             };
         }
 
-        public async Task AddMovieRating(RatingInsertRequest request)
+        public async Task AddMovieRatingAsync(RatingInsertRequest request)
         {
             var rating = _mapper.Map<Rating>(request);
 
@@ -87,10 +91,10 @@ namespace JAP.Repository
             _context.Ratings.Add(rating);
             await SaveChangesAsync();
 
-            await SetMovieRatingTotal(request.MovieId);
+            await SetMovieRatingTotalAsync(request.MovieId);
         }
 
-        private async Task SetMovieRatingTotal(int movieId)
+        private async Task SetMovieRatingTotalAsync(int movieId)
         {
             var movie = await _context.Movies.Where(x => x.Id == movieId).Include(x => x.MovieRatings).FirstOrDefaultAsync();
             double total = 0;
@@ -104,7 +108,7 @@ namespace JAP.Repository
         }
 
 
-        public async Task<ICollection<RatingModel>> GetMovieRatings(int id)
+        public async Task<ICollection<RatingModel>> GetMovieRatingsAsync(int id)
         {
             var ratings = await _context.Movies.Where(x => x.Id == id)
                 .Include(x => x.MovieRatings).ThenInclude(y => y.RatedByUser).Select(x => x.MovieRatings).FirstOrDefaultAsync();
@@ -154,6 +158,31 @@ namespace JAP.Repository
             result.Results = _mapper.Map<IReadOnlyList<MovieModel>>(res);
 
             return result;
+        }
+
+        public async Task<PhotoModel> AddMovieCoverPhotoAsync(PhotoInsertRequest request)
+        {
+            var result = await _photoService.AddPhotoAsync(request.Photo);
+
+            if (result.Error != null) return null;
+
+            var photo = new Photo
+            {
+                Url = result.SecureUrl.AbsoluteUri,
+                PublicId = result.PublicId
+            };
+
+            await _context.AddAsync(photo);
+            await SaveChangesAsync();
+
+            var movie = await _context.Movies.FindAsync(request.Id);
+            movie.PhotoId = photo.Id;
+            movie.DateModified = DateTime.Now;
+            movie.ModifiedById = _http.HttpContext.User.GetUserId();
+
+            await SaveChangesAsync();
+
+            return _mapper.Map<PhotoModel>(photo);
         }
     }
 }

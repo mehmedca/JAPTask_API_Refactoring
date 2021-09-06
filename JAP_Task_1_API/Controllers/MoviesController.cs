@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using JAP.Core.Interfaces.IService;
+using JAP.Core.Models;
+using JAP.Core.Entities;
 
 namespace JAP_Task_1_API.Controllers
 {
@@ -19,6 +21,7 @@ namespace JAP_Task_1_API.Controllers
         {
             _movieService = movieService;
         }
+
 
         [HttpGet]
         [Route("{id}")]
@@ -59,21 +62,30 @@ namespace JAP_Task_1_API.Controllers
         //RATINGS
 
         //Get movie ratings
-        [HttpGet("ratings/{id}")]
+        [HttpGet("get-ratings/{id}")]
         public async Task<IActionResult> GetMovieRatings(int id)
         {
-            return Ok(await _movieService.GetMovieRatings(id));
+            return Ok(await _movieService.GetMovieRatingsAsync(id));
         }
 
+        //Add new rating
         [HttpPost("add-rating")]
         public async Task<IActionResult> AddMovieRating(RatingInsertRequest request)
         {
-            await _movieService.AddMovieRating(request);
+            await _movieService.AddMovieRatingAsync(request);
             return Ok();
         }
 
 
         // MOVIE PHOTO
+        [HttpPost("add-photo")]
+        public async Task<ActionResult<PhotoModel>> AddPhoto(PhotoInsertRequest request)
+        {
+            //Insert request will contain IFormFile (photo) and Id which will act as MovieId or ActorId depending on the situation
+            var photoModel = await _movieService.AddMovieCoverPhotoAsync(request);
+            if (photoModel == null) return BadRequest("Problem addding photo");
 
+            return Ok(photoModel);
+        }
     }
 }

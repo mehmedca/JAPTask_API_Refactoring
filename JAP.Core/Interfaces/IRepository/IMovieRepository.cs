@@ -14,7 +14,8 @@ namespace JAP.Core.Interfaces.IRepository
     public interface IMovieRepository : IBaseRepository<MovieModel, MovieSearchRequest, MovieInsertRequest,
         MovieUpdateRequest, Movie>
     {
-        Task<ICollection<RatingModel>> GetMovieRatings(int id);
-        Task AddMovieRating(RatingInsertRequest request);
+        Task<ICollection<RatingModel>> GetMovieRatingsAsync(int id);
+        Task AddMovieRatingAsync(RatingInsertRequest request);
+        Task<PhotoModel> AddMovieCoverPhotoAsync(PhotoInsertRequest request);
     }
 }

@@ -28,6 +28,11 @@ namespace JAP.Core.Services
             userId = _httpContext.HttpContext.User.GetUserId();
         }
 
+        public async Task<PhotoModel> AddActorProfilePhotoAsync(PhotoInsertRequest request)
+        {
+            return await _actorRepository.AddActorProfilePhotoAsync(request);
+        }
+
         public async Task<ActorModel> GetActorByIdAsync(int id)
         {
             return await _actorRepository.GetByIdAsync(id);

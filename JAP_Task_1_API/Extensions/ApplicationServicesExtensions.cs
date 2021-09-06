@@ -5,6 +5,7 @@ using JAP.Core.Interfaces.IService;
 using JAP.Core.Services;
 using JAP.Core.Services.Auth;
 using JAP.Database.Context;
+using JAP.Integration.Photo;
 using JAP.Repository;
 using JAP_Task_1_API.Helpers;
 using Microsoft.AspNetCore.Http;
@@ -42,6 +43,9 @@ namespace JAP_Task_1_API.Extensions
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<IActorService, ActorService>();
 
+            services.AddScoped<IPhotoService, PhotoService>();
+
+
             //Repsitories
             services.AddScoped(typeof(IBaseRepository<,,,,>), typeof(BaseRepository<,,,,>));
             services.AddScoped<IUserRepository, UserRepository>();
@@ -52,7 +56,6 @@ namespace JAP_Task_1_API.Extensions
 
 
             services.AddScoped<LogUserActivity>();
-
         }
     }
 }

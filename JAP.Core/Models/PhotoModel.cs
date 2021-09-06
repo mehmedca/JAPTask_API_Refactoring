@@ -11,8 +11,5 @@ namespace JAP.Core.Models
         public int Id { get; set; }
 
         public string Url { get; set; }
-
-        public string PublicId { get; set; }
-
     }
 }

@@ -19,5 +19,6 @@ namespace JAP.Core.Interfaces.IService
         Task UpdateActorAsync(int id, ActorUpdateRequest update);
         Task<PagedResult<ActorModel>> GetPageAsync(ActorSearchRequest search);
         Task SoftDeleteActorAsync(int id);
+        Task<PhotoModel> AddActorProfilePhotoAsync(PhotoInsertRequest request);
     }
 }

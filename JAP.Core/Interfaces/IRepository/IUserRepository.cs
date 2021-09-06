@@ -4,6 +4,7 @@ using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,5 +18,6 @@ namespace JAP.Core.Interfaces.IRepository
     {
         Task TrackUserActivity(string userId);
         Task<ICollection<Rating>> GetUserRatings(string userId);
+        Task<PhotoModel> AddUserProfilePhotoAsync(IFormFile file);
     }
 }

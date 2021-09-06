@@ -5,6 +5,7 @@ using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +20,6 @@ namespace JAP.Core.Interfaces.IService
         Task UpdateUserAsync(string id, AppUserUpdateRequest update);
         Task<PagedResult<AppUserModel>> GetPageAsync(AppUserSearchRequest search);
         Task<ICollection<RatingModel>> GetUserRatings(string id);
+        Task<PhotoModel> AddUserProfilePhotoAsync(IFormFile file);
     }
 }

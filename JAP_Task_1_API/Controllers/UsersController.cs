@@ -1,4 +1,5 @@
 ﻿using JAP.Core.Interfaces.IService;
+using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
@@ -19,6 +20,7 @@ namespace JAP_Task_1_API.Controllers
         {
             _userService = userService;
         }
+
 
         [HttpGet]
         [Route("{id}")]
@@ -41,12 +43,16 @@ namespace JAP_Task_1_API.Controllers
         }
 
 
-        ////Get user ratings
-        //[HttpGet("user-ratings")]
-        //public async Task<IActionResult> GetUserRatings(string id)
-        //{
-        //    return Ok(await _userService.GetUserRatings(id));
-        //}
+        // USER PHOTO
+        [HttpPost("add-photo")]
+        public async Task<ActionResult<PhotoModel>> AddPhoto(IFormFile file)
+        {
+            //Not receiving PhotoInsertRequest instead we'll receive the photo directly without the UserId because we're able to
+            // get the UserId from logged user. User will only be able to add a photo if loggedIn = true
+            var photoModel = await _userService.AddUserProfilePhotoAsync(file);
+            if (photoModel == null) return BadRequest("Problem addding photo");
 
+            return Ok(photoModel);
+        }
     }
 }
