@@ -10,6 +10,6 @@ namespace JAP.Core.Models.SearchRequest
     public class MovieSearchRequest : BaseSearch
     {
         public string TextualSearch { get; set; }
-        public int? ReleaseYear { get; set; }
+        public int IsTvShow { get; set; } = 0;
     }
 }

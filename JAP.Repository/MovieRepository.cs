@@ -105,14 +105,37 @@ namespace JAP.Repository
         {
             base.AddFilterFromSearchObject(search, ref query);
 
+            _ = search.IsTvShow == 1 ? query = query.Where(x => x.IsTvShow == true) 
+                : query = query.Where(x => x.IsTvShow == false);
+
             if (!string.IsNullOrWhiteSpace(search.TextualSearch))
             {
+                var phraseHit = CheckForPhrases(search, ref query);
+
+                if(!phraseHit)
                 query = query.Where(x => x.Description.ToLower().Contains(search.TextualSearch.ToLower())
                     || x.Title.ToLower().Contains(search.TextualSearch.ToLower()));
             }
-            if (search.ReleaseYear != null)
+        }
+
+        private bool CheckForPhrases(MovieSearchRequest search, ref IQueryable<Movie> query)
+        {
+            switch (search.TextualSearch.ToLower())
             {
-                query = query.Where(x => x.ReleaseDate.Year == search.ReleaseYear);
+                case "5 stars":
+                    query = query.Where(x => x.RatingTotal == 5);
+                    return true;
+                case "at least 3 stars":
+                    query = query.Where(x => x.RatingTotal >= 3);
+                    return true;
+                case "older than 5 years":
+                    query = query.Where(x => (DateTime.Now.Year - x.ReleaseDate.Year) > 5);
+                    return true;
+                case "after 2015":
+                    query = query.Where(x => x.ReleaseDate.Year > 2015);
+                    return true;
+               
+                default: return false;
             }
         }
 

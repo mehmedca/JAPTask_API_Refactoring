@@ -12,5 +12,6 @@ namespace JAP.Core.Models.AuthModels
         public DateTime ValidTo { get; set; }
         public string UserId { get; set; }
         public string Username { get; set; }
+        public string PhotoUrl { get; set; }
     }
 }

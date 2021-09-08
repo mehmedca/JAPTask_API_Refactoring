@@ -208,20 +208,20 @@ namespace JAP.Database.Seed
                 new Photo
                 {
                     Id = -17,
-                    PublicId = "pig_byciwz",
-                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1630871033/pig_byciwz.jpg"
+                    PublicId = "pig22_egzevy",
+                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1631143530/pig22_egzevy.jpg"
                 },
                 new Photo
                 {
                     Id = -18,
-                    PublicId = "nowayhome_xivojd",
-                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1630871035/nowayhome_xivojd.jpg"
+                    PublicId = "spiderman22_ev68ek",
+                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1631143529/spiderman22_ev68ek.jpg"
                 },
                 new Photo
                 {
                     Id = -19,
-                    PublicId = "beckett-2021_nco3v7",
-                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1630871035/beckett-2021_nco3v7.jpg"
+                    PublicId = "beckett22_icrxsl",
+                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1631143527/beckett22_icrxsl.jpg"
                 },
                 new Photo
                 {
@@ -270,14 +270,14 @@ namespace JAP.Database.Seed
                 new Photo
                 {
                     Id = -27,
-                    PublicId = "peakyblinders_jz6bxi",
-                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1630872070/peakyblinders_jz6bxi.jpg"
+                    PublicId = "peaky22_nokwxv",
+                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1631143519/peaky22_nokwxv.jpg"
                 },
                 new Photo
                 {
                     Id = -28,
-                    PublicId = "greys_fczdub",
-                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1630872074/greys_fczdub.jpg"
+                    PublicId = "greys22_jb0wr9",
+                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1631143519/greys22_jb0wr9.jpg"
                 },
                 new Photo
                 {
@@ -300,8 +300,8 @@ namespace JAP.Database.Seed
                 new Photo
                 {
                     Id = -32,
-                    PublicId = "titans_hkz342",
-                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1630872086/titans_hkz342.jpg"
+                    PublicId = "titans22_pipzsv",
+                    Url = "https://res.cloudinary.com/doisz5wiz/image/upload/v1631143524/titans22_pipzsv.jpg"
                 },
                 new Photo
                 {
@@ -426,7 +426,7 @@ namespace JAP.Database.Seed
                    Title = "Hit and Run",
                    Description = "A happily married man's life is turned upside down when his wife is killed in a mysterious hit-and-run accident in Tel Aviv.",
                    ReleaseDate = new DateTime(2021, 4, 12),
-                   RatingTotal = 4
+                   RatingTotal = 3.5
                 },
                 new Movie
                 {
@@ -437,7 +437,7 @@ namespace JAP.Database.Seed
                     Title = "The Godfather",
                     Description = "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
                     ReleaseDate = new DateTime(1972, 6, 17),
-                    RatingTotal = 4.2
+                    RatingTotal = 4.5
                 },
                 new Movie
                 {
@@ -448,7 +448,7 @@ namespace JAP.Database.Seed
                     Title = "Suicide Squad",
                     Description = "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X",
                     ReleaseDate = new DateTime(2021, 1, 11),
-                    RatingTotal = 4.1
+                    RatingTotal = 3
                 },
                 new Movie
                 {
@@ -459,7 +459,7 @@ namespace JAP.Database.Seed
                     Title = "Mr and Mrs Smith",
                     Description = "Two spies are recruited by an intelligence agency. They pose as a married couple Mr. and Mrs. Smith when they are on their missions.",
                     ReleaseDate = new DateTime(2005, 4, 5),
-                    RatingTotal = 4.7
+                    RatingTotal = 4
                 },
                 new Movie
                 {
@@ -470,7 +470,7 @@ namespace JAP.Database.Seed
                     Title = "The Dark Knight",
                     Description = "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
                     ReleaseDate = new DateTime(2008, 11, 12),
-                    RatingTotal = 5
+                    RatingTotal = 2.5
                 },
                  new Movie
                  {
@@ -480,8 +480,7 @@ namespace JAP.Database.Seed
                      PhotoId = -18,
                      Title = "Spider Man: No Way Home",
                      Description = "For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero is unmasked and no longer able to separate his normal life from the high-stakes of being a Super Hero.",
-                     ReleaseDate = new DateTime(2021, 11, 10),
-                     RatingTotal = 3
+                     ReleaseDate = new DateTime(2021, 11, 10)
                  },
                   new Movie
                   {
@@ -491,8 +490,7 @@ namespace JAP.Database.Seed
                       PhotoId = -20,
                       Title = "Jungle Cruise",
                       Description = "Based on Disneyland's theme park ride where a small riverboat takes a group of travelers through a jungle filled with dangerous animals and reptiles but with a supernatural element.",
-                      ReleaseDate = new DateTime(2021, 11, 12),
-                      RatingTotal = 3.9
+                      ReleaseDate = new DateTime(2021, 11, 12)
                   },
                    new Movie
                    {
@@ -502,8 +500,7 @@ namespace JAP.Database.Seed
                        PhotoId = -19,
                        Title = "Beckett",
                        Description = "Following a tragic car accident in Greece, an American tourist finds himself at the center of a dangerous political conspiracy and on the run for his life.",
-                       ReleaseDate = new DateTime(2021, 10, 9),
-                       RatingTotal = 3.8
+                       ReleaseDate = new DateTime(2021, 10, 9)
                    },
                     new Movie
                     {
@@ -513,8 +510,7 @@ namespace JAP.Database.Seed
                         PhotoId = -16,
                         Title = "Vacation Friends",
                         Description = "A couple meets up with another couple while on vacation in Mexico, but their friendship takes an awkward turn when they get back home.",
-                        ReleaseDate = new DateTime(2021, 1, 6),
-                        RatingTotal = 3.55
+                        ReleaseDate = new DateTime(2021, 1, 6)
                     },
                      new Movie
                      {
@@ -524,8 +520,7 @@ namespace JAP.Database.Seed
                          PhotoId = -21,
                          Title = "Once Upon A Time... In Hollywood",
                          Description = "A faded television actor and his stunt double strive to achieve fame and success in the final years of Hollywood's Golden Age in 1969 Los Angeles.",
-                         ReleaseDate = new DateTime(2019, 11, 12),
-                         RatingTotal = 5
+                         ReleaseDate = new DateTime(2019, 11, 12)
                      },
                       new Movie
                       {
@@ -535,8 +530,7 @@ namespace JAP.Database.Seed
                           PhotoId = -17,
                           Title = "Pig",
                           Description = "A truffle hunter who lives alone in the Oregonian wilderness must return to his past in Portland in search of his beloved foraging pig after she is kidnapped.",
-                          ReleaseDate = new DateTime(2021, 7, 5),
-                          RatingTotal = 2.9
+                          ReleaseDate = new DateTime(2021, 7, 5)
                       },
                        new Movie
                        {
@@ -546,8 +540,7 @@ namespace JAP.Database.Seed
                            PhotoId = -22,
                            Title = "Wrath of Man",
                            Description = "The plot follows H, a cold and mysterious character working at a cash truck company responsible for moving hundreds of millions of dollars around Los Angeles each week.",
-                           ReleaseDate = new DateTime(2021, 11, 12),
-                           RatingTotal = 4.1
+                           ReleaseDate = new DateTime(2021, 11, 12)
                        },
 
                         //TV SHOWS
@@ -560,8 +553,7 @@ namespace JAP.Database.Seed
                             Title = "Breaking bad",
                             Description = "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
                             ReleaseDate = new DateTime(2008, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 4
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -572,8 +564,7 @@ namespace JAP.Database.Seed
                             Title = "American Horror Story",
                             Description = "An anthology series centering on different characters and locations, including a house with a murderous past, an insane asylum, a witch coven, a freak show circus, a haunted hotel, and much more.",
                             ReleaseDate = new DateTime(2011, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 4.3
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -584,8 +575,7 @@ namespace JAP.Database.Seed
                             Title = "Friends",
                             Description = "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
                             ReleaseDate = new DateTime(1994, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 4.4
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -596,8 +586,7 @@ namespace JAP.Database.Seed
                             Title = "Game of Thrones",
                             Description = "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
                             ReleaseDate = new DateTime(2013, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 4.7
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -608,8 +597,7 @@ namespace JAP.Database.Seed
                             Title = "Peaky Blinders",
                             Description = "A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.",
                             ReleaseDate = new DateTime(2013, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 5
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -620,8 +608,7 @@ namespace JAP.Database.Seed
                             Title = "Grey's Anatomy",
                             Description = "A drama centered on the personal and professional lives of five surgical interns and their supervisors.",
                             ReleaseDate = new DateTime(2005, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 3
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -632,8 +619,7 @@ namespace JAP.Database.Seed
                             Title = "The Sopranos",
                             Description = "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.",
                             ReleaseDate = new DateTime(1999, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 3.1
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -644,8 +630,7 @@ namespace JAP.Database.Seed
                             Title = "Rick and Morty",
                             Description = "An animated series that follows the exploits of a super scientist and his not-so-bright grandson.",
                             ReleaseDate = new DateTime(2013, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 3.3
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -656,8 +641,7 @@ namespace JAP.Database.Seed
                             Title = "Walking Dead",
                             Description = "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive.",
                             ReleaseDate = new DateTime(2010, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 3.4
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -668,8 +652,7 @@ namespace JAP.Database.Seed
                             Title = "Titans",
                             Description = "A team of young superheroes combat evil and other perils.",
                             ReleaseDate = new DateTime(2018, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 3.7
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -680,8 +663,7 @@ namespace JAP.Database.Seed
                             Title = "See",
                             Description = "Far in a dystopian future, the human race has lost the sense of sight, and society has had to find new ways to interact, build, hunt, and to survive.",
                             ReleaseDate = new DateTime(2019, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 2.88
+                            IsTvShow = true
                         },
                         new Movie
                         {
@@ -692,8 +674,7 @@ namespace JAP.Database.Seed
                             Title = "Brooklyn 99",
                             Description = "Comedy series following the exploits of Det. Jake Peralta and his diverse, lovable colleagues as they police the NYPD's 99th Precinct.",
                             ReleaseDate = new DateTime(2013, 11, 12),
-                            IsTvShow = true,
-                            RatingTotal = 2.9
+                            IsTvShow = true
                         });
         }
 

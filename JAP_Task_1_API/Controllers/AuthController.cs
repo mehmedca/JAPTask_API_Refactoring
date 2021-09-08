@@ -52,7 +52,8 @@ namespace JAP_Task_1_API.Controllers
                 Token = await _tokenService.CreateToken(user),
                 UserId = user.Id,
                 Username = user.UserName,
-                ValidTo = DateTime.Now.AddHours(_authSettings.ValidHours)
+                ValidTo = DateTime.Now.AddHours(_authSettings.ValidHours),
+                PhotoUrl = user.UserPhoto != null ? user.UserPhoto.Url : null
             };
         }
 

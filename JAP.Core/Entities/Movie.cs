@@ -31,7 +31,7 @@ namespace JAP.Core.Entities
         public int? PhotoId { get; set; }
         public Photo CoverImage { get; set; }
 
-        public double RatingTotal { get; set; } = 0;
+        public double RatingTotal { get; set; }
         public bool IsTvShow { get; set; } = false;
 
         public ICollection<ActorsMovies> Cast { get; private set; }
