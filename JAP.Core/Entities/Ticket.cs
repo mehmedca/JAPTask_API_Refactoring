@@ -10,6 +10,7 @@ namespace JAP.Core.Entities
     {
         public int Id { get; set; }
         public double Price { get; set; }
+        public bool IsSold { get; set; } = false;
 
         public int ScreeningId { get; set; }
         public Screening Screening { get; set; }
