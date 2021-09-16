@@ -14,4 +14,8 @@
     <ProjectReference Include="..\JAP.Core\JAP.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="SeedJson\" />
+  </ItemGroup>
+
 </Project>

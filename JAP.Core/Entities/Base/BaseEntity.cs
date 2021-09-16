@@ -12,16 +12,15 @@ namespace JAP.Core.Entities.Base
     {
         public int Id { get; set; }
 
-        [Required]
         [MaxLength(200)]
-        public string CreatedById { get; set; }
+        public string CreatedById { get; set; } = "rOFHG9xvlRKAdXOjUh3J";
         public AppUser CreatedByUser { get; set; }
 
         [MaxLength(200)]
         public string ModifiedById { get; set; }
         public AppUser ModifiedByUser { get; set; }
 
-        public DateTime DateCreated { get; set; } = DateTime.Now;
+        public DateTime? DateCreated { get; set; } = DateTime.Now;
         public DateTime? DateModified { get; set; }
     }
 }

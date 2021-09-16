@@ -55,11 +55,12 @@ namespace JAP.Database.Context
 
 
             SeedHelper.SeedDefaultUsersAndRoles(builder);
-            SeedHelper.SeedImagesToDb(builder);
             SeedHelper.SeedActorsToDb(builder);
             SeedHelper.SeedMoviesToDb(builder);
             SeedHelper.SeedActorsInMovies(builder);
-            SeedHelper.SeedRatingsToDb(builder);
+            SeedHelper.SeedScreeningsToDb(builder);
+            SeedHelper.SeedTicketsToDb(builder);
+            //SeedHelper.SeedRatingsToDb(builder);
         }
     }
 

@@ -1,0 +1,8822 @@
+[
+  {
+    "id": 10,
+    "price": 15,
+    "isSold": true,
+    "screeningId": 1
+  },
+  {
+    "id": 11,
+    "price": 11.81,
+    "isSold": true,
+    "screeningId": 1
+  },
+  {
+    "id": 12,
+    "price": 6.48,
+    "isSold": false,
+    "screeningId": 1
+  },
+  {
+    "id": 13,
+    "price": 12.26,
+    "isSold": true,
+    "screeningId": 1
+  },
+  {
+    "id": 14,
+    "price": 7.77,
+    "isSold": false,
+    "screeningId": 1
+  },
+  {
+    "id": 15,
+    "price": 11.81,
+    "isSold": false,
+    "screeningId": 1
+  },
+  {
+    "id": 16,
+    "price": 14.88,
+    "isSold": true,
+    "screeningId": 1
+  },
+  {
+    "id": 17,
+    "price": 13.62,
+    "isSold": false,
+    "screeningId": 1
+  },
+  {
+    "id": 18,
+    "price": 14.24,
+    "isSold": true,
+    "screeningId": 1
+  },
+  {
+    "id": 19,
+    "price": 14.57,
+    "isSold": true,
+    "screeningId": 1
+  },
+  {
+    "id": 20,
+    "price": 10.09,
+    "isSold": true,
+    "screeningId": 2
+  },
+  {
+    "id": 21,
+    "price": 7.92,
+    "isSold": false,
+    "screeningId": 2
+  },
+  {
+    "id": 22,
+    "price": 10.46,
+    "isSold": true,
+    "screeningId": 2
+  },
+  {
+    "id": 23,
+    "price": 10.43,
+    "isSold": true,
+    "screeningId": 2
+  },
+  {
+    "id": 24,
+    "price": 5.15,
+    "isSold": true,
+    "screeningId": 2
+  },
+  {
+    "id": 25,
+    "price": 7.7,
+    "isSold": true,
+    "screeningId": 2
+  },
+  {
+    "id": 26,
+    "price": 6.05,
+    "isSold": true,
+    "screeningId": 2
+  },
+  {
+    "id": 27,
+    "price": 7.58,
+    "isSold": true,
+    "screeningId": 2
+  },
+  {
+    "id": 28,
+    "price": 7.01,
+    "isSold": true,
+    "screeningId": 2
+  },
+  {
+    "id": 29,
+    "price": 5.1,
+    "isSold": false,
+    "screeningId": 2
+  },
+  {
+    "id": 30,
+    "price": 9.31,
+    "isSold": false,
+    "screeningId": 3
+  },
+  {
+    "id": 31,
+    "price": 9.91,
+    "isSold": true,
+    "screeningId": 3
+  },
+  {
+    "id": 32,
+    "price": 13.59,
+    "isSold": true,
+    "screeningId": 3
+  },
+  {
+    "id": 33,
+    "price": 14.91,
+    "isSold": false,
+    "screeningId": 3
+  },
+  {
+    "id": 34,
+    "price": 13.99,
+    "isSold": false,
+    "screeningId": 3
+  },
+  {
+    "id": 35,
+    "price": 9.65,
+    "isSold": true,
+    "screeningId": 3
+  },
+  {
+    "id": 36,
+    "price": 9.08,
+    "isSold": false,
+    "screeningId": 3
+  },
+  {
+    "id": 37,
+    "price": 13.11,
+    "isSold": true,
+    "screeningId": 3
+  },
+  {
+    "id": 38,
+    "price": 8.29,
+    "isSold": true,
+    "screeningId": 3
+  },
+  {
+    "id": 39,
+    "price": 10.09,
+    "isSold": false,
+    "screeningId": 3
+  },
+  {
+    "id": 40,
+    "price": 11.66,
+    "isSold": false,
+    "screeningId": 4
+  },
+  {
+    "id": 41,
+    "price": 6.09,
+    "isSold": false,
+    "screeningId": 4
+  },
+  {
+    "id": 42,
+    "price": 12.76,
+    "isSold": true,
+    "screeningId": 4
+  },
+  {
+    "id": 43,
+    "price": 6.36,
+    "isSold": false,
+    "screeningId": 4
+  },
+  {
+    "id": 44,
+    "price": 10.88,
+    "isSold": false,
+    "screeningId": 4
+  },
+  {
+    "id": 45,
+    "price": 12,
+    "isSold": true,
+    "screeningId": 4
+  },
+  {
+    "id": 46,
+    "price": 6.32,
+    "isSold": false,
+    "screeningId": 4
+  },
+  {
+    "id": 47,
+    "price": 6.83,
+    "isSold": true,
+    "screeningId": 4
+  },
+  {
+    "id": 48,
+    "price": 8.14,
+    "isSold": false,
+    "screeningId": 4
+  },
+  {
+    "id": 49,
+    "price": 9.11,
+    "isSold": true,
+    "screeningId": 4
+  },
+  {
+    "id": 50,
+    "price": 5.53,
+    "isSold": true,
+    "screeningId": 5
+  },
+  {
+    "id": 51,
+    "price": 10.77,
+    "isSold": false,
+    "screeningId": 5
+  },
+  {
+    "id": 52,
+    "price": 12.28,
+    "isSold": false,
+    "screeningId": 5
+  },
+  {
+    "id": 53,
+    "price": 8.62,
+    "isSold": true,
+    "screeningId": 5
+  },
+  {
+    "id": 54,
+    "price": 8.65,
+    "isSold": true,
+    "screeningId": 5
+  },
+  {
+    "id": 55,
+    "price": 13.32,
+    "isSold": false,
+    "screeningId": 5
+  },
+  {
+    "id": 56,
+    "price": 11.91,
+    "isSold": true,
+    "screeningId": 5
+  },
+  {
+    "id": 57,
+    "price": 14.01,
+    "isSold": true,
+    "screeningId": 5
+  },
+  {
+    "id": 58,
+    "price": 10.75,
+    "isSold": false,
+    "screeningId": 5
+  },
+  {
+    "id": 59,
+    "price": 14.91,
+    "isSold": false,
+    "screeningId": 5
+  },
+  {
+    "id": 60,
+    "price": 13.07,
+    "isSold": true,
+    "screeningId": 6
+  },
+  {
+    "id": 61,
+    "price": 14.79,
+    "isSold": false,
+    "screeningId": 6
+  },
+  {
+    "id": 62,
+    "price": 14.23,
+    "isSold": true,
+    "screeningId": 6
+  },
+  {
+    "id": 63,
+    "price": 14.21,
+    "isSold": true,
+    "screeningId": 6
+  },
+  {
+    "id": 64,
+    "price": 5.16,
+    "isSold": false,
+    "screeningId": 6
+  },
+  {
+    "id": 65,
+    "price": 14.83,
+    "isSold": false,
+    "screeningId": 6
+  },
+  {
+    "id": 66,
+    "price": 13.86,
+    "isSold": false,
+    "screeningId": 6
+  },
+  {
+    "id": 67,
+    "price": 5.02,
+    "isSold": false,
+    "screeningId": 6
+  },
+  {
+    "id": 68,
+    "price": 7.58,
+    "isSold": true,
+    "screeningId": 6
+  },
+  {
+    "id": 69,
+    "price": 6.43,
+    "isSold": false,
+    "screeningId": 6
+  },
+  {
+    "id": 70,
+    "price": 7.21,
+    "isSold": false,
+    "screeningId": 7
+  },
+  {
+    "id": 71,
+    "price": 14.72,
+    "isSold": false,
+    "screeningId": 7
+  },
+  {
+    "id": 72,
+    "price": 6.92,
+    "isSold": true,
+    "screeningId": 7
+  },
+  {
+    "id": 73,
+    "price": 13.83,
+    "isSold": false,
+    "screeningId": 7
+  },
+  {
+    "id": 74,
+    "price": 12.48,
+    "isSold": false,
+    "screeningId": 7
+  },
+  {
+    "id": 75,
+    "price": 9.35,
+    "isSold": true,
+    "screeningId": 7
+  },
+  {
+    "id": 76,
+    "price": 5.78,
+    "isSold": true,
+    "screeningId": 7
+  },
+  {
+    "id": 77,
+    "price": 11.54,
+    "isSold": false,
+    "screeningId": 7
+  },
+  {
+    "id": 78,
+    "price": 14.34,
+    "isSold": false,
+    "screeningId": 7
+  },
+  {
+    "id": 79,
+    "price": 8.81,
+    "isSold": true,
+    "screeningId": 7
+  },
+  {
+    "id": 80,
+    "price": 7.51,
+    "isSold": false,
+    "screeningId": 8
+  },
+  {
+    "id": 81,
+    "price": 8.15,
+    "isSold": false,
+    "screeningId": 8
+  },
+  {
+    "id": 82,
+    "price": 11.95,
+    "isSold": true,
+    "screeningId": 8
+  },
+  {
+    "id": 83,
+    "price": 12.24,
+    "isSold": false,
+    "screeningId": 8
+  },
+  {
+    "id": 84,
+    "price": 13.49,
+    "isSold": false,
+    "screeningId": 8
+  },
+  {
+    "id": 85,
+    "price": 13.14,
+    "isSold": true,
+    "screeningId": 8
+  },
+  {
+    "id": 86,
+    "price": 5.23,
+    "isSold": true,
+    "screeningId": 8
+  },
+  {
+    "id": 87,
+    "price": 13.59,
+    "isSold": true,
+    "screeningId": 8
+  },
+  {
+    "id": 88,
+    "price": 11.25,
+    "isSold": false,
+    "screeningId": 8
+  },
+  {
+    "id": 89,
+    "price": 11.86,
+    "isSold": true,
+    "screeningId": 8
+  },
+  {
+    "id": 90,
+    "price": 6.57,
+    "isSold": true,
+    "screeningId": 9
+  },
+  {
+    "id": 91,
+    "price": 6.95,
+    "isSold": false,
+    "screeningId": 9
+  },
+  {
+    "id": 92,
+    "price": 6.91,
+    "isSold": true,
+    "screeningId": 9
+  },
+  {
+    "id": 93,
+    "price": 6.41,
+    "isSold": false,
+    "screeningId": 9
+  },
+  {
+    "id": 94,
+    "price": 14.15,
+    "isSold": false,
+    "screeningId": 9
+  },
+  {
+    "id": 95,
+    "price": 13.93,
+    "isSold": false,
+    "screeningId": 9
+  },
+  {
+    "id": 96,
+    "price": 13.03,
+    "isSold": true,
+    "screeningId": 9
+  },
+  {
+    "id": 97,
+    "price": 11.38,
+    "isSold": false,
+    "screeningId": 9
+  },
+  {
+    "id": 98,
+    "price": 7.85,
+    "isSold": true,
+    "screeningId": 9
+  },
+  {
+    "id": 99,
+    "price": 8.96,
+    "isSold": true,
+    "screeningId": 9
+  },
+  {
+    "id": 100,
+    "price": 13.56,
+    "isSold": false,
+    "screeningId": 10
+  },
+  {
+    "id": 101,
+    "price": 12.96,
+    "isSold": true,
+    "screeningId": 10
+  },
+  {
+    "id": 102,
+    "price": 7.66,
+    "isSold": true,
+    "screeningId": 10
+  },
+  {
+    "id": 103,
+    "price": 11.82,
+    "isSold": false,
+    "screeningId": 10
+  },
+  {
+    "id": 104,
+    "price": 7.94,
+    "isSold": false,
+    "screeningId": 10
+  },
+  {
+    "id": 105,
+    "price": 5.37,
+    "isSold": false,
+    "screeningId": 10
+  },
+  {
+    "id": 106,
+    "price": 14.43,
+    "isSold": true,
+    "screeningId": 10
+  },
+  {
+    "id": 107,
+    "price": 8.08,
+    "isSold": false,
+    "screeningId": 10
+  },
+  {
+    "id": 108,
+    "price": 7.45,
+    "isSold": true,
+    "screeningId": 10
+  },
+  {
+    "id": 109,
+    "price": 9.55,
+    "isSold": true,
+    "screeningId": 10
+  },
+  {
+    "id": 110,
+    "price": 13.95,
+    "isSold": false,
+    "screeningId": 11
+  },
+  {
+    "id": 111,
+    "price": 9.39,
+    "isSold": true,
+    "screeningId": 11
+  },
+  {
+    "id": 112,
+    "price": 7.49,
+    "isSold": true,
+    "screeningId": 11
+  },
+  {
+    "id": 113,
+    "price": 10.23,
+    "isSold": true,
+    "screeningId": 11
+  },
+  {
+    "id": 114,
+    "price": 9.05,
+    "isSold": false,
+    "screeningId": 11
+  },
+  {
+    "id": 115,
+    "price": 14.01,
+    "isSold": true,
+    "screeningId": 11
+  },
+  {
+    "id": 116,
+    "price": 13.58,
+    "isSold": true,
+    "screeningId": 11
+  },
+  {
+    "id": 117,
+    "price": 9.4,
+    "isSold": true,
+    "screeningId": 11
+  },
+  {
+    "id": 118,
+    "price": 13.43,
+    "isSold": false,
+    "screeningId": 11
+  },
+  {
+    "id": 119,
+    "price": 14.69,
+    "isSold": true,
+    "screeningId": 11
+  },
+  {
+    "id": 120,
+    "price": 8.61,
+    "isSold": true,
+    "screeningId": 12
+  },
+  {
+    "id": 121,
+    "price": 10.73,
+    "isSold": true,
+    "screeningId": 12
+  },
+  {
+    "id": 122,
+    "price": 5.58,
+    "isSold": true,
+    "screeningId": 12
+  },
+  {
+    "id": 123,
+    "price": 7.8,
+    "isSold": false,
+    "screeningId": 12
+  },
+  {
+    "id": 124,
+    "price": 10.97,
+    "isSold": false,
+    "screeningId": 12
+  },
+  {
+    "id": 125,
+    "price": 10.16,
+    "isSold": true,
+    "screeningId": 12
+  },
+  {
+    "id": 126,
+    "price": 5.96,
+    "isSold": false,
+    "screeningId": 12
+  },
+  {
+    "id": 127,
+    "price": 10.34,
+    "isSold": false,
+    "screeningId": 12
+  },
+  {
+    "id": 128,
+    "price": 11.44,
+    "isSold": false,
+    "screeningId": 12
+  },
+  {
+    "id": 129,
+    "price": 8.57,
+    "isSold": false,
+    "screeningId": 12
+  },
+  {
+    "id": 130,
+    "price": 11.49,
+    "isSold": true,
+    "screeningId": 13
+  },
+  {
+    "id": 131,
+    "price": 13.48,
+    "isSold": true,
+    "screeningId": 13
+  },
+  {
+    "id": 132,
+    "price": 10.52,
+    "isSold": false,
+    "screeningId": 13
+  },
+  {
+    "id": 133,
+    "price": 13.81,
+    "isSold": false,
+    "screeningId": 13
+  },
+  {
+    "id": 134,
+    "price": 9.27,
+    "isSold": false,
+    "screeningId": 13
+  },
+  {
+    "id": 135,
+    "price": 8.8,
+    "isSold": true,
+    "screeningId": 13
+  },
+  {
+    "id": 136,
+    "price": 12.7,
+    "isSold": true,
+    "screeningId": 13
+  },
+  {
+    "id": 137,
+    "price": 13.09,
+    "isSold": true,
+    "screeningId": 13
+  },
+  {
+    "id": 138,
+    "price": 7.82,
+    "isSold": true,
+    "screeningId": 13
+  },
+  {
+    "id": 139,
+    "price": 10.47,
+    "isSold": false,
+    "screeningId": 13
+  },
+  {
+    "id": 140,
+    "price": 13.5,
+    "isSold": false,
+    "screeningId": 14
+  },
+  {
+    "id": 141,
+    "price": 10.59,
+    "isSold": false,
+    "screeningId": 14
+  },
+  {
+    "id": 142,
+    "price": 12.86,
+    "isSold": false,
+    "screeningId": 14
+  },
+  {
+    "id": 143,
+    "price": 11.31,
+    "isSold": true,
+    "screeningId": 14
+  },
+  {
+    "id": 144,
+    "price": 7.74,
+    "isSold": false,
+    "screeningId": 14
+  },
+  {
+    "id": 145,
+    "price": 11.62,
+    "isSold": true,
+    "screeningId": 14
+  },
+  {
+    "id": 146,
+    "price": 6.71,
+    "isSold": false,
+    "screeningId": 14
+  },
+  {
+    "id": 147,
+    "price": 10.67,
+    "isSold": true,
+    "screeningId": 14
+  },
+  {
+    "id": 148,
+    "price": 7.71,
+    "isSold": false,
+    "screeningId": 14
+  },
+  {
+    "id": 149,
+    "price": 6.03,
+    "isSold": false,
+    "screeningId": 14
+  },
+  {
+    "id": 150,
+    "price": 10.02,
+    "isSold": true,
+    "screeningId": 15
+  },
+  {
+    "id": 151,
+    "price": 5.8,
+    "isSold": false,
+    "screeningId": 15
+  },
+  {
+    "id": 152,
+    "price": 13.29,
+    "isSold": true,
+    "screeningId": 15
+  },
+  {
+    "id": 153,
+    "price": 5.1,
+    "isSold": true,
+    "screeningId": 15
+  },
+  {
+    "id": 154,
+    "price": 7.56,
+    "isSold": false,
+    "screeningId": 15
+  },
+  {
+    "id": 155,
+    "price": 13.35,
+    "isSold": false,
+    "screeningId": 15
+  },
+  {
+    "id": 156,
+    "price": 14.34,
+    "isSold": false,
+    "screeningId": 15
+  },
+  {
+    "id": 157,
+    "price": 5.38,
+    "isSold": false,
+    "screeningId": 15
+  },
+  {
+    "id": 158,
+    "price": 13.77,
+    "isSold": false,
+    "screeningId": 15
+  },
+  {
+    "id": 159,
+    "price": 13.87,
+    "isSold": false,
+    "screeningId": 15
+  },
+  {
+    "id": 160,
+    "price": 5.43,
+    "isSold": false,
+    "screeningId": 16
+  },
+  {
+    "id": 161,
+    "price": 5.85,
+    "isSold": false,
+    "screeningId": 16
+  },
+  {
+    "id": 162,
+    "price": 7.3,
+    "isSold": false,
+    "screeningId": 16
+  },
+  {
+    "id": 163,
+    "price": 12.88,
+    "isSold": false,
+    "screeningId": 16
+  },
+  {
+    "id": 164,
+    "price": 5.14,
+    "isSold": true,
+    "screeningId": 16
+  },
+  {
+    "id": 165,
+    "price": 8.41,
+    "isSold": true,
+    "screeningId": 16
+  },
+  {
+    "id": 166,
+    "price": 6.15,
+    "isSold": true,
+    "screeningId": 16
+  },
+  {
+    "id": 167,
+    "price": 8.17,
+    "isSold": false,
+    "screeningId": 16
+  },
+  {
+    "id": 168,
+    "price": 12.62,
+    "isSold": true,
+    "screeningId": 16
+  },
+  {
+    "id": 169,
+    "price": 8.53,
+    "isSold": false,
+    "screeningId": 16
+  },
+  {
+    "id": 170,
+    "price": 7.23,
+    "isSold": true,
+    "screeningId": 17
+  },
+  {
+    "id": 171,
+    "price": 9.67,
+    "isSold": true,
+    "screeningId": 17
+  },
+  {
+    "id": 172,
+    "price": 10.9,
+    "isSold": true,
+    "screeningId": 17
+  },
+  {
+    "id": 173,
+    "price": 5.97,
+    "isSold": false,
+    "screeningId": 17
+  },
+  {
+    "id": 174,
+    "price": 10.96,
+    "isSold": false,
+    "screeningId": 17
+  },
+  {
+    "id": 175,
+    "price": 12.57,
+    "isSold": true,
+    "screeningId": 17
+  },
+  {
+    "id": 176,
+    "price": 14.86,
+    "isSold": false,
+    "screeningId": 17
+  },
+  {
+    "id": 177,
+    "price": 13.66,
+    "isSold": true,
+    "screeningId": 17
+  },
+  {
+    "id": 178,
+    "price": 12.26,
+    "isSold": true,
+    "screeningId": 17
+  },
+  {
+    "id": 179,
+    "price": 13.69,
+    "isSold": false,
+    "screeningId": 17
+  },
+  {
+    "id": 180,
+    "price": 14.42,
+    "isSold": false,
+    "screeningId": 18
+  },
+  {
+    "id": 181,
+    "price": 13.12,
+    "isSold": false,
+    "screeningId": 18
+  },
+  {
+    "id": 182,
+    "price": 12.28,
+    "isSold": true,
+    "screeningId": 18
+  },
+  {
+    "id": 183,
+    "price": 5.7,
+    "isSold": true,
+    "screeningId": 18
+  },
+  {
+    "id": 184,
+    "price": 9.88,
+    "isSold": false,
+    "screeningId": 18
+  },
+  {
+    "id": 185,
+    "price": 9.92,
+    "isSold": false,
+    "screeningId": 18
+  },
+  {
+    "id": 186,
+    "price": 12.51,
+    "isSold": false,
+    "screeningId": 18
+  },
+  {
+    "id": 187,
+    "price": 6.57,
+    "isSold": true,
+    "screeningId": 18
+  },
+  {
+    "id": 188,
+    "price": 6.53,
+    "isSold": false,
+    "screeningId": 18
+  },
+  {
+    "id": 189,
+    "price": 5.53,
+    "isSold": true,
+    "screeningId": 18
+  },
+  {
+    "id": 190,
+    "price": 12.87,
+    "isSold": false,
+    "screeningId": 19
+  },
+  {
+    "id": 191,
+    "price": 7.31,
+    "isSold": true,
+    "screeningId": 19
+  },
+  {
+    "id": 192,
+    "price": 11.97,
+    "isSold": false,
+    "screeningId": 19
+  },
+  {
+    "id": 193,
+    "price": 11.66,
+    "isSold": true,
+    "screeningId": 19
+  },
+  {
+    "id": 194,
+    "price": 14.06,
+    "isSold": false,
+    "screeningId": 19
+  },
+  {
+    "id": 195,
+    "price": 11.73,
+    "isSold": false,
+    "screeningId": 19
+  },
+  {
+    "id": 196,
+    "price": 11.13,
+    "isSold": false,
+    "screeningId": 19
+  },
+  {
+    "id": 197,
+    "price": 5.97,
+    "isSold": true,
+    "screeningId": 19
+  },
+  {
+    "id": 198,
+    "price": 6.09,
+    "isSold": false,
+    "screeningId": 19
+  },
+  {
+    "id": 199,
+    "price": 11.17,
+    "isSold": false,
+    "screeningId": 19
+  },
+  {
+    "id": 200,
+    "price": 13.8,
+    "isSold": false,
+    "screeningId": 20
+  },
+  {
+    "id": 201,
+    "price": 6.12,
+    "isSold": false,
+    "screeningId": 20
+  },
+  {
+    "id": 202,
+    "price": 11.58,
+    "isSold": true,
+    "screeningId": 20
+  },
+  {
+    "id": 203,
+    "price": 11.89,
+    "isSold": false,
+    "screeningId": 20
+  },
+  {
+    "id": 204,
+    "price": 11.92,
+    "isSold": true,
+    "screeningId": 20
+  },
+  {
+    "id": 205,
+    "price": 7.45,
+    "isSold": false,
+    "screeningId": 20
+  },
+  {
+    "id": 206,
+    "price": 5.69,
+    "isSold": false,
+    "screeningId": 20
+  },
+  {
+    "id": 207,
+    "price": 13.38,
+    "isSold": true,
+    "screeningId": 20
+  },
+  {
+    "id": 208,
+    "price": 5.24,
+    "isSold": false,
+    "screeningId": 20
+  },
+  {
+    "id": 209,
+    "price": 8.43,
+    "isSold": true,
+    "screeningId": 20
+  },
+  {
+    "id": 210,
+    "price": 11.45,
+    "isSold": false,
+    "screeningId": 21
+  },
+  {
+    "id": 211,
+    "price": 10.46,
+    "isSold": false,
+    "screeningId": 21
+  },
+  {
+    "id": 212,
+    "price": 7.52,
+    "isSold": false,
+    "screeningId": 21
+  },
+  {
+    "id": 213,
+    "price": 10.64,
+    "isSold": false,
+    "screeningId": 21
+  },
+  {
+    "id": 214,
+    "price": 5.68,
+    "isSold": false,
+    "screeningId": 21
+  },
+  {
+    "id": 215,
+    "price": 11.08,
+    "isSold": true,
+    "screeningId": 21
+  },
+  {
+    "id": 216,
+    "price": 12.34,
+    "isSold": false,
+    "screeningId": 21
+  },
+  {
+    "id": 217,
+    "price": 9.25,
+    "isSold": true,
+    "screeningId": 21
+  },
+  {
+    "id": 218,
+    "price": 13.4,
+    "isSold": false,
+    "screeningId": 21
+  },
+  {
+    "id": 219,
+    "price": 10.34,
+    "isSold": false,
+    "screeningId": 21
+  },
+  {
+    "id": 220,
+    "price": 14.54,
+    "isSold": false,
+    "screeningId": 22
+  },
+  {
+    "id": 221,
+    "price": 12.49,
+    "isSold": true,
+    "screeningId": 22
+  },
+  {
+    "id": 222,
+    "price": 7.84,
+    "isSold": false,
+    "screeningId": 22
+  },
+  {
+    "id": 223,
+    "price": 12.24,
+    "isSold": true,
+    "screeningId": 22
+  },
+  {
+    "id": 224,
+    "price": 10.47,
+    "isSold": false,
+    "screeningId": 22
+  },
+  {
+    "id": 225,
+    "price": 12.5,
+    "isSold": true,
+    "screeningId": 22
+  },
+  {
+    "id": 226,
+    "price": 14.84,
+    "isSold": false,
+    "screeningId": 22
+  },
+  {
+    "id": 227,
+    "price": 13.24,
+    "isSold": true,
+    "screeningId": 22
+  },
+  {
+    "id": 228,
+    "price": 5.52,
+    "isSold": true,
+    "screeningId": 22
+  },
+  {
+    "id": 229,
+    "price": 10.72,
+    "isSold": false,
+    "screeningId": 22
+  },
+  {
+    "id": 230,
+    "price": 8.72,
+    "isSold": true,
+    "screeningId": 23
+  },
+  {
+    "id": 231,
+    "price": 6.9,
+    "isSold": false,
+    "screeningId": 23
+  },
+  {
+    "id": 232,
+    "price": 7.9,
+    "isSold": false,
+    "screeningId": 23
+  },
+  {
+    "id": 233,
+    "price": 5.06,
+    "isSold": true,
+    "screeningId": 23
+  },
+  {
+    "id": 234,
+    "price": 9.05,
+    "isSold": true,
+    "screeningId": 23
+  },
+  {
+    "id": 235,
+    "price": 13.97,
+    "isSold": false,
+    "screeningId": 23
+  },
+  {
+    "id": 236,
+    "price": 5.61,
+    "isSold": false,
+    "screeningId": 23
+  },
+  {
+    "id": 237,
+    "price": 11.51,
+    "isSold": false,
+    "screeningId": 23
+  },
+  {
+    "id": 238,
+    "price": 11.77,
+    "isSold": true,
+    "screeningId": 23
+  },
+  {
+    "id": 239,
+    "price": 10.82,
+    "isSold": true,
+    "screeningId": 23
+  },
+  {
+    "id": 240,
+    "price": 14.26,
+    "isSold": false,
+    "screeningId": 24
+  },
+  {
+    "id": 241,
+    "price": 14.52,
+    "isSold": false,
+    "screeningId": 24
+  },
+  {
+    "id": 242,
+    "price": 5.04,
+    "isSold": false,
+    "screeningId": 24
+  },
+  {
+    "id": 243,
+    "price": 5,
+    "isSold": false,
+    "screeningId": 24
+  },
+  {
+    "id": 244,
+    "price": 7.05,
+    "isSold": false,
+    "screeningId": 24
+  },
+  {
+    "id": 245,
+    "price": 12.04,
+    "isSold": false,
+    "screeningId": 24
+  },
+  {
+    "id": 246,
+    "price": 13.91,
+    "isSold": false,
+    "screeningId": 24
+  },
+  {
+    "id": 247,
+    "price": 12.44,
+    "isSold": true,
+    "screeningId": 24
+  },
+  {
+    "id": 248,
+    "price": 7.98,
+    "isSold": true,
+    "screeningId": 24
+  },
+  {
+    "id": 249,
+    "price": 11.01,
+    "isSold": true,
+    "screeningId": 24
+  },
+  {
+    "id": 250,
+    "price": 6.56,
+    "isSold": true,
+    "screeningId": 25
+  },
+  {
+    "id": 251,
+    "price": 5.89,
+    "isSold": true,
+    "screeningId": 25
+  },
+  {
+    "id": 252,
+    "price": 14.28,
+    "isSold": true,
+    "screeningId": 25
+  },
+  {
+    "id": 253,
+    "price": 7.01,
+    "isSold": false,
+    "screeningId": 25
+  },
+  {
+    "id": 254,
+    "price": 6.93,
+    "isSold": true,
+    "screeningId": 25
+  },
+  {
+    "id": 255,
+    "price": 5.67,
+    "isSold": true,
+    "screeningId": 25
+  },
+  {
+    "id": 256,
+    "price": 10.46,
+    "isSold": false,
+    "screeningId": 25
+  },
+  {
+    "id": 257,
+    "price": 12.64,
+    "isSold": true,
+    "screeningId": 25
+  },
+  {
+    "id": 258,
+    "price": 9.28,
+    "isSold": false,
+    "screeningId": 25
+  },
+  {
+    "id": 259,
+    "price": 12.54,
+    "isSold": false,
+    "screeningId": 25
+  },
+  {
+    "id": 260,
+    "price": 6.81,
+    "isSold": true,
+    "screeningId": 26
+  },
+  {
+    "id": 261,
+    "price": 7.44,
+    "isSold": true,
+    "screeningId": 26
+  },
+  {
+    "id": 262,
+    "price": 11.59,
+    "isSold": true,
+    "screeningId": 26
+  },
+  {
+    "id": 263,
+    "price": 5.44,
+    "isSold": true,
+    "screeningId": 26
+  },
+  {
+    "id": 264,
+    "price": 14.81,
+    "isSold": true,
+    "screeningId": 26
+  },
+  {
+    "id": 265,
+    "price": 8.77,
+    "isSold": true,
+    "screeningId": 26
+  },
+  {
+    "id": 266,
+    "price": 8.07,
+    "isSold": true,
+    "screeningId": 26
+  },
+  {
+    "id": 267,
+    "price": 14.58,
+    "isSold": true,
+    "screeningId": 26
+  },
+  {
+    "id": 268,
+    "price": 10.84,
+    "isSold": true,
+    "screeningId": 26
+  },
+  {
+    "id": 269,
+    "price": 9.99,
+    "isSold": false,
+    "screeningId": 26
+  },
+  {
+    "id": 270,
+    "price": 11.66,
+    "isSold": false,
+    "screeningId": 27
+  },
+  {
+    "id": 271,
+    "price": 6.89,
+    "isSold": true,
+    "screeningId": 27
+  },
+  {
+    "id": 272,
+    "price": 13.72,
+    "isSold": true,
+    "screeningId": 27
+  },
+  {
+    "id": 273,
+    "price": 11.7,
+    "isSold": false,
+    "screeningId": 27
+  },
+  {
+    "id": 274,
+    "price": 11.03,
+    "isSold": true,
+    "screeningId": 27
+  },
+  {
+    "id": 275,
+    "price": 5.55,
+    "isSold": true,
+    "screeningId": 27
+  },
+  {
+    "id": 276,
+    "price": 6.9,
+    "isSold": false,
+    "screeningId": 27
+  },
+  {
+    "id": 277,
+    "price": 12.29,
+    "isSold": true,
+    "screeningId": 27
+  },
+  {
+    "id": 278,
+    "price": 6.9,
+    "isSold": true,
+    "screeningId": 27
+  },
+  {
+    "id": 279,
+    "price": 14.96,
+    "isSold": true,
+    "screeningId": 27
+  },
+  {
+    "id": 280,
+    "price": 12.45,
+    "isSold": true,
+    "screeningId": 28
+  },
+  {
+    "id": 281,
+    "price": 6.01,
+    "isSold": false,
+    "screeningId": 28
+  },
+  {
+    "id": 282,
+    "price": 7.42,
+    "isSold": true,
+    "screeningId": 28
+  },
+  {
+    "id": 283,
+    "price": 10.35,
+    "isSold": true,
+    "screeningId": 28
+  },
+  {
+    "id": 284,
+    "price": 12.75,
+    "isSold": true,
+    "screeningId": 28
+  },
+  {
+    "id": 285,
+    "price": 6.38,
+    "isSold": true,
+    "screeningId": 28
+  },
+  {
+    "id": 286,
+    "price": 5.44,
+    "isSold": false,
+    "screeningId": 28
+  },
+  {
+    "id": 287,
+    "price": 5.44,
+    "isSold": true,
+    "screeningId": 28
+  },
+  {
+    "id": 288,
+    "price": 13.59,
+    "isSold": true,
+    "screeningId": 28
+  },
+  {
+    "id": 289,
+    "price": 14.34,
+    "isSold": true,
+    "screeningId": 28
+  },
+  {
+    "id": 290,
+    "price": 6.34,
+    "isSold": true,
+    "screeningId": 29
+  },
+  {
+    "id": 291,
+    "price": 14.36,
+    "isSold": false,
+    "screeningId": 29
+  },
+  {
+    "id": 292,
+    "price": 12.86,
+    "isSold": true,
+    "screeningId": 29
+  },
+  {
+    "id": 293,
+    "price": 11.05,
+    "isSold": false,
+    "screeningId": 29
+  },
+  {
+    "id": 294,
+    "price": 7.56,
+    "isSold": true,
+    "screeningId": 29
+  },
+  {
+    "id": 295,
+    "price": 5.32,
+    "isSold": false,
+    "screeningId": 29
+  },
+  {
+    "id": 296,
+    "price": 7.3,
+    "isSold": false,
+    "screeningId": 29
+  },
+  {
+    "id": 297,
+    "price": 6.62,
+    "isSold": false,
+    "screeningId": 29
+  },
+  {
+    "id": 298,
+    "price": 14.89,
+    "isSold": false,
+    "screeningId": 29
+  },
+  {
+    "id": 299,
+    "price": 8.15,
+    "isSold": true,
+    "screeningId": 29
+  },
+  {
+    "id": 300,
+    "price": 13.09,
+    "isSold": true,
+    "screeningId": 30
+  },
+  {
+    "id": 301,
+    "price": 14.09,
+    "isSold": false,
+    "screeningId": 30
+  },
+  {
+    "id": 302,
+    "price": 5.03,
+    "isSold": true,
+    "screeningId": 30
+  },
+  {
+    "id": 303,
+    "price": 10.87,
+    "isSold": false,
+    "screeningId": 30
+  },
+  {
+    "id": 304,
+    "price": 6,
+    "isSold": false,
+    "screeningId": 30
+  },
+  {
+    "id": 305,
+    "price": 7.94,
+    "isSold": false,
+    "screeningId": 30
+  },
+  {
+    "id": 306,
+    "price": 6.9,
+    "isSold": true,
+    "screeningId": 30
+  },
+  {
+    "id": 307,
+    "price": 5.02,
+    "isSold": true,
+    "screeningId": 30
+  },
+  {
+    "id": 308,
+    "price": 9.78,
+    "isSold": false,
+    "screeningId": 30
+  },
+  {
+    "id": 309,
+    "price": 8.96,
+    "isSold": true,
+    "screeningId": 30
+  },
+  {
+    "id": 310,
+    "price": 13.37,
+    "isSold": false,
+    "screeningId": 31
+  },
+  {
+    "id": 311,
+    "price": 6.65,
+    "isSold": true,
+    "screeningId": 31
+  },
+  {
+    "id": 312,
+    "price": 7.19,
+    "isSold": false,
+    "screeningId": 31
+  },
+  {
+    "id": 313,
+    "price": 12.3,
+    "isSold": true,
+    "screeningId": 31
+  },
+  {
+    "id": 314,
+    "price": 9.07,
+    "isSold": false,
+    "screeningId": 31
+  },
+  {
+    "id": 315,
+    "price": 14.59,
+    "isSold": false,
+    "screeningId": 31
+  },
+  {
+    "id": 316,
+    "price": 12.65,
+    "isSold": false,
+    "screeningId": 31
+  },
+  {
+    "id": 317,
+    "price": 6.36,
+    "isSold": false,
+    "screeningId": 31
+  },
+  {
+    "id": 318,
+    "price": 11.74,
+    "isSold": true,
+    "screeningId": 31
+  },
+  {
+    "id": 319,
+    "price": 7.87,
+    "isSold": false,
+    "screeningId": 31
+  },
+  {
+    "id": 320,
+    "price": 9.55,
+    "isSold": false,
+    "screeningId": 32
+  },
+  {
+    "id": 321,
+    "price": 6.37,
+    "isSold": true,
+    "screeningId": 32
+  },
+  {
+    "id": 322,
+    "price": 14.98,
+    "isSold": false,
+    "screeningId": 32
+  },
+  {
+    "id": 323,
+    "price": 5.81,
+    "isSold": false,
+    "screeningId": 32
+  },
+  {
+    "id": 324,
+    "price": 14.05,
+    "isSold": true,
+    "screeningId": 32
+  },
+  {
+    "id": 325,
+    "price": 13.11,
+    "isSold": true,
+    "screeningId": 32
+  },
+  {
+    "id": 326,
+    "price": 13.56,
+    "isSold": true,
+    "screeningId": 32
+  },
+  {
+    "id": 327,
+    "price": 8.19,
+    "isSold": true,
+    "screeningId": 32
+  },
+  {
+    "id": 328,
+    "price": 8.38,
+    "isSold": false,
+    "screeningId": 32
+  },
+  {
+    "id": 329,
+    "price": 11.88,
+    "isSold": false,
+    "screeningId": 32
+  },
+  {
+    "id": 330,
+    "price": 13.55,
+    "isSold": true,
+    "screeningId": 33
+  },
+  {
+    "id": 331,
+    "price": 7.19,
+    "isSold": false,
+    "screeningId": 33
+  },
+  {
+    "id": 332,
+    "price": 10.03,
+    "isSold": false,
+    "screeningId": 33
+  },
+  {
+    "id": 333,
+    "price": 13.26,
+    "isSold": true,
+    "screeningId": 33
+  },
+  {
+    "id": 334,
+    "price": 6.84,
+    "isSold": true,
+    "screeningId": 33
+  },
+  {
+    "id": 335,
+    "price": 11.3,
+    "isSold": true,
+    "screeningId": 33
+  },
+  {
+    "id": 336,
+    "price": 10.93,
+    "isSold": false,
+    "screeningId": 33
+  },
+  {
+    "id": 337,
+    "price": 11.21,
+    "isSold": false,
+    "screeningId": 33
+  },
+  {
+    "id": 338,
+    "price": 5.94,
+    "isSold": false,
+    "screeningId": 33
+  },
+  {
+    "id": 339,
+    "price": 6.02,
+    "isSold": true,
+    "screeningId": 33
+  },
+  {
+    "id": 340,
+    "price": 5.5,
+    "isSold": true,
+    "screeningId": 34
+  },
+  {
+    "id": 341,
+    "price": 5.41,
+    "isSold": false,
+    "screeningId": 34
+  },
+  {
+    "id": 342,
+    "price": 5.84,
+    "isSold": true,
+    "screeningId": 34
+  },
+  {
+    "id": 343,
+    "price": 5.9,
+    "isSold": false,
+    "screeningId": 34
+  },
+  {
+    "id": 344,
+    "price": 11.07,
+    "isSold": true,
+    "screeningId": 34
+  },
+  {
+    "id": 345,
+    "price": 8.48,
+    "isSold": false,
+    "screeningId": 34
+  },
+  {
+    "id": 346,
+    "price": 6.96,
+    "isSold": false,
+    "screeningId": 34
+  },
+  {
+    "id": 347,
+    "price": 13.06,
+    "isSold": false,
+    "screeningId": 34
+  },
+  {
+    "id": 348,
+    "price": 14.16,
+    "isSold": false,
+    "screeningId": 34
+  },
+  {
+    "id": 349,
+    "price": 12.01,
+    "isSold": false,
+    "screeningId": 34
+  },
+  {
+    "id": 350,
+    "price": 7.57,
+    "isSold": false,
+    "screeningId": 35
+  },
+  {
+    "id": 351,
+    "price": 12.29,
+    "isSold": true,
+    "screeningId": 35
+  },
+  {
+    "id": 352,
+    "price": 14.83,
+    "isSold": false,
+    "screeningId": 35
+  },
+  {
+    "id": 353,
+    "price": 11.16,
+    "isSold": true,
+    "screeningId": 35
+  },
+  {
+    "id": 354,
+    "price": 8.76,
+    "isSold": false,
+    "screeningId": 35
+  },
+  {
+    "id": 355,
+    "price": 9.72,
+    "isSold": false,
+    "screeningId": 35
+  },
+  {
+    "id": 356,
+    "price": 13.77,
+    "isSold": true,
+    "screeningId": 35
+  },
+  {
+    "id": 357,
+    "price": 10.28,
+    "isSold": true,
+    "screeningId": 35
+  },
+  {
+    "id": 358,
+    "price": 10.37,
+    "isSold": false,
+    "screeningId": 35
+  },
+  {
+    "id": 359,
+    "price": 5.92,
+    "isSold": false,
+    "screeningId": 35
+  },
+  {
+    "id": 360,
+    "price": 12.63,
+    "isSold": false,
+    "screeningId": 36
+  },
+  {
+    "id": 361,
+    "price": 5.18,
+    "isSold": false,
+    "screeningId": 36
+  },
+  {
+    "id": 362,
+    "price": 7.15,
+    "isSold": true,
+    "screeningId": 36
+  },
+  {
+    "id": 363,
+    "price": 6.34,
+    "isSold": false,
+    "screeningId": 36
+  },
+  {
+    "id": 364,
+    "price": 12.6,
+    "isSold": false,
+    "screeningId": 36
+  },
+  {
+    "id": 365,
+    "price": 14.65,
+    "isSold": true,
+    "screeningId": 36
+  },
+  {
+    "id": 366,
+    "price": 13.75,
+    "isSold": true,
+    "screeningId": 36
+  },
+  {
+    "id": 367,
+    "price": 9.76,
+    "isSold": false,
+    "screeningId": 36
+  },
+  {
+    "id": 368,
+    "price": 5.56,
+    "isSold": true,
+    "screeningId": 36
+  },
+  {
+    "id": 369,
+    "price": 13.75,
+    "isSold": true,
+    "screeningId": 36
+  },
+  {
+    "id": 370,
+    "price": 8.78,
+    "isSold": false,
+    "screeningId": 37
+  },
+  {
+    "id": 371,
+    "price": 9.11,
+    "isSold": true,
+    "screeningId": 37
+  },
+  {
+    "id": 372,
+    "price": 8.48,
+    "isSold": true,
+    "screeningId": 37
+  },
+  {
+    "id": 373,
+    "price": 12.76,
+    "isSold": false,
+    "screeningId": 37
+  },
+  {
+    "id": 374,
+    "price": 9.01,
+    "isSold": false,
+    "screeningId": 37
+  },
+  {
+    "id": 375,
+    "price": 5.57,
+    "isSold": false,
+    "screeningId": 37
+  },
+  {
+    "id": 376,
+    "price": 12.7,
+    "isSold": false,
+    "screeningId": 37
+  },
+  {
+    "id": 377,
+    "price": 10.3,
+    "isSold": true,
+    "screeningId": 37
+  },
+  {
+    "id": 378,
+    "price": 11.64,
+    "isSold": false,
+    "screeningId": 37
+  },
+  {
+    "id": 379,
+    "price": 12.14,
+    "isSold": false,
+    "screeningId": 37
+  },
+  {
+    "id": 380,
+    "price": 9.26,
+    "isSold": false,
+    "screeningId": 38
+  },
+  {
+    "id": 381,
+    "price": 11.61,
+    "isSold": false,
+    "screeningId": 38
+  },
+  {
+    "id": 382,
+    "price": 10.81,
+    "isSold": true,
+    "screeningId": 38
+  },
+  {
+    "id": 383,
+    "price": 9.35,
+    "isSold": true,
+    "screeningId": 38
+  },
+  {
+    "id": 384,
+    "price": 7.48,
+    "isSold": true,
+    "screeningId": 38
+  },
+  {
+    "id": 385,
+    "price": 11.93,
+    "isSold": true,
+    "screeningId": 38
+  },
+  {
+    "id": 386,
+    "price": 14.41,
+    "isSold": true,
+    "screeningId": 38
+  },
+  {
+    "id": 387,
+    "price": 10.42,
+    "isSold": true,
+    "screeningId": 38
+  },
+  {
+    "id": 388,
+    "price": 14.26,
+    "isSold": true,
+    "screeningId": 38
+  },
+  {
+    "id": 389,
+    "price": 5.67,
+    "isSold": true,
+    "screeningId": 38
+  },
+  {
+    "id": 390,
+    "price": 13.64,
+    "isSold": false,
+    "screeningId": 39
+  },
+  {
+    "id": 391,
+    "price": 8.64,
+    "isSold": false,
+    "screeningId": 39
+  },
+  {
+    "id": 392,
+    "price": 9.44,
+    "isSold": false,
+    "screeningId": 39
+  },
+  {
+    "id": 393,
+    "price": 6.48,
+    "isSold": true,
+    "screeningId": 39
+  },
+  {
+    "id": 394,
+    "price": 11.26,
+    "isSold": true,
+    "screeningId": 39
+  },
+  {
+    "id": 395,
+    "price": 7.08,
+    "isSold": true,
+    "screeningId": 39
+  },
+  {
+    "id": 396,
+    "price": 10.97,
+    "isSold": true,
+    "screeningId": 39
+  },
+  {
+    "id": 397,
+    "price": 8.62,
+    "isSold": true,
+    "screeningId": 39
+  },
+  {
+    "id": 398,
+    "price": 6.07,
+    "isSold": true,
+    "screeningId": 39
+  },
+  {
+    "id": 399,
+    "price": 9.67,
+    "isSold": false,
+    "screeningId": 39
+  },
+  {
+    "id": 400,
+    "price": 8.37,
+    "isSold": false,
+    "screeningId": 40
+  },
+  {
+    "id": 401,
+    "price": 11,
+    "isSold": false,
+    "screeningId": 40
+  },
+  {
+    "id": 402,
+    "price": 8.37,
+    "isSold": true,
+    "screeningId": 40
+  },
+  {
+    "id": 403,
+    "price": 5.29,
+    "isSold": false,
+    "screeningId": 40
+  },
+  {
+    "id": 404,
+    "price": 5.13,
+    "isSold": true,
+    "screeningId": 40
+  },
+  {
+    "id": 405,
+    "price": 12.25,
+    "isSold": true,
+    "screeningId": 40
+  },
+  {
+    "id": 406,
+    "price": 10.4,
+    "isSold": false,
+    "screeningId": 40
+  },
+  {
+    "id": 407,
+    "price": 9.78,
+    "isSold": false,
+    "screeningId": 40
+  },
+  {
+    "id": 408,
+    "price": 7.4,
+    "isSold": false,
+    "screeningId": 40
+  },
+  {
+    "id": 409,
+    "price": 8.55,
+    "isSold": false,
+    "screeningId": 40
+  },
+  {
+    "id": 410,
+    "price": 13.35,
+    "isSold": false,
+    "screeningId": 41
+  },
+  {
+    "id": 411,
+    "price": 6.02,
+    "isSold": true,
+    "screeningId": 41
+  },
+  {
+    "id": 412,
+    "price": 14.62,
+    "isSold": false,
+    "screeningId": 41
+  },
+  {
+    "id": 413,
+    "price": 9.91,
+    "isSold": false,
+    "screeningId": 41
+  },
+  {
+    "id": 414,
+    "price": 7.04,
+    "isSold": true,
+    "screeningId": 41
+  },
+  {
+    "id": 415,
+    "price": 11.6,
+    "isSold": true,
+    "screeningId": 41
+  },
+  {
+    "id": 416,
+    "price": 11.19,
+    "isSold": false,
+    "screeningId": 41
+  },
+  {
+    "id": 417,
+    "price": 11.71,
+    "isSold": true,
+    "screeningId": 41
+  },
+  {
+    "id": 418,
+    "price": 5.7,
+    "isSold": true,
+    "screeningId": 41
+  },
+  {
+    "id": 419,
+    "price": 8.72,
+    "isSold": false,
+    "screeningId": 41
+  },
+  {
+    "id": 420,
+    "price": 10.5,
+    "isSold": true,
+    "screeningId": 42
+  },
+  {
+    "id": 421,
+    "price": 10.51,
+    "isSold": true,
+    "screeningId": 42
+  },
+  {
+    "id": 422,
+    "price": 10.23,
+    "isSold": false,
+    "screeningId": 42
+  },
+  {
+    "id": 423,
+    "price": 14.37,
+    "isSold": true,
+    "screeningId": 42
+  },
+  {
+    "id": 424,
+    "price": 6.27,
+    "isSold": false,
+    "screeningId": 42
+  },
+  {
+    "id": 425,
+    "price": 13.69,
+    "isSold": false,
+    "screeningId": 42
+  },
+  {
+    "id": 426,
+    "price": 6.34,
+    "isSold": true,
+    "screeningId": 42
+  },
+  {
+    "id": 427,
+    "price": 12.81,
+    "isSold": false,
+    "screeningId": 42
+  },
+  {
+    "id": 428,
+    "price": 14.61,
+    "isSold": false,
+    "screeningId": 42
+  },
+  {
+    "id": 429,
+    "price": 10.4,
+    "isSold": true,
+    "screeningId": 42
+  },
+  {
+    "id": 430,
+    "price": 8.22,
+    "isSold": false,
+    "screeningId": 43
+  },
+  {
+    "id": 431,
+    "price": 14.4,
+    "isSold": false,
+    "screeningId": 43
+  },
+  {
+    "id": 432,
+    "price": 9.47,
+    "isSold": false,
+    "screeningId": 43
+  },
+  {
+    "id": 433,
+    "price": 12.53,
+    "isSold": false,
+    "screeningId": 43
+  },
+  {
+    "id": 434,
+    "price": 13.13,
+    "isSold": false,
+    "screeningId": 43
+  },
+  {
+    "id": 435,
+    "price": 7.26,
+    "isSold": false,
+    "screeningId": 43
+  },
+  {
+    "id": 436,
+    "price": 12.82,
+    "isSold": true,
+    "screeningId": 43
+  },
+  {
+    "id": 437,
+    "price": 10.5,
+    "isSold": false,
+    "screeningId": 43
+  },
+  {
+    "id": 438,
+    "price": 11.13,
+    "isSold": false,
+    "screeningId": 43
+  },
+  {
+    "id": 439,
+    "price": 14.01,
+    "isSold": false,
+    "screeningId": 43
+  },
+  {
+    "id": 440,
+    "price": 11.55,
+    "isSold": true,
+    "screeningId": 44
+  },
+  {
+    "id": 441,
+    "price": 13.16,
+    "isSold": false,
+    "screeningId": 44
+  },
+  {
+    "id": 442,
+    "price": 10.03,
+    "isSold": true,
+    "screeningId": 44
+  },
+  {
+    "id": 443,
+    "price": 5.16,
+    "isSold": true,
+    "screeningId": 44
+  },
+  {
+    "id": 444,
+    "price": 5.34,
+    "isSold": false,
+    "screeningId": 44
+  },
+  {
+    "id": 445,
+    "price": 11.95,
+    "isSold": false,
+    "screeningId": 44
+  },
+  {
+    "id": 446,
+    "price": 12.36,
+    "isSold": true,
+    "screeningId": 44
+  },
+  {
+    "id": 447,
+    "price": 13.09,
+    "isSold": true,
+    "screeningId": 44
+  },
+  {
+    "id": 448,
+    "price": 6.26,
+    "isSold": false,
+    "screeningId": 44
+  },
+  {
+    "id": 449,
+    "price": 8.49,
+    "isSold": false,
+    "screeningId": 44
+  },
+  {
+    "id": 450,
+    "price": 14.42,
+    "isSold": false,
+    "screeningId": 45
+  },
+  {
+    "id": 451,
+    "price": 13.76,
+    "isSold": false,
+    "screeningId": 45
+  },
+  {
+    "id": 452,
+    "price": 11.98,
+    "isSold": true,
+    "screeningId": 45
+  },
+  {
+    "id": 453,
+    "price": 8.47,
+    "isSold": true,
+    "screeningId": 45
+  },
+  {
+    "id": 454,
+    "price": 6.38,
+    "isSold": true,
+    "screeningId": 45
+  },
+  {
+    "id": 455,
+    "price": 11.12,
+    "isSold": true,
+    "screeningId": 45
+  },
+  {
+    "id": 456,
+    "price": 13.24,
+    "isSold": true,
+    "screeningId": 45
+  },
+  {
+    "id": 457,
+    "price": 7.23,
+    "isSold": false,
+    "screeningId": 45
+  },
+  {
+    "id": 458,
+    "price": 12.84,
+    "isSold": false,
+    "screeningId": 45
+  },
+  {
+    "id": 459,
+    "price": 6.41,
+    "isSold": false,
+    "screeningId": 45
+  },
+  {
+    "id": 460,
+    "price": 12.69,
+    "isSold": false,
+    "screeningId": 46
+  },
+  {
+    "id": 461,
+    "price": 10.59,
+    "isSold": false,
+    "screeningId": 46
+  },
+  {
+    "id": 462,
+    "price": 6.12,
+    "isSold": false,
+    "screeningId": 46
+  },
+  {
+    "id": 463,
+    "price": 5.61,
+    "isSold": false,
+    "screeningId": 46
+  },
+  {
+    "id": 464,
+    "price": 12.81,
+    "isSold": false,
+    "screeningId": 46
+  },
+  {
+    "id": 465,
+    "price": 7.67,
+    "isSold": true,
+    "screeningId": 46
+  },
+  {
+    "id": 466,
+    "price": 6.07,
+    "isSold": false,
+    "screeningId": 46
+  },
+  {
+    "id": 467,
+    "price": 11.7,
+    "isSold": true,
+    "screeningId": 46
+  },
+  {
+    "id": 468,
+    "price": 11.1,
+    "isSold": false,
+    "screeningId": 46
+  },
+  {
+    "id": 469,
+    "price": 6.24,
+    "isSold": true,
+    "screeningId": 46
+  },
+  {
+    "id": 470,
+    "price": 10.39,
+    "isSold": false,
+    "screeningId": 47
+  },
+  {
+    "id": 471,
+    "price": 10.65,
+    "isSold": false,
+    "screeningId": 47
+  },
+  {
+    "id": 472,
+    "price": 12.96,
+    "isSold": false,
+    "screeningId": 47
+  },
+  {
+    "id": 473,
+    "price": 10.21,
+    "isSold": true,
+    "screeningId": 47
+  },
+  {
+    "id": 474,
+    "price": 5.03,
+    "isSold": true,
+    "screeningId": 47
+  },
+  {
+    "id": 475,
+    "price": 13.07,
+    "isSold": true,
+    "screeningId": 47
+  },
+  {
+    "id": 476,
+    "price": 9.84,
+    "isSold": false,
+    "screeningId": 47
+  },
+  {
+    "id": 477,
+    "price": 10.84,
+    "isSold": true,
+    "screeningId": 47
+  },
+  {
+    "id": 478,
+    "price": 7.98,
+    "isSold": false,
+    "screeningId": 47
+  },
+  {
+    "id": 479,
+    "price": 9.81,
+    "isSold": true,
+    "screeningId": 47
+  },
+  {
+    "id": 480,
+    "price": 13.81,
+    "isSold": true,
+    "screeningId": 48
+  },
+  {
+    "id": 481,
+    "price": 13.6,
+    "isSold": true,
+    "screeningId": 48
+  },
+  {
+    "id": 482,
+    "price": 11.93,
+    "isSold": true,
+    "screeningId": 48
+  },
+  {
+    "id": 483,
+    "price": 6.75,
+    "isSold": true,
+    "screeningId": 48
+  },
+  {
+    "id": 484,
+    "price": 7.48,
+    "isSold": false,
+    "screeningId": 48
+  },
+  {
+    "id": 485,
+    "price": 6.86,
+    "isSold": true,
+    "screeningId": 48
+  },
+  {
+    "id": 486,
+    "price": 5.23,
+    "isSold": false,
+    "screeningId": 48
+  },
+  {
+    "id": 487,
+    "price": 8.05,
+    "isSold": false,
+    "screeningId": 48
+  },
+  {
+    "id": 488,
+    "price": 10.55,
+    "isSold": true,
+    "screeningId": 48
+  },
+  {
+    "id": 489,
+    "price": 6.67,
+    "isSold": true,
+    "screeningId": 48
+  },
+  {
+    "id": 490,
+    "price": 5.84,
+    "isSold": false,
+    "screeningId": 49
+  },
+  {
+    "id": 491,
+    "price": 6.68,
+    "isSold": false,
+    "screeningId": 49
+  },
+  {
+    "id": 492,
+    "price": 5.17,
+    "isSold": false,
+    "screeningId": 49
+  },
+  {
+    "id": 493,
+    "price": 7.96,
+    "isSold": false,
+    "screeningId": 49
+  },
+  {
+    "id": 494,
+    "price": 6.12,
+    "isSold": false,
+    "screeningId": 49
+  },
+  {
+    "id": 495,
+    "price": 12.86,
+    "isSold": false,
+    "screeningId": 49
+  },
+  {
+    "id": 496,
+    "price": 6.58,
+    "isSold": true,
+    "screeningId": 49
+  },
+  {
+    "id": 497,
+    "price": 7.71,
+    "isSold": false,
+    "screeningId": 49
+  },
+  {
+    "id": 498,
+    "price": 8.26,
+    "isSold": false,
+    "screeningId": 49
+  },
+  {
+    "id": 499,
+    "price": 11.63,
+    "isSold": false,
+    "screeningId": 49
+  },
+  {
+    "id": 500,
+    "price": 10.62,
+    "isSold": false,
+    "screeningId": 50
+  },
+  {
+    "id": 501,
+    "price": 11.47,
+    "isSold": false,
+    "screeningId": 50
+  },
+  {
+    "id": 502,
+    "price": 10.59,
+    "isSold": false,
+    "screeningId": 50
+  },
+  {
+    "id": 503,
+    "price": 7.58,
+    "isSold": true,
+    "screeningId": 50
+  },
+  {
+    "id": 504,
+    "price": 5.24,
+    "isSold": false,
+    "screeningId": 50
+  },
+  {
+    "id": 505,
+    "price": 6,
+    "isSold": false,
+    "screeningId": 50
+  },
+  {
+    "id": 506,
+    "price": 10.36,
+    "isSold": true,
+    "screeningId": 50
+  },
+  {
+    "id": 507,
+    "price": 12.08,
+    "isSold": true,
+    "screeningId": 50
+  },
+  {
+    "id": 508,
+    "price": 11.14,
+    "isSold": true,
+    "screeningId": 50
+  },
+  {
+    "id": 509,
+    "price": 8.25,
+    "isSold": true,
+    "screeningId": 50
+  },
+  {
+    "id": 510,
+    "price": 14.41,
+    "isSold": false,
+    "screeningId": 51
+  },
+  {
+    "id": 511,
+    "price": 14.08,
+    "isSold": true,
+    "screeningId": 51
+  },
+  {
+    "id": 512,
+    "price": 7.75,
+    "isSold": false,
+    "screeningId": 51
+  },
+  {
+    "id": 513,
+    "price": 13.08,
+    "isSold": false,
+    "screeningId": 51
+  },
+  {
+    "id": 514,
+    "price": 7.97,
+    "isSold": false,
+    "screeningId": 51
+  },
+  {
+    "id": 515,
+    "price": 10.65,
+    "isSold": false,
+    "screeningId": 51
+  },
+  {
+    "id": 516,
+    "price": 13.59,
+    "isSold": false,
+    "screeningId": 51
+  },
+  {
+    "id": 517,
+    "price": 12.53,
+    "isSold": false,
+    "screeningId": 51
+  },
+  {
+    "id": 518,
+    "price": 14.37,
+    "isSold": false,
+    "screeningId": 51
+  },
+  {
+    "id": 519,
+    "price": 14.66,
+    "isSold": false,
+    "screeningId": 51
+  },
+  {
+    "id": 520,
+    "price": 13.99,
+    "isSold": true,
+    "screeningId": 52
+  },
+  {
+    "id": 521,
+    "price": 12.37,
+    "isSold": true,
+    "screeningId": 52
+  },
+  {
+    "id": 522,
+    "price": 6.73,
+    "isSold": true,
+    "screeningId": 52
+  },
+  {
+    "id": 523,
+    "price": 14.99,
+    "isSold": true,
+    "screeningId": 52
+  },
+  {
+    "id": 524,
+    "price": 5.41,
+    "isSold": true,
+    "screeningId": 52
+  },
+  {
+    "id": 525,
+    "price": 10.18,
+    "isSold": false,
+    "screeningId": 52
+  },
+  {
+    "id": 526,
+    "price": 9.47,
+    "isSold": false,
+    "screeningId": 52
+  },
+  {
+    "id": 527,
+    "price": 12.88,
+    "isSold": false,
+    "screeningId": 52
+  },
+  {
+    "id": 528,
+    "price": 14.81,
+    "isSold": true,
+    "screeningId": 52
+  },
+  {
+    "id": 529,
+    "price": 5.25,
+    "isSold": true,
+    "screeningId": 52
+  },
+  {
+    "id": 530,
+    "price": 10.83,
+    "isSold": false,
+    "screeningId": 53
+  },
+  {
+    "id": 531,
+    "price": 12.92,
+    "isSold": false,
+    "screeningId": 53
+  },
+  {
+    "id": 532,
+    "price": 8.24,
+    "isSold": false,
+    "screeningId": 53
+  },
+  {
+    "id": 533,
+    "price": 14.27,
+    "isSold": true,
+    "screeningId": 53
+  },
+  {
+    "id": 534,
+    "price": 6.84,
+    "isSold": true,
+    "screeningId": 53
+  },
+  {
+    "id": 535,
+    "price": 5.84,
+    "isSold": true,
+    "screeningId": 53
+  },
+  {
+    "id": 536,
+    "price": 11.97,
+    "isSold": true,
+    "screeningId": 53
+  },
+  {
+    "id": 537,
+    "price": 9.4,
+    "isSold": false,
+    "screeningId": 53
+  },
+  {
+    "id": 538,
+    "price": 8.73,
+    "isSold": true,
+    "screeningId": 53
+  },
+  {
+    "id": 539,
+    "price": 7.74,
+    "isSold": true,
+    "screeningId": 53
+  },
+  {
+    "id": 540,
+    "price": 9.49,
+    "isSold": true,
+    "screeningId": 54
+  },
+  {
+    "id": 541,
+    "price": 11.34,
+    "isSold": true,
+    "screeningId": 54
+  },
+  {
+    "id": 542,
+    "price": 13.07,
+    "isSold": false,
+    "screeningId": 54
+  },
+  {
+    "id": 543,
+    "price": 5.42,
+    "isSold": true,
+    "screeningId": 54
+  },
+  {
+    "id": 544,
+    "price": 5.77,
+    "isSold": false,
+    "screeningId": 54
+  },
+  {
+    "id": 545,
+    "price": 5.31,
+    "isSold": true,
+    "screeningId": 54
+  },
+  {
+    "id": 546,
+    "price": 5.35,
+    "isSold": true,
+    "screeningId": 54
+  },
+  {
+    "id": 547,
+    "price": 7.93,
+    "isSold": false,
+    "screeningId": 54
+  },
+  {
+    "id": 548,
+    "price": 6.58,
+    "isSold": false,
+    "screeningId": 54
+  },
+  {
+    "id": 549,
+    "price": 5.04,
+    "isSold": false,
+    "screeningId": 54
+  },
+  {
+    "id": 550,
+    "price": 13.93,
+    "isSold": false,
+    "screeningId": 55
+  },
+  {
+    "id": 551,
+    "price": 13.65,
+    "isSold": true,
+    "screeningId": 55
+  },
+  {
+    "id": 552,
+    "price": 9.33,
+    "isSold": true,
+    "screeningId": 55
+  },
+  {
+    "id": 553,
+    "price": 5.31,
+    "isSold": false,
+    "screeningId": 55
+  },
+  {
+    "id": 554,
+    "price": 11.59,
+    "isSold": false,
+    "screeningId": 55
+  },
+  {
+    "id": 555,
+    "price": 12.8,
+    "isSold": true,
+    "screeningId": 55
+  },
+  {
+    "id": 556,
+    "price": 5.54,
+    "isSold": false,
+    "screeningId": 55
+  },
+  {
+    "id": 557,
+    "price": 10.92,
+    "isSold": false,
+    "screeningId": 55
+  },
+  {
+    "id": 558,
+    "price": 12.89,
+    "isSold": true,
+    "screeningId": 55
+  },
+  {
+    "id": 559,
+    "price": 10.01,
+    "isSold": true,
+    "screeningId": 55
+  },
+  {
+    "id": 560,
+    "price": 12.03,
+    "isSold": true,
+    "screeningId": 56
+  },
+  {
+    "id": 561,
+    "price": 12.33,
+    "isSold": true,
+    "screeningId": 56
+  },
+  {
+    "id": 562,
+    "price": 12.07,
+    "isSold": false,
+    "screeningId": 56
+  },
+  {
+    "id": 563,
+    "price": 7.67,
+    "isSold": false,
+    "screeningId": 56
+  },
+  {
+    "id": 564,
+    "price": 12.84,
+    "isSold": false,
+    "screeningId": 56
+  },
+  {
+    "id": 565,
+    "price": 7.83,
+    "isSold": true,
+    "screeningId": 56
+  },
+  {
+    "id": 566,
+    "price": 5.79,
+    "isSold": false,
+    "screeningId": 56
+  },
+  {
+    "id": 567,
+    "price": 14.77,
+    "isSold": true,
+    "screeningId": 56
+  },
+  {
+    "id": 568,
+    "price": 10.17,
+    "isSold": false,
+    "screeningId": 56
+  },
+  {
+    "id": 569,
+    "price": 7.2,
+    "isSold": false,
+    "screeningId": 56
+  },
+  {
+    "id": 570,
+    "price": 13.08,
+    "isSold": true,
+    "screeningId": 57
+  },
+  {
+    "id": 571,
+    "price": 6.36,
+    "isSold": false,
+    "screeningId": 57
+  },
+  {
+    "id": 572,
+    "price": 12.6,
+    "isSold": false,
+    "screeningId": 57
+  },
+  {
+    "id": 573,
+    "price": 5.04,
+    "isSold": true,
+    "screeningId": 57
+  },
+  {
+    "id": 574,
+    "price": 13.64,
+    "isSold": false,
+    "screeningId": 57
+  },
+  {
+    "id": 575,
+    "price": 5.76,
+    "isSold": false,
+    "screeningId": 57
+  },
+  {
+    "id": 576,
+    "price": 9.67,
+    "isSold": true,
+    "screeningId": 57
+  },
+  {
+    "id": 577,
+    "price": 12.98,
+    "isSold": false,
+    "screeningId": 57
+  },
+  {
+    "id": 578,
+    "price": 8.54,
+    "isSold": false,
+    "screeningId": 57
+  },
+  {
+    "id": 579,
+    "price": 7.79,
+    "isSold": false,
+    "screeningId": 57
+  },
+  {
+    "id": 580,
+    "price": 13.08,
+    "isSold": false,
+    "screeningId": 58
+  },
+  {
+    "id": 581,
+    "price": 12.97,
+    "isSold": false,
+    "screeningId": 58
+  },
+  {
+    "id": 582,
+    "price": 9.05,
+    "isSold": true,
+    "screeningId": 58
+  },
+  {
+    "id": 583,
+    "price": 7.74,
+    "isSold": false,
+    "screeningId": 58
+  },
+  {
+    "id": 584,
+    "price": 5.38,
+    "isSold": false,
+    "screeningId": 58
+  },
+  {
+    "id": 585,
+    "price": 11.78,
+    "isSold": true,
+    "screeningId": 58
+  },
+  {
+    "id": 586,
+    "price": 14.99,
+    "isSold": false,
+    "screeningId": 58
+  },
+  {
+    "id": 587,
+    "price": 12.27,
+    "isSold": false,
+    "screeningId": 58
+  },
+  {
+    "id": 588,
+    "price": 5.22,
+    "isSold": true,
+    "screeningId": 58
+  },
+  {
+    "id": 589,
+    "price": 14.85,
+    "isSold": false,
+    "screeningId": 58
+  },
+  {
+    "id": 590,
+    "price": 5,
+    "isSold": true,
+    "screeningId": 59
+  },
+  {
+    "id": 591,
+    "price": 12.68,
+    "isSold": true,
+    "screeningId": 59
+  },
+  {
+    "id": 592,
+    "price": 11.85,
+    "isSold": false,
+    "screeningId": 59
+  },
+  {
+    "id": 593,
+    "price": 11,
+    "isSold": true,
+    "screeningId": 59
+  },
+  {
+    "id": 594,
+    "price": 7.8,
+    "isSold": true,
+    "screeningId": 59
+  },
+  {
+    "id": 595,
+    "price": 6.16,
+    "isSold": true,
+    "screeningId": 59
+  },
+  {
+    "id": 596,
+    "price": 6.95,
+    "isSold": true,
+    "screeningId": 59
+  },
+  {
+    "id": 597,
+    "price": 10.54,
+    "isSold": false,
+    "screeningId": 59
+  },
+  {
+    "id": 598,
+    "price": 8.28,
+    "isSold": true,
+    "screeningId": 59
+  },
+  {
+    "id": 599,
+    "price": 9.82,
+    "isSold": true,
+    "screeningId": 59
+  },
+  {
+    "id": 600,
+    "price": 13.2,
+    "isSold": false,
+    "screeningId": 60
+  },
+  {
+    "id": 601,
+    "price": 7.7,
+    "isSold": true,
+    "screeningId": 60
+  },
+  {
+    "id": 602,
+    "price": 13.29,
+    "isSold": true,
+    "screeningId": 60
+  },
+  {
+    "id": 603,
+    "price": 8.32,
+    "isSold": false,
+    "screeningId": 60
+  },
+  {
+    "id": 604,
+    "price": 12.04,
+    "isSold": true,
+    "screeningId": 60
+  },
+  {
+    "id": 605,
+    "price": 8.04,
+    "isSold": true,
+    "screeningId": 60
+  },
+  {
+    "id": 606,
+    "price": 14.41,
+    "isSold": false,
+    "screeningId": 60
+  },
+  {
+    "id": 607,
+    "price": 10.14,
+    "isSold": false,
+    "screeningId": 60
+  },
+  {
+    "id": 608,
+    "price": 7.9,
+    "isSold": true,
+    "screeningId": 60
+  },
+  {
+    "id": 609,
+    "price": 7.54,
+    "isSold": false,
+    "screeningId": 60
+  },
+  {
+    "id": 610,
+    "price": 7.52,
+    "isSold": false,
+    "screeningId": 61
+  },
+  {
+    "id": 611,
+    "price": 11.71,
+    "isSold": true,
+    "screeningId": 61
+  },
+  {
+    "id": 612,
+    "price": 13.68,
+    "isSold": false,
+    "screeningId": 61
+  },
+  {
+    "id": 613,
+    "price": 11.4,
+    "isSold": true,
+    "screeningId": 61
+  },
+  {
+    "id": 614,
+    "price": 7.69,
+    "isSold": false,
+    "screeningId": 61
+  },
+  {
+    "id": 615,
+    "price": 14.93,
+    "isSold": false,
+    "screeningId": 61
+  },
+  {
+    "id": 616,
+    "price": 14.81,
+    "isSold": false,
+    "screeningId": 61
+  },
+  {
+    "id": 617,
+    "price": 11.15,
+    "isSold": false,
+    "screeningId": 61
+  },
+  {
+    "id": 618,
+    "price": 7.75,
+    "isSold": true,
+    "screeningId": 61
+  },
+  {
+    "id": 619,
+    "price": 6.03,
+    "isSold": false,
+    "screeningId": 61
+  },
+  {
+    "id": 620,
+    "price": 12.58,
+    "isSold": true,
+    "screeningId": 62
+  },
+  {
+    "id": 621,
+    "price": 13.6,
+    "isSold": true,
+    "screeningId": 62
+  },
+  {
+    "id": 622,
+    "price": 8.07,
+    "isSold": false,
+    "screeningId": 62
+  },
+  {
+    "id": 623,
+    "price": 15,
+    "isSold": false,
+    "screeningId": 62
+  },
+  {
+    "id": 624,
+    "price": 13.74,
+    "isSold": true,
+    "screeningId": 62
+  },
+  {
+    "id": 625,
+    "price": 5.12,
+    "isSold": true,
+    "screeningId": 62
+  },
+  {
+    "id": 626,
+    "price": 9.18,
+    "isSold": false,
+    "screeningId": 62
+  },
+  {
+    "id": 627,
+    "price": 5.06,
+    "isSold": false,
+    "screeningId": 62
+  },
+  {
+    "id": 628,
+    "price": 11.58,
+    "isSold": false,
+    "screeningId": 62
+  },
+  {
+    "id": 629,
+    "price": 7.51,
+    "isSold": false,
+    "screeningId": 62
+  },
+  {
+    "id": 630,
+    "price": 12.56,
+    "isSold": true,
+    "screeningId": 63
+  },
+  {
+    "id": 631,
+    "price": 6.69,
+    "isSold": false,
+    "screeningId": 63
+  },
+  {
+    "id": 632,
+    "price": 9.94,
+    "isSold": false,
+    "screeningId": 63
+  },
+  {
+    "id": 633,
+    "price": 10.96,
+    "isSold": true,
+    "screeningId": 63
+  },
+  {
+    "id": 634,
+    "price": 5.23,
+    "isSold": false,
+    "screeningId": 63
+  },
+  {
+    "id": 635,
+    "price": 12.57,
+    "isSold": false,
+    "screeningId": 63
+  },
+  {
+    "id": 636,
+    "price": 7.77,
+    "isSold": true,
+    "screeningId": 63
+  },
+  {
+    "id": 637,
+    "price": 6.92,
+    "isSold": false,
+    "screeningId": 63
+  },
+  {
+    "id": 638,
+    "price": 14.34,
+    "isSold": true,
+    "screeningId": 63
+  },
+  {
+    "id": 639,
+    "price": 13.29,
+    "isSold": true,
+    "screeningId": 63
+  },
+  {
+    "id": 640,
+    "price": 6.96,
+    "isSold": true,
+    "screeningId": 64
+  },
+  {
+    "id": 641,
+    "price": 8.22,
+    "isSold": false,
+    "screeningId": 64
+  },
+  {
+    "id": 642,
+    "price": 8.26,
+    "isSold": true,
+    "screeningId": 64
+  },
+  {
+    "id": 643,
+    "price": 9.33,
+    "isSold": false,
+    "screeningId": 64
+  },
+  {
+    "id": 644,
+    "price": 10.32,
+    "isSold": false,
+    "screeningId": 64
+  },
+  {
+    "id": 645,
+    "price": 9.88,
+    "isSold": true,
+    "screeningId": 64
+  },
+  {
+    "id": 646,
+    "price": 10.53,
+    "isSold": true,
+    "screeningId": 64
+  },
+  {
+    "id": 647,
+    "price": 14.57,
+    "isSold": true,
+    "screeningId": 64
+  },
+  {
+    "id": 648,
+    "price": 10.95,
+    "isSold": true,
+    "screeningId": 64
+  },
+  {
+    "id": 649,
+    "price": 11.92,
+    "isSold": false,
+    "screeningId": 64
+  },
+  {
+    "id": 650,
+    "price": 13.68,
+    "isSold": true,
+    "screeningId": 65
+  },
+  {
+    "id": 651,
+    "price": 5.55,
+    "isSold": false,
+    "screeningId": 65
+  },
+  {
+    "id": 652,
+    "price": 5.93,
+    "isSold": false,
+    "screeningId": 65
+  },
+  {
+    "id": 653,
+    "price": 14.54,
+    "isSold": false,
+    "screeningId": 65
+  },
+  {
+    "id": 654,
+    "price": 14.18,
+    "isSold": true,
+    "screeningId": 65
+  },
+  {
+    "id": 655,
+    "price": 13.89,
+    "isSold": false,
+    "screeningId": 65
+  },
+  {
+    "id": 656,
+    "price": 6.65,
+    "isSold": true,
+    "screeningId": 65
+  },
+  {
+    "id": 657,
+    "price": 8.84,
+    "isSold": true,
+    "screeningId": 65
+  },
+  {
+    "id": 658,
+    "price": 9.7,
+    "isSold": false,
+    "screeningId": 65
+  },
+  {
+    "id": 659,
+    "price": 6.94,
+    "isSold": true,
+    "screeningId": 65
+  },
+  {
+    "id": 660,
+    "price": 7.9,
+    "isSold": false,
+    "screeningId": 66
+  },
+  {
+    "id": 661,
+    "price": 9.82,
+    "isSold": false,
+    "screeningId": 66
+  },
+  {
+    "id": 662,
+    "price": 5.34,
+    "isSold": true,
+    "screeningId": 66
+  },
+  {
+    "id": 663,
+    "price": 6.33,
+    "isSold": true,
+    "screeningId": 66
+  },
+  {
+    "id": 664,
+    "price": 5.36,
+    "isSold": true,
+    "screeningId": 66
+  },
+  {
+    "id": 665,
+    "price": 8.12,
+    "isSold": true,
+    "screeningId": 66
+  },
+  {
+    "id": 666,
+    "price": 6.12,
+    "isSold": false,
+    "screeningId": 66
+  },
+  {
+    "id": 667,
+    "price": 5.2,
+    "isSold": true,
+    "screeningId": 66
+  },
+  {
+    "id": 668,
+    "price": 5.69,
+    "isSold": true,
+    "screeningId": 66
+  },
+  {
+    "id": 669,
+    "price": 10.69,
+    "isSold": false,
+    "screeningId": 66
+  },
+  {
+    "id": 670,
+    "price": 14.51,
+    "isSold": true,
+    "screeningId": 67
+  },
+  {
+    "id": 671,
+    "price": 8.2,
+    "isSold": false,
+    "screeningId": 67
+  },
+  {
+    "id": 672,
+    "price": 8.54,
+    "isSold": false,
+    "screeningId": 67
+  },
+  {
+    "id": 673,
+    "price": 13.35,
+    "isSold": false,
+    "screeningId": 67
+  },
+  {
+    "id": 674,
+    "price": 13.85,
+    "isSold": true,
+    "screeningId": 67
+  },
+  {
+    "id": 675,
+    "price": 5.59,
+    "isSold": true,
+    "screeningId": 67
+  },
+  {
+    "id": 676,
+    "price": 14.05,
+    "isSold": false,
+    "screeningId": 67
+  },
+  {
+    "id": 677,
+    "price": 12.6,
+    "isSold": true,
+    "screeningId": 67
+  },
+  {
+    "id": 678,
+    "price": 9.56,
+    "isSold": false,
+    "screeningId": 67
+  },
+  {
+    "id": 679,
+    "price": 11,
+    "isSold": false,
+    "screeningId": 67
+  },
+  {
+    "id": 680,
+    "price": 8.81,
+    "isSold": false,
+    "screeningId": 68
+  },
+  {
+    "id": 681,
+    "price": 12.01,
+    "isSold": false,
+    "screeningId": 68
+  },
+  {
+    "id": 682,
+    "price": 14.07,
+    "isSold": false,
+    "screeningId": 68
+  },
+  {
+    "id": 683,
+    "price": 6.55,
+    "isSold": true,
+    "screeningId": 68
+  },
+  {
+    "id": 684,
+    "price": 11.39,
+    "isSold": true,
+    "screeningId": 68
+  },
+  {
+    "id": 685,
+    "price": 10.62,
+    "isSold": true,
+    "screeningId": 68
+  },
+  {
+    "id": 686,
+    "price": 14.29,
+    "isSold": false,
+    "screeningId": 68
+  },
+  {
+    "id": 687,
+    "price": 9.15,
+    "isSold": false,
+    "screeningId": 68
+  },
+  {
+    "id": 688,
+    "price": 7.27,
+    "isSold": false,
+    "screeningId": 68
+  },
+  {
+    "id": 689,
+    "price": 6.41,
+    "isSold": false,
+    "screeningId": 68
+  },
+  {
+    "id": 690,
+    "price": 9.35,
+    "isSold": false,
+    "screeningId": 69
+  },
+  {
+    "id": 691,
+    "price": 11.17,
+    "isSold": false,
+    "screeningId": 69
+  },
+  {
+    "id": 692,
+    "price": 5.32,
+    "isSold": true,
+    "screeningId": 69
+  },
+  {
+    "id": 693,
+    "price": 6.7,
+    "isSold": false,
+    "screeningId": 69
+  },
+  {
+    "id": 694,
+    "price": 7.65,
+    "isSold": false,
+    "screeningId": 69
+  },
+  {
+    "id": 695,
+    "price": 7.52,
+    "isSold": true,
+    "screeningId": 69
+  },
+  {
+    "id": 696,
+    "price": 9.24,
+    "isSold": true,
+    "screeningId": 69
+  },
+  {
+    "id": 697,
+    "price": 5.02,
+    "isSold": true,
+    "screeningId": 69
+  },
+  {
+    "id": 698,
+    "price": 7.57,
+    "isSold": false,
+    "screeningId": 69
+  },
+  {
+    "id": 699,
+    "price": 7.33,
+    "isSold": false,
+    "screeningId": 69
+  },
+  {
+    "id": 700,
+    "price": 5.57,
+    "isSold": false,
+    "screeningId": 70
+  },
+  {
+    "id": 701,
+    "price": 5.71,
+    "isSold": false,
+    "screeningId": 70
+  },
+  {
+    "id": 702,
+    "price": 14.14,
+    "isSold": false,
+    "screeningId": 70
+  },
+  {
+    "id": 703,
+    "price": 9.53,
+    "isSold": true,
+    "screeningId": 70
+  },
+  {
+    "id": 704,
+    "price": 13.35,
+    "isSold": true,
+    "screeningId": 70
+  },
+  {
+    "id": 705,
+    "price": 12.36,
+    "isSold": true,
+    "screeningId": 70
+  },
+  {
+    "id": 706,
+    "price": 11.62,
+    "isSold": true,
+    "screeningId": 70
+  },
+  {
+    "id": 707,
+    "price": 8.27,
+    "isSold": true,
+    "screeningId": 70
+  },
+  {
+    "id": 708,
+    "price": 14.58,
+    "isSold": false,
+    "screeningId": 70
+  },
+  {
+    "id": 709,
+    "price": 10.99,
+    "isSold": true,
+    "screeningId": 70
+  },
+  {
+    "id": 710,
+    "price": 7.96,
+    "isSold": true,
+    "screeningId": 71
+  },
+  {
+    "id": 711,
+    "price": 9.45,
+    "isSold": false,
+    "screeningId": 71
+  },
+  {
+    "id": 712,
+    "price": 13.93,
+    "isSold": true,
+    "screeningId": 71
+  },
+  {
+    "id": 713,
+    "price": 12.6,
+    "isSold": true,
+    "screeningId": 71
+  },
+  {
+    "id": 714,
+    "price": 12.73,
+    "isSold": true,
+    "screeningId": 71
+  },
+  {
+    "id": 715,
+    "price": 5.11,
+    "isSold": true,
+    "screeningId": 71
+  },
+  {
+    "id": 716,
+    "price": 13.75,
+    "isSold": true,
+    "screeningId": 71
+  },
+  {
+    "id": 717,
+    "price": 13.34,
+    "isSold": false,
+    "screeningId": 71
+  },
+  {
+    "id": 718,
+    "price": 14.54,
+    "isSold": false,
+    "screeningId": 71
+  },
+  {
+    "id": 719,
+    "price": 7.83,
+    "isSold": false,
+    "screeningId": 71
+  },
+  {
+    "id": 720,
+    "price": 5.68,
+    "isSold": true,
+    "screeningId": 72
+  },
+  {
+    "id": 721,
+    "price": 11.86,
+    "isSold": true,
+    "screeningId": 72
+  },
+  {
+    "id": 722,
+    "price": 8.26,
+    "isSold": true,
+    "screeningId": 72
+  },
+  {
+    "id": 723,
+    "price": 5.81,
+    "isSold": true,
+    "screeningId": 72
+  },
+  {
+    "id": 724,
+    "price": 7.58,
+    "isSold": false,
+    "screeningId": 72
+  },
+  {
+    "id": 725,
+    "price": 10.8,
+    "isSold": true,
+    "screeningId": 72
+  },
+  {
+    "id": 726,
+    "price": 5.71,
+    "isSold": true,
+    "screeningId": 72
+  },
+  {
+    "id": 727,
+    "price": 9.95,
+    "isSold": false,
+    "screeningId": 72
+  },
+  {
+    "id": 728,
+    "price": 9.16,
+    "isSold": true,
+    "screeningId": 72
+  },
+  {
+    "id": 729,
+    "price": 6.73,
+    "isSold": true,
+    "screeningId": 72
+  },
+  {
+    "id": 730,
+    "price": 12.3,
+    "isSold": false,
+    "screeningId": 73
+  },
+  {
+    "id": 731,
+    "price": 13.06,
+    "isSold": false,
+    "screeningId": 73
+  },
+  {
+    "id": 732,
+    "price": 8,
+    "isSold": false,
+    "screeningId": 73
+  },
+  {
+    "id": 733,
+    "price": 6.53,
+    "isSold": false,
+    "screeningId": 73
+  },
+  {
+    "id": 734,
+    "price": 7.75,
+    "isSold": true,
+    "screeningId": 73
+  },
+  {
+    "id": 735,
+    "price": 7.41,
+    "isSold": false,
+    "screeningId": 73
+  },
+  {
+    "id": 736,
+    "price": 7.74,
+    "isSold": true,
+    "screeningId": 73
+  },
+  {
+    "id": 737,
+    "price": 13.96,
+    "isSold": false,
+    "screeningId": 73
+  },
+  {
+    "id": 738,
+    "price": 10.93,
+    "isSold": false,
+    "screeningId": 73
+  },
+  {
+    "id": 739,
+    "price": 13.32,
+    "isSold": true,
+    "screeningId": 73
+  },
+  {
+    "id": 740,
+    "price": 5.99,
+    "isSold": true,
+    "screeningId": 74
+  },
+  {
+    "id": 741,
+    "price": 10.68,
+    "isSold": false,
+    "screeningId": 74
+  },
+  {
+    "id": 742,
+    "price": 13.33,
+    "isSold": false,
+    "screeningId": 74
+  },
+  {
+    "id": 743,
+    "price": 5.48,
+    "isSold": false,
+    "screeningId": 74
+  },
+  {
+    "id": 744,
+    "price": 9.81,
+    "isSold": false,
+    "screeningId": 74
+  },
+  {
+    "id": 745,
+    "price": 10.05,
+    "isSold": false,
+    "screeningId": 74
+  },
+  {
+    "id": 746,
+    "price": 7.41,
+    "isSold": false,
+    "screeningId": 74
+  },
+  {
+    "id": 747,
+    "price": 14.15,
+    "isSold": false,
+    "screeningId": 74
+  },
+  {
+    "id": 748,
+    "price": 12.59,
+    "isSold": true,
+    "screeningId": 74
+  },
+  {
+    "id": 749,
+    "price": 6.07,
+    "isSold": false,
+    "screeningId": 74
+  },
+  {
+    "id": 750,
+    "price": 10.16,
+    "isSold": true,
+    "screeningId": 75
+  },
+  {
+    "id": 751,
+    "price": 12.06,
+    "isSold": true,
+    "screeningId": 75
+  },
+  {
+    "id": 752,
+    "price": 8.39,
+    "isSold": true,
+    "screeningId": 75
+  },
+  {
+    "id": 753,
+    "price": 8.36,
+    "isSold": false,
+    "screeningId": 75
+  },
+  {
+    "id": 754,
+    "price": 14.2,
+    "isSold": false,
+    "screeningId": 75
+  },
+  {
+    "id": 755,
+    "price": 14.2,
+    "isSold": true,
+    "screeningId": 75
+  },
+  {
+    "id": 756,
+    "price": 11.78,
+    "isSold": false,
+    "screeningId": 75
+  },
+  {
+    "id": 757,
+    "price": 7.64,
+    "isSold": true,
+    "screeningId": 75
+  },
+  {
+    "id": 758,
+    "price": 10.09,
+    "isSold": true,
+    "screeningId": 75
+  },
+  {
+    "id": 759,
+    "price": 7.39,
+    "isSold": true,
+    "screeningId": 75
+  },
+  {
+    "id": 760,
+    "price": 12.87,
+    "isSold": false,
+    "screeningId": 76
+  },
+  {
+    "id": 761,
+    "price": 6.63,
+    "isSold": true,
+    "screeningId": 76
+  },
+  {
+    "id": 762,
+    "price": 15,
+    "isSold": true,
+    "screeningId": 76
+  },
+  {
+    "id": 763,
+    "price": 8.12,
+    "isSold": false,
+    "screeningId": 76
+  },
+  {
+    "id": 764,
+    "price": 12.88,
+    "isSold": true,
+    "screeningId": 76
+  },
+  {
+    "id": 765,
+    "price": 13.67,
+    "isSold": true,
+    "screeningId": 76
+  },
+  {
+    "id": 766,
+    "price": 8.16,
+    "isSold": false,
+    "screeningId": 76
+  },
+  {
+    "id": 767,
+    "price": 5.43,
+    "isSold": false,
+    "screeningId": 76
+  },
+  {
+    "id": 768,
+    "price": 5.11,
+    "isSold": true,
+    "screeningId": 76
+  },
+  {
+    "id": 769,
+    "price": 12.11,
+    "isSold": false,
+    "screeningId": 76
+  },
+  {
+    "id": 770,
+    "price": 9.32,
+    "isSold": true,
+    "screeningId": 77
+  },
+  {
+    "id": 771,
+    "price": 13.96,
+    "isSold": false,
+    "screeningId": 77
+  },
+  {
+    "id": 772,
+    "price": 13.04,
+    "isSold": true,
+    "screeningId": 77
+  },
+  {
+    "id": 773,
+    "price": 5.23,
+    "isSold": false,
+    "screeningId": 77
+  },
+  {
+    "id": 774,
+    "price": 10.85,
+    "isSold": true,
+    "screeningId": 77
+  },
+  {
+    "id": 775,
+    "price": 10.04,
+    "isSold": false,
+    "screeningId": 77
+  },
+  {
+    "id": 776,
+    "price": 9.24,
+    "isSold": true,
+    "screeningId": 77
+  },
+  {
+    "id": 777,
+    "price": 6.51,
+    "isSold": false,
+    "screeningId": 77
+  },
+  {
+    "id": 778,
+    "price": 5.94,
+    "isSold": true,
+    "screeningId": 77
+  },
+  {
+    "id": 779,
+    "price": 10.94,
+    "isSold": false,
+    "screeningId": 77
+  },
+  {
+    "id": 780,
+    "price": 10.53,
+    "isSold": false,
+    "screeningId": 78
+  },
+  {
+    "id": 781,
+    "price": 14.03,
+    "isSold": false,
+    "screeningId": 78
+  },
+  {
+    "id": 782,
+    "price": 11.75,
+    "isSold": false,
+    "screeningId": 78
+  },
+  {
+    "id": 783,
+    "price": 6,
+    "isSold": true,
+    "screeningId": 78
+  },
+  {
+    "id": 784,
+    "price": 10.66,
+    "isSold": false,
+    "screeningId": 78
+  },
+  {
+    "id": 785,
+    "price": 10.08,
+    "isSold": true,
+    "screeningId": 78
+  },
+  {
+    "id": 786,
+    "price": 8.61,
+    "isSold": false,
+    "screeningId": 78
+  },
+  {
+    "id": 787,
+    "price": 7.25,
+    "isSold": true,
+    "screeningId": 78
+  },
+  {
+    "id": 788,
+    "price": 14.7,
+    "isSold": true,
+    "screeningId": 78
+  },
+  {
+    "id": 789,
+    "price": 10.26,
+    "isSold": true,
+    "screeningId": 78
+  },
+  {
+    "id": 790,
+    "price": 14.93,
+    "isSold": true,
+    "screeningId": 79
+  },
+  {
+    "id": 791,
+    "price": 13.9,
+    "isSold": true,
+    "screeningId": 79
+  },
+  {
+    "id": 792,
+    "price": 12.97,
+    "isSold": false,
+    "screeningId": 79
+  },
+  {
+    "id": 793,
+    "price": 6.37,
+    "isSold": true,
+    "screeningId": 79
+  },
+  {
+    "id": 794,
+    "price": 8.49,
+    "isSold": true,
+    "screeningId": 79
+  },
+  {
+    "id": 795,
+    "price": 8,
+    "isSold": false,
+    "screeningId": 79
+  },
+  {
+    "id": 796,
+    "price": 10.88,
+    "isSold": false,
+    "screeningId": 79
+  },
+  {
+    "id": 797,
+    "price": 8.85,
+    "isSold": false,
+    "screeningId": 79
+  },
+  {
+    "id": 798,
+    "price": 10.98,
+    "isSold": false,
+    "screeningId": 79
+  },
+  {
+    "id": 799,
+    "price": 7.41,
+    "isSold": true,
+    "screeningId": 79
+  },
+  {
+    "id": 800,
+    "price": 7.78,
+    "isSold": true,
+    "screeningId": 80
+  },
+  {
+    "id": 801,
+    "price": 8.36,
+    "isSold": false,
+    "screeningId": 80
+  },
+  {
+    "id": 802,
+    "price": 6.01,
+    "isSold": false,
+    "screeningId": 80
+  },
+  {
+    "id": 803,
+    "price": 14.73,
+    "isSold": false,
+    "screeningId": 80
+  },
+  {
+    "id": 804,
+    "price": 11.51,
+    "isSold": true,
+    "screeningId": 80
+  },
+  {
+    "id": 805,
+    "price": 7.32,
+    "isSold": true,
+    "screeningId": 80
+  },
+  {
+    "id": 806,
+    "price": 11.72,
+    "isSold": true,
+    "screeningId": 80
+  },
+  {
+    "id": 807,
+    "price": 8.87,
+    "isSold": true,
+    "screeningId": 80
+  },
+  {
+    "id": 808,
+    "price": 8.95,
+    "isSold": true,
+    "screeningId": 80
+  },
+  {
+    "id": 809,
+    "price": 14.34,
+    "isSold": true,
+    "screeningId": 80
+  },
+  {
+    "id": 810,
+    "price": 8.21,
+    "isSold": false,
+    "screeningId": 81
+  },
+  {
+    "id": 811,
+    "price": 6.01,
+    "isSold": true,
+    "screeningId": 81
+  },
+  {
+    "id": 812,
+    "price": 10.8,
+    "isSold": false,
+    "screeningId": 81
+  },
+  {
+    "id": 813,
+    "price": 12.61,
+    "isSold": true,
+    "screeningId": 81
+  },
+  {
+    "id": 814,
+    "price": 14.03,
+    "isSold": true,
+    "screeningId": 81
+  },
+  {
+    "id": 815,
+    "price": 10.26,
+    "isSold": true,
+    "screeningId": 81
+  },
+  {
+    "id": 816,
+    "price": 7.96,
+    "isSold": false,
+    "screeningId": 81
+  },
+  {
+    "id": 817,
+    "price": 9.68,
+    "isSold": true,
+    "screeningId": 81
+  },
+  {
+    "id": 818,
+    "price": 6.28,
+    "isSold": true,
+    "screeningId": 81
+  },
+  {
+    "id": 819,
+    "price": 12.87,
+    "isSold": true,
+    "screeningId": 81
+  },
+  {
+    "id": 820,
+    "price": 5.8,
+    "isSold": false,
+    "screeningId": 82
+  },
+  {
+    "id": 821,
+    "price": 12.63,
+    "isSold": true,
+    "screeningId": 82
+  },
+  {
+    "id": 822,
+    "price": 9.44,
+    "isSold": false,
+    "screeningId": 82
+  },
+  {
+    "id": 823,
+    "price": 14.45,
+    "isSold": true,
+    "screeningId": 82
+  },
+  {
+    "id": 824,
+    "price": 5.58,
+    "isSold": true,
+    "screeningId": 82
+  },
+  {
+    "id": 825,
+    "price": 7.3,
+    "isSold": false,
+    "screeningId": 82
+  },
+  {
+    "id": 826,
+    "price": 10.92,
+    "isSold": false,
+    "screeningId": 82
+  },
+  {
+    "id": 827,
+    "price": 5.37,
+    "isSold": false,
+    "screeningId": 82
+  },
+  {
+    "id": 828,
+    "price": 5.26,
+    "isSold": false,
+    "screeningId": 82
+  },
+  {
+    "id": 829,
+    "price": 14.32,
+    "isSold": false,
+    "screeningId": 82
+  },
+  {
+    "id": 830,
+    "price": 6.25,
+    "isSold": true,
+    "screeningId": 83
+  },
+  {
+    "id": 831,
+    "price": 6.53,
+    "isSold": false,
+    "screeningId": 83
+  },
+  {
+    "id": 832,
+    "price": 8.19,
+    "isSold": true,
+    "screeningId": 83
+  },
+  {
+    "id": 833,
+    "price": 11.13,
+    "isSold": true,
+    "screeningId": 83
+  },
+  {
+    "id": 834,
+    "price": 13.13,
+    "isSold": true,
+    "screeningId": 83
+  },
+  {
+    "id": 835,
+    "price": 11.49,
+    "isSold": false,
+    "screeningId": 83
+  },
+  {
+    "id": 836,
+    "price": 11.54,
+    "isSold": true,
+    "screeningId": 83
+  },
+  {
+    "id": 837,
+    "price": 12.21,
+    "isSold": true,
+    "screeningId": 83
+  },
+  {
+    "id": 838,
+    "price": 5.33,
+    "isSold": true,
+    "screeningId": 83
+  },
+  {
+    "id": 839,
+    "price": 5.59,
+    "isSold": false,
+    "screeningId": 83
+  },
+  {
+    "id": 840,
+    "price": 10.81,
+    "isSold": true,
+    "screeningId": 84
+  },
+  {
+    "id": 841,
+    "price": 14.09,
+    "isSold": true,
+    "screeningId": 84
+  },
+  {
+    "id": 842,
+    "price": 10.48,
+    "isSold": true,
+    "screeningId": 84
+  },
+  {
+    "id": 843,
+    "price": 5.53,
+    "isSold": true,
+    "screeningId": 84
+  },
+  {
+    "id": 844,
+    "price": 8.86,
+    "isSold": true,
+    "screeningId": 84
+  },
+  {
+    "id": 845,
+    "price": 14.38,
+    "isSold": true,
+    "screeningId": 84
+  },
+  {
+    "id": 846,
+    "price": 6.75,
+    "isSold": true,
+    "screeningId": 84
+  },
+  {
+    "id": 847,
+    "price": 9.27,
+    "isSold": false,
+    "screeningId": 84
+  },
+  {
+    "id": 848,
+    "price": 11.45,
+    "isSold": true,
+    "screeningId": 84
+  },
+  {
+    "id": 849,
+    "price": 9.26,
+    "isSold": false,
+    "screeningId": 84
+  },
+  {
+    "id": 850,
+    "price": 5.61,
+    "isSold": false,
+    "screeningId": 85
+  },
+  {
+    "id": 851,
+    "price": 10.51,
+    "isSold": false,
+    "screeningId": 85
+  },
+  {
+    "id": 852,
+    "price": 8.16,
+    "isSold": true,
+    "screeningId": 85
+  },
+  {
+    "id": 853,
+    "price": 8.63,
+    "isSold": false,
+    "screeningId": 85
+  },
+  {
+    "id": 854,
+    "price": 8.67,
+    "isSold": true,
+    "screeningId": 85
+  },
+  {
+    "id": 855,
+    "price": 14.39,
+    "isSold": false,
+    "screeningId": 85
+  },
+  {
+    "id": 856,
+    "price": 13.85,
+    "isSold": false,
+    "screeningId": 85
+  },
+  {
+    "id": 857,
+    "price": 13.62,
+    "isSold": false,
+    "screeningId": 85
+  },
+  {
+    "id": 858,
+    "price": 5.63,
+    "isSold": false,
+    "screeningId": 85
+  },
+  {
+    "id": 859,
+    "price": 8.75,
+    "isSold": false,
+    "screeningId": 85
+  },
+  {
+    "id": 860,
+    "price": 10.31,
+    "isSold": false,
+    "screeningId": 86
+  },
+  {
+    "id": 861,
+    "price": 11.96,
+    "isSold": false,
+    "screeningId": 86
+  },
+  {
+    "id": 862,
+    "price": 10.63,
+    "isSold": false,
+    "screeningId": 86
+  },
+  {
+    "id": 863,
+    "price": 6.78,
+    "isSold": true,
+    "screeningId": 86
+  },
+  {
+    "id": 864,
+    "price": 5.98,
+    "isSold": false,
+    "screeningId": 86
+  },
+  {
+    "id": 865,
+    "price": 7.74,
+    "isSold": true,
+    "screeningId": 86
+  },
+  {
+    "id": 866,
+    "price": 5.97,
+    "isSold": false,
+    "screeningId": 86
+  },
+  {
+    "id": 867,
+    "price": 13.2,
+    "isSold": true,
+    "screeningId": 86
+  },
+  {
+    "id": 868,
+    "price": 8,
+    "isSold": true,
+    "screeningId": 86
+  },
+  {
+    "id": 869,
+    "price": 12.14,
+    "isSold": true,
+    "screeningId": 86
+  },
+  {
+    "id": 870,
+    "price": 9.69,
+    "isSold": true,
+    "screeningId": 87
+  },
+  {
+    "id": 871,
+    "price": 14.39,
+    "isSold": false,
+    "screeningId": 87
+  },
+  {
+    "id": 872,
+    "price": 6.84,
+    "isSold": true,
+    "screeningId": 87
+  },
+  {
+    "id": 873,
+    "price": 8.05,
+    "isSold": false,
+    "screeningId": 87
+  },
+  {
+    "id": 874,
+    "price": 5.47,
+    "isSold": false,
+    "screeningId": 87
+  },
+  {
+    "id": 875,
+    "price": 10.66,
+    "isSold": false,
+    "screeningId": 87
+  },
+  {
+    "id": 876,
+    "price": 8.04,
+    "isSold": false,
+    "screeningId": 87
+  },
+  {
+    "id": 877,
+    "price": 5.07,
+    "isSold": true,
+    "screeningId": 87
+  },
+  {
+    "id": 878,
+    "price": 7.33,
+    "isSold": true,
+    "screeningId": 87
+  },
+  {
+    "id": 879,
+    "price": 9.96,
+    "isSold": false,
+    "screeningId": 87
+  },
+  {
+    "id": 880,
+    "price": 9.77,
+    "isSold": false,
+    "screeningId": 88
+  },
+  {
+    "id": 881,
+    "price": 12.12,
+    "isSold": true,
+    "screeningId": 88
+  },
+  {
+    "id": 882,
+    "price": 5.48,
+    "isSold": true,
+    "screeningId": 88
+  },
+  {
+    "id": 883,
+    "price": 10.2,
+    "isSold": false,
+    "screeningId": 88
+  },
+  {
+    "id": 884,
+    "price": 5.37,
+    "isSold": true,
+    "screeningId": 88
+  },
+  {
+    "id": 885,
+    "price": 14.95,
+    "isSold": true,
+    "screeningId": 88
+  },
+  {
+    "id": 886,
+    "price": 6.51,
+    "isSold": true,
+    "screeningId": 88
+  },
+  {
+    "id": 887,
+    "price": 12.37,
+    "isSold": false,
+    "screeningId": 88
+  },
+  {
+    "id": 888,
+    "price": 12.67,
+    "isSold": true,
+    "screeningId": 88
+  },
+  {
+    "id": 889,
+    "price": 13.71,
+    "isSold": true,
+    "screeningId": 88
+  },
+  {
+    "id": 890,
+    "price": 8.18,
+    "isSold": true,
+    "screeningId": 89
+  },
+  {
+    "id": 891,
+    "price": 9.51,
+    "isSold": false,
+    "screeningId": 89
+  },
+  {
+    "id": 892,
+    "price": 10.81,
+    "isSold": true,
+    "screeningId": 89
+  },
+  {
+    "id": 893,
+    "price": 10.63,
+    "isSold": false,
+    "screeningId": 89
+  },
+  {
+    "id": 894,
+    "price": 14.05,
+    "isSold": false,
+    "screeningId": 89
+  },
+  {
+    "id": 895,
+    "price": 11.08,
+    "isSold": false,
+    "screeningId": 89
+  },
+  {
+    "id": 896,
+    "price": 8.57,
+    "isSold": false,
+    "screeningId": 89
+  },
+  {
+    "id": 897,
+    "price": 13.72,
+    "isSold": true,
+    "screeningId": 89
+  },
+  {
+    "id": 898,
+    "price": 10.38,
+    "isSold": true,
+    "screeningId": 89
+  },
+  {
+    "id": 899,
+    "price": 11.2,
+    "isSold": true,
+    "screeningId": 89
+  },
+  {
+    "id": 900,
+    "price": 8.55,
+    "isSold": true,
+    "screeningId": 90
+  },
+  {
+    "id": 901,
+    "price": 9.43,
+    "isSold": true,
+    "screeningId": 90
+  },
+  {
+    "id": 902,
+    "price": 5.3,
+    "isSold": false,
+    "screeningId": 90
+  },
+  {
+    "id": 903,
+    "price": 8.13,
+    "isSold": false,
+    "screeningId": 90
+  },
+  {
+    "id": 904,
+    "price": 13.36,
+    "isSold": true,
+    "screeningId": 90
+  },
+  {
+    "id": 905,
+    "price": 14.49,
+    "isSold": true,
+    "screeningId": 90
+  },
+  {
+    "id": 906,
+    "price": 6.86,
+    "isSold": false,
+    "screeningId": 90
+  },
+  {
+    "id": 907,
+    "price": 12.4,
+    "isSold": false,
+    "screeningId": 90
+  },
+  {
+    "id": 908,
+    "price": 7.38,
+    "isSold": false,
+    "screeningId": 90
+  },
+  {
+    "id": 909,
+    "price": 8.39,
+    "isSold": false,
+    "screeningId": 90
+  },
+  {
+    "id": 910,
+    "price": 7.62,
+    "isSold": false,
+    "screeningId": 91
+  },
+  {
+    "id": 911,
+    "price": 8.18,
+    "isSold": false,
+    "screeningId": 91
+  },
+  {
+    "id": 912,
+    "price": 12.05,
+    "isSold": false,
+    "screeningId": 91
+  },
+  {
+    "id": 913,
+    "price": 10.5,
+    "isSold": false,
+    "screeningId": 91
+  },
+  {
+    "id": 914,
+    "price": 9.11,
+    "isSold": false,
+    "screeningId": 91
+  },
+  {
+    "id": 915,
+    "price": 9.18,
+    "isSold": true,
+    "screeningId": 91
+  },
+  {
+    "id": 916,
+    "price": 12.4,
+    "isSold": true,
+    "screeningId": 91
+  },
+  {
+    "id": 917,
+    "price": 8,
+    "isSold": true,
+    "screeningId": 91
+  },
+  {
+    "id": 918,
+    "price": 9.94,
+    "isSold": false,
+    "screeningId": 91
+  },
+  {
+    "id": 919,
+    "price": 10,
+    "isSold": true,
+    "screeningId": 91
+  },
+  {
+    "id": 920,
+    "price": 11.7,
+    "isSold": false,
+    "screeningId": 92
+  },
+  {
+    "id": 921,
+    "price": 7.01,
+    "isSold": true,
+    "screeningId": 92
+  },
+  {
+    "id": 922,
+    "price": 10.63,
+    "isSold": true,
+    "screeningId": 92
+  },
+  {
+    "id": 923,
+    "price": 10.51,
+    "isSold": false,
+    "screeningId": 92
+  },
+  {
+    "id": 924,
+    "price": 14.71,
+    "isSold": true,
+    "screeningId": 92
+  },
+  {
+    "id": 925,
+    "price": 7.12,
+    "isSold": false,
+    "screeningId": 92
+  },
+  {
+    "id": 926,
+    "price": 11.49,
+    "isSold": false,
+    "screeningId": 92
+  },
+  {
+    "id": 927,
+    "price": 11.22,
+    "isSold": true,
+    "screeningId": 92
+  },
+  {
+    "id": 928,
+    "price": 6.78,
+    "isSold": true,
+    "screeningId": 92
+  },
+  {
+    "id": 929,
+    "price": 7.56,
+    "isSold": false,
+    "screeningId": 92
+  },
+  {
+    "id": 930,
+    "price": 13.77,
+    "isSold": false,
+    "screeningId": 93
+  },
+  {
+    "id": 931,
+    "price": 9.43,
+    "isSold": false,
+    "screeningId": 93
+  },
+  {
+    "id": 932,
+    "price": 9.2,
+    "isSold": false,
+    "screeningId": 93
+  },
+  {
+    "id": 933,
+    "price": 11.46,
+    "isSold": true,
+    "screeningId": 93
+  },
+  {
+    "id": 934,
+    "price": 13.22,
+    "isSold": true,
+    "screeningId": 93
+  },
+  {
+    "id": 935,
+    "price": 14.4,
+    "isSold": true,
+    "screeningId": 93
+  },
+  {
+    "id": 936,
+    "price": 10.88,
+    "isSold": true,
+    "screeningId": 93
+  },
+  {
+    "id": 937,
+    "price": 11.02,
+    "isSold": true,
+    "screeningId": 93
+  },
+  {
+    "id": 938,
+    "price": 9.42,
+    "isSold": true,
+    "screeningId": 93
+  },
+  {
+    "id": 939,
+    "price": 5.18,
+    "isSold": true,
+    "screeningId": 93
+  },
+  {
+    "id": 940,
+    "price": 7.55,
+    "isSold": true,
+    "screeningId": 94
+  },
+  {
+    "id": 941,
+    "price": 5.64,
+    "isSold": false,
+    "screeningId": 94
+  },
+  {
+    "id": 942,
+    "price": 10.15,
+    "isSold": false,
+    "screeningId": 94
+  },
+  {
+    "id": 943,
+    "price": 11.08,
+    "isSold": true,
+    "screeningId": 94
+  },
+  {
+    "id": 944,
+    "price": 10.09,
+    "isSold": true,
+    "screeningId": 94
+  },
+  {
+    "id": 945,
+    "price": 13.41,
+    "isSold": false,
+    "screeningId": 94
+  },
+  {
+    "id": 946,
+    "price": 12.83,
+    "isSold": false,
+    "screeningId": 94
+  },
+  {
+    "id": 947,
+    "price": 5.77,
+    "isSold": true,
+    "screeningId": 94
+  },
+  {
+    "id": 948,
+    "price": 10.56,
+    "isSold": true,
+    "screeningId": 94
+  },
+  {
+    "id": 949,
+    "price": 5.59,
+    "isSold": false,
+    "screeningId": 94
+  },
+  {
+    "id": 950,
+    "price": 6.43,
+    "isSold": true,
+    "screeningId": 95
+  },
+  {
+    "id": 951,
+    "price": 6.48,
+    "isSold": true,
+    "screeningId": 95
+  },
+  {
+    "id": 952,
+    "price": 13.49,
+    "isSold": true,
+    "screeningId": 95
+  },
+  {
+    "id": 953,
+    "price": 12.91,
+    "isSold": false,
+    "screeningId": 95
+  },
+  {
+    "id": 954,
+    "price": 13.56,
+    "isSold": false,
+    "screeningId": 95
+  },
+  {
+    "id": 955,
+    "price": 9.35,
+    "isSold": false,
+    "screeningId": 95
+  },
+  {
+    "id": 956,
+    "price": 10.33,
+    "isSold": true,
+    "screeningId": 95
+  },
+  {
+    "id": 957,
+    "price": 7.72,
+    "isSold": false,
+    "screeningId": 95
+  },
+  {
+    "id": 958,
+    "price": 11.46,
+    "isSold": false,
+    "screeningId": 95
+  },
+  {
+    "id": 959,
+    "price": 10.54,
+    "isSold": true,
+    "screeningId": 95
+  },
+  {
+    "id": 960,
+    "price": 10.45,
+    "isSold": false,
+    "screeningId": 96
+  },
+  {
+    "id": 961,
+    "price": 9.6,
+    "isSold": true,
+    "screeningId": 96
+  },
+  {
+    "id": 962,
+    "price": 15,
+    "isSold": true,
+    "screeningId": 96
+  },
+  {
+    "id": 963,
+    "price": 8.19,
+    "isSold": false,
+    "screeningId": 96
+  },
+  {
+    "id": 964,
+    "price": 7.64,
+    "isSold": true,
+    "screeningId": 96
+  },
+  {
+    "id": 965,
+    "price": 8.22,
+    "isSold": true,
+    "screeningId": 96
+  },
+  {
+    "id": 966,
+    "price": 7.89,
+    "isSold": false,
+    "screeningId": 96
+  },
+  {
+    "id": 967,
+    "price": 13.35,
+    "isSold": true,
+    "screeningId": 96
+  },
+  {
+    "id": 968,
+    "price": 7.05,
+    "isSold": false,
+    "screeningId": 96
+  },
+  {
+    "id": 969,
+    "price": 8.48,
+    "isSold": true,
+    "screeningId": 96
+  },
+  {
+    "id": 970,
+    "price": 13.11,
+    "isSold": false,
+    "screeningId": 97
+  },
+  {
+    "id": 971,
+    "price": 5.5,
+    "isSold": true,
+    "screeningId": 97
+  },
+  {
+    "id": 972,
+    "price": 5.48,
+    "isSold": true,
+    "screeningId": 97
+  },
+  {
+    "id": 973,
+    "price": 10.34,
+    "isSold": false,
+    "screeningId": 97
+  },
+  {
+    "id": 974,
+    "price": 13.47,
+    "isSold": false,
+    "screeningId": 97
+  },
+  {
+    "id": 975,
+    "price": 8.69,
+    "isSold": false,
+    "screeningId": 97
+  },
+  {
+    "id": 976,
+    "price": 11.85,
+    "isSold": false,
+    "screeningId": 97
+  },
+  {
+    "id": 977,
+    "price": 6.72,
+    "isSold": false,
+    "screeningId": 97
+  },
+  {
+    "id": 978,
+    "price": 9.42,
+    "isSold": false,
+    "screeningId": 97
+  },
+  {
+    "id": 979,
+    "price": 10.04,
+    "isSold": false,
+    "screeningId": 97
+  },
+  {
+    "id": 980,
+    "price": 14.41,
+    "isSold": true,
+    "screeningId": 98
+  },
+  {
+    "id": 981,
+    "price": 12.46,
+    "isSold": true,
+    "screeningId": 98
+  },
+  {
+    "id": 982,
+    "price": 5.13,
+    "isSold": true,
+    "screeningId": 98
+  },
+  {
+    "id": 983,
+    "price": 8.4,
+    "isSold": true,
+    "screeningId": 98
+  },
+  {
+    "id": 984,
+    "price": 7.49,
+    "isSold": false,
+    "screeningId": 98
+  },
+  {
+    "id": 985,
+    "price": 5.32,
+    "isSold": true,
+    "screeningId": 98
+  },
+  {
+    "id": 986,
+    "price": 8.47,
+    "isSold": true,
+    "screeningId": 98
+  },
+  {
+    "id": 987,
+    "price": 10.36,
+    "isSold": false,
+    "screeningId": 98
+  },
+  {
+    "id": 988,
+    "price": 5.65,
+    "isSold": true,
+    "screeningId": 98
+  },
+  {
+    "id": 989,
+    "price": 7,
+    "isSold": false,
+    "screeningId": 98
+  },
+  {
+    "id": 990,
+    "price": 6.33,
+    "isSold": false,
+    "screeningId": 99
+  },
+  {
+    "id": 991,
+    "price": 13.51,
+    "isSold": true,
+    "screeningId": 99
+  },
+  {
+    "id": 992,
+    "price": 10.45,
+    "isSold": true,
+    "screeningId": 99
+  },
+  {
+    "id": 993,
+    "price": 13.1,
+    "isSold": false,
+    "screeningId": 99
+  },
+  {
+    "id": 994,
+    "price": 5.93,
+    "isSold": true,
+    "screeningId": 99
+  },
+  {
+    "id": 995,
+    "price": 10.28,
+    "isSold": true,
+    "screeningId": 99
+  },
+  {
+    "id": 996,
+    "price": 12,
+    "isSold": true,
+    "screeningId": 99
+  },
+  {
+    "id": 997,
+    "price": 6.2,
+    "isSold": false,
+    "screeningId": 99
+  },
+  {
+    "id": 998,
+    "price": 8.34,
+    "isSold": false,
+    "screeningId": 99
+  },
+  {
+    "id": 999,
+    "price": 10.7,
+    "isSold": false,
+    "screeningId": 99
+  },
+  {
+    "id": 1010,
+    "price": 7.38,
+    "isSold": true,
+    "screeningId": 101
+  },
+  {
+    "id": 1011,
+    "price": 14.99,
+    "isSold": false,
+    "screeningId": 101
+  },
+  {
+    "id": 1012,
+    "price": 13.75,
+    "isSold": false,
+    "screeningId": 101
+  },
+  {
+    "id": 1013,
+    "price": 8.04,
+    "isSold": true,
+    "screeningId": 101
+  },
+  {
+    "id": 1014,
+    "price": 8.66,
+    "isSold": false,
+    "screeningId": 101
+  },
+  {
+    "id": 1015,
+    "price": 7.61,
+    "isSold": true,
+    "screeningId": 101
+  },
+  {
+    "id": 1016,
+    "price": 5.38,
+    "isSold": true,
+    "screeningId": 101
+  },
+  {
+    "id": 1017,
+    "price": 14.25,
+    "isSold": false,
+    "screeningId": 101
+  },
+  {
+    "id": 1018,
+    "price": 7.59,
+    "isSold": true,
+    "screeningId": 101
+  },
+  {
+    "id": 1019,
+    "price": 12.19,
+    "isSold": true,
+    "screeningId": 101
+  },
+  {
+    "id": 1020,
+    "price": 13.71,
+    "isSold": false,
+    "screeningId": 102
+  },
+  {
+    "id": 1021,
+    "price": 11.5,
+    "isSold": false,
+    "screeningId": 102
+  },
+  {
+    "id": 1022,
+    "price": 6.99,
+    "isSold": false,
+    "screeningId": 102
+  },
+  {
+    "id": 1023,
+    "price": 13.68,
+    "isSold": false,
+    "screeningId": 102
+  },
+  {
+    "id": 1024,
+    "price": 14.58,
+    "isSold": false,
+    "screeningId": 102
+  },
+  {
+    "id": 1025,
+    "price": 11.21,
+    "isSold": false,
+    "screeningId": 102
+  },
+  {
+    "id": 1026,
+    "price": 9.21,
+    "isSold": true,
+    "screeningId": 102
+  },
+  {
+    "id": 1027,
+    "price": 8.65,
+    "isSold": true,
+    "screeningId": 102
+  },
+  {
+    "id": 1028,
+    "price": 9.56,
+    "isSold": false,
+    "screeningId": 102
+  },
+  {
+    "id": 1029,
+    "price": 11.27,
+    "isSold": false,
+    "screeningId": 102
+  },
+  {
+    "id": 1030,
+    "price": 13.15,
+    "isSold": true,
+    "screeningId": 103
+  },
+  {
+    "id": 1031,
+    "price": 8.32,
+    "isSold": false,
+    "screeningId": 103
+  },
+  {
+    "id": 1032,
+    "price": 5.09,
+    "isSold": false,
+    "screeningId": 103
+  },
+  {
+    "id": 1033,
+    "price": 12.62,
+    "isSold": true,
+    "screeningId": 103
+  },
+  {
+    "id": 1034,
+    "price": 7.49,
+    "isSold": true,
+    "screeningId": 103
+  },
+  {
+    "id": 1035,
+    "price": 10.19,
+    "isSold": true,
+    "screeningId": 103
+  },
+  {
+    "id": 1036,
+    "price": 9.67,
+    "isSold": true,
+    "screeningId": 103
+  },
+  {
+    "id": 1037,
+    "price": 13.78,
+    "isSold": false,
+    "screeningId": 103
+  },
+  {
+    "id": 1038,
+    "price": 14.79,
+    "isSold": false,
+    "screeningId": 103
+  },
+  {
+    "id": 1039,
+    "price": 5.95,
+    "isSold": false,
+    "screeningId": 103
+  },
+  {
+    "id": 1040,
+    "price": 12.18,
+    "isSold": false,
+    "screeningId": 104
+  },
+  {
+    "id": 1041,
+    "price": 7.79,
+    "isSold": true,
+    "screeningId": 104
+  },
+  {
+    "id": 1042,
+    "price": 8.48,
+    "isSold": false,
+    "screeningId": 104
+  },
+  {
+    "id": 1043,
+    "price": 5.03,
+    "isSold": false,
+    "screeningId": 104
+  },
+  {
+    "id": 1044,
+    "price": 11.48,
+    "isSold": true,
+    "screeningId": 104
+  },
+  {
+    "id": 1045,
+    "price": 5.23,
+    "isSold": false,
+    "screeningId": 104
+  },
+  {
+    "id": 1046,
+    "price": 14.61,
+    "isSold": false,
+    "screeningId": 104
+  },
+  {
+    "id": 1047,
+    "price": 13.72,
+    "isSold": true,
+    "screeningId": 104
+  },
+  {
+    "id": 1048,
+    "price": 8.08,
+    "isSold": true,
+    "screeningId": 104
+  },
+  {
+    "id": 1049,
+    "price": 9.36,
+    "isSold": false,
+    "screeningId": 104
+  },
+  {
+    "id": 1050,
+    "price": 8.12,
+    "isSold": true,
+    "screeningId": 105
+  },
+  {
+    "id": 1051,
+    "price": 8.29,
+    "isSold": false,
+    "screeningId": 105
+  },
+  {
+    "id": 1052,
+    "price": 9.17,
+    "isSold": true,
+    "screeningId": 105
+  },
+  {
+    "id": 1053,
+    "price": 6.84,
+    "isSold": false,
+    "screeningId": 105
+  },
+  {
+    "id": 1054,
+    "price": 5.36,
+    "isSold": false,
+    "screeningId": 105
+  },
+  {
+    "id": 1055,
+    "price": 8.31,
+    "isSold": false,
+    "screeningId": 105
+  },
+  {
+    "id": 1056,
+    "price": 9.66,
+    "isSold": true,
+    "screeningId": 105
+  },
+  {
+    "id": 1057,
+    "price": 11.05,
+    "isSold": true,
+    "screeningId": 105
+  },
+  {
+    "id": 1058,
+    "price": 5.13,
+    "isSold": true,
+    "screeningId": 105
+  },
+  {
+    "id": 1059,
+    "price": 7.73,
+    "isSold": false,
+    "screeningId": 105
+  },
+  {
+    "id": 1060,
+    "price": 9.41,
+    "isSold": true,
+    "screeningId": 106
+  },
+  {
+    "id": 1061,
+    "price": 11.4,
+    "isSold": false,
+    "screeningId": 106
+  },
+  {
+    "id": 1062,
+    "price": 11.95,
+    "isSold": false,
+    "screeningId": 106
+  },
+  {
+    "id": 1063,
+    "price": 10.07,
+    "isSold": true,
+    "screeningId": 106
+  },
+  {
+    "id": 1064,
+    "price": 12.68,
+    "isSold": false,
+    "screeningId": 106
+  },
+  {
+    "id": 1065,
+    "price": 5.73,
+    "isSold": true,
+    "screeningId": 106
+  },
+  {
+    "id": 1066,
+    "price": 5.27,
+    "isSold": false,
+    "screeningId": 106
+  },
+  {
+    "id": 1067,
+    "price": 10.56,
+    "isSold": false,
+    "screeningId": 106
+  },
+  {
+    "id": 1068,
+    "price": 7.39,
+    "isSold": false,
+    "screeningId": 106
+  },
+  {
+    "id": 1069,
+    "price": 11.86,
+    "isSold": false,
+    "screeningId": 106
+  },
+  {
+    "id": 1070,
+    "price": 13.48,
+    "isSold": false,
+    "screeningId": 107
+  },
+  {
+    "id": 1071,
+    "price": 6.41,
+    "isSold": true,
+    "screeningId": 107
+  },
+  {
+    "id": 1072,
+    "price": 6.6,
+    "isSold": false,
+    "screeningId": 107
+  },
+  {
+    "id": 1073,
+    "price": 9.38,
+    "isSold": true,
+    "screeningId": 107
+  },
+  {
+    "id": 1074,
+    "price": 11.94,
+    "isSold": true,
+    "screeningId": 107
+  },
+  {
+    "id": 1075,
+    "price": 9.99,
+    "isSold": true,
+    "screeningId": 107
+  },
+  {
+    "id": 1076,
+    "price": 5.73,
+    "isSold": false,
+    "screeningId": 107
+  },
+  {
+    "id": 1077,
+    "price": 6.28,
+    "isSold": true,
+    "screeningId": 107
+  },
+  {
+    "id": 1078,
+    "price": 7.04,
+    "isSold": true,
+    "screeningId": 107
+  },
+  {
+    "id": 1079,
+    "price": 7.04,
+    "isSold": true,
+    "screeningId": 107
+  },
+  {
+    "id": 1080,
+    "price": 7.68,
+    "isSold": false,
+    "screeningId": 108
+  },
+  {
+    "id": 1081,
+    "price": 12.78,
+    "isSold": false,
+    "screeningId": 108
+  },
+  {
+    "id": 1082,
+    "price": 12.21,
+    "isSold": false,
+    "screeningId": 108
+  },
+  {
+    "id": 1083,
+    "price": 10.45,
+    "isSold": false,
+    "screeningId": 108
+  },
+  {
+    "id": 1084,
+    "price": 9.38,
+    "isSold": false,
+    "screeningId": 108
+  },
+  {
+    "id": 1085,
+    "price": 8.96,
+    "isSold": false,
+    "screeningId": 108
+  },
+  {
+    "id": 1086,
+    "price": 6.99,
+    "isSold": false,
+    "screeningId": 108
+  },
+  {
+    "id": 1087,
+    "price": 7.88,
+    "isSold": true,
+    "screeningId": 108
+  },
+  {
+    "id": 1088,
+    "price": 13.19,
+    "isSold": true,
+    "screeningId": 108
+  },
+  {
+    "id": 1089,
+    "price": 7.18,
+    "isSold": true,
+    "screeningId": 108
+  },
+  {
+    "id": 1090,
+    "price": 9.9,
+    "isSold": true,
+    "screeningId": 109
+  },
+  {
+    "id": 1091,
+    "price": 12.88,
+    "isSold": true,
+    "screeningId": 109
+  },
+  {
+    "id": 1092,
+    "price": 10.68,
+    "isSold": true,
+    "screeningId": 109
+  },
+  {
+    "id": 1093,
+    "price": 10.45,
+    "isSold": true,
+    "screeningId": 109
+  },
+  {
+    "id": 1094,
+    "price": 10.14,
+    "isSold": false,
+    "screeningId": 109
+  },
+  {
+    "id": 1095,
+    "price": 14.92,
+    "isSold": true,
+    "screeningId": 109
+  },
+  {
+    "id": 1096,
+    "price": 11.05,
+    "isSold": true,
+    "screeningId": 109
+  },
+  {
+    "id": 1097,
+    "price": 11.08,
+    "isSold": false,
+    "screeningId": 109
+  },
+  {
+    "id": 1098,
+    "price": 13.61,
+    "isSold": false,
+    "screeningId": 109
+  },
+  {
+    "id": 1099,
+    "price": 9.88,
+    "isSold": false,
+    "screeningId": 109
+  },
+  {
+    "id": 1100,
+    "price": 9.14,
+    "isSold": true,
+    "screeningId": 110
+  },
+  {
+    "id": 1101,
+    "price": 7.15,
+    "isSold": true,
+    "screeningId": 110
+  },
+  {
+    "id": 1102,
+    "price": 7.93,
+    "isSold": true,
+    "screeningId": 110
+  },
+  {
+    "id": 1103,
+    "price": 10.92,
+    "isSold": true,
+    "screeningId": 110
+  },
+  {
+    "id": 1104,
+    "price": 11.27,
+    "isSold": true,
+    "screeningId": 110
+  },
+  {
+    "id": 1105,
+    "price": 11.76,
+    "isSold": false,
+    "screeningId": 110
+  },
+  {
+    "id": 1106,
+    "price": 5.24,
+    "isSold": false,
+    "screeningId": 110
+  },
+  {
+    "id": 1107,
+    "price": 8.63,
+    "isSold": false,
+    "screeningId": 110
+  },
+  {
+    "id": 1108,
+    "price": 11.06,
+    "isSold": false,
+    "screeningId": 110
+  },
+  {
+    "id": 1109,
+    "price": 12.54,
+    "isSold": false,
+    "screeningId": 110
+  },
+  {
+    "id": 1110,
+    "price": 9.33,
+    "isSold": false,
+    "screeningId": 111
+  },
+  {
+    "id": 1111,
+    "price": 11.8,
+    "isSold": false,
+    "screeningId": 111
+  },
+  {
+    "id": 1112,
+    "price": 10.29,
+    "isSold": true,
+    "screeningId": 111
+  },
+  {
+    "id": 1113,
+    "price": 10.6,
+    "isSold": true,
+    "screeningId": 111
+  },
+  {
+    "id": 1114,
+    "price": 6.09,
+    "isSold": true,
+    "screeningId": 111
+  },
+  {
+    "id": 1115,
+    "price": 13.47,
+    "isSold": true,
+    "screeningId": 111
+  },
+  {
+    "id": 1116,
+    "price": 10.75,
+    "isSold": false,
+    "screeningId": 111
+  },
+  {
+    "id": 1117,
+    "price": 10.25,
+    "isSold": false,
+    "screeningId": 111
+  },
+  {
+    "id": 1118,
+    "price": 5.07,
+    "isSold": false,
+    "screeningId": 111
+  },
+  {
+    "id": 1119,
+    "price": 8.55,
+    "isSold": false,
+    "screeningId": 111
+  },
+  {
+    "id": 1120,
+    "price": 5.47,
+    "isSold": false,
+    "screeningId": 112
+  },
+  {
+    "id": 1121,
+    "price": 10.96,
+    "isSold": true,
+    "screeningId": 112
+  },
+  {
+    "id": 1122,
+    "price": 13.85,
+    "isSold": true,
+    "screeningId": 112
+  },
+  {
+    "id": 1123,
+    "price": 13.44,
+    "isSold": false,
+    "screeningId": 112
+  },
+  {
+    "id": 1124,
+    "price": 8.5,
+    "isSold": false,
+    "screeningId": 112
+  },
+  {
+    "id": 1125,
+    "price": 7.86,
+    "isSold": true,
+    "screeningId": 112
+  },
+  {
+    "id": 1126,
+    "price": 11.13,
+    "isSold": true,
+    "screeningId": 112
+  },
+  {
+    "id": 1127,
+    "price": 10.79,
+    "isSold": false,
+    "screeningId": 112
+  },
+  {
+    "id": 1128,
+    "price": 9.5,
+    "isSold": false,
+    "screeningId": 112
+  },
+  {
+    "id": 1129,
+    "price": 9.88,
+    "isSold": true,
+    "screeningId": 112
+  },
+  {
+    "id": 1130,
+    "price": 5.71,
+    "isSold": true,
+    "screeningId": 113
+  },
+  {
+    "id": 1131,
+    "price": 10.8,
+    "isSold": false,
+    "screeningId": 113
+  },
+  {
+    "id": 1132,
+    "price": 11.79,
+    "isSold": false,
+    "screeningId": 113
+  },
+  {
+    "id": 1133,
+    "price": 12.45,
+    "isSold": false,
+    "screeningId": 113
+  },
+  {
+    "id": 1134,
+    "price": 6.87,
+    "isSold": false,
+    "screeningId": 113
+  },
+  {
+    "id": 1135,
+    "price": 6.8,
+    "isSold": true,
+    "screeningId": 113
+  },
+  {
+    "id": 1136,
+    "price": 12.11,
+    "isSold": true,
+    "screeningId": 113
+  },
+  {
+    "id": 1137,
+    "price": 8.6,
+    "isSold": false,
+    "screeningId": 113
+  },
+  {
+    "id": 1138,
+    "price": 6.04,
+    "isSold": true,
+    "screeningId": 113
+  },
+  {
+    "id": 1139,
+    "price": 12.26,
+    "isSold": true,
+    "screeningId": 113
+  },
+  {
+    "id": 1140,
+    "price": 9.16,
+    "isSold": true,
+    "screeningId": 114
+  },
+  {
+    "id": 1141,
+    "price": 5.02,
+    "isSold": false,
+    "screeningId": 114
+  },
+  {
+    "id": 1142,
+    "price": 13.28,
+    "isSold": true,
+    "screeningId": 114
+  },
+  {
+    "id": 1143,
+    "price": 13.9,
+    "isSold": false,
+    "screeningId": 114
+  },
+  {
+    "id": 1144,
+    "price": 5.58,
+    "isSold": true,
+    "screeningId": 114
+  },
+  {
+    "id": 1145,
+    "price": 5.03,
+    "isSold": false,
+    "screeningId": 114
+  },
+  {
+    "id": 1146,
+    "price": 14.81,
+    "isSold": false,
+    "screeningId": 114
+  },
+  {
+    "id": 1147,
+    "price": 13.23,
+    "isSold": false,
+    "screeningId": 114
+  },
+  {
+    "id": 1148,
+    "price": 10.35,
+    "isSold": false,
+    "screeningId": 114
+  },
+  {
+    "id": 1149,
+    "price": 9.31,
+    "isSold": false,
+    "screeningId": 114
+  },
+  {
+    "id": 1150,
+    "price": 13.91,
+    "isSold": true,
+    "screeningId": 115
+  },
+  {
+    "id": 1151,
+    "price": 10.36,
+    "isSold": true,
+    "screeningId": 115
+  },
+  {
+    "id": 1152,
+    "price": 9.82,
+    "isSold": false,
+    "screeningId": 115
+  },
+  {
+    "id": 1153,
+    "price": 12.07,
+    "isSold": true,
+    "screeningId": 115
+  },
+  {
+    "id": 1154,
+    "price": 6.57,
+    "isSold": false,
+    "screeningId": 115
+  },
+  {
+    "id": 1155,
+    "price": 12.48,
+    "isSold": false,
+    "screeningId": 115
+  },
+  {
+    "id": 1156,
+    "price": 11.34,
+    "isSold": true,
+    "screeningId": 115
+  },
+  {
+    "id": 1157,
+    "price": 12.51,
+    "isSold": false,
+    "screeningId": 115
+  },
+  {
+    "id": 1158,
+    "price": 6.14,
+    "isSold": true,
+    "screeningId": 115
+  },
+  {
+    "id": 1159,
+    "price": 10.93,
+    "isSold": false,
+    "screeningId": 115
+  },
+  {
+    "id": 1160,
+    "price": 13.57,
+    "isSold": true,
+    "screeningId": 116
+  },
+  {
+    "id": 1161,
+    "price": 12.09,
+    "isSold": true,
+    "screeningId": 116
+  },
+  {
+    "id": 1162,
+    "price": 9.68,
+    "isSold": true,
+    "screeningId": 116
+  },
+  {
+    "id": 1163,
+    "price": 13.07,
+    "isSold": false,
+    "screeningId": 116
+  },
+  {
+    "id": 1164,
+    "price": 11,
+    "isSold": true,
+    "screeningId": 116
+  },
+  {
+    "id": 1165,
+    "price": 5.51,
+    "isSold": true,
+    "screeningId": 116
+  },
+  {
+    "id": 1166,
+    "price": 10.65,
+    "isSold": false,
+    "screeningId": 116
+  },
+  {
+    "id": 1167,
+    "price": 13.86,
+    "isSold": true,
+    "screeningId": 116
+  },
+  {
+    "id": 1168,
+    "price": 11.28,
+    "isSold": true,
+    "screeningId": 116
+  },
+  {
+    "id": 1169,
+    "price": 7.79,
+    "isSold": true,
+    "screeningId": 116
+  },
+  {
+    "id": 1170,
+    "price": 6.45,
+    "isSold": false,
+    "screeningId": 117
+  },
+  {
+    "id": 1171,
+    "price": 9.07,
+    "isSold": true,
+    "screeningId": 117
+  },
+  {
+    "id": 1172,
+    "price": 12.31,
+    "isSold": false,
+    "screeningId": 117
+  },
+  {
+    "id": 1173,
+    "price": 12.49,
+    "isSold": true,
+    "screeningId": 117
+  },
+  {
+    "id": 1174,
+    "price": 5.53,
+    "isSold": false,
+    "screeningId": 117
+  },
+  {
+    "id": 1175,
+    "price": 6.03,
+    "isSold": true,
+    "screeningId": 117
+  },
+  {
+    "id": 1176,
+    "price": 7.16,
+    "isSold": false,
+    "screeningId": 117
+  },
+  {
+    "id": 1177,
+    "price": 11.96,
+    "isSold": true,
+    "screeningId": 117
+  },
+  {
+    "id": 1178,
+    "price": 8.87,
+    "isSold": false,
+    "screeningId": 117
+  },
+  {
+    "id": 1179,
+    "price": 8.69,
+    "isSold": false,
+    "screeningId": 117
+  },
+  {
+    "id": 1180,
+    "price": 6.24,
+    "isSold": true,
+    "screeningId": 118
+  },
+  {
+    "id": 1181,
+    "price": 7.09,
+    "isSold": false,
+    "screeningId": 118
+  },
+  {
+    "id": 1182,
+    "price": 9.63,
+    "isSold": true,
+    "screeningId": 118
+  },
+  {
+    "id": 1183,
+    "price": 8.05,
+    "isSold": false,
+    "screeningId": 118
+  },
+  {
+    "id": 1184,
+    "price": 14.8,
+    "isSold": false,
+    "screeningId": 118
+  },
+  {
+    "id": 1185,
+    "price": 10.62,
+    "isSold": true,
+    "screeningId": 118
+  },
+  {
+    "id": 1186,
+    "price": 7.28,
+    "isSold": true,
+    "screeningId": 118
+  },
+  {
+    "id": 1187,
+    "price": 11.6,
+    "isSold": true,
+    "screeningId": 118
+  },
+  {
+    "id": 1188,
+    "price": 7.8,
+    "isSold": true,
+    "screeningId": 118
+  },
+  {
+    "id": 1189,
+    "price": 12.37,
+    "isSold": false,
+    "screeningId": 118
+  },
+  {
+    "id": 1190,
+    "price": 14.67,
+    "isSold": false,
+    "screeningId": 119
+  },
+  {
+    "id": 1191,
+    "price": 14.82,
+    "isSold": true,
+    "screeningId": 119
+  },
+  {
+    "id": 1192,
+    "price": 5.71,
+    "isSold": true,
+    "screeningId": 119
+  },
+  {
+    "id": 1193,
+    "price": 9.6,
+    "isSold": true,
+    "screeningId": 119
+  },
+  {
+    "id": 1194,
+    "price": 10.84,
+    "isSold": false,
+    "screeningId": 119
+  },
+  {
+    "id": 1195,
+    "price": 6.1,
+    "isSold": true,
+    "screeningId": 119
+  },
+  {
+    "id": 1196,
+    "price": 5.13,
+    "isSold": true,
+    "screeningId": 119
+  },
+  {
+    "id": 1197,
+    "price": 7.51,
+    "isSold": true,
+    "screeningId": 119
+  },
+  {
+    "id": 1198,
+    "price": 13.79,
+    "isSold": false,
+    "screeningId": 119
+  },
+  {
+    "id": 1199,
+    "price": 9.07,
+    "isSold": true,
+    "screeningId": 119
+  },
+  {
+    "id": 1200,
+    "price": 7.9,
+    "isSold": false,
+    "screeningId": 120
+  },
+  {
+    "id": 1201,
+    "price": 7.83,
+    "isSold": true,
+    "screeningId": 120
+  },
+  {
+    "id": 1202,
+    "price": 9.8,
+    "isSold": true,
+    "screeningId": 120
+  },
+  {
+    "id": 1203,
+    "price": 11.35,
+    "isSold": true,
+    "screeningId": 120
+  },
+  {
+    "id": 1204,
+    "price": 6.61,
+    "isSold": false,
+    "screeningId": 120
+  },
+  {
+    "id": 1205,
+    "price": 11.9,
+    "isSold": true,
+    "screeningId": 120
+  },
+  {
+    "id": 1206,
+    "price": 13.82,
+    "isSold": false,
+    "screeningId": 120
+  },
+  {
+    "id": 1207,
+    "price": 5.14,
+    "isSold": true,
+    "screeningId": 120
+  },
+  {
+    "id": 1208,
+    "price": 10.9,
+    "isSold": true,
+    "screeningId": 120
+  },
+  {
+    "id": 1209,
+    "price": 11.92,
+    "isSold": true,
+    "screeningId": 120
+  },
+  {
+    "id": 1210,
+    "price": 5.71,
+    "isSold": false,
+    "screeningId": 121
+  },
+  {
+    "id": 1211,
+    "price": 9.9,
+    "isSold": false,
+    "screeningId": 121
+  },
+  {
+    "id": 1212,
+    "price": 10.88,
+    "isSold": true,
+    "screeningId": 121
+  },
+  {
+    "id": 1213,
+    "price": 5.41,
+    "isSold": false,
+    "screeningId": 121
+  },
+  {
+    "id": 1214,
+    "price": 9.02,
+    "isSold": true,
+    "screeningId": 121
+  },
+  {
+    "id": 1215,
+    "price": 10.05,
+    "isSold": false,
+    "screeningId": 121
+  },
+  {
+    "id": 1216,
+    "price": 9.99,
+    "isSold": true,
+    "screeningId": 121
+  },
+  {
+    "id": 1217,
+    "price": 14.36,
+    "isSold": false,
+    "screeningId": 121
+  },
+  {
+    "id": 1218,
+    "price": 5.88,
+    "isSold": false,
+    "screeningId": 121
+  },
+  {
+    "id": 1219,
+    "price": 9.52,
+    "isSold": true,
+    "screeningId": 121
+  },
+  {
+    "id": 1220,
+    "price": 10.22,
+    "isSold": false,
+    "screeningId": 122
+  },
+  {
+    "id": 1221,
+    "price": 5.43,
+    "isSold": false,
+    "screeningId": 122
+  },
+  {
+    "id": 1222,
+    "price": 10.42,
+    "isSold": false,
+    "screeningId": 122
+  },
+  {
+    "id": 1223,
+    "price": 14.58,
+    "isSold": true,
+    "screeningId": 122
+  },
+  {
+    "id": 1224,
+    "price": 13.84,
+    "isSold": false,
+    "screeningId": 122
+  },
+  {
+    "id": 1225,
+    "price": 8.75,
+    "isSold": false,
+    "screeningId": 122
+  },
+  {
+    "id": 1226,
+    "price": 13.33,
+    "isSold": false,
+    "screeningId": 122
+  },
+  {
+    "id": 1227,
+    "price": 12.59,
+    "isSold": false,
+    "screeningId": 122
+  },
+  {
+    "id": 1228,
+    "price": 8.95,
+    "isSold": false,
+    "screeningId": 122
+  },
+  {
+    "id": 1229,
+    "price": 13.49,
+    "isSold": true,
+    "screeningId": 122
+  },
+  {
+    "id": 1230,
+    "price": 11.31,
+    "isSold": true,
+    "screeningId": 123
+  },
+  {
+    "id": 1231,
+    "price": 12.24,
+    "isSold": true,
+    "screeningId": 123
+  },
+  {
+    "id": 1232,
+    "price": 9.75,
+    "isSold": false,
+    "screeningId": 123
+  },
+  {
+    "id": 1233,
+    "price": 6.72,
+    "isSold": false,
+    "screeningId": 123
+  },
+  {
+    "id": 1234,
+    "price": 6.73,
+    "isSold": true,
+    "screeningId": 123
+  },
+  {
+    "id": 1235,
+    "price": 8.97,
+    "isSold": true,
+    "screeningId": 123
+  },
+  {
+    "id": 1236,
+    "price": 5.92,
+    "isSold": true,
+    "screeningId": 123
+  },
+  {
+    "id": 1237,
+    "price": 7.19,
+    "isSold": true,
+    "screeningId": 123
+  },
+  {
+    "id": 1238,
+    "price": 11.5,
+    "isSold": false,
+    "screeningId": 123
+  },
+  {
+    "id": 1239,
+    "price": 8.24,
+    "isSold": true,
+    "screeningId": 123
+  },
+  {
+    "id": 1240,
+    "price": 12.01,
+    "isSold": true,
+    "screeningId": 124
+  },
+  {
+    "id": 1241,
+    "price": 8.94,
+    "isSold": false,
+    "screeningId": 124
+  },
+  {
+    "id": 1242,
+    "price": 5,
+    "isSold": true,
+    "screeningId": 124
+  },
+  {
+    "id": 1243,
+    "price": 5.15,
+    "isSold": true,
+    "screeningId": 124
+  },
+  {
+    "id": 1244,
+    "price": 10.48,
+    "isSold": true,
+    "screeningId": 124
+  },
+  {
+    "id": 1245,
+    "price": 13.21,
+    "isSold": false,
+    "screeningId": 124
+  },
+  {
+    "id": 1246,
+    "price": 14.89,
+    "isSold": false,
+    "screeningId": 124
+  },
+  {
+    "id": 1247,
+    "price": 9.6,
+    "isSold": true,
+    "screeningId": 124
+  },
+  {
+    "id": 1248,
+    "price": 14.17,
+    "isSold": true,
+    "screeningId": 124
+  },
+  {
+    "id": 1249,
+    "price": 7.74,
+    "isSold": true,
+    "screeningId": 124
+  },
+  {
+    "id": 1260,
+    "price": 6.92,
+    "isSold": false,
+    "screeningId": 126
+  },
+  {
+    "id": 1261,
+    "price": 11.58,
+    "isSold": true,
+    "screeningId": 126
+  },
+  {
+    "id": 1262,
+    "price": 10.79,
+    "isSold": true,
+    "screeningId": 126
+  },
+  {
+    "id": 1263,
+    "price": 7.91,
+    "isSold": false,
+    "screeningId": 126
+  },
+  {
+    "id": 1264,
+    "price": 11.58,
+    "isSold": false,
+    "screeningId": 126
+  },
+  {
+    "id": 1265,
+    "price": 8.95,
+    "isSold": false,
+    "screeningId": 126
+  },
+  {
+    "id": 1266,
+    "price": 10.18,
+    "isSold": true,
+    "screeningId": 126
+  },
+  {
+    "id": 1267,
+    "price": 13.35,
+    "isSold": false,
+    "screeningId": 126
+  },
+  {
+    "id": 1268,
+    "price": 13.79,
+    "isSold": false,
+    "screeningId": 126
+  },
+  {
+    "id": 1269,
+    "price": 11.78,
+    "isSold": false,
+    "screeningId": 126
+  },
+  {
+    "id": 1270,
+    "price": 11.45,
+    "isSold": true,
+    "screeningId": 127
+  },
+  {
+    "id": 1271,
+    "price": 7.43,
+    "isSold": false,
+    "screeningId": 127
+  },
+  {
+    "id": 1272,
+    "price": 10.92,
+    "isSold": true,
+    "screeningId": 127
+  },
+  {
+    "id": 1273,
+    "price": 11.82,
+    "isSold": true,
+    "screeningId": 127
+  },
+  {
+    "id": 1274,
+    "price": 6.19,
+    "isSold": true,
+    "screeningId": 127
+  },
+  {
+    "id": 1275,
+    "price": 10.82,
+    "isSold": false,
+    "screeningId": 127
+  },
+  {
+    "id": 1276,
+    "price": 14.87,
+    "isSold": true,
+    "screeningId": 127
+  },
+  {
+    "id": 1277,
+    "price": 10.17,
+    "isSold": true,
+    "screeningId": 127
+  },
+  {
+    "id": 1278,
+    "price": 10.29,
+    "isSold": true,
+    "screeningId": 127
+  },
+  {
+    "id": 1279,
+    "price": 12.13,
+    "isSold": true,
+    "screeningId": 127
+  },
+  {
+    "id": 1280,
+    "price": 12.04,
+    "isSold": true,
+    "screeningId": 128
+  },
+  {
+    "id": 1281,
+    "price": 10.27,
+    "isSold": true,
+    "screeningId": 128
+  },
+  {
+    "id": 1282,
+    "price": 8.04,
+    "isSold": false,
+    "screeningId": 128
+  },
+  {
+    "id": 1283,
+    "price": 5.86,
+    "isSold": true,
+    "screeningId": 128
+  },
+  {
+    "id": 1284,
+    "price": 6.47,
+    "isSold": true,
+    "screeningId": 128
+  },
+  {
+    "id": 1285,
+    "price": 5.78,
+    "isSold": false,
+    "screeningId": 128
+  },
+  {
+    "id": 1286,
+    "price": 6.7,
+    "isSold": true,
+    "screeningId": 128
+  },
+  {
+    "id": 1287,
+    "price": 6.56,
+    "isSold": true,
+    "screeningId": 128
+  },
+  {
+    "id": 1288,
+    "price": 14.52,
+    "isSold": false,
+    "screeningId": 128
+  },
+  {
+    "id": 1289,
+    "price": 14.7,
+    "isSold": true,
+    "screeningId": 128
+  },
+  {
+    "id": 1290,
+    "price": 9.4,
+    "isSold": true,
+    "screeningId": 129
+  },
+  {
+    "id": 1291,
+    "price": 12.2,
+    "isSold": true,
+    "screeningId": 129
+  },
+  {
+    "id": 1292,
+    "price": 12.91,
+    "isSold": true,
+    "screeningId": 129
+  },
+  {
+    "id": 1293,
+    "price": 5.82,
+    "isSold": true,
+    "screeningId": 129
+  },
+  {
+    "id": 1294,
+    "price": 6.34,
+    "isSold": true,
+    "screeningId": 129
+  },
+  {
+    "id": 1295,
+    "price": 6.15,
+    "isSold": false,
+    "screeningId": 129
+  },
+  {
+    "id": 1296,
+    "price": 7.28,
+    "isSold": false,
+    "screeningId": 129
+  },
+  {
+    "id": 1297,
+    "price": 7.5,
+    "isSold": true,
+    "screeningId": 129
+  },
+  {
+    "id": 1298,
+    "price": 9.93,
+    "isSold": true,
+    "screeningId": 129
+  },
+  {
+    "id": 1299,
+    "price": 6.15,
+    "isSold": true,
+    "screeningId": 129
+  },
+  {
+    "id": 1300,
+    "price": 13.03,
+    "isSold": false,
+    "screeningId": 130
+  },
+  {
+    "id": 1301,
+    "price": 10.43,
+    "isSold": true,
+    "screeningId": 130
+  },
+  {
+    "id": 1302,
+    "price": 5.51,
+    "isSold": true,
+    "screeningId": 130
+  },
+  {
+    "id": 1303,
+    "price": 9.75,
+    "isSold": true,
+    "screeningId": 130
+  },
+  {
+    "id": 1304,
+    "price": 8.9,
+    "isSold": false,
+    "screeningId": 130
+  },
+  {
+    "id": 1305,
+    "price": 9.38,
+    "isSold": true,
+    "screeningId": 130
+  },
+  {
+    "id": 1306,
+    "price": 10.46,
+    "isSold": true,
+    "screeningId": 130
+  },
+  {
+    "id": 1307,
+    "price": 5.56,
+    "isSold": true,
+    "screeningId": 130
+  },
+  {
+    "id": 1308,
+    "price": 13.78,
+    "isSold": true,
+    "screeningId": 130
+  },
+  {
+    "id": 1309,
+    "price": 10.15,
+    "isSold": false,
+    "screeningId": 130
+  },
+  {
+    "id": 1310,
+    "price": 5.08,
+    "isSold": false,
+    "screeningId": 131
+  },
+  {
+    "id": 1311,
+    "price": 7.86,
+    "isSold": false,
+    "screeningId": 131
+  },
+  {
+    "id": 1312,
+    "price": 6.42,
+    "isSold": true,
+    "screeningId": 131
+  },
+  {
+    "id": 1313,
+    "price": 8,
+    "isSold": true,
+    "screeningId": 131
+  },
+  {
+    "id": 1314,
+    "price": 7.33,
+    "isSold": true,
+    "screeningId": 131
+  },
+  {
+    "id": 1315,
+    "price": 9.03,
+    "isSold": false,
+    "screeningId": 131
+  },
+  {
+    "id": 1316,
+    "price": 13.88,
+    "isSold": false,
+    "screeningId": 131
+  },
+  {
+    "id": 1317,
+    "price": 14.22,
+    "isSold": true,
+    "screeningId": 131
+  },
+  {
+    "id": 1318,
+    "price": 10.53,
+    "isSold": false,
+    "screeningId": 131
+  },
+  {
+    "id": 1319,
+    "price": 9.17,
+    "isSold": false,
+    "screeningId": 131
+  },
+  {
+    "id": 1320,
+    "price": 12.67,
+    "isSold": false,
+    "screeningId": 132
+  },
+  {
+    "id": 1321,
+    "price": 8.7,
+    "isSold": false,
+    "screeningId": 132
+  },
+  {
+    "id": 1322,
+    "price": 10.82,
+    "isSold": true,
+    "screeningId": 132
+  },
+  {
+    "id": 1323,
+    "price": 9.03,
+    "isSold": true,
+    "screeningId": 132
+  },
+  {
+    "id": 1324,
+    "price": 10.49,
+    "isSold": false,
+    "screeningId": 132
+  },
+  {
+    "id": 1325,
+    "price": 6.91,
+    "isSold": false,
+    "screeningId": 132
+  },
+  {
+    "id": 1326,
+    "price": 13.84,
+    "isSold": false,
+    "screeningId": 132
+  },
+  {
+    "id": 1327,
+    "price": 6.71,
+    "isSold": false,
+    "screeningId": 132
+  },
+  {
+    "id": 1328,
+    "price": 9.93,
+    "isSold": false,
+    "screeningId": 132
+  },
+  {
+    "id": 1329,
+    "price": 14.62,
+    "isSold": true,
+    "screeningId": 132
+  },
+  {
+    "id": 1330,
+    "price": 9.82,
+    "isSold": false,
+    "screeningId": 133
+  },
+  {
+    "id": 1331,
+    "price": 7.6,
+    "isSold": true,
+    "screeningId": 133
+  },
+  {
+    "id": 1332,
+    "price": 6.52,
+    "isSold": true,
+    "screeningId": 133
+  },
+  {
+    "id": 1333,
+    "price": 13.71,
+    "isSold": true,
+    "screeningId": 133
+  },
+  {
+    "id": 1334,
+    "price": 13.88,
+    "isSold": false,
+    "screeningId": 133
+  },
+  {
+    "id": 1335,
+    "price": 10.42,
+    "isSold": true,
+    "screeningId": 133
+  },
+  {
+    "id": 1336,
+    "price": 8.7,
+    "isSold": true,
+    "screeningId": 133
+  },
+  {
+    "id": 1337,
+    "price": 10.53,
+    "isSold": false,
+    "screeningId": 133
+  },
+  {
+    "id": 1338,
+    "price": 7.91,
+    "isSold": true,
+    "screeningId": 133
+  },
+  {
+    "id": 1339,
+    "price": 5.83,
+    "isSold": false,
+    "screeningId": 133
+  },
+  {
+    "id": 1340,
+    "price": 10.38,
+    "isSold": false,
+    "screeningId": 134
+  },
+  {
+    "id": 1341,
+    "price": 11.88,
+    "isSold": true,
+    "screeningId": 134
+  },
+  {
+    "id": 1342,
+    "price": 5.43,
+    "isSold": true,
+    "screeningId": 134
+  },
+  {
+    "id": 1343,
+    "price": 5.91,
+    "isSold": false,
+    "screeningId": 134
+  },
+  {
+    "id": 1344,
+    "price": 7.58,
+    "isSold": true,
+    "screeningId": 134
+  },
+  {
+    "id": 1345,
+    "price": 5.73,
+    "isSold": true,
+    "screeningId": 134
+  },
+  {
+    "id": 1346,
+    "price": 8.2,
+    "isSold": false,
+    "screeningId": 134
+  },
+  {
+    "id": 1347,
+    "price": 10.26,
+    "isSold": true,
+    "screeningId": 134
+  },
+  {
+    "id": 1348,
+    "price": 5.12,
+    "isSold": true,
+    "screeningId": 134
+  },
+  {
+    "id": 1349,
+    "price": 11.61,
+    "isSold": false,
+    "screeningId": 134
+  },
+  {
+    "id": 1350,
+    "price": 14.75,
+    "isSold": false,
+    "screeningId": 135
+  },
+  {
+    "id": 1351,
+    "price": 6.95,
+    "isSold": true,
+    "screeningId": 135
+  },
+  {
+    "id": 1352,
+    "price": 9.11,
+    "isSold": false,
+    "screeningId": 135
+  },
+  {
+    "id": 1353,
+    "price": 11.82,
+    "isSold": false,
+    "screeningId": 135
+  },
+  {
+    "id": 1354,
+    "price": 8.58,
+    "isSold": false,
+    "screeningId": 135
+  },
+  {
+    "id": 1355,
+    "price": 8.29,
+    "isSold": true,
+    "screeningId": 135
+  },
+  {
+    "id": 1356,
+    "price": 10.57,
+    "isSold": true,
+    "screeningId": 135
+  },
+  {
+    "id": 1357,
+    "price": 10.3,
+    "isSold": false,
+    "screeningId": 135
+  },
+  {
+    "id": 1358,
+    "price": 11.79,
+    "isSold": false,
+    "screeningId": 135
+  },
+  {
+    "id": 1359,
+    "price": 8.42,
+    "isSold": false,
+    "screeningId": 135
+  },
+  {
+    "id": 1360,
+    "price": 14.13,
+    "isSold": true,
+    "screeningId": 136
+  },
+  {
+    "id": 1361,
+    "price": 6.55,
+    "isSold": true,
+    "screeningId": 136
+  },
+  {
+    "id": 1362,
+    "price": 6.47,
+    "isSold": false,
+    "screeningId": 136
+  },
+  {
+    "id": 1363,
+    "price": 6.14,
+    "isSold": true,
+    "screeningId": 136
+  },
+  {
+    "id": 1364,
+    "price": 14.15,
+    "isSold": false,
+    "screeningId": 136
+  },
+  {
+    "id": 1365,
+    "price": 13.33,
+    "isSold": true,
+    "screeningId": 136
+  },
+  {
+    "id": 1366,
+    "price": 9.31,
+    "isSold": false,
+    "screeningId": 136
+  },
+  {
+    "id": 1367,
+    "price": 5.74,
+    "isSold": true,
+    "screeningId": 136
+  },
+  {
+    "id": 1368,
+    "price": 8.14,
+    "isSold": false,
+    "screeningId": 136
+  },
+  {
+    "id": 1369,
+    "price": 7.54,
+    "isSold": false,
+    "screeningId": 136
+  },
+  {
+    "id": 1370,
+    "price": 8.58,
+    "isSold": true,
+    "screeningId": 137
+  },
+  {
+    "id": 1371,
+    "price": 12.29,
+    "isSold": false,
+    "screeningId": 137
+  },
+  {
+    "id": 1372,
+    "price": 9.1,
+    "isSold": false,
+    "screeningId": 137
+  },
+  {
+    "id": 1373,
+    "price": 6.49,
+    "isSold": false,
+    "screeningId": 137
+  },
+  {
+    "id": 1374,
+    "price": 5.34,
+    "isSold": false,
+    "screeningId": 137
+  },
+  {
+    "id": 1375,
+    "price": 7.24,
+    "isSold": true,
+    "screeningId": 137
+  },
+  {
+    "id": 1376,
+    "price": 14.23,
+    "isSold": false,
+    "screeningId": 137
+  },
+  {
+    "id": 1377,
+    "price": 6.52,
+    "isSold": true,
+    "screeningId": 137
+  },
+  {
+    "id": 1378,
+    "price": 9.81,
+    "isSold": false,
+    "screeningId": 137
+  },
+  {
+    "id": 1379,
+    "price": 11.04,
+    "isSold": false,
+    "screeningId": 137
+  },
+  {
+    "id": 1380,
+    "price": 11.52,
+    "isSold": true,
+    "screeningId": 138
+  },
+  {
+    "id": 1381,
+    "price": 9.29,
+    "isSold": true,
+    "screeningId": 138
+  },
+  {
+    "id": 1382,
+    "price": 13.46,
+    "isSold": true,
+    "screeningId": 138
+  },
+  {
+    "id": 1383,
+    "price": 13.36,
+    "isSold": false,
+    "screeningId": 138
+  },
+  {
+    "id": 1384,
+    "price": 10.4,
+    "isSold": false,
+    "screeningId": 138
+  },
+  {
+    "id": 1385,
+    "price": 12.08,
+    "isSold": false,
+    "screeningId": 138
+  },
+  {
+    "id": 1386,
+    "price": 12.61,
+    "isSold": true,
+    "screeningId": 138
+  },
+  {
+    "id": 1387,
+    "price": 5.59,
+    "isSold": true,
+    "screeningId": 138
+  },
+  {
+    "id": 1388,
+    "price": 5.83,
+    "isSold": true,
+    "screeningId": 138
+  },
+  {
+    "id": 1389,
+    "price": 11.88,
+    "isSold": true,
+    "screeningId": 138
+  },
+  {
+    "id": 1390,
+    "price": 11.5,
+    "isSold": true,
+    "screeningId": 139
+  },
+  {
+    "id": 1391,
+    "price": 14.56,
+    "isSold": false,
+    "screeningId": 139
+  },
+  {
+    "id": 1392,
+    "price": 6.6,
+    "isSold": false,
+    "screeningId": 139
+  },
+  {
+    "id": 1393,
+    "price": 14.85,
+    "isSold": true,
+    "screeningId": 139
+  },
+  {
+    "id": 1394,
+    "price": 8.67,
+    "isSold": true,
+    "screeningId": 139
+  },
+  {
+    "id": 1395,
+    "price": 9.84,
+    "isSold": false,
+    "screeningId": 139
+  },
+  {
+    "id": 1396,
+    "price": 9.32,
+    "isSold": true,
+    "screeningId": 139
+  },
+  {
+    "id": 1397,
+    "price": 9.87,
+    "isSold": false,
+    "screeningId": 139
+  },
+  {
+    "id": 1398,
+    "price": 8.34,
+    "isSold": true,
+    "screeningId": 139
+  },
+  {
+    "id": 1399,
+    "price": 5.7,
+    "isSold": false,
+    "screeningId": 139
+  },
+  {
+    "id": 1400,
+    "price": 8.36,
+    "isSold": false,
+    "screeningId": 140
+  },
+  {
+    "id": 1401,
+    "price": 11.71,
+    "isSold": true,
+    "screeningId": 140
+  },
+  {
+    "id": 1402,
+    "price": 10.58,
+    "isSold": false,
+    "screeningId": 140
+  },
+  {
+    "id": 1403,
+    "price": 11.7,
+    "isSold": true,
+    "screeningId": 140
+  },
+  {
+    "id": 1404,
+    "price": 8.83,
+    "isSold": false,
+    "screeningId": 140
+  },
+  {
+    "id": 1405,
+    "price": 8.18,
+    "isSold": false,
+    "screeningId": 140
+  },
+  {
+    "id": 1406,
+    "price": 11.82,
+    "isSold": true,
+    "screeningId": 140
+  },
+  {
+    "id": 1407,
+    "price": 9.59,
+    "isSold": true,
+    "screeningId": 140
+  },
+  {
+    "id": 1408,
+    "price": 11.51,
+    "isSold": false,
+    "screeningId": 140
+  },
+  {
+    "id": 1409,
+    "price": 6.1,
+    "isSold": false,
+    "screeningId": 140
+  },
+  {
+    "id": 1410,
+    "price": 6.73,
+    "isSold": false,
+    "screeningId": 141
+  },
+  {
+    "id": 1411,
+    "price": 14.3,
+    "isSold": false,
+    "screeningId": 141
+  },
+  {
+    "id": 1412,
+    "price": 5.23,
+    "isSold": false,
+    "screeningId": 141
+  },
+  {
+    "id": 1413,
+    "price": 10.21,
+    "isSold": true,
+    "screeningId": 141
+  },
+  {
+    "id": 1414,
+    "price": 13.36,
+    "isSold": true,
+    "screeningId": 141
+  },
+  {
+    "id": 1415,
+    "price": 9.68,
+    "isSold": true,
+    "screeningId": 141
+  },
+  {
+    "id": 1416,
+    "price": 6.24,
+    "isSold": false,
+    "screeningId": 141
+  },
+  {
+    "id": 1417,
+    "price": 12.77,
+    "isSold": false,
+    "screeningId": 141
+  },
+  {
+    "id": 1418,
+    "price": 8.59,
+    "isSold": true,
+    "screeningId": 141
+  },
+  {
+    "id": 1419,
+    "price": 5.92,
+    "isSold": false,
+    "screeningId": 141
+  },
+  {
+    "id": 1420,
+    "price": 13.54,
+    "isSold": true,
+    "screeningId": 142
+  },
+  {
+    "id": 1421,
+    "price": 10.78,
+    "isSold": false,
+    "screeningId": 142
+  },
+  {
+    "id": 1422,
+    "price": 5.05,
+    "isSold": true,
+    "screeningId": 142
+  },
+  {
+    "id": 1423,
+    "price": 14.09,
+    "isSold": true,
+    "screeningId": 142
+  },
+  {
+    "id": 1424,
+    "price": 10.35,
+    "isSold": false,
+    "screeningId": 142
+  },
+  {
+    "id": 1425,
+    "price": 7.24,
+    "isSold": false,
+    "screeningId": 142
+  },
+  {
+    "id": 1426,
+    "price": 12.62,
+    "isSold": true,
+    "screeningId": 142
+  },
+  {
+    "id": 1427,
+    "price": 6.13,
+    "isSold": false,
+    "screeningId": 142
+  },
+  {
+    "id": 1428,
+    "price": 8.85,
+    "isSold": false,
+    "screeningId": 142
+  },
+  {
+    "id": 1429,
+    "price": 13.87,
+    "isSold": false,
+    "screeningId": 142
+  },
+  {
+    "id": 1430,
+    "price": 6.86,
+    "isSold": false,
+    "screeningId": 143
+  },
+  {
+    "id": 1431,
+    "price": 13.6,
+    "isSold": false,
+    "screeningId": 143
+  },
+  {
+    "id": 1432,
+    "price": 8.6,
+    "isSold": true,
+    "screeningId": 143
+  },
+  {
+    "id": 1433,
+    "price": 7.82,
+    "isSold": false,
+    "screeningId": 143
+  },
+  {
+    "id": 1434,
+    "price": 9.22,
+    "isSold": false,
+    "screeningId": 143
+  },
+  {
+    "id": 1435,
+    "price": 14.1,
+    "isSold": true,
+    "screeningId": 143
+  },
+  {
+    "id": 1436,
+    "price": 7.54,
+    "isSold": true,
+    "screeningId": 143
+  },
+  {
+    "id": 1437,
+    "price": 11.91,
+    "isSold": false,
+    "screeningId": 143
+  },
+  {
+    "id": 1438,
+    "price": 13.65,
+    "isSold": true,
+    "screeningId": 143
+  },
+  {
+    "id": 1439,
+    "price": 7.79,
+    "isSold": true,
+    "screeningId": 143
+  },
+  {
+    "id": 1440,
+    "price": 9.76,
+    "isSold": false,
+    "screeningId": 144
+  },
+  {
+    "id": 1441,
+    "price": 14.23,
+    "isSold": true,
+    "screeningId": 144
+  },
+  {
+    "id": 1442,
+    "price": 14.74,
+    "isSold": false,
+    "screeningId": 144
+  },
+  {
+    "id": 1443,
+    "price": 14.75,
+    "isSold": false,
+    "screeningId": 144
+  },
+  {
+    "id": 1444,
+    "price": 13.88,
+    "isSold": true,
+    "screeningId": 144
+  },
+  {
+    "id": 1445,
+    "price": 8.84,
+    "isSold": false,
+    "screeningId": 144
+  },
+  {
+    "id": 1446,
+    "price": 9.7,
+    "isSold": true,
+    "screeningId": 144
+  },
+  {
+    "id": 1447,
+    "price": 12.36,
+    "isSold": false,
+    "screeningId": 144
+  },
+  {
+    "id": 1448,
+    "price": 9.22,
+    "isSold": false,
+    "screeningId": 144
+  },
+  {
+    "id": 1449,
+    "price": 11.53,
+    "isSold": true,
+    "screeningId": 144
+  },
+  {
+    "id": 1450,
+    "price": 11.57,
+    "isSold": false,
+    "screeningId": 145
+  },
+  {
+    "id": 1451,
+    "price": 8.13,
+    "isSold": true,
+    "screeningId": 145
+  },
+  {
+    "id": 1452,
+    "price": 12.28,
+    "isSold": false,
+    "screeningId": 145
+  },
+  {
+    "id": 1453,
+    "price": 10.74,
+    "isSold": true,
+    "screeningId": 145
+  },
+  {
+    "id": 1454,
+    "price": 5.78,
+    "isSold": false,
+    "screeningId": 145
+  },
+  {
+    "id": 1455,
+    "price": 8.21,
+    "isSold": false,
+    "screeningId": 145
+  },
+  {
+    "id": 1456,
+    "price": 8.93,
+    "isSold": false,
+    "screeningId": 145
+  },
+  {
+    "id": 1457,
+    "price": 10.55,
+    "isSold": false,
+    "screeningId": 145
+  },
+  {
+    "id": 1458,
+    "price": 9.81,
+    "isSold": true,
+    "screeningId": 145
+  },
+  {
+    "id": 1459,
+    "price": 11.46,
+    "isSold": false,
+    "screeningId": 145
+  },
+  {
+    "id": 1460,
+    "price": 11.53,
+    "isSold": false,
+    "screeningId": 146
+  },
+  {
+    "id": 1461,
+    "price": 11.16,
+    "isSold": false,
+    "screeningId": 146
+  },
+  {
+    "id": 1462,
+    "price": 8.83,
+    "isSold": false,
+    "screeningId": 146
+  },
+  {
+    "id": 1463,
+    "price": 10.27,
+    "isSold": true,
+    "screeningId": 146
+  },
+  {
+    "id": 1464,
+    "price": 8.1,
+    "isSold": true,
+    "screeningId": 146
+  },
+  {
+    "id": 1465,
+    "price": 11.73,
+    "isSold": false,
+    "screeningId": 146
+  },
+  {
+    "id": 1466,
+    "price": 13.24,
+    "isSold": true,
+    "screeningId": 146
+  },
+  {
+    "id": 1467,
+    "price": 10.93,
+    "isSold": true,
+    "screeningId": 146
+  },
+  {
+    "id": 1468,
+    "price": 8.73,
+    "isSold": true,
+    "screeningId": 146
+  },
+  {
+    "id": 1469,
+    "price": 9.07,
+    "isSold": true,
+    "screeningId": 146
+  },
+  {
+    "id": 1470,
+    "price": 8.38,
+    "isSold": true,
+    "screeningId": 147
+  },
+  {
+    "id": 1471,
+    "price": 9.6,
+    "isSold": true,
+    "screeningId": 147
+  },
+  {
+    "id": 1472,
+    "price": 12.9,
+    "isSold": false,
+    "screeningId": 147
+  },
+  {
+    "id": 1473,
+    "price": 11.59,
+    "isSold": true,
+    "screeningId": 147
+  },
+  {
+    "id": 1474,
+    "price": 11.73,
+    "isSold": false,
+    "screeningId": 147
+  },
+  {
+    "id": 1475,
+    "price": 5.11,
+    "isSold": false,
+    "screeningId": 147
+  },
+  {
+    "id": 1476,
+    "price": 7.82,
+    "isSold": false,
+    "screeningId": 147
+  },
+  {
+    "id": 1477,
+    "price": 11.17,
+    "isSold": true,
+    "screeningId": 147
+  },
+  {
+    "id": 1478,
+    "price": 14.38,
+    "isSold": false,
+    "screeningId": 147
+  },
+  {
+    "id": 1479,
+    "price": 5.95,
+    "isSold": true,
+    "screeningId": 147
+  },
+  {
+    "id": 1480,
+    "price": 5.41,
+    "isSold": false,
+    "screeningId": 148
+  },
+  {
+    "id": 1481,
+    "price": 11.43,
+    "isSold": false,
+    "screeningId": 148
+  },
+  {
+    "id": 1482,
+    "price": 9.65,
+    "isSold": false,
+    "screeningId": 148
+  },
+  {
+    "id": 1483,
+    "price": 9.82,
+    "isSold": false,
+    "screeningId": 148
+  },
+  {
+    "id": 1484,
+    "price": 11.39,
+    "isSold": true,
+    "screeningId": 148
+  },
+  {
+    "id": 1485,
+    "price": 14.71,
+    "isSold": true,
+    "screeningId": 148
+  },
+  {
+    "id": 1486,
+    "price": 8.94,
+    "isSold": false,
+    "screeningId": 148
+  },
+  {
+    "id": 1487,
+    "price": 10.26,
+    "isSold": true,
+    "screeningId": 148
+  },
+  {
+    "id": 1488,
+    "price": 7.97,
+    "isSold": true,
+    "screeningId": 148
+  },
+  {
+    "id": 1489,
+    "price": 13.58,
+    "isSold": true,
+    "screeningId": 148
+  },
+  {
+    "id": 1490,
+    "price": 6.97,
+    "isSold": false,
+    "screeningId": 149
+  },
+  {
+    "id": 1491,
+    "price": 12.52,
+    "isSold": false,
+    "screeningId": 149
+  },
+  {
+    "id": 1492,
+    "price": 12.42,
+    "isSold": false,
+    "screeningId": 149
+  },
+  {
+    "id": 1493,
+    "price": 7.73,
+    "isSold": true,
+    "screeningId": 149
+  },
+  {
+    "id": 1494,
+    "price": 13.28,
+    "isSold": true,
+    "screeningId": 149
+  },
+  {
+    "id": 1495,
+    "price": 5.53,
+    "isSold": true,
+    "screeningId": 149
+  },
+  {
+    "id": 1496,
+    "price": 13.19,
+    "isSold": true,
+    "screeningId": 149
+  },
+  {
+    "id": 1497,
+    "price": 11.5,
+    "isSold": true,
+    "screeningId": 149
+  },
+  {
+    "id": 1498,
+    "price": 5.56,
+    "isSold": false,
+    "screeningId": 149
+  },
+  {
+    "id": 1499,
+    "price": 13.36,
+    "isSold": false,
+    "screeningId": 149
+  }
+]
