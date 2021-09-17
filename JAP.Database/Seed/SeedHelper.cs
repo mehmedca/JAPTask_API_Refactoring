@@ -117,82 +117,12 @@ namespace JAP.Database.Seed
         }
 
 
-        //public static void SeedRatingsToDb(ModelBuilder builder)
-        //{
-        //    builder.Entity<Rating>().HasData(
-        //        new Rating
-        //        {
-        //            Id = -1,
-        //            MovieId = -1,
-        //            RatedById = Common.UserIds.USER_ID,
-        //            RatingInt = 3
-        //        },
-        //        new Rating
-        //        {
-        //            Id = -2,
-        //            MovieId = -1,
-        //            RatedById = Common.UserIds.USER_ID,
-        //            RatingInt = 4
-        //        },
-        //        new Rating
-        //        {
-        //            Id = -3,
-        //            MovieId = -2,
-        //            RatedById = Common.UserIds.USER_ID,
-        //            RatingInt = 5
-        //        },
-        //        new Rating
-        //        {
-        //            Id = -4,
-        //            MovieId = -2,
-        //            RatedById = Common.UserIds.USER_ID,
-        //            RatingInt = 4
-        //        },
-        //        new Rating
-        //        {
-        //            Id = -5,
-        //            MovieId = -3,
-        //            RatedById = Common.UserIds.USER_ID,
-        //            RatingInt = 2
-        //        },
-        //        new Rating
-        //        {
-        //            Id = -6,
-        //            MovieId = -3,
-        //            RatedById = Common.UserIds.USER_ID,
-        //            RatingInt = 4
-        //        },
-        //        new Rating
-        //        {
-        //            Id = -7,
-        //            MovieId = -4,
-        //            RatedById = Common.UserIds.USER_ID,
-        //            RatingInt = 3
-        //        },
-        //        new Rating
-        //        {
-        //            Id = -8,
-        //            MovieId = -4,
-        //            RatedById = Common.UserIds.USER_ID,
-        //            RatingInt = 5
-        //        },
-        //        new Rating
-        //        {
-        //            Id = -9,
-        //            MovieId = -5,
-        //            RatedById = Common.UserIds.USER_ID,
-        //            RatingInt = 2
-        //        },
-        //        new Rating
-        //        {
-        //            Id = -10,
-        //            MovieId = -5,
-        //            RatedById = Common.UserIds.USER_ID,
-        //            RatingInt = 3
-        //        });
-        //}
+        public static void SeedRatingsToDb(ModelBuilder builder)
+        {
+            builder.Entity<Rating>().HasData(JsonConverterHelper.LoadJsonFromFile<Rating>("RatingsJson.json"));
+        }
 
-        public static void SeedScreeningsToDb(ModelBuilder builder)
+    public static void SeedScreeningsToDb(ModelBuilder builder)
         {
             builder.Entity<Screening>().HasData(JsonConverterHelper.LoadJsonFromFile<Screening>("ScreeningsJson.json"));
         }

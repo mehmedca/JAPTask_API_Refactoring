@@ -5,7 +5,8 @@
     "dateCreated": "2021-09-27",
     "title": "Norsul",
     "description": "Eu cillum nostrud Lorem magna ad eu ipsum.",
-    "releaseDate": "2014-07-29"
+    "releaseDate": "2014-07-29",
+    "ratingTotal":  2.5
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "dateCreated": "2021-09-28",
     "title": "Emoltra",
     "description": "Voluptate aliquip fugiat reprehenderit dolore pariatur non aliquip aute ex labore.",
-    "releaseDate": "2009-07-27"
+    "releaseDate": "2009-07-27",
+    "ratingTotal": 2.5
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "dateCreated": "2021-10-06",
     "title": "Euron",
     "description": "Adipisicing mollit ipsum ad esse est eu aute laborum occaecat dolore voluptate culpa esse.",
-    "releaseDate": "2017-03-03"
+    "releaseDate": "2017-03-03",
+    "ratingTotal": 2.5
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "dateCreated": "2021-09-26",
     "title": "Limage",
     "description": "Culpa cillum esse qui deserunt duis magna cillum laboris pariatur reprehenderit do.",
-    "releaseDate": "2016-02-10"
+    "releaseDate": "2016-02-10",
+    "ratingTotal": 2.5
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "dateCreated": "2021-09-23",
     "title": "Tellifly",
     "description": "Consequat dolore anim labore enim ad et sunt ut consequat do non quis sunt ad.",
-    "releaseDate": "2007-05-12"
+    "releaseDate": "2007-05-12",
+    "ratingTotal": 2.5
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "dateCreated": "2021-09-25",
     "title": "Coash",
     "description": "Qui voluptate elit deserunt nulla pariatur ullamco do consequat amet.",
-    "releaseDate": "2005-06-25"
+    "releaseDate": "2005-06-25",
+    "ratingTotal": 2.5
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "dateCreated": "2021-10-06",
     "title": "Phuel",
     "description": "Ad esse occaecat consequat cupidatat.",
-    "releaseDate": "2008-07-16"
+    "releaseDate": "2008-07-16",
+    "ratingTotal": 2.5
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "dateCreated": "2021-10-07",
     "title": "Venoflex",
     "description": "Laborum exercitation mollit sunt cillum ea duis consectetur pariatur exercitation ad Lorem cillum eu ex.",
-    "releaseDate": "2016-06-24"
+    "releaseDate": "2016-06-24",
+    "ratingTotal": 2.5
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "dateCreated": "2021-10-04",
     "title": "Aclima",
     "description": "Aute dolore sunt magna consequat minim ea.",
-    "releaseDate": "2020-12-16"
+    "releaseDate": "2020-12-16",
+    "ratingTotal": 2.5
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "dateCreated": "2021-09-18",
     "title": "Entality",
     "description": "Ea irure sit nulla voluptate amet voluptate duis qui exercitation excepteur.",
-    "releaseDate": "2015-09-29"
+    "releaseDate": "2015-09-29",
+    "ratingTotal": 2.5
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "dateCreated": "2021-09-19",
     "title": "Gology",
     "description": "Pariatur dolore occaecat adipisicing amet velit ex excepteur sunt incididunt cupidatat ad eiusmod proident do.",
-    "releaseDate": "2008-12-04"
+    "releaseDate": "2008-12-04",
+    "ratingTotal": 2.5
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "dateCreated": "2021-09-25",
     "title": "Techtrix",
     "description": "Dolore nostrud ipsum quis consequat officia enim cillum nostrud duis deserunt magna enim.",
-    "releaseDate": "2017-07-05"
+    "releaseDate": "2017-07-05",
+    "ratingTotal": 2.5
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "dateCreated": "2021-10-01",
     "title": "Gallaxia",
     "description": "Laborum magna Lorem enim exercitation excepteur qui.",
-    "releaseDate": "2014-03-18"
+    "releaseDate": "2014-03-18",
+    "ratingTotal": 2.5
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "dateCreated": "2021-09-26",
     "title": "Confrenzy",
     "description": "Occaecat ex cupidatat ullamco sint cillum reprehenderit ipsum voluptate nulla minim commodo ullamco magna.",
-    "releaseDate": "2014-05-15"
+    "releaseDate": "2014-05-15",
+    "ratingTotal": 2.5
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "dateCreated": "2021-09-16",
     "title": "Ronbert",
     "description": "Ut sint qui eu fugiat aliqua eiusmod deserunt amet est ea non.",
-    "releaseDate": "2011-02-17"
+    "releaseDate": "2011-02-17",
+    "ratingTotal": 2.5
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "dateCreated": "2021-10-03",
     "title": "Animalia",
     "description": "Anim magna enim pariatur duis ipsum.",
-    "releaseDate": "2014-09-03"
+    "releaseDate": "2014-09-03",
+    "ratingTotal": 2.5
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "dateCreated": "2021-09-21",
     "title": "Sustenza",
     "description": "Occaecat proident veniam qui voluptate esse commodo.",
-    "releaseDate": "2014-10-18"
+    "releaseDate": "2014-10-18",
+    "ratingTotal": 2.5
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "dateCreated": "2021-10-01",
     "title": "Deepends",
     "description": "Minim officia cupidatat est enim nostrud anim veniam.",
-    "releaseDate": "2005-01-12"
+    "releaseDate": "2005-01-12",
+    "ratingTotal": 2.5
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "dateCreated": "2021-09-18",
     "title": "Fibrodyne",
     "description": "Ad nisi voluptate aute laboris magna laboris sint aliqua Lorem duis deserunt ad deserunt deserunt.",
-    "releaseDate": "2020-12-06"
+    "releaseDate": "2020-12-06",
+    "ratingTotal": 2.5
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "dateCreated": "2021-09-24",
     "title": "Microluxe",
     "description": "Cillum eu anim ea deserunt esse cupidatat velit.",
-    "releaseDate": "2008-11-11"
+    "releaseDate": "2008-11-11",
+    "ratingTotal": 2.5
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@
     "dateCreated": "2021-09-22",
     "title": "Ziore",
     "description": "Labore id in ullamco velit laboris nisi minim cupidatat nostrud exercitation incididunt non sunt.",
-    "releaseDate": "2012-07-21"
+    "releaseDate": "2012-07-21",
+    "ratingTotal": 3.5
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@
     "dateCreated": "2021-09-27",
     "title": "Imaginart",
     "description": "Minim nulla nisi do ut est mollit deserunt non anim.",
-    "releaseDate": "2008-03-20"
+    "releaseDate": "2008-03-20",
+    "ratingTotal": 3.5
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@
     "dateCreated": "2021-09-19",
     "title": "Digitalus",
     "description": "Dolor incididunt ipsum cupidatat dolor occaecat tempor reprehenderit sit esse cillum sint occaecat non aliqua.",
-    "releaseDate": "2007-01-05"
+    "releaseDate": "2007-01-05",
+    "ratingTotal": 3.5
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@
     "dateCreated": "2021-10-04",
     "title": "Isosphere",
     "description": "Consequat consectetur eiusmod sint esse reprehenderit esse culpa excepteur magna est voluptate.",
-    "releaseDate": "2017-09-20"
+    "releaseDate": "2017-09-20",
+    "ratingTotal": 3.5
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@
     "dateCreated": "2021-10-06",
     "title": "Prosure",
     "description": "Lorem minim nostrud ex laborum tempor.",
-    "releaseDate": "2006-01-05"
+    "releaseDate": "2006-01-05",
+    "ratingTotal": 3.5
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@
     "dateCreated": "2021-09-16",
     "title": "Enaut",
     "description": "Enim duis ex et pariatur cillum.",
-    "releaseDate": "2019-02-28"
+    "releaseDate": "2019-02-28",
+    "ratingTotal": 3.5
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@
     "dateCreated": "2021-09-23",
     "title": "Velity",
     "description": "Amet ipsum fugiat ut occaecat qui amet minim mollit.",
-    "releaseDate": "2009-10-20"
+    "releaseDate": "2009-10-20",
+    "ratingTotal": 3.5
   },
   {
     "id": 28,
@@ -221,7 +248,8 @@
     "dateCreated": "2021-09-24",
     "title": "Enersave",
     "description": "Nulla reprehenderit id aliqua officia occaecat irure eu amet aliquip laborum et.",
-    "releaseDate": "2018-01-20"
+    "releaseDate": "2018-01-20",
+    "ratingTotal": 3.5
   },
   {
     "id": 29,
@@ -229,7 +257,8 @@
     "dateCreated": "2021-10-04",
     "title": "Insuron",
     "description": "Lorem nulla eiusmod exercitation tempor eiusmod.",
-    "releaseDate": "2018-05-11"
+    "releaseDate": "2018-05-11",
+    "ratingTotal": 3.5
   },
   {
     "id": 30,
@@ -237,7 +266,8 @@
     "dateCreated": "2021-10-01",
     "title": "Cinesanct",
     "description": "Ex proident cillum minim sit anim elit ipsum dolor sunt proident excepteur elit elit elit.",
-    "releaseDate": "2008-10-09"
+    "releaseDate": "2008-10-09",
+    "ratingTotal": 3.5
   },
   {
     "id": 31,
@@ -245,7 +275,8 @@
     "dateCreated": "2021-09-19",
     "title": "Mixers",
     "description": "Officia pariatur ipsum culpa aute do mollit dolor.",
-    "releaseDate": "2016-03-20"
+    "releaseDate": "2016-03-20",
+    "ratingTotal": 3.5
   },
   {
     "id": 32,
@@ -253,7 +284,8 @@
     "dateCreated": "2021-09-21",
     "title": "Opticon",
     "description": "Anim incididunt pariatur est ut labore fugiat nostrud ipsum.",
-    "releaseDate": "2014-06-12"
+    "releaseDate": "2014-06-12",
+    "ratingTotal": 3.5
   },
   {
     "id": 33,
@@ -261,7 +293,8 @@
     "dateCreated": "2021-09-23",
     "title": "Applica",
     "description": "Sint tempor ad reprehenderit do eu.",
-    "releaseDate": "2007-06-04"
+    "releaseDate": "2007-06-04",
+    "ratingTotal": 3.5
   },
   {
     "id": 34,
@@ -269,7 +302,8 @@
     "dateCreated": "2021-09-18",
     "title": "Qualitern",
     "description": "Ipsum sunt occaecat anim minim culpa quis ad fugiat amet.",
-    "releaseDate": "2013-05-28"
+    "releaseDate": "2013-05-28",
+    "ratingTotal": 3.5
   },
   {
     "id": 35,
@@ -277,7 +311,8 @@
     "dateCreated": "2021-09-28",
     "title": "Mitroc",
     "description": "Consequat non eiusmod proident minim consectetur exercitation excepteur ullamco.",
-    "releaseDate": "2017-11-14"
+    "releaseDate": "2017-11-14",
+    "ratingTotal": 3.5
   },
   {
     "id": 36,
@@ -285,7 +320,8 @@
     "dateCreated": "2021-09-18",
     "title": "Kidgrease",
     "description": "Duis esse reprehenderit ut irure.",
-    "releaseDate": "2010-02-17"
+    "releaseDate": "2010-02-17",
+    "ratingTotal": 3.5
   },
   {
     "id": 37,
@@ -293,7 +329,8 @@
     "dateCreated": "2021-09-28",
     "title": "Centregy",
     "description": "Officia cillum officia incididunt incididunt sit fugiat fugiat ipsum laboris deserunt ipsum.",
-    "releaseDate": "2019-12-14"
+    "releaseDate": "2019-12-14",
+    "ratingTotal": 3.5
   },
   {
     "id": 38,
@@ -301,7 +338,8 @@
     "dateCreated": "2021-09-29",
     "title": "Cuizine",
     "description": "Aliqua fugiat duis tempor voluptate cillum eiusmod deserunt.",
-    "releaseDate": "2017-08-18"
+    "releaseDate": "2017-08-18",
+    "ratingTotal": 3.5
   },
   {
     "id": 39,
@@ -309,7 +347,8 @@
     "dateCreated": "2021-10-08",
     "title": "Comvene",
     "description": "Ut aute sit aute in aliqua dolore.",
-    "releaseDate": "2020-01-17"
+    "releaseDate": "2020-01-17",
+    "ratingTotal": 3.5
   },
   {
     "id": 40,
@@ -317,7 +356,8 @@
     "dateCreated": "2021-09-20",
     "title": "Xplor",
     "description": "Consequat amet ex eu elit dolore.",
-    "releaseDate": "2020-06-20"
+    "releaseDate": "2020-06-20",
+    "ratingTotal": 3.5
   },
   {
     "id": 41,
@@ -325,7 +365,8 @@
     "dateCreated": "2021-09-28",
     "title": "Zaj",
     "description": "Aliqua magna aliqua veniam eiusmod sint eu deserunt.",
-    "releaseDate": "2018-05-25"
+    "releaseDate": "2018-05-25",
+    "ratingTotal": 4.5
   },
   {
     "id": 42,
@@ -333,7 +374,8 @@
     "dateCreated": "2021-10-03",
     "title": "Parleynet",
     "description": "Fugiat adipisicing nisi qui adipisicing aute labore non deserunt esse irure dolor minim.",
-    "releaseDate": "2020-04-30"
+    "releaseDate": "2020-04-30",
+    "ratingTotal": 4.5
   },
   {
     "id": 43,
@@ -341,7 +383,8 @@
     "dateCreated": "2021-09-24",
     "title": "Sarasonic",
     "description": "Quis id aliquip sit sint eu labore commodo commodo aliqua nisi consequat sint velit.",
-    "releaseDate": "2017-06-25"
+    "releaseDate": "2017-06-25",
+    "ratingTotal": 4.5
   },
   {
     "id": 44,
@@ -349,7 +392,8 @@
     "dateCreated": "2021-10-04",
     "title": "Securia",
     "description": "Culpa dolor velit excepteur proident amet esse ea sunt aliqua et excepteur pariatur.",
-    "releaseDate": "2019-01-23"
+    "releaseDate": "2019-01-23",
+    "ratingTotal": 4.5
   },
   {
     "id": 45,
@@ -357,7 +401,8 @@
     "dateCreated": "2021-09-19",
     "title": "Zensus",
     "description": "Do sunt quis cupidatat ullamco sit duis non.",
-    "releaseDate": "2019-06-02"
+    "releaseDate": "2019-06-02",
+    "ratingTotal": 4.5
   },
   {
     "id": 46,
@@ -365,7 +410,8 @@
     "dateCreated": "2021-09-25",
     "title": "Musaphics",
     "description": "Et reprehenderit amet enim esse labore anim amet duis.",
-    "releaseDate": "2019-03-18"
+    "releaseDate": "2019-03-18",
+    "ratingTotal": 4.5
   },
   {
     "id": 47,
@@ -373,7 +419,8 @@
     "dateCreated": "2021-09-19",
     "title": "Manglo",
     "description": "Ipsum sunt minim ipsum aute non duis excepteur est pariatur nulla eu consectetur.",
-    "releaseDate": "2016-09-15"
+    "releaseDate": "2016-09-15",
+    "ratingTotal": 4.5
   },
   {
     "id": 48,
@@ -381,7 +428,8 @@
     "dateCreated": "2021-09-24",
     "title": "Aeora",
     "description": "Esse et dolor amet esse non.",
-    "releaseDate": "2014-11-20"
+    "releaseDate": "2014-11-20",
+    "ratingTotal": 4.5
   },
   {
     "id": 49,
@@ -389,7 +437,8 @@
     "dateCreated": "2021-09-23",
     "title": "Extro",
     "description": "Ipsum voluptate fugiat proident eiusmod est culpa deserunt in laborum eiusmod.",
-    "releaseDate": "2016-05-26"
+    "releaseDate": "2016-05-26",
+    "ratingTotal": 4.5
   },
   {
     "id": 50,
@@ -397,7 +446,8 @@
     "dateCreated": "2021-10-02",
     "title": "Lexicondo",
     "description": "Eu ut reprehenderit aliquip culpa amet in magna velit.",
-    "releaseDate": "2011-05-07"
+    "releaseDate": "2011-05-07",
+    "ratingTotal": 4.5
   },
   {
     "id": 51,
@@ -405,7 +455,8 @@
     "dateCreated": "2021-09-23",
     "title": "Translink",
     "description": "Est Lorem exercitation exercitation id.",
-    "releaseDate": "2012-07-10"
+    "releaseDate": "2012-07-10",
+    "ratingTotal": 4.5
   },
   {
     "id": 52,
@@ -413,7 +464,8 @@
     "dateCreated": "2021-09-24",
     "title": "Netagy",
     "description": "Cupidatat excepteur laborum cillum in ut velit.",
-    "releaseDate": "2018-12-14"
+    "releaseDate": "2018-12-14",
+    "ratingTotal": 4.5
   },
   {
     "id": 53,
@@ -421,7 +473,8 @@
     "dateCreated": "2021-10-04",
     "title": "Cujo",
     "description": "Amet aliqua fugiat ullamco cupidatat qui Lorem exercitation esse aliqua do sint reprehenderit magna.",
-    "releaseDate": "2015-07-17"
+    "releaseDate": "2015-07-17",
+    "ratingTotal": 4.5
   },
   {
     "id": 54,
@@ -429,7 +482,8 @@
     "dateCreated": "2021-09-18",
     "title": "Senmei",
     "description": "Voluptate qui reprehenderit sunt consequat ea esse sint quis do sit sit mollit.",
-    "releaseDate": "2018-08-09"
+    "releaseDate": "2018-08-09",
+    "ratingTotal": 4.5
   },
   {
     "id": 55,
@@ -437,7 +491,8 @@
     "dateCreated": "2021-10-06",
     "title": "Paprikut",
     "description": "Proident velit amet labore ullamco id veniam.",
-    "releaseDate": "2005-08-25"
+    "releaseDate": "2005-08-25",
+    "ratingTotal": 4.5
   },
   {
     "id": 56,
@@ -445,7 +500,8 @@
     "dateCreated": "2021-09-21",
     "title": "Jamnation",
     "description": "Pariatur deserunt id dolore occaecat.",
-    "releaseDate": "2018-07-02"
+    "releaseDate": "2018-07-02",
+    "ratingTotal": 4.5
   },
   {
     "id": 57,
@@ -453,7 +509,8 @@
     "dateCreated": "2021-09-18",
     "title": "Zillanet",
     "description": "Nostrud quis commodo eu labore qui nisi enim aliquip labore aliquip.",
-    "releaseDate": "2009-08-13"
+    "releaseDate": "2009-08-13",
+    "ratingTotal": 4.5
   },
   {
     "id": 58,
@@ -461,7 +518,8 @@
     "dateCreated": "2021-09-30",
     "title": "Kiggle",
     "description": "Tempor nisi commodo Lorem sunt mollit duis nulla sunt.",
-    "releaseDate": "2005-01-26"
+    "releaseDate": "2005-01-26",
+    "ratingTotal": 4.5
   },
   {
     "id": 59,
@@ -469,7 +527,8 @@
     "dateCreated": "2021-09-22",
     "title": "Ramjob",
     "description": "Ipsum anim laboris proident cupidatat in do nostrud occaecat commodo commodo reprehenderit dolor.",
-    "releaseDate": "2018-06-08"
+    "releaseDate": "2018-06-08",
+    "ratingTotal": 4.5
   },
   {
     "id": 60,
@@ -477,7 +536,8 @@
     "dateCreated": "2021-09-22",
     "title": "Maineland",
     "description": "Lorem proident nulla proident excepteur magna officia cupidatat.",
-    "releaseDate": "2009-01-15"
+    "releaseDate": "2009-01-15",
+    "ratingTotal": 4.5
   },
   {
     "id": 61,

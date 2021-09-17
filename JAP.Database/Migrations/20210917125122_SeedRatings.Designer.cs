@@ -3,15 +3,17 @@ using System;
 using JAP.Database.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace JAP.Database.Migrations
 {
     [DbContext(typeof(JAPContext))]
-    partial class JAPContextModelSnapshot : ModelSnapshot
+    [Migration("20210917125122_SeedRatings")]
+    partial class SeedRatings
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -2343,9 +2345,9 @@ namespace JAP.Database.Migrations
                         new
                         {
                             Id = "8cdd8900-b5a2-41ef-bd55-2a4215f04c48",
-                            ConcurrencyStamp = "1cf88982-940d-46fe-83e7-8d711dd75e33",
+                            ConcurrencyStamp = "da4a5062-867e-4b43-afef-c55113a2cbd2",
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 17, 14, 56, 37, 125, DateTimeKind.Local).AddTicks(8944),
+                            DateCreated = new DateTime(2021, 9, 17, 14, 51, 21, 411, DateTimeKind.Local).AddTicks(809),
                             IsDeleted = false,
                             Name = "Admin",
                             NormalizedName = "ADMIN"
@@ -2353,9 +2355,9 @@ namespace JAP.Database.Migrations
                         new
                         {
                             Id = "3cf0bbae-1fc5-4ca2-9eb4-1557aed94397",
-                            ConcurrencyStamp = "718c7e89-5bc0-4969-84c6-d87188069603",
+                            ConcurrencyStamp = "52645599-526f-4115-be78-3835679e48e1",
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 17, 14, 56, 37, 125, DateTimeKind.Local).AddTicks(9236),
+                            DateCreated = new DateTime(2021, 9, 17, 14, 51, 21, 411, DateTimeKind.Local).AddTicks(1099),
                             IsDeleted = false,
                             Name = "Moderator",
                             NormalizedName = "MODERATOR"
@@ -2363,9 +2365,9 @@ namespace JAP.Database.Migrations
                         new
                         {
                             Id = "0ee2b0b2-e5f4-4bab-b7aa-bc6d6237efd0",
-                            ConcurrencyStamp = "351a473f-98f9-42e2-beba-8bd780c30095",
+                            ConcurrencyStamp = "efa94352-7eee-4dc4-a465-3dd06b9ee34b",
                             CreatedById = "rOFHG9xvlRKAdXOjUh3J",
-                            DateCreated = new DateTime(2021, 9, 17, 14, 56, 37, 125, DateTimeKind.Local).AddTicks(9250),
+                            DateCreated = new DateTime(2021, 9, 17, 14, 51, 21, 411, DateTimeKind.Local).AddTicks(1113),
                             IsDeleted = false,
                             Name = "User",
                             NormalizedName = "USER"
@@ -2464,15 +2466,15 @@ namespace JAP.Database.Migrations
                         {
                             Id = "rOFHG9xvlRKAdXOjUh3J",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5d4c9c28-8508-49da-bf84-a6e80ebed5fa",
-                            DateCreated = new DateTime(2021, 9, 17, 14, 56, 37, 114, DateTimeKind.Local).AddTicks(3000),
+                            ConcurrencyStamp = "9cf8850b-120d-4d29-883b-825d427f7695",
+                            DateCreated = new DateTime(2021, 9, 17, 14, 51, 21, 399, DateTimeKind.Local).AddTicks(5067),
                             EmailConfirmed = false,
                             FirstName = "Admin",
                             LastName = "Admin",
-                            LastOnline = new DateTime(2021, 9, 17, 14, 56, 37, 107, DateTimeKind.Local).AddTicks(2336),
+                            LastOnline = new DateTime(2021, 9, 17, 14, 51, 21, 392, DateTimeKind.Local).AddTicks(4226),
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEH26wMWxSX9Kwwk/l9TeHJ3Zf8OKnHftQF0x6YEJTf+1iQwbAS2s0xR++Y2fc+uzTQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJINQNBvW+fdUOn+qUqQ+wNTRSSrAFsG5CRdiwLE9U/dNhB7iWcHEMmqe+ziU0A9EA==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "admin"
@@ -2481,15 +2483,15 @@ namespace JAP.Database.Migrations
                         {
                             Id = "pQVqvZg7tnJYQv93gme9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4a6fd114-e710-4e27-9434-e436d99974e4",
-                            DateCreated = new DateTime(2021, 9, 17, 14, 56, 37, 119, DateTimeKind.Local).AddTicks(7486),
+                            ConcurrencyStamp = "c8e011e3-aadb-417f-9b81-0479bc295376",
+                            DateCreated = new DateTime(2021, 9, 17, 14, 51, 21, 404, DateTimeKind.Local).AddTicks(9400),
                             EmailConfirmed = false,
                             FirstName = "Moderator",
                             LastName = "Moderator",
-                            LastOnline = new DateTime(2021, 9, 17, 14, 56, 37, 114, DateTimeKind.Local).AddTicks(3428),
+                            LastOnline = new DateTime(2021, 9, 17, 14, 51, 21, 399, DateTimeKind.Local).AddTicks(5480),
                             LockoutEnabled = false,
                             NormalizedUserName = "MODERATOR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEPOyoasi85PEifB3hbSPtvh111RbeOZrvPql7Eq3cEapiRIaFUIvnhEwiaoOD/RRuw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEArKd/AAukCHbxJSulD4jAVXE7r86t9n1XTmnDuXsh+9MNfezW/ihDu0c+uhAbYLEg==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "moderator"
@@ -2498,15 +2500,15 @@ namespace JAP.Database.Migrations
                         {
                             Id = "NsOUTyrRU3CRxdPY06lP",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "34ffdad4-5bc3-4b51-90c7-4d6934318f15",
-                            DateCreated = new DateTime(2021, 9, 17, 14, 56, 37, 125, DateTimeKind.Local).AddTicks(1055),
+                            ConcurrencyStamp = "58a8f465-6a43-4f03-9ff7-eafc86f8c94a",
+                            DateCreated = new DateTime(2021, 9, 17, 14, 51, 21, 410, DateTimeKind.Local).AddTicks(2960),
                             EmailConfirmed = false,
                             FirstName = "User",
                             LastName = "User",
-                            LastOnline = new DateTime(2021, 9, 17, 14, 56, 37, 119, DateTimeKind.Local).AddTicks(7496),
+                            LastOnline = new DateTime(2021, 9, 17, 14, 51, 21, 404, DateTimeKind.Local).AddTicks(9408),
                             LockoutEnabled = false,
                             NormalizedUserName = "USER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFsxDIvgZsQShnnmQ3geTVuuNgdiomPJNOLxWopYSG0iA9xWdTuqs94pBzaouf+TBQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEK4F4T1jre/NdtJ5CcwD/FzdGM12pXwS1S0jKeZh1hO99wWlKyHcRZlQ0fyjecjjzw==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "user"
@@ -2628,7 +2630,7 @@ namespace JAP.Database.Migrations
                             Description = "Eu cillum nostrud Lorem magna ad eu ipsum.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2014, 7, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Norsul"
                         },
@@ -2640,7 +2642,7 @@ namespace JAP.Database.Migrations
                             Description = "Voluptate aliquip fugiat reprehenderit dolore pariatur non aliquip aute ex labore.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2009, 7, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Emoltra"
                         },
@@ -2652,7 +2654,7 @@ namespace JAP.Database.Migrations
                             Description = "Adipisicing mollit ipsum ad esse est eu aute laborum occaecat dolore voluptate culpa esse.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2017, 3, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Euron"
                         },
@@ -2664,7 +2666,7 @@ namespace JAP.Database.Migrations
                             Description = "Culpa cillum esse qui deserunt duis magna cillum laboris pariatur reprehenderit do.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2016, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Limage"
                         },
@@ -2676,7 +2678,7 @@ namespace JAP.Database.Migrations
                             Description = "Consequat dolore anim labore enim ad et sunt ut consequat do non quis sunt ad.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2007, 5, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Tellifly"
                         },
@@ -2688,7 +2690,7 @@ namespace JAP.Database.Migrations
                             Description = "Qui voluptate elit deserunt nulla pariatur ullamco do consequat amet.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2005, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Coash"
                         },
@@ -2700,7 +2702,7 @@ namespace JAP.Database.Migrations
                             Description = "Ad esse occaecat consequat cupidatat.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2008, 7, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Phuel"
                         },
@@ -2712,7 +2714,7 @@ namespace JAP.Database.Migrations
                             Description = "Laborum exercitation mollit sunt cillum ea duis consectetur pariatur exercitation ad Lorem cillum eu ex.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2016, 6, 24, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Venoflex"
                         },
@@ -2724,7 +2726,7 @@ namespace JAP.Database.Migrations
                             Description = "Aute dolore sunt magna consequat minim ea.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2020, 12, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Aclima"
                         },
@@ -2736,7 +2738,7 @@ namespace JAP.Database.Migrations
                             Description = "Ea irure sit nulla voluptate amet voluptate duis qui exercitation excepteur.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2015, 9, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Entality"
                         },
@@ -2748,7 +2750,7 @@ namespace JAP.Database.Migrations
                             Description = "Pariatur dolore occaecat adipisicing amet velit ex excepteur sunt incididunt cupidatat ad eiusmod proident do.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2008, 12, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Gology"
                         },
@@ -2760,7 +2762,7 @@ namespace JAP.Database.Migrations
                             Description = "Dolore nostrud ipsum quis consequat officia enim cillum nostrud duis deserunt magna enim.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2017, 7, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Techtrix"
                         },
@@ -2772,7 +2774,7 @@ namespace JAP.Database.Migrations
                             Description = "Laborum magna Lorem enim exercitation excepteur qui.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2014, 3, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Gallaxia"
                         },
@@ -2784,7 +2786,7 @@ namespace JAP.Database.Migrations
                             Description = "Occaecat ex cupidatat ullamco sint cillum reprehenderit ipsum voluptate nulla minim commodo ullamco magna.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2014, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Confrenzy"
                         },
@@ -2796,7 +2798,7 @@ namespace JAP.Database.Migrations
                             Description = "Ut sint qui eu fugiat aliqua eiusmod deserunt amet est ea non.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2011, 2, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Ronbert"
                         },
@@ -2808,7 +2810,7 @@ namespace JAP.Database.Migrations
                             Description = "Anim magna enim pariatur duis ipsum.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2014, 9, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Animalia"
                         },
@@ -2820,7 +2822,7 @@ namespace JAP.Database.Migrations
                             Description = "Occaecat proident veniam qui voluptate esse commodo.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2014, 10, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Sustenza"
                         },
@@ -2832,7 +2834,7 @@ namespace JAP.Database.Migrations
                             Description = "Minim officia cupidatat est enim nostrud anim veniam.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2005, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Deepends"
                         },
@@ -2844,7 +2846,7 @@ namespace JAP.Database.Migrations
                             Description = "Ad nisi voluptate aute laboris magna laboris sint aliqua Lorem duis deserunt ad deserunt deserunt.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2020, 12, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Fibrodyne"
                         },
@@ -2856,7 +2858,7 @@ namespace JAP.Database.Migrations
                             Description = "Cillum eu anim ea deserunt esse cupidatat velit.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 2.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2008, 11, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Microluxe"
                         },
@@ -2868,7 +2870,7 @@ namespace JAP.Database.Migrations
                             Description = "Labore id in ullamco velit laboris nisi minim cupidatat nostrud exercitation incididunt non sunt.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2012, 7, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Ziore"
                         },
@@ -2880,7 +2882,7 @@ namespace JAP.Database.Migrations
                             Description = "Minim nulla nisi do ut est mollit deserunt non anim.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2008, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Imaginart"
                         },
@@ -2892,7 +2894,7 @@ namespace JAP.Database.Migrations
                             Description = "Dolor incididunt ipsum cupidatat dolor occaecat tempor reprehenderit sit esse cillum sint occaecat non aliqua.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2007, 1, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Digitalus"
                         },
@@ -2904,7 +2906,7 @@ namespace JAP.Database.Migrations
                             Description = "Consequat consectetur eiusmod sint esse reprehenderit esse culpa excepteur magna est voluptate.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2017, 9, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Isosphere"
                         },
@@ -2916,7 +2918,7 @@ namespace JAP.Database.Migrations
                             Description = "Lorem minim nostrud ex laborum tempor.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2006, 1, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Prosure"
                         },
@@ -2928,7 +2930,7 @@ namespace JAP.Database.Migrations
                             Description = "Enim duis ex et pariatur cillum.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2019, 2, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Enaut"
                         },
@@ -2940,7 +2942,7 @@ namespace JAP.Database.Migrations
                             Description = "Amet ipsum fugiat ut occaecat qui amet minim mollit.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2009, 10, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Velity"
                         },
@@ -2952,7 +2954,7 @@ namespace JAP.Database.Migrations
                             Description = "Nulla reprehenderit id aliqua officia occaecat irure eu amet aliquip laborum et.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2018, 1, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Enersave"
                         },
@@ -2964,7 +2966,7 @@ namespace JAP.Database.Migrations
                             Description = "Lorem nulla eiusmod exercitation tempor eiusmod.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2018, 5, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Insuron"
                         },
@@ -2976,7 +2978,7 @@ namespace JAP.Database.Migrations
                             Description = "Ex proident cillum minim sit anim elit ipsum dolor sunt proident excepteur elit elit elit.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2008, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Cinesanct"
                         },
@@ -2988,7 +2990,7 @@ namespace JAP.Database.Migrations
                             Description = "Officia pariatur ipsum culpa aute do mollit dolor.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2016, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Mixers"
                         },
@@ -3000,7 +3002,7 @@ namespace JAP.Database.Migrations
                             Description = "Anim incididunt pariatur est ut labore fugiat nostrud ipsum.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2014, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Opticon"
                         },
@@ -3012,7 +3014,7 @@ namespace JAP.Database.Migrations
                             Description = "Sint tempor ad reprehenderit do eu.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2007, 6, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Applica"
                         },
@@ -3024,7 +3026,7 @@ namespace JAP.Database.Migrations
                             Description = "Ipsum sunt occaecat anim minim culpa quis ad fugiat amet.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2013, 5, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Qualitern"
                         },
@@ -3036,7 +3038,7 @@ namespace JAP.Database.Migrations
                             Description = "Consequat non eiusmod proident minim consectetur exercitation excepteur ullamco.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2017, 11, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Mitroc"
                         },
@@ -3048,7 +3050,7 @@ namespace JAP.Database.Migrations
                             Description = "Duis esse reprehenderit ut irure.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2010, 2, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Kidgrease"
                         },
@@ -3060,7 +3062,7 @@ namespace JAP.Database.Migrations
                             Description = "Officia cillum officia incididunt incididunt sit fugiat fugiat ipsum laboris deserunt ipsum.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2019, 12, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Centregy"
                         },
@@ -3072,7 +3074,7 @@ namespace JAP.Database.Migrations
                             Description = "Aliqua fugiat duis tempor voluptate cillum eiusmod deserunt.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2017, 8, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Cuizine"
                         },
@@ -3084,7 +3086,7 @@ namespace JAP.Database.Migrations
                             Description = "Ut aute sit aute in aliqua dolore.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2020, 1, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Comvene"
                         },
@@ -3096,7 +3098,7 @@ namespace JAP.Database.Migrations
                             Description = "Consequat amet ex eu elit dolore.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 3.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2020, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Xplor"
                         },
@@ -3108,7 +3110,7 @@ namespace JAP.Database.Migrations
                             Description = "Aliqua magna aliqua veniam eiusmod sint eu deserunt.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2018, 5, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Zaj"
                         },
@@ -3120,7 +3122,7 @@ namespace JAP.Database.Migrations
                             Description = "Fugiat adipisicing nisi qui adipisicing aute labore non deserunt esse irure dolor minim.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2020, 4, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Parleynet"
                         },
@@ -3132,7 +3134,7 @@ namespace JAP.Database.Migrations
                             Description = "Quis id aliquip sit sint eu labore commodo commodo aliqua nisi consequat sint velit.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2017, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Sarasonic"
                         },
@@ -3144,7 +3146,7 @@ namespace JAP.Database.Migrations
                             Description = "Culpa dolor velit excepteur proident amet esse ea sunt aliqua et excepteur pariatur.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2019, 1, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Securia"
                         },
@@ -3156,7 +3158,7 @@ namespace JAP.Database.Migrations
                             Description = "Do sunt quis cupidatat ullamco sit duis non.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2019, 6, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Zensus"
                         },
@@ -3168,7 +3170,7 @@ namespace JAP.Database.Migrations
                             Description = "Et reprehenderit amet enim esse labore anim amet duis.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2019, 3, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Musaphics"
                         },
@@ -3180,7 +3182,7 @@ namespace JAP.Database.Migrations
                             Description = "Ipsum sunt minim ipsum aute non duis excepteur est pariatur nulla eu consectetur.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2016, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Manglo"
                         },
@@ -3192,7 +3194,7 @@ namespace JAP.Database.Migrations
                             Description = "Esse et dolor amet esse non.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2014, 11, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Aeora"
                         },
@@ -3204,7 +3206,7 @@ namespace JAP.Database.Migrations
                             Description = "Ipsum voluptate fugiat proident eiusmod est culpa deserunt in laborum eiusmod.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2016, 5, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Extro"
                         },
@@ -3216,7 +3218,7 @@ namespace JAP.Database.Migrations
                             Description = "Eu ut reprehenderit aliquip culpa amet in magna velit.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2011, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Lexicondo"
                         },
@@ -3228,7 +3230,7 @@ namespace JAP.Database.Migrations
                             Description = "Est Lorem exercitation exercitation id.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2012, 7, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Translink"
                         },
@@ -3240,7 +3242,7 @@ namespace JAP.Database.Migrations
                             Description = "Cupidatat excepteur laborum cillum in ut velit.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2018, 12, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Netagy"
                         },
@@ -3252,7 +3254,7 @@ namespace JAP.Database.Migrations
                             Description = "Amet aliqua fugiat ullamco cupidatat qui Lorem exercitation esse aliqua do sint reprehenderit magna.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2015, 7, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Cujo"
                         },
@@ -3264,7 +3266,7 @@ namespace JAP.Database.Migrations
                             Description = "Voluptate qui reprehenderit sunt consequat ea esse sint quis do sit sit mollit.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2018, 8, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Senmei"
                         },
@@ -3276,7 +3278,7 @@ namespace JAP.Database.Migrations
                             Description = "Proident velit amet labore ullamco id veniam.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2005, 8, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Paprikut"
                         },
@@ -3288,7 +3290,7 @@ namespace JAP.Database.Migrations
                             Description = "Pariatur deserunt id dolore occaecat.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2018, 7, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Jamnation"
                         },
@@ -3300,7 +3302,7 @@ namespace JAP.Database.Migrations
                             Description = "Nostrud quis commodo eu labore qui nisi enim aliquip labore aliquip.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2009, 8, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Zillanet"
                         },
@@ -3312,7 +3314,7 @@ namespace JAP.Database.Migrations
                             Description = "Tempor nisi commodo Lorem sunt mollit duis nulla sunt.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2005, 1, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Kiggle"
                         },
@@ -3324,7 +3326,7 @@ namespace JAP.Database.Migrations
                             Description = "Ipsum anim laboris proident cupidatat in do nostrud occaecat commodo commodo reprehenderit dolor.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2018, 6, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Ramjob"
                         },
@@ -3336,7 +3338,7 @@ namespace JAP.Database.Migrations
                             Description = "Lorem proident nulla proident excepteur magna officia cupidatat.",
                             IsDeleted = false,
                             IsTvShow = false,
-                            RatingTotal = 4.5,
+                            RatingTotal = 0.0,
                             ReleaseDate = new DateTime(2009, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Maineland"
                         },
