@@ -17,19 +17,19 @@ namespace JAP.Core.Services
             _reportsRepository = reportsRepository;
         }
 
-        public Task<ICollection<MoviesWithMostSoldTicketsWithoutRatingsModel>> GetMoviesWithMostSoldTicketsWithoutRatings()
+        public async Task<ICollection<ProcedureModel>> GetMoviesWithMostSoldTicketsWithoutRatingsAsync()
         {
-            throw new NotImplementedException();
+            return await _reportsRepository.GetMoviesWithMostSoldTicketsWithoutRatingsAsync();
         }
 
-        public async Task<ICollection<TenMoviesWithMostRatingsModel>> GetTenMoviesWithMostRatingsAsync()
+        public async Task<ICollection<ProcedureModel>> GetTenMoviesWithMostRatingsAsync()
         {
             return await _reportsRepository.GetTenMoviesWithMostRatingsAsync();
         }
 
-        public Task<ICollection<TenMoviesWithMostScreeningsModel>> GetTenMoviesWithMostScreeningsWithDateParams(DateTime startDate, DateTime endDate)
+        public async Task<ICollection<ProcedureModel>> GetTenMoviesWithMostScreeningsWithDateParamsAsync(TenMoviesWithMostScreeningsSearch request)
         {
-            throw new NotImplementedException();
+            return await _reportsRepository.GetTenMoviesWithMostScreeningsWithDateParamsAsync(request);
         }
     }
 }

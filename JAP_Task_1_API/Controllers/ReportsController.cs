@@ -24,12 +24,27 @@ namespace JAP_Task_1_API.Controllers
         }
 
 
-        [AllowAnonymous]
         [HttpGet]
         [Route("get-ten-movies-with-most-ratings")]
         public async Task<IActionResult> GetTenMoviesWithMostRatings()
         {
             var result = await _reportsService.GetTenMoviesWithMostRatingsAsync();
+            return Ok(result);
+        }
+
+        [HttpGet]
+        [Route("get-ten-movies-with-most-screenings")]
+        public async Task<IActionResult> GetTenMoviesWithMostScreeningsDesc([FromQuery] TenMoviesWithMostScreeningsSearch request)
+        {
+            var result = await _reportsService.GetTenMoviesWithMostScreeningsWithDateParamsAsync(request);
+            return Ok(result);
+        }
+
+        [HttpGet]
+        [Route("get-movies-with-most-sold-tickets-without-ratings")]
+        public async Task<IActionResult> GetMoviesWithMostSoldTicketsWithoutRatings()
+        {
+            var result = await _reportsService.GetMoviesWithMostSoldTicketsWithoutRatingsAsync();
             return Ok(result);
         }
     }
