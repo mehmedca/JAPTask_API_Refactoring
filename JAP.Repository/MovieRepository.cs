@@ -1,20 +1,16 @@
 ﻿using AutoMapper;
 using JAP.Common;
-using JAP.Common.Extensions;
 using JAP.Core.Entities;
 using JAP.Core.Interfaces.IRepository;
-using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
 using JAP.Database.Context;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace JAP.Repository
@@ -25,8 +21,11 @@ namespace JAP.Repository
         private readonly IRatingRepository _ratingRepository;
         private readonly IScreeningsRepository _screeningRepository;
 
-        public MovieRepository(JAPContext dbContext, IMapper mapper, IHttpContextAccessor http, 
-            IRatingRepository ratingRepository, IScreeningsRepository screeningsRepository) : base(dbContext, mapper)
+        public MovieRepository(JAPContext dbContext,
+            IMapper mapper,
+            IRatingRepository ratingRepository,
+            IScreeningsRepository screeningsRepository
+        ) : base(dbContext, mapper)
         {
             _screeningRepository = screeningsRepository;
             _ratingRepository = ratingRepository;
@@ -83,9 +82,12 @@ namespace JAP.Repository
             await SetMovieRatingTotalAsync(request.MovieId);
         }
 
-        private async Task SetMovieRatingTotalAsync(int movieId)
+        public async Task SetMovieRatingTotalAsync(int movieId)
         {
             var movie = await _context.Movies.Where(x => x.Id == movieId).Include(x => x.MovieRatings).FirstOrDefaultAsync();
+            if (movie == null)
+                throw new Exception("Movie doesn't exist!");
+
             double total =  movie.MovieRatings.Sum(x => x.RatingInt);
 
             movie.RatingTotal = total / movie.MovieRatings.Count;
