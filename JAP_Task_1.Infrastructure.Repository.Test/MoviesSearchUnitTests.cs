@@ -37,7 +37,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [OneTimeSetUp]
         public async Task Setup()
         {
-            var dbContextOptions = new DbContextOptionsBuilder().UseInMemoryDatabase("testdb");
+            var dbContextOptions = new DbContextOptionsBuilder().UseInMemoryDatabase("movieSearchDB");
             _context = new JAPContext(dbContextOptions.Options);
 
             var configuration = new MapperConfiguration(cfg => cfg.AddProfile(typeof(ModelsToEntitiesProfiles)));
@@ -80,23 +80,23 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
             };
 
             //Seed three movies with Release Date in 2010 and avg rating of 5
-            for (int i = 0; i < 3; i++)
+            for (int i = 70; i < 73; i++)
             {
                 await _context.Movies.AddAsync(new Movie
                 {
-                    Id = i + 1,
-                    Title = $"Title {i + 1}",
-                    Description = $"Description {i + 1}",
+                    Id = i,
+                    Title = $"Title {i}",
+                    Description = $"Description {i}",
                     ReleaseDate = new DateTime(2010, 10, 05),
                     RatingTotal = 5
                 });
             }
-            for (int i = 0; i < 3; i++)
+            for (int i = 70; i < 73; i++)
             {
                 await _context.Ratings.AddAsync(new Rating
                 {
-                    Id = i + 1,
-                    MovieId = i + 1,
+                    Id = i,
+                    MovieId = i,
                     RatedById = "0000-1111",
                     RatingInt = 5
                 });
@@ -104,23 +104,23 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
 
 
             //Seed three movies with Release Date in 2020 and avg rating of 4
-            for (int i = 3; i < 6; i++)
+            for (int i = 73; i < 76; i++)
             {
                 await _context.Movies.AddAsync(new Movie
                 {
-                    Id = i + 1,
-                    Title = $"Title {i + 1}",
-                    Description = $"Description {i + 1}",
+                    Id = i,
+                    Title = $"Title {i}",
+                    Description = $"Description {i}",
                     ReleaseDate = new DateTime(2020, 10, 05),
                     RatingTotal = 4
                 });
             }
-            for (int i = 3; i < 6; i++)
+            for (int i = 73; i < 76; i++)
             {
                 await _context.Ratings.AddAsync(new Rating
                 {
-                    Id = i + 1,
-                    MovieId = i + 1,
+                    Id = i,
+                    MovieId = i,
                     RatedById = "0000-1111",
                     RatingInt = 4
                 });
@@ -130,7 +130,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
             //Seed one movie without ratings
             await _context.Movies.AddAsync(new Movie
             {
-                Id = 7,
+                Id = 77,
                 Title = "Shawshank Redemption",
                 Description = "Some test description",
                 ReleaseDate = new DateTime(2019, 05, 06)
@@ -138,24 +138,24 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
 
 
             //Seed 5 TV Shows
-            for (int i = 7; i < 12; i++)
+            for (int i = 78; i < 83; i++)
             {
                 await _context.Movies.AddAsync(new Movie
                 {
-                    Id = i + 1,
-                    Title = $"Title {i + 1}",
-                    Description = $"Description {i + 1}",
+                    Id = i,
+                    Title = $"Title {i}",
+                    Description = $"Description {i}",
                     ReleaseDate = new DateTime(2021, 10, 05),
                     IsTvShow = true,
                     RatingTotal = 4
                 });
             }
-            for (int i = 7; i < 12; i++)
+            for (int i = 78; i < 83; i++)
             {
                 await _context.Ratings.AddAsync(new Rating
                 {
-                    Id = i + 1,
-                    MovieId = i + 1,
+                    Id = i,
+                    MovieId = i,
                     RatedById = "0000-1111",
                     RatingInt = 4
                 });
@@ -165,7 +165,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
             //Seed one deleted movie
             await _context.Movies.AddAsync(new Movie
             {
-                Id = 13,
+                Id = 84,
                 Title = "King VS Kong",
                 Description = "Some test description",
                 ReleaseDate = new DateTime(2021, 05, 06),

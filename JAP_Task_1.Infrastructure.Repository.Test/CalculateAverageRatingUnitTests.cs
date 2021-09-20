@@ -29,7 +29,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [OneTimeSetUp]
         public async Task Setup()
         {
-            var dbContextOptions = new DbContextOptionsBuilder().UseInMemoryDatabase("testdb");
+            var dbContextOptions = new DbContextOptionsBuilder().UseInMemoryDatabase("calculateAverageDB");
             _context = new JAPContext(dbContextOptions.Options);
 
             var configuration = new MapperConfiguration(cfg => cfg.AddProfile(typeof(ModelsToEntitiesProfiles)));
@@ -41,7 +41,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
 
             movie1 = new Movie
             {
-                Id = 1,
+                Id = 99,
                 Title = "Test title",
                 Description = "Test description",
                 ReleaseDate = new DateTime(2020, 10, 05),
@@ -49,14 +49,14 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
             };
             await _context.Movies.AddAsync(movie1);
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 55; i < 59; i++)
             {
                 await _context.Ratings.AddAsync(new Rating
                 {
-                    Id = i + 1,
+                    Id = i,
                     MovieId = movie1.Id,
                     RatedById = "0000-1111",
-                    RatingInt = i + 2
+                    RatingInt = i - 53
                 });
             }
             await _context.SaveChangesAsync();
@@ -64,7 +64,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
 
             movie2 = new Movie
             {
-                Id = 2,
+                Id = 100,
                 Title = "Test title",
                 Description = "Test description",
                 ReleaseDate = new DateTime(2020, 10, 05),
@@ -72,7 +72,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
             };
             await _context.Movies.AddAsync(movie2);
 
-            for (int i = 5; i < 8; i++)
+            for (int i = 60; i < 63; i++)
             {
                 await _context.Ratings.AddAsync(new Rating
                 {
@@ -92,7 +92,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         {
             var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
 
-            Assert.ThrowsAsync<Exception>(async () => await movieRepo.SetMovieRatingTotalAsync(99));
+            Assert.ThrowsAsync<Exception>(async () => await movieRepo.SetMovieRatingTotalAsync(1000));
         }
 
         [Test]
