@@ -158,6 +158,8 @@ namespace JAP.Repository
                 .Include(x => x.MovieRatings)
                 .Include(x => x.Cast);
 
+            query = query.Where(x => !x.IsDeleted);
+
             query = await AddFilterAsync(search, query);
 
             query = query.OrderByDescending(x => x.RatingTotal);
