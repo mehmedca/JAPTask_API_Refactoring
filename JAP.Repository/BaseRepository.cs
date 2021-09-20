@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using JAP.Common;
+using JAP.Core.Entities;
 using JAP.Core.Entities.Base;
 using JAP.Core.Entities.Identity;
 using JAP.Core.Interfaces.IRepository;
+using JAP.Core.Models.InsertRequest;
 using JAP.Database.Context;
 using JAP.Repository.Extensions;
 using Microsoft.EntityFrameworkCore;
@@ -33,7 +35,19 @@ namespace JAP.Repository
         public async virtual Task<TModel> AddAsync(TInsert entity)
         {
             var insert = _mapper.Map<TDatabase>(entity);
+
+            if(entity is RatingInsertRequest ratingInsert)
+            {
+                if (ratingInsert.RatingInt < 1 || ratingInsert.RatingInt > 5)
+                    throw new Exception("Rating must be from 1 to 5!");
+                if(await _context.Movies.FindAsync(ratingInsert.MovieId) == null)
+                    throw new Exception("Movie does not exist!");
+            }
+
             await _context.Set<TDatabase>().AddAsync(insert);
+
+            if (_context.ChangeTracker.HasChanges() == false)
+                throw new Exception("Something went wrong!");
 
             await SaveChangesAsync();
 

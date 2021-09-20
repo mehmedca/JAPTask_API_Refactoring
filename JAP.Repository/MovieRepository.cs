@@ -77,7 +77,7 @@ namespace JAP.Repository
 
         public async Task AddMovieRatingAsync(RatingInsertRequest request)
         {
-            if (await _ratingRepository.AddAsync(request) == null) return;
+            if (await _ratingRepository.AddAsync(request) == null) throw new Exception("Something went wrong!");
             
             await SetMovieRatingTotalAsync(request.MovieId);
         }
