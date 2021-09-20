@@ -58,6 +58,7 @@ namespace JAP_Task_1_API.Extensions
             services.AddScoped<IRatingRepository, RatingRepository>();
             services.AddScoped<IPhotoRepository, PhotoRepository>();
             services.AddScoped<IReportsRepository, ReportsRepository>();
+            services.AddScoped<IScreeningsRepository, ScreeningsRepository>();
 
 
             //Action Filters

@@ -23,10 +23,12 @@ namespace JAP.Repository
         MovieUpdateRequest, Movie>, IMovieRepository
     {
         private readonly IRatingRepository _ratingRepository;
+        private readonly IScreeningsRepository _screeningRepository;
 
         public MovieRepository(JAPContext dbContext, IMapper mapper, IHttpContextAccessor http, 
-            IRatingRepository ratingRepository) : base(dbContext, mapper)
+            IRatingRepository ratingRepository, IScreeningsRepository screeningsRepository) : base(dbContext, mapper)
         {
+            _screeningRepository = screeningsRepository;
             _ratingRepository = ratingRepository;
         }
 
@@ -151,7 +153,8 @@ namespace JAP.Repository
             var query = _context.Set<Movie>().AsQueryable();
             query = query
                 .Include(x => x.CoverImage)
-                .Include(x => x.MovieRatings);
+                .Include(x => x.MovieRatings)
+                .Include(x => x.Cast);
 
             query = await AddFilterAsync(search, query);
 
@@ -175,6 +178,11 @@ namespace JAP.Repository
                 .Include(x => x.Cast).ThenInclude(y => y.Actor).FirstOrDefaultAsync();
 
             return _mapper.Map<MovieModel>(movie);
+        }
+
+        public async Task<ICollection<ScreeningModel>> GetMovieScreeningsAsync(int id)
+        {
+            return await _screeningRepository.GetMovieScreeningsAsync(id);
         }
     }
 }

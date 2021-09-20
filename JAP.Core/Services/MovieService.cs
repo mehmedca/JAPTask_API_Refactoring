@@ -19,13 +19,16 @@ namespace JAP.Core.Services
     {
         private readonly IMovieRepository _movieRepository;
         private readonly IPhotoRepository _photoRepository;
+        private readonly IScreeningsRepository _screeningsRepository;
         private readonly IHttpContextAccessor _httpContext;
 
         private readonly string userId;
-        public MovieService(IMovieRepository movieRepository, IHttpContextAccessor httpContext, IPhotoRepository photoRepository)
+        public MovieService(IMovieRepository movieRepository, IHttpContextAccessor httpContext, IPhotoRepository photoRepository, 
+            IScreeningsRepository screeningsRepository)
         {
             _movieRepository = movieRepository;
             _photoRepository = photoRepository;
+            _screeningsRepository = screeningsRepository;
             _httpContext = httpContext;
             userId = _httpContext.HttpContext.User.GetUserId();
         }
@@ -50,6 +53,11 @@ namespace JAP.Core.Services
             await _movieRepository.AddMovieRatingAsync(request);
         }
 
+        public async Task BuyMovieTicketAsync(int screeningId)
+        {
+            await _screeningsRepository.BuyTicketAsync(screeningId);
+        }
+
         public async Task<MovieModel> GetMovieByIdAsync(int id)
         {
             return await _movieRepository.GetByIdAsync(id);
@@ -58,6 +66,11 @@ namespace JAP.Core.Services
         public async Task<ICollection<RatingModel>> GetMovieRatingsAsync(int id)
         {
             return await _movieRepository.GetMovieRatingsAsync(id);
+        }
+
+        public async Task<ICollection<ScreeningModel>> GetMovieScreeningsAsync(int id)
+        {
+            return await _movieRepository.GetMovieScreeningsAsync(id);
         }
 
         public async Task<PagedResult<MovieModel>> GetPageAsync(MovieSearchRequest search)

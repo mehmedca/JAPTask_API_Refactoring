@@ -93,5 +93,24 @@ namespace JAP_Task_1_API.Controllers
 
             return Ok(photoModel);
         }
+
+
+
+        //GET MOVIE SCREENINGS 
+        [AllowAnonymous]
+        [HttpGet("get-movie-screenings/{movieId}")]
+        public async Task<ActionResult<PhotoModel>> GetMovieScreenings(int movieId)
+        {
+            return Ok(await _movieService.GetMovieScreeningsAsync(movieId));
+        }
+
+        //BUY TICKET FOR SCREENING
+        [AllowAnonymous]
+        [HttpPost("buy-ticket/{screeningId}")]
+        public async Task<ActionResult<PhotoModel>> BuyMovieTicket(int screeningId)
+        {
+            await _movieService.BuyMovieTicketAsync(screeningId);
+            return Ok("Successfully bought the ticket!");
+        }
     }
 }

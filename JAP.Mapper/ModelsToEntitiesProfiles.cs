@@ -60,6 +60,9 @@ namespace JAP.Mapper
             CreateMap<Rating, RatingModel>()
                .ReverseMap().PreserveReferences();
             CreateMap<RatingInsertRequest, Rating>();
+
+            //SCREENINGS
+            CreateMap<Screening, ScreeningModel>().ReverseMap().PreserveReferences();
         }
     }
 }

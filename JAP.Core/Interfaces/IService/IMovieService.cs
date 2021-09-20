@@ -22,5 +22,7 @@ namespace JAP.Core.Interfaces.IService
         Task<ICollection<RatingModel>> GetMovieRatingsAsync(int id);
         Task AddMovieRatingAsync(RatingInsertRequest request);
         Task<PhotoModel> AddMovieCoverPhotoAsync(PhotoInsertRequest request);
+        Task<ICollection<ScreeningModel>> GetMovieScreeningsAsync(int id);
+        Task BuyMovieTicketAsync(int screeningId);
     }
 }
