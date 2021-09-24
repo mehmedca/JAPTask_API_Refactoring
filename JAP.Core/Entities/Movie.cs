@@ -1,4 +1,5 @@
-﻿using JAP.Core.Entities.Base;
+﻿using JAP.Common;
+using JAP.Core.Entities.Base;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -33,8 +34,7 @@ namespace JAP.Core.Entities
         public Photo CoverImage { get; set; }
 
         public double RatingTotal { get; set; }
-        public bool IsTvShow { get; set; } = false;
-
+        public MediaType MediaType { get; set; }
         public ICollection<Screening> Screenings { get; private set; }
         public ICollection<ActorMovie> Casts { get; private set; }
         public ICollection<Rating> Ratings { get; private set; }

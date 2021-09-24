@@ -146,7 +146,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
                     Title = $"Title {i}",
                     Description = $"Description {i}",
                     ReleaseDate = new DateTime(2021, 10, 05),
-                    IsTvShow = true,
+                    MediaType = MediaType.TVSHOW,
                     RatingTotal = 4
                 });
             }

@@ -69,7 +69,7 @@ namespace JAP.Repository
                 DateCreated = entity.DateCreated,
                 CreatedById = entity.CreatedById,
                 Description = entity.Description,
-                IsTvShow = entity.IsTvShow,
+                MediaType = entity.IsTvShow == true ? MediaType.TVSHOW : MediaType.MOVIE,
                 ReleaseDate = entity.ReleaseDate,
                 Title = entity.Title
             };
@@ -109,8 +109,8 @@ namespace JAP.Repository
         {
             base.AddFilterFromSearchObject(search, ref query);
 
-            _ = search.IsTvShow == 1 ? query = query.Where(x => x.IsTvShow == true) 
-                : query = query.Where(x => x.IsTvShow == false);
+            _ = search.IsTvShow == 1 ? query = query.Where(x => x.MediaType == MediaType.TVSHOW) 
+                : query = query.Where(x => x.MediaType == MediaType.MOVIE);
 
             if (!string.IsNullOrWhiteSpace(search.TextualSearch))
             {

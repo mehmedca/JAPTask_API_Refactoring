@@ -1,4 +1,5 @@
-﻿using JAP.Core.Models.BaseModels;
+﻿using JAP.Common;
+using JAP.Core.Models.BaseModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace JAP.Core.Models
 
         public double RatingTotal { get; set; }
 
-        public bool IsTvShow { get; set; }
+        public MediaType MediaType { get; set; }
 
         public int PhotoId { get; set; }
         public string PhotoUrl { get; set; }
