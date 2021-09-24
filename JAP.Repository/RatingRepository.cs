@@ -7,6 +7,7 @@ using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
 using JAP.Database.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,12 @@ namespace JAP.Repository
     {
         public RatingRepository(JAPContext dbContext, IMapper mapper) : base(dbContext, mapper)
         {
+        }
+
+        public async Task<List<RatingModel>> GetMovieRatingsAsync(int movieId)
+        {
+            var ratings = await _context.Ratings.Where(x => x.MovieId == movieId).ToListAsync();
+            return _mapper.Map<List<RatingModel>>(ratings);
         }
 
         public Task<PagedResult<RatingModel>> GetPageAsync(object search)

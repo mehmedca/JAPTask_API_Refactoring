@@ -64,15 +64,6 @@ namespace JAP_Task_1_API.Controllers
 
 
 
-        //RATINGS
-
-        //Get movie ratings
-        [HttpGet("get-ratings/{id}")]
-        public async Task<IActionResult> GetMovieRatings(int id)
-        {
-            return Ok(await _movieService.GetMovieRatingsAsync(id));
-        }
-
         //Add new rating
         [HttpPost("add-rating")]
         public async Task<IActionResult> AddMovieRating(RatingInsertRequest request)

@@ -13,5 +13,6 @@ namespace JAP.Core.Interfaces.IRepository
 {
     public interface IRatingRepository : IBaseRepository<RatingModel, object, RatingInsertRequest, object, Rating>
     {
+        Task<List<RatingModel>> GetMovieRatingsAsync(int movieId);
     }
 }

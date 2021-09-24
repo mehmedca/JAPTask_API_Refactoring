@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace JAP_Task_1_API.Controllers
 {
     [ServiceFilter(typeof(LogUserActivity))]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class BaseApiController : ControllerBase
     {

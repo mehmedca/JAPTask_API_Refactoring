@@ -19,7 +19,6 @@ namespace JAP.Core.Interfaces.IService
         Task UpdateMovieAsync(int id, MovieUpdateRequest update);
         Task<PagedResult<MovieModel>> GetPageAsync(MovieSearchRequest search);
         Task SoftDeleteMovieAsync(int id);
-        Task<ICollection<RatingModel>> GetMovieRatingsAsync(int id);
         Task AddMovieRatingAsync(RatingInsertRequest request);
         Task<PhotoModel> AddMovieCoverPhotoAsync(PhotoInsertRequest request);
         Task<ICollection<ScreeningModel>> GetMovieScreeningsAsync(int id);

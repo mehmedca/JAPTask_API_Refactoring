@@ -19,6 +19,10 @@ namespace JAP.Core.Services
             _ratingRepository = ratingRepository;
         }
 
+        public async Task<List<RatingModel>> GetMovieRatingsAsync(int movieId)
+        {
+            return await _ratingRepository.GetMovieRatingsAsync(movieId);
+        }
 
         public async Task<RatingModel> GetRatingByIdAsync(int id)
         {
