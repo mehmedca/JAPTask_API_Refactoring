@@ -44,7 +44,7 @@ namespace JAP.Mapper
             CreateMap<ActorInsertRequest, Actor>();
 
             //ACTORS-MOVIES
-            CreateMap<ActorsMovies, ActorsMoviesModel>().ReverseMap().PreserveReferences();
+            CreateMap<ActorMovie, ActorsMoviesModel>().ReverseMap().PreserveReferences();
 
             //MOVIE
             CreateMap<Movie, MovieModel>()

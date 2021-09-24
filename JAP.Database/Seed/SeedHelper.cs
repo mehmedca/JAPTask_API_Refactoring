@@ -112,7 +112,7 @@ namespace JAP.Database.Seed
 
         public static void SeedActorsInMovies(ModelBuilder builder)
         {
-            builder.Entity<ActorsMovies>().HasData(JsonConverterHelper.LoadJsonFromFile<ActorsMovies>
+            builder.Entity<ActorMovie>().HasData(JsonConverterHelper.LoadJsonFromFile<ActorMovie>
                 ("ActorsMoviesJson.json"));
         }
 

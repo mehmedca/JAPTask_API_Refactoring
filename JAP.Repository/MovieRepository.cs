@@ -49,7 +49,7 @@ namespace JAP.Repository
                 var actor = await _context.Actors.FindAsync(item);
                 if(actor != null)
                 {
-                    await _context.ActorsInMovies.AddAsync(new ActorsMovies
+                    await _context.ActorsInMovies.AddAsync(new ActorMovie
                     {
                         ActorId = actor.Id,
                         MovieId = movie.Id
@@ -84,13 +84,13 @@ namespace JAP.Repository
 
         public async Task SetMovieRatingTotalAsync(int movieId)
         {
-            var movie = await _context.Movies.Where(x => x.Id == movieId).Include(x => x.MovieRatings).FirstOrDefaultAsync();
+            var movie = await _context.Movies.Where(x => x.Id == movieId).Include(x => x.Ratings).FirstOrDefaultAsync();
             if (movie == null)
                 throw new Exception("Movie doesn't exist!");
 
-            double total =  movie.MovieRatings.Sum(x => x.RatingInt);
+            double total =  movie.Ratings.Sum(x => x.RatingInt);
 
-            movie.RatingTotal = total / movie.MovieRatings.Count;
+            movie.RatingTotal = total / movie.Ratings.Count;
 
             await SaveChangesAsync();
         }
@@ -99,7 +99,7 @@ namespace JAP.Repository
         public async Task<ICollection<RatingModel>> GetMovieRatingsAsync(int id)
         {
             var ratings = await _context.Movies.Where(x => x.Id == id)
-                .Include(x => x.MovieRatings).ThenInclude(y => y.RatedByUser).Select(x => x.MovieRatings)
+                .Include(x => x.Ratings).ThenInclude(y => y.RatedByUser).Select(x => x.Ratings)
                 .FirstOrDefaultAsync();
 
             return _mapper.Map<ICollection<RatingModel>>(ratings);
@@ -155,8 +155,8 @@ namespace JAP.Repository
             var query = _context.Set<Movie>().AsQueryable();
             query = query
                 .Include(x => x.CoverImage)
-                .Include(x => x.MovieRatings)
-                .Include(x => x.Cast);
+                .Include(x => x.Ratings)
+                .Include(x => x.Casts);
 
             query = query.Where(x => !x.IsDeleted);
 
@@ -178,8 +178,8 @@ namespace JAP.Repository
         {
             var movie = await _context.Movies.Where(x => x.Id == (int)id)
                 .Include(x => x.CoverImage)
-                .Include(x => x.MovieRatings)
-                .Include(x => x.Cast).ThenInclude(y => y.Actor).FirstOrDefaultAsync();
+                .Include(x => x.Ratings)
+                .Include(x => x.Casts).ThenInclude(y => y.Actor).FirstOrDefaultAsync();
 
             return _mapper.Map<MovieModel>(movie);
         }

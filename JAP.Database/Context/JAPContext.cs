@@ -23,7 +23,7 @@ namespace JAP.Database.Context
         public DbSet<Actor> Actors { get; set; }
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Rating> Ratings { get; set; }
-        public DbSet<ActorsMovies> ActorsInMovies { get; set; }
+        public DbSet<ActorMovie> ActorsInMovies { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<Screening> Screenings { get; set; }
 

@@ -13,8 +13,8 @@ namespace JAP.Core.Entities
     {
         public Movie()
         {
-            Cast = new HashSet<ActorsMovies>();
-            MovieRatings = new HashSet<Rating>();
+            Casts = new HashSet<ActorMovie>();
+            Ratings = new HashSet<Rating>();
             Screenings = new HashSet<Screening>();
         }
 
@@ -36,7 +36,7 @@ namespace JAP.Core.Entities
         public bool IsTvShow { get; set; } = false;
 
         public ICollection<Screening> Screenings { get; private set; }
-        public ICollection<ActorsMovies> Cast { get; private set; }
-        public ICollection<Rating> MovieRatings { get; private set; }
+        public ICollection<ActorMovie> Casts { get; private set; }
+        public ICollection<Rating> Ratings { get; private set; }
     }
 }

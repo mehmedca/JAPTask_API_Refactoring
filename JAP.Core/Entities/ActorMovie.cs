@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JAP.Core.Entities
 {
-    public class ActorsMovies
+    public class ActorMovie
     {
         public int Id { get; set; }
 
