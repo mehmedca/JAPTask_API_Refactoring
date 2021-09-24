@@ -39,6 +39,7 @@ namespace JAP_Task_1_API.Extensions
 
 
             //Services
+            services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IRoleService, RoleService>();
