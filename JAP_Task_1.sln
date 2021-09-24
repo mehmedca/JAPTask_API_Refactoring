@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JAP_Task_1_API", "JAP_Task_1_API\JAP_Task_1_API.csproj", "{D386418A-17E8-4D88-993D-32E54EEDBCAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JAP.Web", "JAP_Task_1_API\JAP.Web.csproj", "{D386418A-17E8-4D88-993D-32E54EEDBCAC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{ABC5D49E-7723-4809-AFE6-D02BE02D1991}"
 EndProject
@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{08DC8E79-CC34-4165-9EA7-988D0E741A1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JAP_Task_1.Infrastructure.JAP.Repository.Test", "JAP_Task_1.Infrastructure.Repository.Test\JAP_Task_1.Infrastructure.JAP.Repository.Test.csproj", "{1297384B-9EF0-49D0-BC50-AB402B150945}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JAP_Task_1.Infrastructure.JAP.Repository.Test", "JAP_Task_1.Infrastructure.Repository.Test\JAP_Task_1.Infrastructure.JAP.Repository.Test.csproj", "{1297384B-9EF0-49D0-BC50-AB402B150945}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
