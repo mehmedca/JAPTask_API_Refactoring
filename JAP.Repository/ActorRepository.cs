@@ -33,6 +33,7 @@ namespace JAP.Repository
         {
             base.AddFilterFromSearchObject(search, ref query);
 
+            //Add search by first and last name capabilities
             if (!string.IsNullOrWhiteSpace(search.FirstName))
                 query = query.Where(x => x.FirstName.ToLower().Contains(search.FirstName.ToLower()));
             if (!string.IsNullOrWhiteSpace(search.LastName))

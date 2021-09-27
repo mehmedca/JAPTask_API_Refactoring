@@ -15,8 +15,10 @@ namespace JAP.Integration.Photo
     public class PhotoService : IPhotoService
     {
         private readonly Cloudinary _cloudinary;
+
         public PhotoService(IOptions<CloudinarySettings> config)
         {
+            //Cloudinary service setup
             var acc = new Account
             (
                 config.Value.CloudName,
@@ -29,6 +31,8 @@ namespace JAP.Integration.Photo
 
         public async Task<ImageUploadResult> AddPhotoAsync(IFormFile file)
         {
+            //Convert the IFormFile to image then upload it to cloudinary cloud and return the result returned
+
             var uploadResult = new ImageUploadResult();
 
             if (file.Length > 0)

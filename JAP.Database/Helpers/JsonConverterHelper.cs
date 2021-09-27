@@ -20,6 +20,7 @@ namespace JAP.Database.Helpers
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
 
+            //Be sure to check and reformat the json files location
             var itemData = File.ReadAllText("C:/Users/mehmedca/Desktop/JAP/jap projects/JAP_Task_2/JAP_Task_2_API/JAP.Database/SeedJson/" + fileName);
             var items = JsonSerializer.Deserialize<List<T>>(itemData, options);
             

@@ -116,13 +116,12 @@ namespace JAP.Database.Seed
                 ("ActorsMoviesJson.json"));
         }
 
-
         public static void SeedRatingsToDb(ModelBuilder builder)
         {
             builder.Entity<Rating>().HasData(JsonConverterHelper.LoadJsonFromFile<Rating>("RatingsJson.json"));
         }
 
-    public static void SeedScreeningsToDb(ModelBuilder builder)
+        public static void SeedScreeningsToDb(ModelBuilder builder)
         {
             builder.Entity<Screening>().HasData(JsonConverterHelper.LoadJsonFromFile<Screening>("ScreeningsJson.json"));
         }

@@ -36,6 +36,7 @@ namespace JAP.Repository
 
         public async virtual Task<TModel> AddAsync(TInsert request)
         {
+            //Validate the rating insert request
             if (request is RatingInsertRequest ratingInsert)
             {
                 if (ratingInsert.RatingInt < 1 || ratingInsert.RatingInt > 5)
@@ -46,6 +47,8 @@ namespace JAP.Repository
             }
 
             var insert = _mapper.Map<TDatabase>(request);
+
+            //Add entity tracking 
             if(insert is BaseEntity entity)
             {
                 entity.CreatedById = _loggedUser.UserId;
@@ -69,6 +72,7 @@ namespace JAP.Repository
             if(entity == null)
                 throw new Exception("The desired object does not exist or it has been deleted!");
 
+            //Add tracking on delete
             if (entity is BaseDeleteEntity deletableEntity)
             {
                 deletableEntity.IsDeleted = true;
@@ -111,6 +115,7 @@ namespace JAP.Repository
         {
             var dbEntity = await _context.Set<TDatabase>().FindAsync(id);
 
+            //Add tracking on update
             if (dbEntity is BaseEntity baseEntity)
             {
                 baseEntity.ModifiedById = _loggedUser.UserId;
@@ -202,7 +207,7 @@ namespace JAP.Repository
 
         protected virtual void AddFilterFromSearchObject(TSearch search, ref IQueryable<TDatabase> query)
         {
-
+            //Override this method in other repos that are deriving from base repo and add the required logic
         }
 
         protected virtual void AddOrder(TSearch search, ref IQueryable<TDatabase> query)

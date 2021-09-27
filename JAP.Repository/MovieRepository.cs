@@ -33,8 +33,6 @@ namespace JAP.Repository
             _ratingRepository = ratingRepository;
         }
 
-
-
         public async override Task<MovieModel> AddAsync(MovieInsertRequest request)
         {
             var movie = MapMovieEntityFromInsertRequest(request);
@@ -94,6 +92,7 @@ namespace JAP.Repository
 
             double total =  movie.Ratings.Sum(x => x.RatingInt);
 
+            //Set movie rating total, calculate ratings avg
             movie.RatingTotal = total / movie.Ratings.Count;
 
             await SaveChangesAsync();
@@ -113,6 +112,7 @@ namespace JAP.Repository
         {
             base.AddFilterFromSearchObject(search, ref query);
 
+            //If IsTvShow == 1 means we got a request for tv shows ELSE return movies
             _ = search.IsTvShow == 1 ? query = query.Where(x => x.MediaType == MediaType.TVSHOW) 
                 : query = query.Where(x => x.MediaType == MediaType.MOVIE);
 
@@ -120,6 +120,7 @@ namespace JAP.Repository
             {
                 var phraseHit = CheckForPhrases(search, ref query);
 
+                //If we dont have any phrases hit we'll check for other possibilies in description and title
                 if(!phraseHit)
                 query = query.Where(x => x.Description.ToLower().Contains(search.TextualSearch.ToLower())
                     || x.Title.ToLower().Contains(search.TextualSearch.ToLower()));
@@ -135,8 +136,11 @@ namespace JAP.Repository
             if (searchArray.Length < 2 || searchArray.Length > 4 || searchArray.Length == 3)
                 return false;
 
+            //Desired phrase conditions are: "{nrOfStars} stars" - etc. 4 stars, "{before || after} {year}"- etc. before 2012,
+            // "at least {nrOfStars} stars" - etc. at least 2 stars, "older than {nrOfYears} years" - etc. Older than 4 years
             if(searchArray.Length == 2)
             {
+                //"{before || after} {year}" - etc.before 2012
                 if (searchArray[0] == "after" || searchArray[0] == "before")
                 {
                     if(int.TryParse(searchArray[1], out int releaseYear))
@@ -149,7 +153,8 @@ namespace JAP.Repository
                         return true;
                     }
                 }
-                if(int.TryParse(searchArray[0], out int starsValue)){
+                //"{nrOfStars} stars" - etc. 4 stars
+                if (int.TryParse(searchArray[0], out int starsValue)){
                     if (starsValue < 1 || starsValue > 5)
                         return false;
                     if(searchArray[1].Contains("stars") || searchArray[1].Contains("star"))
@@ -161,7 +166,8 @@ namespace JAP.Repository
             }
             else if(searchArray.Length == 4)
             {
-                if(searchArray[0] == "older")
+                //"older than {nrOfYears} years" - etc.Older than 4 years
+                if (searchArray[0] == "older")
                 {
                     if(int.TryParse(searchArray[2], out int yearsPast))
                     {
@@ -176,7 +182,8 @@ namespace JAP.Repository
                         }
                     }
                 }
-                if(int.TryParse(searchArray[2], out int ratingTotal))
+                //"at least {nrOfStars} stars" - etc. at least 2 stars
+                if (int.TryParse(searchArray[2], out int ratingTotal))
                 {
                     if (ratingTotal < 1 || ratingTotal > 5)
                         return false;
@@ -189,7 +196,6 @@ namespace JAP.Repository
                     }
                 }
             }
-
             return false;
         }
 
@@ -226,7 +232,7 @@ namespace JAP.Repository
 
         public override async Task<MovieModel> GetByIdAsync(object id)
         {
-            var movie = await _context.Movies.Where(x => x.Id == (int)id)
+            var movie = await _context.Movies.Where(x => x.Id == (int)id && !x.IsDeleted)
                 .Include(x => x.CoverImage)
                 .Include(x => x.Ratings)
                 .Include(x => x.Casts).ThenInclude(y => y.Actor).FirstOrDefaultAsync();

@@ -12,7 +12,7 @@ namespace JAP.Core.Interfaces.IService
     public interface IRatingService
     {
         Task<RatingModel> GetRatingByIdAsync(int id);
-        Task<List<RatingModel>> GetMovieRatingsAsync(int movieId);
+        Task<ICollection<RatingModel>> GetMovieRatingsAsync(int movieId);
         Task<RatingModel> InsertRatingAsync(RatingInsertRequest insert);
     }
 }

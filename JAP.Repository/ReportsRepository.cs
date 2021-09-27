@@ -17,6 +17,7 @@ namespace JAP.Repository
     {
         private readonly JAPContext _context;
 
+        //Procedure names
         private const string MoviesWithMostSoldTicketsProcedure = "GetMoviesWithMostSoldTicketsWithoutRating";
         private const string TenMoviesWithMostScreeningsProcedure = "GetTenMoviesWithTheMostScreeningsDesc";
         private const string TenMoviesWithMostRatingsProcedure = "GetTenMoviesWithTheMostRatings";

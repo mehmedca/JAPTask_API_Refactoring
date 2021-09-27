@@ -25,7 +25,7 @@ namespace JAP.Repository
         {
         }
 
-        public async Task<List<RatingModel>> GetMovieRatingsAsync(int movieId)
+        public async Task<ICollection<RatingModel>> GetMovieRatingsAsync(int movieId)
         {
             var ratings = await _context.Ratings.Where(x => x.MovieId == movieId).ToListAsync();
             return _mapper.Map<List<RatingModel>>(ratings);
