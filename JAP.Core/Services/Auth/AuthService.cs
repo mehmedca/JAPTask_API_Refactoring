@@ -39,14 +39,14 @@ namespace JAP.Core.Services.Auth
                 .Include(x => x.UserPhoto)
                 .SingleOrDefaultAsync(x => x.UserName == loginModel.UserName.ToLower());
 
-            if (user == null) 
-                throw new Exception("Username or password invalid!");
+            if (user == null)
+                return null;
 
             var result = await _signInManager
                 .CheckPasswordSignInAsync(user, loginModel.Password, false);
 
             if (!result.Succeeded)
-                throw new Exception("Username or password invalid!");
+                return null;
 
             return new TokenModel
             {
@@ -62,7 +62,7 @@ namespace JAP.Core.Services.Auth
         {
             if (await UserExists(registerModel.UserName)) 
                 throw new Exception("Username is taken");
-
+            
             AppUser user = _mapper.Map<AppUser>(registerModel);
 
             user.UserName = registerModel.UserName.ToLower();

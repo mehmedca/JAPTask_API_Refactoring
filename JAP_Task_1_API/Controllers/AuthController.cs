@@ -3,6 +3,7 @@ using JAP.Common;
 using JAP.Core.Entities.Identity;
 using JAP.Core.Interfaces.IAuth;
 using JAP.Core.Models.AuthModels;
+using JAP.Web.Errors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -28,7 +29,10 @@ namespace JAP_Task_1_API.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<TokenModel>> Login(LoginModel loginModel)
         {
-            return await _authService.Login(loginModel);
+            var user = await _authService.Login(loginModel);
+            if (user == null)
+                return BadRequest(new BadRequestError("Username or password invalid!"));
+            return Ok(user);
         }
 
         [HttpPost("register")]

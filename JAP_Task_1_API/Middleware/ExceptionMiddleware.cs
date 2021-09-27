@@ -1,4 +1,5 @@
-﻿using JAP_Task_1_API.Errors;
+﻿using JAP.Web.Errors;
+using JAP_Task_1_API.Errors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -42,10 +43,10 @@ namespace JAP_Task_1_API.Middleware
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
-            //Check if is development, if true show full error msg and StackTrace, if not return ISE msg
+            //Check if is development, if true show full error msg, if not return ISE msg
             var response = _env.IsDevelopment()
-                ? new ApiException(context.Response.StatusCode, ex.Message, ex.StackTrace?.ToString())
-                : new ApiException(context.Response.StatusCode, "Internal Server Error");
+                ? new InternalServerError(ex.Message)
+                : new InternalServerError();
 
             var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
 

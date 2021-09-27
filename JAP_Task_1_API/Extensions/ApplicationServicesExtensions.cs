@@ -1,4 +1,5 @@
 ﻿using JAP.Common;
+using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IAuth;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Interfaces.IService;
@@ -7,6 +8,7 @@ using JAP.Core.Services.Auth;
 using JAP.Database.Context;
 using JAP.Integration.Photo;
 using JAP.Repository;
+using JAP.Web.Helpers;
 using JAP_Task_1_API.Helpers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -64,6 +66,9 @@ namespace JAP_Task_1_API.Extensions
 
             //Action Filters
             services.AddScoped<LogUserActivity>();
+
+            //Get logged user
+            services.AddScoped<ILoggedUser, LoggedUser>();
         }
     }
 }
