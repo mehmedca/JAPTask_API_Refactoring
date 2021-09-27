@@ -2,6 +2,7 @@
 using JAP.Common;
 using JAP.Common.Extensions;
 using JAP.Core.Entities;
+using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
@@ -22,7 +23,8 @@ namespace JAP.Repository
     public class ActorRepository : BaseRepository<ActorModel, ActorSearchRequest, ActorInsertRequest, 
         ActorUpdateRequest, Actor>, IActorRepository
     {
-        public ActorRepository(JAPContext dbContext, IMapper mapper) : base(dbContext, mapper)
+        public ActorRepository(JAPContext dbContext, IMapper mapper, ILoggedUser loggedUser) 
+            : base(dbContext, mapper, loggedUser)
         {
         }
 

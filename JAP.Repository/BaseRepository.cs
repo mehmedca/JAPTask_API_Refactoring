@@ -3,6 +3,7 @@ using JAP.Common;
 using JAP.Core.Entities;
 using JAP.Core.Entities.Base;
 using JAP.Core.Entities.Identity;
+using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Models.InsertRequest;
 using JAP.Database.Context;
@@ -23,25 +24,41 @@ namespace JAP.Repository
     {
         protected readonly JAPContext _context;
         protected readonly IMapper _mapper;
-
+        protected readonly ILoggedUser _loggedUser;
         public virtual int DefaultPageSize { get; set; } = 10;
 
-        public BaseRepository(JAPContext dbContext, IMapper mapper)
+        public BaseRepository(JAPContext dbContext, IMapper mapper, ILoggedUser loggedUser)
         {
             _context = dbContext;
             _mapper = mapper;
+            _loggedUser = loggedUser;
         }
 
-        public async virtual Task<TModel> AddAsync(TInsert entity)
+        public async virtual Task<TModel> AddAsync(TInsert request)
         {
-            var insert = _mapper.Map<TDatabase>(entity);
-
-            if(entity is RatingInsertRequest ratingInsert)
+            if (request is RatingInsertRequest ratingInsert)
             {
                 if (ratingInsert.RatingInt < 1 || ratingInsert.RatingInt > 5)
                     throw new Exception("Rating must be from 1 to 5!");
-                if(await _context.Movies.FindAsync(ratingInsert.MovieId) == null)
+
+                if (await _context.Movies.FindAsync(ratingInsert.MovieId) == null)
                     throw new Exception("Movie does not exist!");
+            }
+
+            var insert = _mapper.Map<TDatabase>(request);
+            if(insert is BaseEntity entity)
+            {
+                entity.CreatedById = _loggedUser.UserId;
+                entity.DateCreated = DateTime.Now;
+            }
+            else if (insert is AppUser user)
+            {
+                user.DateCreated = DateTime.Now;
+            }
+            else if (insert is AppRole role)
+            {
+                role.CreatedById = _loggedUser.UserId;
+                role.DateCreated = DateTime.Now;
             }
 
             await _context.Set<TDatabase>().AddAsync(insert);
@@ -54,22 +71,23 @@ namespace JAP.Repository
             return _mapper.Map<TModel>(insert);
         }
 
-        public async virtual Task SoftDeleteAsync(object id, string userId)
+        public async virtual Task SoftDeleteAsync(object id)
         {
             var entity = await _context.Set<TDatabase>().FindAsync(id);
+
+            if(entity == null)
+                throw new Exception("The desired object does not exist or it has been deleted!");
 
             if (entity is BaseDeleteEntity deletableEntity)
             {
                 deletableEntity.IsDeleted = true;
-                deletableEntity.DeletedById = userId;
+                deletableEntity.DeletedById = _loggedUser.UserId;
                 deletableEntity.DateDeleted = DateTime.Now;
-
-                _context.Set<BaseDeleteEntity>().Attach(deletableEntity);
             }
             else if (entity is AppRole role)
             {
                 role.IsDeleted = true;
-                role.DeletedById = userId;
+                role.DeletedById = _loggedUser.UserId;
                 role.DateDeleted = DateTime.Now;
 
                 _context.Set<AppRole>().Attach(role);
@@ -85,13 +103,39 @@ namespace JAP.Repository
         public virtual async Task<TModel> GetByIdAsync(object id)
         {
             var entity = await _context.Set<TDatabase>().FindAsync(id);
+            if(entity is BaseDeleteEntity baseDeleteEntity)
+            {
+                if (baseDeleteEntity.IsDeleted)
+                    throw new Exception("The desired object does not exist or it has been deleted!");
+            }
+            else if(entity is AppRole role)
+            {
+                if (role.IsDeleted)
+                    throw new Exception("The desired object does not exist or it has been deleted!");
+            }
             return _mapper.Map<TModel>(entity);
         }
 
-        public virtual async Task UpdateAsync(object id, TUpdate entity)
+        public virtual async Task UpdateAsync(object id, TUpdate request)
         {
             var dbEntity = await _context.Set<TDatabase>().FindAsync(id);
-            _mapper.Map(entity, dbEntity);
+
+            if (dbEntity is BaseEntity baseEntity)
+            {
+                baseEntity.ModifiedById = _loggedUser.UserId;
+                baseEntity.DateModified = DateTime.Now;
+            }
+            else if(dbEntity is AppUser user)
+            {
+                user.DateModified = DateTime.Now;
+            }
+            else if(dbEntity is AppRole role)
+            {
+                role.ModifiedById = _loggedUser.UserId;
+                role.DateModified = DateTime.Now;
+            }
+
+            _mapper.Map(request, dbEntity);
 
             _context.Set<TDatabase>().Attach(dbEntity);
             _context.Entry(dbEntity).State = EntityState.Modified;

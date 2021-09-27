@@ -11,10 +11,10 @@ namespace JAP.Core.Interfaces.IRepository
         where TDatabase : class
     {
         Task<TModel> GetByIdAsync(object id);
-        Task<PagedResult<TModel>> GetPageAsync(TSearch search);
-        Task<TModel> AddAsync(TInsert entity);
-        Task UpdateAsync(object id, TUpdate entity);
-        Task SoftDeleteAsync(object id, string userId = "");
+        Task<PagedResult<TModel>> GetPageAsync(TSearch request);
+        Task<TModel> AddAsync(TInsert request);
+        Task UpdateAsync(object id, TUpdate request);
+        Task SoftDeleteAsync(object id);
         Task SaveChangesAsync();
     }
 }

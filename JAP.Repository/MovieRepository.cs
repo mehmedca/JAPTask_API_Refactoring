@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using JAP.Common;
 using JAP.Core.Entities;
+using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
@@ -24,8 +25,9 @@ namespace JAP.Repository
         public MovieRepository(JAPContext dbContext,
             IMapper mapper,
             IRatingRepository ratingRepository,
-            IScreeningsRepository screeningsRepository
-        ) : base(dbContext, mapper)
+            IScreeningsRepository screeningsRepository,
+            ILoggedUser loggedUser
+        ) : base(dbContext, mapper, loggedUser)
         {
             _screeningRepository = screeningsRepository;
             _ratingRepository = ratingRepository;
@@ -33,9 +35,9 @@ namespace JAP.Repository
 
 
 
-        public async override Task<MovieModel> AddAsync(MovieInsertRequest entity)
+        public async override Task<MovieModel> AddAsync(MovieInsertRequest request)
         {
-            var movie = MapMovieEntityFromInsertRequest(entity);
+            var movie = MapMovieEntityFromInsertRequest(request);
 
             await _context.Movies.AddAsync(movie);
 
@@ -43,9 +45,9 @@ namespace JAP.Repository
 
             //After adding a movie to db we need to add data to ActorsMovies table in order to connect actors who act in that
             // particular movie
-            foreach (var item in entity.Actors)
+            foreach (var item in request.Actors)
             {
-                //entity.Actors is a list of Actor ids (int) 
+                //request.Actors is a list of Actor ids (int) 
                 var actor = await _context.Actors.FindAsync(item);
                 if(actor != null)
                 {
@@ -62,22 +64,24 @@ namespace JAP.Repository
             return _mapper.Map<MovieModel>(movie);
         }
 
-        private Movie MapMovieEntityFromInsertRequest(MovieInsertRequest entity)
+        private Movie MapMovieEntityFromInsertRequest(MovieInsertRequest request)
         {
             return new Movie
             {
-                DateCreated = entity.DateCreated,
-                CreatedById = entity.CreatedById,
-                Description = entity.Description,
-                MediaType = entity.IsTvShow == true ? MediaType.TVSHOW : MediaType.MOVIE,
-                ReleaseDate = entity.ReleaseDate,
-                Title = entity.Title
+                DateCreated = DateTime.Now,
+                CreatedById = _loggedUser.UserId,
+                Description = request.Description,
+                MediaType = request.IsTvShow == true ? MediaType.TVSHOW : MediaType.MOVIE,
+                ReleaseDate = request.ReleaseDate,
+                Title = request.Title
             };
         }
 
         public async Task AddMovieRatingAsync(RatingInsertRequest request)
         {
-            if (await _ratingRepository.AddAsync(request) == null) throw new Exception("Something went wrong!");
+            request.RatedById = _loggedUser.UserId;
+            if (await _ratingRepository.AddAsync(request) == null) 
+                throw new Exception("Something went wrong!");
             
             await SetMovieRatingTotalAsync(request.MovieId);
         }

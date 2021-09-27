@@ -1,17 +1,11 @@
 ﻿using JAP.Common;
-using JAP.Common.Extensions;
-using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
-using Microsoft.AspNetCore.Http;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace JAP.Core.Services
@@ -21,15 +15,13 @@ namespace JAP.Core.Services
         private readonly IMovieRepository _movieRepository;
         private readonly IPhotoRepository _photoRepository;
         private readonly IScreeningsRepository _screeningsRepository;
-        private readonly ILoggedUser _loggedUser;
 
-        public MovieService(IMovieRepository movieRepository, ILoggedUser loggedUser, IPhotoRepository photoRepository, 
+        public MovieService(IMovieRepository movieRepository, IPhotoRepository photoRepository, 
             IScreeningsRepository screeningsRepository)
         {
             _movieRepository = movieRepository;
             _photoRepository = photoRepository;
             _screeningsRepository = screeningsRepository;
-            _loggedUser = loggedUser;
         }
 
         public async Task<PhotoModel> AddMovieCoverPhotoAsync(PhotoInsertRequest request)
@@ -50,7 +42,6 @@ namespace JAP.Core.Services
 
         public async Task AddMovieRatingAsync(RatingInsertRequest request)
         {
-            request.RatedById = _loggedUser.UserId;
             await _movieRepository.AddMovieRatingAsync(request);
         }
 
@@ -81,22 +72,16 @@ namespace JAP.Core.Services
 
         public async Task<MovieModel> InsertMovieAsync(MovieInsertRequest insert)
         {
-            insert.DateCreated = DateTime.Now;
-            insert.CreatedById = _loggedUser.UserId;
-
             return await _movieRepository.AddAsync(insert);
         }
 
         public async Task SoftDeleteMovieAsync(int id)
         {
-            await _movieRepository.SoftDeleteAsync(id, _loggedUser.UserId);
+            await _movieRepository.SoftDeleteAsync(id);
         }
 
         public async Task UpdateMovieAsync(int id, MovieUpdateRequest update)
         {
-            update.DateModified = DateTime.Now;
-            update.ModifiedById = _loggedUser.UserId;
-
             await _movieRepository.UpdateAsync(id, update);
         }
     }

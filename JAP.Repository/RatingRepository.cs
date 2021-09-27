@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using JAP.Common;
 using JAP.Core.Entities;
+using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
@@ -19,7 +20,8 @@ namespace JAP.Repository
     public class RatingRepository : BaseRepository<RatingModel, BaseSearch, RatingInsertRequest,
         object, Rating>, IRatingRepository
     {
-        public RatingRepository(JAPContext dbContext, IMapper mapper) : base(dbContext, mapper)
+        public RatingRepository(JAPContext dbContext, IMapper mapper, ILoggedUser loggedUser) 
+            : base(dbContext, mapper, loggedUser)
         {
         }
 

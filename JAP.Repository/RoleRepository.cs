@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using JAP.Core.Entities;
 using JAP.Core.Entities.Identity;
+using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
@@ -18,7 +19,8 @@ namespace JAP.Repository
     public class RoleRepository : BaseRepository<AppRoleModel, AppRoleSearchRequest, AppRoleInsertRequest,
          AppRoleUpdateRequest, AppRole>, IRoleRepository
     {
-        public RoleRepository(JAPContext dbContext, IMapper mapper) : base(dbContext, mapper)
+        public RoleRepository(JAPContext dbContext, IMapper mapper, ILoggedUser loggedUser) 
+            : base(dbContext, mapper, loggedUser)
         {
         }
 

@@ -1,5 +1,4 @@
-﻿using JAP.Core.Models.BaseModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JAP.Core.Models.InsertRequest
 {
-    public class MovieInsertRequest : CreateUpdateModel
+    public class MovieInsertRequest 
     {
         public string Title { get; set; }
         public string Description { get; set; }

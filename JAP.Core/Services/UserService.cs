@@ -2,6 +2,7 @@
 using JAP.Common;
 using JAP.Common.Extensions;
 using JAP.Core.Entities.Identity;
+using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
@@ -25,20 +26,17 @@ namespace JAP.Core.Services
         private readonly IUserRepository _userRepository;
         private readonly IPhotoRepository _photoRepository;
         private readonly UserManager<AppUser> _userManager;
-        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IMapper _mapper;
-
-        private readonly string userId;
+        private readonly ILoggedUser _loggedUser;
 
         public UserService(IUserRepository userRepository, UserManager<AppUser> userManager,
-            IHttpContextAccessor httpContextAccessor, IMapper mapper, IPhotoRepository photoRepository)
+            IMapper mapper, IPhotoRepository photoRepository, ILoggedUser loggedUser)
         {
             _userRepository = userRepository;
             _photoRepository = photoRepository;
             _userManager = userManager;
-            _httpContextAccessor = httpContextAccessor;
             _mapper = mapper;
-            userId = _httpContextAccessor.HttpContext.User.GetUserId();
+            _loggedUser = loggedUser;
         }
 
         public async Task<PhotoModel> AddUserProfilePhotoAsync(IFormFile file)
@@ -50,7 +48,7 @@ namespace JAP.Core.Services
                 PhotoId = photo.Id
             };
 
-            await UpdateUserAsync(userId, update);
+            await UpdateUserAsync(_loggedUser.UserId, update);
 
             return photo;
         }
@@ -78,9 +76,6 @@ namespace JAP.Core.Services
             var user = await _userManager.Users.Include(x => x.UserRoles)
                 .ThenInclude(y => y.Role)
                 .FirstOrDefaultAsync(x => x.Id == id);
-
-            update.ModifiedById = userId;
-            update.DateModified = DateTime.UtcNow;
 
             await _userRepository.UpdateAsync(id, update);
         }
