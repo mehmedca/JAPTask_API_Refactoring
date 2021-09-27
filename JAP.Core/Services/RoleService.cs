@@ -1,11 +1,15 @@
 ﻿using JAP.Common;
+using JAP.Core.Entities.Identity;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Interfaces.IService;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
+using Microsoft.AspNetCore.Identity;
+using System;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace JAP.Core.Services
 {

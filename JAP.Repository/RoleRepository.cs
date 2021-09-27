@@ -8,6 +8,7 @@ using JAP.Core.Models.InsertRequest;
 using JAP.Core.Models.SearchRequest;
 using JAP.Core.Models.UpdateRequest;
 using JAP.Database.Context;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,10 +20,32 @@ namespace JAP.Repository
     public class RoleRepository : BaseRepository<AppRoleModel, AppRoleSearchRequest, AppRoleInsertRequest,
          AppRoleUpdateRequest, AppRole>, IRoleRepository
     {
-        public RoleRepository(JAPContext dbContext, IMapper mapper, ILoggedUser loggedUser) 
+        private readonly RoleManager<AppRole> _roleManager;
+        public RoleRepository(JAPContext dbContext, IMapper mapper, ILoggedUser loggedUser, RoleManager<AppRole> roleManager) 
             : base(dbContext, mapper, loggedUser)
         {
+            _roleManager = roleManager;
         }
 
+
+        public override async Task<AppRoleModel> AddAsync(AppRoleInsertRequest request)
+        {
+            if (await _roleManager.RoleExistsAsync(request.Name))
+                throw new Exception("The role you are trying to add already exists!");
+
+            var mappedRole = _mapper.Map<AppRole>(request);
+            mappedRole.CreatedById = _loggedUser.UserId;
+            mappedRole.DateCreated = DateTime.Now;
+            mappedRole.Id = Guid.NewGuid().ToString();
+
+            IdentityResult result = await _roleManager.CreateAsync(mappedRole);
+
+            if (!result.Succeeded)
+                throw new Exception("Something went wrong!");
+
+            var addedRole = await _roleManager.FindByNameAsync(mappedRole.Name);
+
+            return _mapper.Map<AppRoleModel>(addedRole);
+        }
     }
 }

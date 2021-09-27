@@ -9,5 +9,6 @@ namespace JAP.Core.Models.InsertRequest
     public class AppRoleInsertRequest 
     {
         public string Name { get; set; }
+        public string NormalizedName { get; set; }
     }
 }
