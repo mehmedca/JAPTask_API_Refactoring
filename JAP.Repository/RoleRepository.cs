@@ -47,5 +47,16 @@ namespace JAP.Repository
 
             return _mapper.Map<AppRoleModel>(addedRole);
         }
+
+        //Override method to add IsDeleted == false check
+        protected override async Task<IQueryable<AppRole>> GetAsync(AppRoleSearchRequest search)
+        {
+            var query = _context.Set<AppRole>().AsQueryable();
+            query = query.Where(x => !x.IsDeleted);
+            AddInclude(search, ref query);
+            query = await AddFilterAsync(search, query);
+            AddOrder(search, ref query);
+            return await Task.FromResult(query);
+        }
     }
 }

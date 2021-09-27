@@ -41,7 +41,8 @@ namespace JAP.Repository
         public async Task<ICollection<ScreeningModel>> GetMovieScreeningsAsync(int movieId)
         {
             //Return only the screenings that are in the future and have available tickets 
-            var screenings = await _context.Screenings.Include(x => x.Tickets).Where(x => x.MovieId == movieId && x.StartDate >= DateTime.Now && x.Tickets
+            var screenings = await _context.Screenings.Include(x => x.Tickets).Where(x => x.MovieId == movieId 
+            && x.StartDate >= DateTime.Now && x.Tickets
             .Any(c => c.IsSold == false)).ToListAsync();
 
             var mappedScreenings = _mapper.Map<List<ScreeningModel>>(screenings);

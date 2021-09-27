@@ -53,7 +53,8 @@ namespace JAP_Task_1_API.Controllers
             //Not receiving PhotoInsertRequest instead we'll receive the photo directly without the UserId because we're able to
             // get the UserId from logged user. User will only be able to add a photo if loggedIn == true
             var photoModel = await _userService.AddUserProfilePhotoAsync(file);
-            if (photoModel == null) return BadRequest("Problem addding photo");
+            if (photoModel == null) 
+                return BadRequest("Problem addding photo");
 
             return Ok(photoModel);
         }

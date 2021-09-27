@@ -19,6 +19,7 @@ namespace JAP.Core.Models
         public double RatingTotal { get; set; }
 
         public MediaType MediaType { get; set; }
+        public string MediaTypeString { get; set; }
 
         public int PhotoId { get; set; }
         public string PhotoUrl { get; set; }

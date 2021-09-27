@@ -51,16 +51,7 @@ namespace JAP.Repository
                 entity.CreatedById = _loggedUser.UserId;
                 entity.DateCreated = DateTime.Now;
             }
-            else if (insert is AppUser user)
-            {
-                user.DateCreated = DateTime.Now;
-            }
-            else if (insert is AppRole role)
-            {
-                role.CreatedById = _loggedUser.UserId;
-                role.DateCreated = DateTime.Now;
-            }
-
+            
             await _context.Set<TDatabase>().AddAsync(insert);
 
             if (_context.ChangeTracker.HasChanges() == false)
@@ -159,7 +150,7 @@ namespace JAP.Repository
             PagedResult<TModel> result = new PagedResult<TModel>();
 
             var query = await GetAsync(search);
-
+            
             result.Count = await GetCountAsync(query);
 
             AddPaging(search, ref query);

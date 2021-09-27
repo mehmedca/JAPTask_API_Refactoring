@@ -128,23 +128,69 @@ namespace JAP.Repository
 
         private bool CheckForPhrases(MovieSearchRequest search, ref IQueryable<Movie> query)
         {
-            switch (search.TextualSearch.ToLower())
+            //Split the string into array 
+            var searchArray = search.TextualSearch.ToLower().Split(" ");
+
+            //If the array length doesn't match these conditions the search string won't match the desired conditions
+            if (searchArray.Length < 2 || searchArray.Length > 4 || searchArray.Length == 3)
+                return false;
+
+            if(searchArray.Length == 2)
             {
-                case "5 stars":
-                    query = query.Where(x => x.RatingTotal == 5);
-                    return true;
-                case "at least 3 stars":
-                    query = query.Where(x => x.RatingTotal >= 3);
-                    return true;
-                case "older than 5 years":
-                    query = query.Where(x => (DateTime.Now.Year - x.ReleaseDate.Year) > 5);
-                    return true;
-                case "after 2015":
-                    query = query.Where(x => x.ReleaseDate.Year > 2015);
-                    return true;
-               
-                default: return false;
+                if (searchArray[0] == "after" || searchArray[0] == "before")
+                {
+                    if(int.TryParse(searchArray[1], out int releaseYear))
+                    {
+                        if (searchArray[0] == "after")
+                            query = query.Where(x => x.ReleaseDate.Year > releaseYear);
+                        else
+                            query = query.Where(x => x.ReleaseDate.Year < releaseYear);
+
+                        return true;
+                    }
+                }
+                if(int.TryParse(searchArray[0], out int starsValue)){
+                    if (starsValue < 1 || starsValue > 5)
+                        return false;
+                    if(searchArray[1].Contains("stars") || searchArray[1].Contains("star"))
+                    {
+                        query = query.Where(x => x.RatingTotal == starsValue);
+                        return true;
+                    }
+                }
             }
+            else if(searchArray.Length == 4)
+            {
+                if(searchArray[0] == "older")
+                {
+                    if(int.TryParse(searchArray[2], out int yearsPast))
+                    {
+                        if (yearsPast < 1)
+                            return false;
+
+                        if(search.TextualSearch == $"older than {yearsPast} years"
+                            || search.TextualSearch == $"older than {yearsPast} year")
+                        {
+                            query = query.Where(x => (DateTime.Now.Year - x.ReleaseDate.Year) > yearsPast);
+                            return true;
+                        }
+                    }
+                }
+                if(int.TryParse(searchArray[2], out int ratingTotal))
+                {
+                    if (ratingTotal < 1 || ratingTotal > 5)
+                        return false;
+
+                    if (search.TextualSearch == $"at least {ratingTotal} stars"
+                        || search.TextualSearch == $"at least {ratingTotal} star")
+                    {
+                        query = query.Where(x => x.RatingTotal >= ratingTotal);
+                        return true;
+                    }
+                }
+            }
+
+            return false;
         }
 
         public async override Task<PagedResult<MovieModel>> GetPageAsync(MovieSearchRequest search)

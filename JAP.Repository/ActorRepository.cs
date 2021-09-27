@@ -50,7 +50,8 @@ namespace JAP.Repository
 
             var query = _context.Set<Actor>().AsQueryable();
             query = query
-                .Include(x => x.ProfileImg);
+                .Include(x => x.ProfileImg)
+                .Where(x => !x.IsDeleted);
 
             query = await AddFilterAsync(search, query);
 

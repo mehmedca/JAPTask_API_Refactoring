@@ -49,6 +49,7 @@ namespace JAP.Mapper
             //MOVIE
             CreateMap<Movie, MovieModel>()
                .ForMember(x => x.PhotoUrl, y => y.MapFrom(z => z.CoverImage.Url))
+               .ForMember(x => x.MediaTypeString, y => y.MapFrom(z => z.MediaType == Common.MediaType.MOVIE ? "Movie" : "TV Show"))
                .ReverseMap().PreserveReferences();
             CreateMap<MovieUpdateRequest, Movie>();
             CreateMap<MovieInsertRequest, Movie>();
