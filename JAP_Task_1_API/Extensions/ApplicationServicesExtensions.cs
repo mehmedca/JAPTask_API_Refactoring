@@ -35,6 +35,7 @@ namespace JAP_Task_1_API.Extensions
 
             //DB configuration
             services.AddDbContext<JAPContext>(options => options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<LogErrorContext>(options => options.UseNpgsql(configuration.GetConnectionString("ErrorLogsConnection")));
 
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

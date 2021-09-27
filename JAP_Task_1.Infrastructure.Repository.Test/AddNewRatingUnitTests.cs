@@ -33,7 +33,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [OneTimeSetUp]
         public async Task Setup()
         {
-            var dbContextOptions = new DbContextOptionsBuilder().UseInMemoryDatabase("addNewRatingDB");
+            var dbContextOptions = new DbContextOptionsBuilder<JAPContext>().UseInMemoryDatabase("addNewRatingDB");
             _context = new JAPContext(dbContextOptions.Options);
 
             var configuration = new MapperConfiguration(cfg => cfg.AddProfile(typeof(ModelsToEntitiesProfiles)));

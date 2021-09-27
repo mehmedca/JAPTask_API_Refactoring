@@ -24,9 +24,13 @@ namespace JAP_Task_1_API
             try
             {
                 var context = services.GetRequiredService<JAPContext>();
+                var errorContext = services.GetRequiredService<LogErrorContext>();
                 var userManager = services.GetRequiredService<UserManager<AppUser>>();
                 var roleManager = services.GetRequiredService<RoleManager<AppRole>>();
+
+                //Migrate contexts on app startup
                 await context.Database.MigrateAsync();
+                await errorContext.Database.MigrateAsync();
             }
             catch (Exception ex)
             {

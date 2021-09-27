@@ -15,7 +15,7 @@ namespace JAP.Database.Context
     public class JAPContext : IdentityDbContext<AppUser, AppRole, string, IdentityUserClaim<string>, AppUserRole,
         IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>
     {
-        public JAPContext(DbContextOptions options) : base(options)
+        public JAPContext(DbContextOptions<JAPContext> options) : base(options)
         {
         }
 
