@@ -70,13 +70,27 @@ namespace JAP.Core.Services.Auth
 
             var result = await _userManager.CreateAsync(user, registerModel.Password);
 
-            if (!result.Succeeded) 
-                throw new Exception(result.Errors.ToString());
+            string errorWithMultipleMsgs = "";
+
+            if (!result.Succeeded)
+            {
+                result.Errors.ToList().ForEach(x =>
+                {
+                    errorWithMultipleMsgs += x.Description;
+                });
+                throw new Exception(errorWithMultipleMsgs);
+            }
 
             var roleResult = await _userManager.AddToRoleAsync(user, "User");
 
-            if (!roleResult.Succeeded) 
-                throw new Exception(result.Errors.ToString());
+            if (!roleResult.Succeeded)
+            {
+                result.Errors.ToList().ForEach(x =>
+                {
+                    errorWithMultipleMsgs += x.Description;
+                });
+                throw new Exception(errorWithMultipleMsgs);
+            }
 
             return new TokenModel
             {
