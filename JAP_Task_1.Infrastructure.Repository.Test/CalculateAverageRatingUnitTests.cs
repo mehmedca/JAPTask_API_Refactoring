@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using JAP.Core.Entities;
+using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Database.Context;
 using JAP.Mapper;
@@ -21,6 +22,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         private IMapper _mapper { get; set; }
         private Mock<IScreeningsRepository> mockScreeningRepo { get; set; }
         private Mock<IRatingRepository> mockRatingRepo { get; set; }
+        private Mock<ILoggedUser> mockLoggedUser { get; set; }
 
         private Movie movie1 { get; set; }
         private Movie movie2 { get; set; }
@@ -37,7 +39,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
 
             mockScreeningRepo = new Mock<IScreeningsRepository>();
             mockRatingRepo = new Mock<IRatingRepository>();
-
+            mockLoggedUser = new Mock<ILoggedUser>();
 
             movie1 = new Movie
             {
@@ -90,7 +92,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public void SetMovieRatingTotalAsync_SetRatingToNonExistingMovie_ThrowsException()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object,
+                mockLoggedUser.Object);
 
             Assert.ThrowsAsync<Exception>(async () => await movieRepo.SetMovieRatingTotalAsync(1000));
         }
@@ -98,7 +101,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task SetMovieRatingTotalAsync_SetFourRatingsToMovie_ResultEqualTo_3_5()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object,
+                mockLoggedUser.Object);
 
             await movieRepo.SetMovieRatingTotalAsync(movie1.Id);
 
@@ -108,7 +112,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task SetMovieRatingTotalAsync_SetThreeRatingsToMovie_ResultEqualTo_4()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object,
+                mockLoggedUser.Object);
 
             await movieRepo.SetMovieRatingTotalAsync(movie2.Id);
 

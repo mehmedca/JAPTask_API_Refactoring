@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using JAP.Common;
 using JAP.Core.Entities;
+using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Models;
 using JAP.Core.Models.SearchRequest;
@@ -24,6 +25,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         private IMapper _mapper { get; set; }
         private Mock<IScreeningsRepository> mockScreeningRepo { get; set; }
         private Mock<IRatingRepository> mockRatingRepo { get; set; }
+        private Mock<ILoggedUser> mockLoggedUser { get; set; }
         private MovieSearchRequest movieSearchRequest { get; set; }
         private MovieSearchRequest tvShowSearchRequest { get; set; }
         private MovieSearchRequest after2015 { get; set; }
@@ -45,6 +47,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
 
             mockScreeningRepo = new Mock<IScreeningsRepository>();
             mockRatingRepo = new Mock<IRatingRepository>();
+            mockLoggedUser = new Mock<ILoggedUser>();
 
             movieSearchRequest = new MovieSearchRequest
             {
@@ -180,7 +183,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task GetPageAsync_SearchForMovies_Returns7Movies()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object, 
+                mockLoggedUser.Object);
 
             var moviesList = await movieRepo.GetPageAsync(movieSearchRequest);
 
@@ -190,7 +194,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task GetPageAsync_SearchForTvShows_Returns5Shows()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object,
+                mockLoggedUser.Object);
 
             var moviesList = await movieRepo.GetPageAsync(tvShowSearchRequest);
 
@@ -200,7 +205,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task GetPageAsync_SearchForMoviesWithReleaseDateAfter2015_Returns4Movies()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object,
+                mockLoggedUser.Object);
 
             var moviesList = await movieRepo.GetPageAsync(after2015);
 
@@ -210,7 +216,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task GetPageAsync_SearchForMoviesOlderThan5Years_Returns3Movies()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object,
+                mockLoggedUser.Object);
 
             var moviesList = await movieRepo.GetPageAsync(olderThan5Years);
             
@@ -220,7 +227,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task GetPageAsync_SearchForMoviesWith5Stars_Returns3Movies()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object,
+                mockLoggedUser.Object);
 
             var moviesList = await movieRepo.GetPageAsync(FiveStars);
 
@@ -230,7 +238,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task GetPageAsync_SearchForMoviesWithAtLeast3Stars_Returns6Movies()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object,
+                mockLoggedUser.Object);
 
             var moviesList = await movieRepo.GetPageAsync(atLeast3Start);
 
@@ -240,7 +249,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task GetPageAsync_SearchForMoviesWithCustomTextualSearch_ReturnsMovieShawshankRedemption()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object,
+                mockLoggedUser.Object);
 
             var moviesList = await movieRepo.GetPageAsync(CustomTextualSearch);
 
@@ -250,7 +260,8 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task GetPageAsync_SearchForDeletedMovieByTextualSearch_ReturnsEmptyResult()
         {
-            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object);
+            var movieRepo = new MovieRepository(_context, _mapper, mockRatingRepo.Object, mockScreeningRepo.Object,
+                mockLoggedUser.Object);
 
             var moviesList = await movieRepo.GetPageAsync(deletedMovieSearch);
 

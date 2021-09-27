@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using JAP.Core.Entities;
+using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IRepository;
 using JAP.Core.Models;
 using JAP.Core.Models.InsertRequest;
@@ -21,6 +22,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
     {
         private JAPContext _context { get; set; }
         private IMapper _mapper { get; set; }
+        private Mock<ILoggedUser> mockLoggedUser { get; set; }
 
         private Movie movie1 { get; set; }
         private RatingInsertRequest failingInsertRequest1 { get; set; }
@@ -37,6 +39,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
             var configuration = new MapperConfiguration(cfg => cfg.AddProfile(typeof(ModelsToEntitiesProfiles)));
             _mapper = new Mapper(configuration);
 
+            mockLoggedUser = new Mock<ILoggedUser>();
 
             //Failed because of unexisting movie id
             failingInsertRequest1 = new RatingInsertRequest
@@ -77,7 +80,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public void AddMovieRatingAsync_SetRatingToNonExistingMovie_ReturnsNull()
         {
-            var ratingRepo = new RatingRepository(_context, _mapper);
+            var ratingRepo = new RatingRepository(_context, _mapper, mockLoggedUser.Object);
 
             Assert.ThrowsAsync<Exception>(async () => await ratingRepo.AddAsync(failingInsertRequest1));
         }
@@ -85,7 +88,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public void AddMovieRatingAsync_SetBadRatingValue_ReturnsNull()
         {
-            var ratingRepo = new RatingRepository(_context, _mapper);
+            var ratingRepo = new RatingRepository(_context, _mapper, mockLoggedUser.Object);
 
             Assert.ThrowsAsync<Exception>(async () => await ratingRepo.AddAsync(failingInsertRequest2));
         }
@@ -93,7 +96,7 @@ namespace JAP_Task_1.Infrastructure.JAP.Repository.Test
         [Test]
         public async Task AddMovieRatingAsync_SetCorrectRating_RequestSucceeds()
         {
-            var ratingRepo = new RatingRepository(_context, _mapper);
+            var ratingRepo = new RatingRepository(_context, _mapper, mockLoggedUser.Object);
 
             var rating = await ratingRepo.AddAsync(successfullRequest);
 
