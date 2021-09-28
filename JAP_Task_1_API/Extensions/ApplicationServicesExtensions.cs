@@ -2,12 +2,15 @@
 using JAP.Core.Interfaces;
 using JAP.Core.Interfaces.IAuth;
 using JAP.Core.Interfaces.IRepository;
+using JAP.Core.Interfaces.IRepository.ErrorLogger;
 using JAP.Core.Interfaces.IService;
 using JAP.Core.Services;
 using JAP.Core.Services.Auth;
+using JAP.Core.Services.ErrorLogger;
 using JAP.Database.Context;
 using JAP.Integration.Photo;
 using JAP.Repository;
+using JAP.Repository.ErrorLogger;
 using JAP.Web.Helpers;
 using JAP_Task_1_API.Helpers;
 using Microsoft.AspNetCore.Http;
@@ -39,7 +42,9 @@ namespace JAP_Task_1_API.Extensions
 
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
+            
+            //Get logged user
+            services.AddScoped<ILoggedUser, LoggedUser>();
 
             //Services
             services.AddScoped<IAuthService, AuthService>();
@@ -65,11 +70,12 @@ namespace JAP_Task_1_API.Extensions
             services.AddScoped<IScreeningsRepository, ScreeningsRepository>();
 
 
+            //Error logger 
+            services.AddScoped<IErrorLoggerService, ErrorLoggerService>();
+            services.AddScoped<IErrorLoggerRepository, ErrorLoggerRepository>();
+
             //Action Filters
             services.AddScoped<LogUserActivity>();
-
-            //Get logged user
-            services.AddScoped<ILoggedUser, LoggedUser>();
         }
     }
 }

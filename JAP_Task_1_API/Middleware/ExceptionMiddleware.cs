@@ -33,7 +33,7 @@ namespace JAP_Task_1_API.Middleware
         // InvokeAsync method which allowed me to get the context and ILoggedUser which I then passed to the method below
         // Visit this post for reference ** first comment reply:
         // https://stackoverflow.com/questions/48590579/cannot-resolve-scoped-service-from-root-provider-net-core-2
-        public async Task InvokeAsync(HttpContext context, LogErrorContext logErrorContext, ILoggedUser loggedUser)
+        public async Task InvokeAsync(HttpContext context, IErrorLoggerService errorService)
         {
             try
             {
@@ -42,30 +42,18 @@ namespace JAP_Task_1_API.Middleware
             catch (Exception ex)
             {
                 _logger.LogError(ex, ex.Message);
-                await HandleExceptionAsync(context, ex, logErrorContext, loggedUser);
+                await HandleExceptionAsync(context, ex, errorService);
             }
         }
 
        
-        private async Task HandleExceptionAsync(HttpContext context, Exception ex, LogErrorContext logErrorContext,
-            ILoggedUser loggedUser)
+        private async Task HandleExceptionAsync(HttpContext context, Exception ex, IErrorLoggerService errorService)
         {
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
             // Log the error to db
-            ErrorLog errorLog = new ErrorLog
-            {
-                ExceptionMessage = ex.Message,
-                ExceptionSource = ex?.Source,
-                ExceptionType = HttpStatusCode.InternalServerError.ToString(),
-                ExceptionCode = (int)HttpStatusCode.InternalServerError,
-                ExceptionTrace = ex?.StackTrace,
-                LogDate = DateTime.Now,
-                UserId = loggedUser.UserId
-            };
-            await logErrorContext.ErrorLogs.AddAsync(errorLog);
-            await logErrorContext.SaveChangesAsync();
+            await errorService.LogErrorAsync(ex);
 
             //Check if is development, if true show full error msg, if not return ISE msg
             var response = _env.IsDevelopment()
