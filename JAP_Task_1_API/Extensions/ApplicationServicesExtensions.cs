@@ -42,9 +42,9 @@ namespace JAP_Task_1_API.Extensions
 
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            
+
             //Get logged user
-            services.AddScoped<ILoggedUser, LoggedUser>();
+            services.AddTransient<ILoggedUser, LoggedUser>();
 
             //Services
             services.AddScoped<IAuthService, AuthService>();
